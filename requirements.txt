@@ -1,0 +1,6 @@
+# ROS Humble cv_bridge requires NumPy 1.x. CPU torch comes from its own index.
+numpy==1.26.4
+opencv-python==4.10.0.84
+ultralytics==8.3.221
+Pillow==9.0.1
+PyYAML==5.4.1
