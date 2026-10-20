@@ -1,4 +1,5 @@
 .venv/
+.venv
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -42,3 +43,16 @@ reference/
 *.mkv
 *.webm
 .DS_Store
+checkpoints/*
+!checkpoints/README.md
+!checkpoints/manifest.json
+!checkpoints/mobilenetv3-small-yolov8n-seg.pt
+experiments/mobilenet/weights/
+experiments/mobilenet/results/
+experiments/mobilenet/training/
+experiments/mobilenet/evaluation/
+experiments/mobilenet/images/
+.torch/
+.matplotlib/
+!config/models/
+!config/models/*.yaml

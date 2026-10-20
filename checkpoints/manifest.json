@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "path": "models/yolov8n-seg.pt",
+    "sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+    "bytes": 7071756,
+    "source": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-seg.pt",
+    "task": "segment",
+    "classes": 80
+  },
+  "mobilenet": {
+    "path": "checkpoints/mobilenetv3-small-yolov8n-seg.pt",
+    "sha256": "354d72b0e55a84742236f77be64fa6383597832b69d52ec31ef8c8c436fe9b66",
+    "bytes": 6716854,
+    "task": "segment",
+    "classes": 80,
+    "status": "trained_experimental",
+    "training_date": "2026-10-15",
+    "epochs": 30,
+    "train_images": 8000,
+    "selection_validation_images": 1000,
+    "test_images": 1000,
+    "supported_test_classes": 79,
+    "mask_map50": 0.30817789020899744,
+    "mask_map50_95": 0.1779976869252523
+  }
+}

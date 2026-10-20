@@ -1,0 +1,85 @@
+{
+  "hardware_label": "Ubuntu VMware CPU",
+  "platform": "linux",
+  "cpu_cores": 8,
+  "processor": "Intel(R) Core(TM) Ultra 9 275HX",
+  "torch": "2.5.1+cpu",
+  "device": "cpu",
+  "torchvision": "0.20.1+cpu",
+  "ultralytics": "8.3.221",
+  "numpy": "1.26.4",
+  "opencv": "4.10.0",
+  "threads": 2,
+  "interop_threads": 1,
+  "opencv_threads": 1,
+  "dtype": "FP32",
+  "batch": 1,
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "images": 20,
+  "rounds": 3,
+  "warmup": 10,
+  "conf": 0.25,
+  "iou": 0.7,
+  "max_det": 100,
+  "retina_masks": true,
+  "conv_bn_fused": true,
+  "scope": "Input already decoded in RAM. Full pipeline includes preprocessing, forward, real NMS and mask decoding.",
+  "mask_workload": "Actual detections per model; no fixed or synthetic boxes.",
+  "models": {
+    "baseline": {
+      "samples": 60,
+      "inference_failures": 0,
+      "effective_threads": 2,
+      "effective_interop_threads": 1,
+      "parameters": 3409968,
+      "checkpoint_mib": 6.744152069091797,
+      "mean_detections": 0.8,
+      "forward_ms": {
+        "p50": 76.3349905,
+        "p95": 79.7664544,
+        "mean": 76.55922979999997,
+        "fps": 13.061782395308272
+      },
+      "full_segmentation_ms": {
+        "p50": 79.445894,
+        "p95": 82.0241269,
+        "mean": 79.05535036666666,
+        "fps": 12.64936522780431
+      },
+      "ready_rss_mib": 497.875,
+      "peak_rss_mib": 517.0078125,
+      "cpu_percent_one_core": 201.51999823674123,
+      "cpu_percent_all_cores": 25.189999779592654
+    },
+    "mobilenet": {
+      "samples": 60,
+      "inference_failures": 0,
+      "effective_threads": 2,
+      "effective_interop_threads": 1,
+      "parameters": 3205632,
+      "checkpoint_mib": 6.405691146850586,
+      "mean_detections": 0.95,
+      "forward_ms": {
+        "p50": 68.40277900000001,
+        "p95": 76.40330275,
+        "mean": 68.39844481666667,
+        "fps": 14.620215454903585
+      },
+      "full_segmentation_ms": {
+        "p50": 75.006599,
+        "p95": 78.9012127,
+        "mean": 73.07745448333334,
+        "fps": 13.684111017140976
+      },
+      "ready_rss_mib": 498.8515625,
+      "peak_rss_mib": 539.35546875,
+      "cpu_percent_one_core": 201.43894412446576,
+      "cpu_percent_all_cores": 25.17986801555822
+    }
+  }
+}

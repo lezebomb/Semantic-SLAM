@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 set -e
+if [ "$(uname -m)" != x86_64 ]; then
+    echo 'This installer is for x86_64 CPU wheels. For Jetson see docs/JETSON.md; keep its JetPack-matched torch/torchvision.' >&2
+    exit 1
+fi
 SEMANTIC_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 source "$SEMANTIC_ROOT/scripts/ros_env.sh"
 if [ ! -x "$SEMANTIC_ROOT/.venv/bin/python" ]; then

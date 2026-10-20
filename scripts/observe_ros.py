@@ -22,10 +22,14 @@ from common import POINT_DTYPE, rotation_matrix
 
 
 class Observer(Node):
-    def __init__(self, output):
+    def __init__(self, output, allow_empty=False):
         super().__init__('semantic_verifier', parameter_overrides=[
             rclpy.parameter.Parameter('use_sim_time', value=True)])
         self.output = output
+        self.allow_empty = allow_empty
+        self.latest_header = None
+        self.last_tf_stamp = None
+        self.pipeline_tf_checks = 0
         self.bridge = CvBridge()
         self.stats = dict(topics={}, mask_nonzero_messages=0, instance_nonzero_messages=0,
                           semantic_cloud_nonempty=0, semantic_map_nonempty=0,
@@ -56,6 +60,8 @@ class Observer(Node):
         if hasattr(msg,'header'):
             item['frame_id'] = msg.header.frame_id
         if isinstance(msg,Image):
+            if topic == '/semantic/image_annotated':
+                self.latest_header = msg.header
             item.update(width=msg.width,height=msg.height,encoding=msg.encoding)
             if topic == '/semantic/input/depth':
                 self.stats['depth_encodings'][msg.encoding] = item['count']
@@ -109,6 +115,18 @@ class Observer(Node):
                 self.stats['detector_frames_with_instances']+=int(bool(item['last']['detections']))
 
     def save(self):
+        if self.latest_header is not None:
+            stamp = (self.latest_header.stamp.sec, self.latest_header.stamp.nanosec)
+            if stamp != self.last_tf_stamp:
+                try:
+                    tf = self.tf_buffer.lookup_transform('map', self.latest_header.frame_id,
+                                                        Time.from_msg(self.latest_header.stamp))
+                    t, q = tf.transform.translation, tf.transform.rotation
+                    if all(np.isfinite(v) for v in (t.x, t.y, t.z, q.x, q.y, q.z, q.w)):
+                        self.pipeline_tf_checks += 1
+                        self.last_tf_stamp = stamp
+                except tf2_ros.TransformException:
+                    pass
         if rclpy.ok():
             self.stats['nodes']=self.get_node_names()
             self.stats['ros_topics']=[dict(name=n,types=t) for n,t in self.get_topic_names_and_types()]
@@ -120,12 +138,29 @@ class Observer(Node):
             self.stats['max_tf_point_error_m']<1e-4,
             self.stats['topics'].get('/map',{}).get('known_cells',0)>0,
             self.stats['topics'].get('/mapData',{}).get('count',0)>0))
+        if self.allow_empty:
+            topics = self.stats['topics']
+            required = ('/semantic/input/rgb', '/semantic/input/depth', '/semantic/image_annotated',
+                        '/semantic/label_image', '/semantic/instance_image', '/semantic/detector_status',
+                        '/mapData')
+            self.stats['success'] = all(topics.get(t, {}).get('count', 0) > 0 for t in required)
+            self.stats['success'] &= (self.pipeline_tf_checks > 0
+                and topics.get('/map', {}).get('known_cells', 0) > 0
+                and topics.get('/mapGraph', {}).get('poses', 0) > 0
+                and self.stats['max_tf_point_error_m'] < 1e-4)
+        self.stats['verification_policy'] = 'interface_allow_empty' if self.allow_empty else 'nonempty_semantics'
+        self.stats['pipeline_tf_checks'] = self.pipeline_tf_checks
+        self.stats['segmentation_state'] = ('predictions_present' if self.stats['detector_frames_with_instances']
+            else 'normal_empty_predictions' if self.stats['topics'].get('/semantic/detector_status', {}).get('count', 0)
+            else 'waiting')
+        self.stats['semantic_transform_validation'] = ('exercised_on_real_model_outputs'
+            if self.stats['tf_checks'] else 'not_exercised')
         (self.output/'verification.json').write_text(json.dumps(self.stats,indent=2))
 
 
 if __name__ == '__main__':
     rclpy.init()
-    node=Observer(Path(sys.argv[1]))
+    node=Observer(Path(sys.argv[1]), allow_empty='--allow-empty' in sys.argv[2:])
     try:
         rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):

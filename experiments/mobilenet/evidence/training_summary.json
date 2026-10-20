@@ -1,0 +1,52 @@
+{
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_memory_gib": 39.4935302734375,
+  "cuda_capability": [
+    8,
+    0
+  ],
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "ultralytics": "8.3.221",
+  "epochs_requested": 30,
+  "batch": 32,
+  "imgsz": 640,
+  "optimizer": "AdamW",
+  "lr0": 0.001,
+  "amp": true,
+  "workers": 4,
+  "seed": 20261015,
+  "gpu_training_budget_hours": 3.0,
+  "resume_source": null,
+  "prior_training_seconds": 0.0,
+  "formal_training_completed": true,
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "training_data_sizes": {
+    "train": 8000,
+    "val": 1000,
+    "test": 1000
+  },
+  "source_sha256": {
+    "train.py": "a163cb396c7ab9fe48a43c9d2fcb8227586589547ff4b05ee913b28e177dbbe4",
+    "yolov8n-mobilenetv3-small-seg.yaml": "10d015a4d17d41dbbd303a0b3fce01db6f47c2d2aad03faf1b3d3d4197007837",
+    "data/dataset/manifest.json": "6f1b8f1ad33e70d08ae2a6f49be26b25ce5b4272af909e38a2ee76d25f77fc43"
+  },
+  "initial_checkpoint_sha256": "7bc066d8e31d0228a112fd9dc557b0274c0d6ecdc76f3dc010070574a62086e1",
+  "initialization_preserved_in_actual_trainer": true,
+  "epochs_actual": 30,
+  "optimizer_updates": 3937,
+  "projection_max_weight_change": 0.4251787066459656,
+  "wall_seconds": 2558.616817409,
+  "session_wall_seconds": 2558.6168191449997,
+  "best_sha256": "354d72b0e55a84742236f77be64fa6383597832b69d52ec31ef8c8c436fe9b66",
+  "final_selection_metrics": {
+    "metrics/precision(B)": 0.439136442127845,
+    "metrics/recall(B)": 0.3231685656176855,
+    "metrics/mAP50(B)": 0.3238534929338683,
+    "metrics/mAP50-95(B)": 0.21259348265321715,
+    "metrics/precision(M)": 0.42496447430682655,
+    "metrics/recall(M)": 0.312278936208908,
+    "metrics/mAP50(M)": 0.3030726462042871,
+    "metrics/mAP50-95(M)": 0.17678618413071132
+  }
+}

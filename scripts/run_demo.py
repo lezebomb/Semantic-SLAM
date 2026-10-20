@@ -25,6 +25,8 @@ def main():
     p.add_argument('--domain-id',type=int,default=77)
     p.add_argument('--duration',type=float,help='Wall seconds of playback for a smoke run; default is full bag')
     p.add_argument('--hold',action='store_true',help='Keep map and RViz visible after playback until Ctrl+C')
+    p.add_argument('--allow-empty', action='store_true',
+                   help='Validate geometry/segmentation interface even when all masks are empty')
     p.add_argument('--confidence',type=float,default=0.35)
     p.add_argument('--image-size',type=int,default=640)
     args=p.parse_args()
@@ -51,12 +53,14 @@ def main():
                 'GDK_PIXBUF_MODULE_FILE','GDK_PIXBUF_MODULEDIR'):
         if '/snap/' in env.get(key,''):
             env.pop(key,None)
+    for key in ('QT_QPA_PLATFORM_PLUGIN_PATH', 'QT_QPA_FONTDIR'):
+        env.pop(key, None)
     env.update(ROS_DOMAIN_ID=str(args.domain_id),ROS_LOCALHOST_ONLY='1',ROS_HOME=str(out/'ros_home'),
                ROS_LOG_DIR=str(out/'ros_logs'),XDG_CONFIG_HOME=str(out/'gui_config'),
                XDG_CACHE_HOME=str(out/'gui_cache'),YOLO_CONFIG_DIR=str(out/'yolo_config'),
                MPLCONFIGDIR=str(out/'matplotlib'),RCUTILS_COLORIZED_OUTPUT='0',
                OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='2',
-               PYTHONUNBUFFERED='1',LIBGL_ALWAYS_SOFTWARE='1')
+               PYTHONUNBUFFERED='1')
     Path(env['ROS_HOME']).mkdir(parents=True,exist_ok=True)
     logs=[];player=None;launch=None;observer=None
     events=[]
@@ -109,7 +113,10 @@ def main():
             if all(marker in text for marker in ('YOLO_READY','PROJECTOR_READY','GRID_READY')):break
             if time.monotonic()>deadline:raise RuntimeError('Pipeline startup timed out')
             time.sleep(0.5)
-        observer=spawn([sys.executable,str(ROOT/'scripts/observe_ros.py'),str(out)],'observer')
+        observer_cmd = [sys.executable,str(ROOT/'scripts/observe_ros.py'),str(out)]
+        if args.allow_empty:
+            observer_cmd.append('--allow-empty')
+        observer=spawn(observer_cmd,'observer')
         time.sleep(3)
         check()
         player=spawn(['ros2','bag','play',bag['bag_db'],'--clock','50','--rate',str(args.rate),

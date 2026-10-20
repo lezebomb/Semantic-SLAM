@@ -1,0 +1,99 @@
+{
+  "status": "initialized_untrained",
+  "real_formal_training_completed": false,
+  "architecture_parameters": 3205632,
+  "imagenet_backbone_parameters": 870560,
+  "transferred_yolo_parameters": 2301920,
+  "random_projection_parameters": 33152,
+  "imagenet_source": "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth",
+  "baseline_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+  "initialized_sha256": "7bc066d8e31d0228a112fd9dc557b0274c0d6ecdc76f3dc010070574a62086e1",
+  "strict_state_dict_and_routing_checks_passed": true,
+  "stock_trainer_reconstruction_preserves_initialization": true,
+  "yolo_layer_mapping": [
+    {
+      "source_layer": 9,
+      "target_layer": 7,
+      "type": "SPPF",
+      "parameters": 164608
+    },
+    {
+      "source_layer": 10,
+      "target_layer": 8,
+      "type": "Upsample",
+      "parameters": 0
+    },
+    {
+      "source_layer": 11,
+      "target_layer": 9,
+      "type": "Concat",
+      "parameters": 0
+    },
+    {
+      "source_layer": 12,
+      "target_layer": 10,
+      "type": "C2f",
+      "parameters": 148224
+    },
+    {
+      "source_layer": 13,
+      "target_layer": 11,
+      "type": "Upsample",
+      "parameters": 0
+    },
+    {
+      "source_layer": 14,
+      "target_layer": 12,
+      "type": "Concat",
+      "parameters": 0
+    },
+    {
+      "source_layer": 15,
+      "target_layer": 13,
+      "type": "C2f",
+      "parameters": 37248
+    },
+    {
+      "source_layer": 16,
+      "target_layer": 14,
+      "type": "Conv",
+      "parameters": 36992
+    },
+    {
+      "source_layer": 17,
+      "target_layer": 15,
+      "type": "Concat",
+      "parameters": 0
+    },
+    {
+      "source_layer": 18,
+      "target_layer": 16,
+      "type": "C2f",
+      "parameters": 123648
+    },
+    {
+      "source_layer": 19,
+      "target_layer": 17,
+      "type": "Conv",
+      "parameters": 147712
+    },
+    {
+      "source_layer": 20,
+      "target_layer": 18,
+      "type": "Concat",
+      "parameters": 0
+    },
+    {
+      "source_layer": 21,
+      "target_layer": 19,
+      "type": "C2f",
+      "parameters": 493056
+    },
+    {
+      "source_layer": 22,
+      "target_layer": 20,
+      "type": "Segment",
+      "parameters": 1150432
+    }
+  ]
+}

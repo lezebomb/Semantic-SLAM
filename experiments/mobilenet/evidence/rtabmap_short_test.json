@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "model_trained": true,
+  "processed_frames": 77,
+  "detections": 25,
+  "model_state": "predictions_present_trained",
+  "inference_p50_ms": 125.5,
+  "inference_p95_ms": 160.488,
+  "projector_bundles": 77,
+  "semantic_points": 95444,
+  "semantic_voxels": 12084,
+  "detector_failures": 0,
+  "projector_errors": 0,
+  "tf_dropped": 1,
+  "geometry_database": {
+    "bytes": 7094272,
+    "quick_check": "ok",
+    "nodes": 17
+  },
+  "resources": {
+    "samples": 70,
+    "mean_cpu_percent_one_core": 255.71171176706605,
+    "mean_cpu_percent_8_vcpu": 31.963963970883256,
+    "mean_process_tree_rss_mib": 1948.596484375,
+    "peak_process_tree_rss_mib": 2090.01171875,
+    "note": "Sum of process RSS includes shared pages; includes RViz and verifier. 100% CPU means one core."
+  },
+  "semantic_transform_validation": "exercised_on_real_model_outputs",
+  "runtime_log_errors": {
+    "log_error_lines": 2,
+    "pipeline_fatal_events": 0,
+    "rgbd_updates_aborted": 0,
+    "image_transport_plugin_error_lines": 1,
+    "rviz_shader_error_lines": 1
+  }
+}

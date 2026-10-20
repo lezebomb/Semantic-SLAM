@@ -13,7 +13,7 @@ import numpy as np
 import torch
 from cv_bridge import CvBridge
 from rclpy.node import Node
-from rclpy.qos import QoSProfile
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 from sensor_msgs.msg import CameraInfo, Image
 from std_msgs.msg import String
 from ultralytics import YOLO
@@ -25,20 +25,28 @@ class YoloDetector(Node):
         super().__init__('yolo_detector')
         defaults = dict(model_path=str(Path(__file__).resolve().parents[1] / 'models/yolov8n-seg.pt'),
                         process_every_n=3, confidence=0.35, image_size=640,
-                        cpu_threads=2, sync_slop=0.04, output_dir='')
+                        cpu_threads=2, sync_slop=0.04, output_dir='', device='cpu', input_qos='reliable')
         for k, v in defaults.items():
             self.declare_parameter(k, v)
         self.p = {k: self.get_parameter(k).value for k in defaults}
         if self.p['process_every_n'] < 1:
             raise ValueError('process_every_n must be positive')
+        if self.p['cpu_threads'] < 1 or self.p['input_qos'] not in ('reliable', 'sensor_data'):
+            raise ValueError('cpu_threads must be positive; input_qos is reliable or sensor_data')
+        if self.p['device'] != 'cpu' and not torch.cuda.is_available():
+            raise RuntimeError('CUDA requested but unavailable; check JetPack torch before launching')
         torch.set_num_threads(self.p['cpu_threads'])
+        torch.set_num_interop_threads(1)
         cv2.setNumThreads(1)
         self.bridge = CvBridge()
         self.model = YOLO(self.p['model_path'])
-        self.model.to('cpu')
+        if self.model.task != 'segment' or len(self.model.names) != 80:
+            raise ValueError('This semantic mapping format requires a COCO-80 instance segmentation checkpoint')
         # Warm up before playback to avoid dropping the first useful frames.
-        self.model.predict(np.zeros((480, 640, 3), np.uint8), device='cpu',
+        self.model.predict(np.zeros((480, 640, 3), np.uint8), device=self.p['device'],
                            imgsz=self.p['image_size'], verbose=False)
+        # AutoBackend/select_device resets CPU thread count during first predict.
+        torch.set_num_threads(self.p['cpu_threads'])
         self.output = Path(self.p['output_dir']) if self.p['output_dir'] else None
         self.names = self.model.names
         if self.output:
@@ -53,7 +61,10 @@ class YoloDetector(Node):
                      for name in ('image_annotated', 'label_image', 'instance_image', 'paired_depth')}
         self.info_pub = self.create_publisher(CameraInfo, '/semantic/paired_camera_info', 5)
         self.status_pub = self.create_publisher(String, '/semantic/detector_status', 5)
-        self.subs = [message_filters.Subscriber(self, typ, topic, qos_profile=QoSProfile(depth=10))
+        reliability = (ReliabilityPolicy.BEST_EFFORT if self.p['input_qos'] == 'sensor_data'
+                       else ReliabilityPolicy.RELIABLE)
+        self.subs = [message_filters.Subscriber(self, typ, topic,
+                                               qos_profile=QoSProfile(depth=10, reliability=reliability))
                      for typ, topic in ((Image, '/semantic/input/rgb'),
                                         (Image, '/semantic/input/depth'),
                                         (CameraInfo, '/data_throttled_camera_info'))]
@@ -62,7 +73,8 @@ class YoloDetector(Node):
         self.sync.registerCallback(self.receive)
         self.worker = threading.Thread(target=self.infer, daemon=True)
         self.worker.start()
-        self.get_logger().info('YOLO_READY model=yolov8n-seg device=cpu every_n=' + str(self.p['process_every_n']))
+        self.get_logger().info(f'YOLO_READY model={self.p["model_path"]} device={self.p["device"]} '
+                               f'threads={torch.get_num_threads()} every_n={self.p["process_every_n"]}')
 
     def receive(self, rgb, depth, info):
         self.stats['synchronized'] += 1
@@ -96,7 +108,7 @@ class YoloDetector(Node):
         if depth.header.frame_id != info.header.frame_id or rgb.header.frame_id != info.header.frame_id:
             raise ValueError('RGB/depth/CameraInfo optical frames differ; registration is required')
         started = time.monotonic()
-        result = self.model.predict(image, device='cpu', conf=self.p['confidence'],
+        result = self.model.predict(image, device=self.p['device'], conf=self.p['confidence'],
                                     imgsz=self.p['image_size'], retina_masks=True, verbose=False)[0]
         elapsed = (time.monotonic() - started) * 1000
         label = np.zeros(image.shape[:2], np.uint8)

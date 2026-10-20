@@ -4,6 +4,30 @@
 
 语义模块独立运行，不参与 RTAB-Map 的定位、回环检测或后端优化；当前尚未实现紧耦合语义 SLAM。
 
+## 部署版本与入口（2026-10-20）
+
+本仓库包含原始 YOLO 基线及已训练的 MobileNetV3-Small 骨干替换实验。SPPF、YOLOv8n Neck 和 Segment Head 保留，三路 1×1 卷积适配通道；CPU 实测收益有限，MobileNet 仍有明显室内误检，默认部署保持原始 YOLO。
+
+| 入口 / 文件 | 用途 | 验证范围 |
+|---|---|---|
+| `./run.sh` | 原始官方 Indoor 整管线回放 | Ubuntu22.04/Humble x86 CPU 已验证 |
+| `./run_mobilenet.sh --duration 60 --rate 0.5` | 同管线切换已训练 MobileNet，允许正常空检测 | 同环境已验证；训练结果见下文 |
+| `./run_live.sh` | 接入实机原始 RGB-D 与已有 RTAB-Map/TF | 实机尚待验证；[接入说明](docs/DEPLOYMENT.md) |
+| `config/live.yaml` | QoS、设备、线程、采样与地图参数 | topics 通过 live launch 参数指定 |
+| `checkpoints/` | 已训练 MobileNet 权重、SHA256、模型说明 | [模型清单](checkpoints/README.md) |
+| `experiments/mobilenet/` | 必要训练代码、原生曲线数据与评估记录 | [训练与评测](experiments/mobilenet/README.md) |
+
+后续目标是 Jetson，请先看 [Jetson 准备说明](docs/JETSON.md)。Jetson 的 CUDA/PyTorch 必须匹配实际 JetPack；`setup.sh` 只面向 x86 CPU，会在 ARM 提前退出，避免覆盖 NVIDIA 环境。这里的 VMware CPU 结果不能作为 Jetson 性能结论。
+
+模型检查和单图识别（下面使用 x86 的 `.venv`；Jetson 选择 Python 的方法见部署说明，从仓库根目录执行）：
+
+```bash
+.venv/bin/python scripts/check_model.py --model mobilenet --device cpu
+.venv/bin/yolo segment predict model=checkpoints/mobilenetv3-small-yolov8n-seg.pt source=/path/image.jpg device=cpu imgsz=640 retina_masks=True
+```
+
+原有 `run.sh --model /path/model.pt` 接口继续保留。`--allow-empty` 只放宽验证器的非空 Mask 条件，仍检查 RGB-D、几何地图、采集时间 TF、推理/投影错误；它不改变模型输出或生成假 Mask。MobileNet 包装入口默认启用此选项。
+
 ## 技术方案
 
 ```text
@@ -84,7 +108,7 @@ export RTABMAP_WS="$HOME/ros2"
 ./setup.sh
 ```
 
-`setup.sh` 检查 ROS 包和官方 `robot_mapping_demo.launch.py`，创建本仓库 `.venv`，安装固定版本 CPU 推理依赖，并从 [Ultralytics 官方资源](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-seg.pt)下载模型到 `models/yolov8n-seg.pt`。模型 SHA-256 为 `a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c`，脚本会校验下载结果。模型权重不纳入 Git。
+`setup.sh` 检查 ROS 包和官方 `robot_mapping_demo.launch.py`，创建本仓库 `.venv`，安装固定版本 CPU 推理依赖，并从 [Ultralytics 官方资源](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-seg.pt)下载模型到 `models/yolov8n-seg.pt`。模型 SHA-256 为 `a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c`，脚本会校验下载结果。基线权重不纳入 Git；本项目训练的 6.41MiB MobileNet checkpoint 单独随仓库发布。
 
 ### 获取数据并回放
 

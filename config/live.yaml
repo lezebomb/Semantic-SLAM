@@ -1,0 +1,21 @@
+# Edit values against the real robot. Topics are launch arguments; see docs/DEPLOYMENT.md.
+yolo_detector:
+  ros__parameters:
+    confidence: 0.35
+    image_size: 640
+    process_every_n: 3
+    cpu_threads: 2
+    sync_slop: 0.04
+    input_qos: sensor_data
+    device: cpu  # Jetson: change to "0" only after CUDA + torchvision NMS checks.
+semantic_projector:
+  ros__parameters:
+    min_depth: 0.3
+    max_depth: 5.0
+    sample_step: 4
+semantic_grid_node:
+  ros__parameters:
+    map_frame: map
+    voxel_size: 0.05
+    max_voxels: 200000
+    tf_wait_wall_seconds: 5.0

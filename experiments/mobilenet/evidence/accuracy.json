@@ -1,0 +1,32 @@
+{
+  "device": "0",
+  "imgsz": 640,
+  "fp32": true,
+  "split": "test",
+  "test_images": 1000,
+  "selection_validation_is_separate": true,
+  "training_conditions_not_equal": true,
+  "supported_test_classes": 79,
+  "models": {
+    "baseline": {
+      "box_precision": 0.6362823610500277,
+      "box_recall": 0.48444482200798356,
+      "box_map50": 0.527480910992005,
+      "box_map50_95": 0.3747664618072702,
+      "mask_precision": 0.6232312608501411,
+      "mask_recall": 0.46273707791645285,
+      "mask_map50": 0.49679541928764565,
+      "mask_map50_95": 0.3100715262239339
+    },
+    "mobilenet": {
+      "box_precision": 0.43789167019392156,
+      "box_recall": 0.3330639654944854,
+      "box_map50": 0.3298278613415516,
+      "box_map50_95": 0.2188340726068824,
+      "mask_precision": 0.4416886800970518,
+      "mask_recall": 0.30517767654182587,
+      "mask_map50": 0.30817789020899744,
+      "mask_map50_95": 0.1779976869252523
+    }
+  }
+}
