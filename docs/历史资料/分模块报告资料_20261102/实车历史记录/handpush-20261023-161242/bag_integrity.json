@@ -1,0 +1,37 @@
+{
+  "recording_duration_seconds": 99.669247933,
+  "message_count": 9076,
+  "topic_counts": {
+    "/semantic/detector_status": 124,
+    "/tf": 2380,
+    "/handpush/odom_info": 496,
+    "/semantic/map_status": 91,
+    "/handpush/odom": 496,
+    "/mapGraph": 15,
+    "/tf_static": 1,
+    "/camera/camera/color/image_raw": 1490,
+    "/info": 64,
+    "/scan": 937,
+    "/camera/camera/color/camera_info": 1492,
+    "/camera/camera/aligned_depth_to_color/image_raw": 1490
+  },
+  "rgb_recorded_fps": 14.949445600328128,
+  "depth_recorded_fps": 14.949445600328128,
+  "bag_parts": [
+    {
+      "file": "sensor_bag_0.db3",
+      "bytes": 1074601984,
+      "quick_check": "ok"
+    },
+    {
+      "file": "sensor_bag_1.db3",
+      "bytes": 1073856512,
+      "quick_check": "ok"
+    },
+    {
+      "file": "sensor_bag_2.db3",
+      "bytes": 185888768,
+      "quick_check": "ok"
+    }
+  ]
+}

@@ -1,0 +1,3629 @@
+{
+  "deleted": [
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/bag_dynamic/bag_dynamic_1.db3",
+      "bytes": 1074024448,
+      "preserved_in_archive": "bag_dynamic/bag_dynamic_1.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/bag_dynamic/bag_dynamic_2.db3",
+      "bytes": 1074118656,
+      "preserved_in_archive": "bag_dynamic/bag_dynamic_2.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/bag_dynamic/bag_dynamic_3.db3",
+      "bytes": 656769024,
+      "preserved_in_archive": "bag_dynamic/bag_dynamic_3.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/bag_dynamic/bag_dynamic_0.db3",
+      "bytes": 1073946624,
+      "preserved_in_archive": "bag_dynamic/bag_dynamic_0.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_1.db3",
+      "bytes": 1074032640,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_1.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_7.db3",
+      "bytes": 157941760,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_7.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_2.db3",
+      "bytes": 1074331648,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_2.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_3.db3",
+      "bytes": 1074270208,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_3.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_0.db3",
+      "bytes": 1074110464,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_0.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_4.db3",
+      "bytes": 1074028544,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_4.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_5.db3",
+      "bytes": 1073860608,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_5.db3"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test/bag_dynamic/bag_dynamic_6.db3",
+      "bytes": 1073934336,
+      "preserved_in_archive": "full-dynamic-test/bag_dynamic/bag_dynamic_6.db3"
+    },
+    {
+      "path": "live_robot_test_20261023/video_tools/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 29498237,
+      "reason": "安装包中ffmpeg与已解包可执行文件SHA256相同；保留可执行文件及许可"
+    }
+  ],
+  "deleted_bytes": 11584867197,
+  "archive_bytes": 2213429026,
+  "net_reclaimed_bytes": 9371438171,
+  "raw_bag_db3_count": 12,
+  "archive_sha256": "855ce73a65f803a3e461ac66fe8cf19a2957410e231c28fa9f0f1cbb3018eaa2",
+  "scope": "本次录包无损归档替换展开副本，以及已核实的ffmpeg安装缓存；保留原始数据集、环境、模型、代码及其他组文件",
+  "storage_cleanup_20261106": {
+    "started_local_date": "2026-11-06",
+    "scope": "This local workspace only; user-authorized ineffective test deletion, exact duplicates and lossless compression",
+    "free_bytes_before": 34382680064,
+    "actions": [
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/multisession_indoor/map1.zip",
+        "deleted_bytes": 569825080,
+        "sha256": "46da009dd79dee5222dbe067dffc625f4e3be10b1b1b988c1dba79ee190e21c2",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/multisession_indoor/map1_bag/map1.db3",
+            "bytes": 673193984,
+            "sha256": "d0ec5bf9002351e6fe4d3d07a8d63078715b69f31df82f594a23ed6d569cc2f0"
+          },
+          {
+            "retained_path": "data/multisession_indoor/map1_bag/metadata.yaml",
+            "bytes": 2220,
+            "sha256": "6c01e3120e645e096b3e341f06b931edd40ecb8da5dbaf626badcabd2d930a01"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/multisession_indoor/map2.zip",
+        "deleted_bytes": 515036280,
+        "sha256": "a57be5111a95cfaf3ba2d631aa87b7adc3d24ec8965b3ac8d5cc3f6c0d4e5ce0",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/multisession_indoor/map2_bag/map2.db3",
+            "bytes": 613507072,
+            "sha256": "5bdd50c737fdf49cc0f6f1c0af54efcf40245fc03129edd603aa4797afb4d631"
+          },
+          {
+            "retained_path": "data/multisession_indoor/map2_bag/metadata.yaml",
+            "bytes": 2220,
+            "sha256": "1a9ca73a8f48848c36febec5007225379b7349eeb928ca7311db674b687eb48f"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/multisession_indoor/map3.zip",
+        "deleted_bytes": 334831528,
+        "sha256": "28c21fae6e776a48c61bc1f52f7cf2610fa72ad39727a07502693c08c7777d91",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/multisession_indoor/map3_bag/map3.db3",
+            "bytes": 396943360,
+            "sha256": "ba628157461eec3ed5b12006f952235709336d1e0b14152af017341adbe89d03"
+          },
+          {
+            "retained_path": "data/multisession_indoor/map3_bag/metadata.yaml",
+            "bytes": 2218,
+            "sha256": "ea1750e05edbed741a29db098406a0c1eeadfdfbeb07c8eec5062833d9678833"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/multisession_indoor/map4.zip",
+        "deleted_bytes": 1183150162,
+        "sha256": "ba9cfe8bf846f2a6d49d5dae32288fbe756e3ba2da4ea3aded7829d1f6603fc1",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/multisession_indoor/map4_bag/map4.db3",
+            "bytes": 1404776448,
+            "sha256": "ab10acaa8083fe60e00be9db55359f78a2a816d2bf4fd7d2d64588957a3bc5ad"
+          },
+          {
+            "retained_path": "data/multisession_indoor/map4_bag/metadata.yaml",
+            "bytes": 2221,
+            "sha256": "68ba64284d2c9a096582b90e6b70ba6859780acf9c0c87c31c496c56d88db447"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/multisession_indoor/map5.zip",
+        "deleted_bytes": 887084257,
+        "sha256": "b5fa3fb344a5f5ab18532c1c394b53694d3ca38a165cdf7a758e3a0f3094faf8",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/multisession_indoor/map5_bag/map5.db3",
+            "bytes": 1060753408,
+            "sha256": "0fa8aaa308daa87a3c13db980c0bb0c73ec7c5007f59a9017eefb9da80412a42"
+          },
+          {
+            "retained_path": "data/multisession_indoor/map5_bag/metadata.yaml",
+            "bytes": 2221,
+            "sha256": "dd78e15589f60ebf0cbce785c98da8afaa5978c38052fd3df2e72c7e1b849165"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/outdoor_stereo/stereo_outdoorA.zip",
+        "deleted_bytes": 663758437,
+        "sha256": "8ad3ed2d602b9c36b2429176fab5e6d5ed82e2f9632331ef588342dd49f96d35",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/outdoor_stereo/stereo_outdoorA_bag/stereo_outdoorA.db3",
+            "bytes": 708014080,
+            "sha256": "e63533a750cfd02bff1640d140552c002264f31802baf9d0182c4140749cd45d"
+          },
+          {
+            "retained_path": "data/outdoor_stereo/stereo_outdoorA_bag/metadata.yaml",
+            "bytes": 2037,
+            "sha256": "ac1f9dc975bc1506c0124e4789aef10376214732f223454007e35ee78d299df0"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_zip",
+        "path": "data/outdoor_stereo/stereo_outdoorB.zip",
+        "deleted_bytes": 976697883,
+        "sha256": "d3b75576065bcb518fe935d7e4dd2420ac5f1992151395cd84f8e7e8d309c7e7",
+        "verified_retained_members": [
+          {
+            "retained_path": "data/outdoor_stereo/stereo_outdoorB_bag/stereo_outdoorB.db3",
+            "bytes": 1044865024,
+            "sha256": "3a55cb8344e5d555459da5fc3a9ab55ceaad8a0c6bef8d8ac6fff6cc65c8b614"
+          },
+          {
+            "retained_path": "data/outdoor_stereo/stereo_outdoorB_bag/metadata.yaml",
+            "bytes": 2037,
+            "sha256": "51d84bc7ba57bb44aa05a5765931bcfa76ef41adfd48c7e887b73ae2ed7c673e"
+          }
+        ],
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-141255-577345",
+        "deleted_bytes": 195134737,
+        "files": 64,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-141255-577345",
+          "phase": "failed",
+          "ever_ready": true,
+          "error": "RuntimeError('Mapping health interrupted during manual control: capture_tf')",
+          "database_nodes": 52,
+          "graph_snapshot_poses": 1,
+          "saved_semantic_voxels": 408,
+          "semantic_transformed": 122,
+          "inference_ms_p50": 216.78500000000003,
+          "inference_ms_p95": 602.8639999999997,
+          "system_cpu_mean_percent": 93.32115384615385
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-141934-491378",
+        "deleted_bytes": 64946063,
+        "files": 54,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-141934-491378",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "RuntimeError('Mapping health interrupted during manual control: capture_tf')",
+          "database_nodes": 21,
+          "graph_snapshot_poses": 4,
+          "saved_semantic_voxels": 5490,
+          "semantic_transformed": 42,
+          "inference_ms_p50": 202.4,
+          "inference_ms_p95": 463.989,
+          "system_cpu_mean_percent": 88.04736842105264
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-143525-698988",
+        "deleted_bytes": 319774950,
+        "files": 51,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-143525-698988",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "RuntimeError('Mapping health interrupted during manual control: points_camera, points_map')",
+          "database_nodes": 101,
+          "graph_snapshot_poses": 1,
+          "saved_semantic_voxels": 2374,
+          "semantic_transformed": 3,
+          "inference_ms_p50": 94.31,
+          "inference_ms_p95": 360.15,
+          "system_cpu_mean_percent": 88.01075268817203
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-143932-769196",
+        "deleted_bytes": 528385484,
+        "files": 67,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-143932-769196",
+          "phase": "未正常收尾",
+          "ever_ready": false,
+          "error": null,
+          "database_nodes": 826,
+          "graph_snapshot_poses": 1,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": null,
+          "inference_ms_p95": null,
+          "system_cpu_mean_percent": 83.89625000000001
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-154921-752747",
+        "deleted_bytes": 408977689,
+        "files": 75,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-154921-752747",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: valid_odom, rtabmap_info, capture_tf, points_map, RTAB-Map graph, RTAB-Map geometry cloud, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 92.08,
+          "inference_ms_p95": 248.49,
+          "system_cpu_mean_percent": 82.59784172661871
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-155640-829050",
+        "deleted_bytes": 104539358,
+        "files": 47,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-155640-829050",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: rgb, depth, valid_odom, rtabmap_info, detector, map_tf, capture_tf, points_camera, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 76.84,
+          "inference_ms_p95": 141.67,
+          "system_cpu_mean_percent": 62.07379310344828
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-160347-605026",
+        "deleted_bytes": 21515672,
+        "files": 46,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-160347-605026",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "RuntimeError('icp_odom process exited: 250; inspect icp_odom.log')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 91.59,
+          "inference_ms_p95": 408.75,
+          "system_cpu_mean_percent": 89.51
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-160602-399688",
+        "deleted_bytes": 462056177,
+        "files": 72,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-160602-399688",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: valid_odom, rtabmap_info, map_tf, capture_tf, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 75.98,
+          "inference_ms_p95": 110.826,
+          "system_cpu_mean_percent": 65.42426470588236
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-161005-861767",
+        "deleted_bytes": 439678405,
+        "files": 70,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-161005-861767",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: valid_odom, rtabmap_info, map_tf, capture_tf, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 76.02,
+          "inference_ms_p95": 121.74499999999996,
+          "system_cpu_mean_percent": 64.08115942028986
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-161745-458221",
+        "deleted_bytes": 13361795,
+        "files": 33,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-161745-458221",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "RuntimeError('Mapping health interrupted during manual control: scan, valid_odom, rtabmap_info, detector, map_tf, capture_tf, points_camera, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation, video recording, recording has no confirmed messages yet')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": null,
+          "inference_ms_p95": null,
+          "system_cpu_mean_percent": null
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-162027-090702",
+        "deleted_bytes": 432916119,
+        "files": 75,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-162027-090702",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: valid_odom, rtabmap_info, map_tf, capture_tf, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 76.205,
+          "inference_ms_p95": 112.78999999999999,
+          "system_cpu_mean_percent": 66.42269503546099
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "delete_ineffective_test_directory",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261106/runs/live-20261106-163013-751047",
+        "deleted_bytes": 68272329,
+        "files": 55,
+        "report_evidence_snapshot": {
+          "run": "live-20261106-163013-751047",
+          "phase": "failed",
+          "ever_ready": false,
+          "error": "TimeoutError('Not ready: rgb, depth, valid_odom, rtabmap_info, detector, map_tf, capture_tf, points_camera, points_map, RTAB-Map graph, RTAB-Map geometry cloud, RTAB-Map map -> odom, capture-time map <- camera TF, semantic map accumulation')",
+          "database_nodes": 0,
+          "graph_snapshot_poses": 0,
+          "saved_semantic_voxels": 0,
+          "semantic_transformed": 0,
+          "inference_ms_p50": 89.05,
+          "inference_ms_p95": 229.47599999999971,
+          "system_cpu_mean_percent": 80.81458333333335
+        },
+        "status": "deleted"
+      },
+      {
+        "action": "compact_old_vehicle_archive",
+        "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/车端历史测试与部署材料.tar.zst",
+        "old_bytes": 8244820844,
+        "new_bytes": 3918580613,
+        "reclaimed_bytes": 4326240231,
+        "old_sha256": "17692d55a1d33d41d3d9fa26c9897c6c28ce95c0c049ccd7da967b45cf84e831",
+        "new_sha256": "2af512179d6327fa67a203b36ac1df400583d8837f3380b57e38f7194f8d757f",
+        "removed_members": [
+          {
+            "path": "runs/handpush-20261023-161141/camera_segmentation.mp4",
+            "bytes": 258,
+            "sha256": "eec6144cfeaf066dcf7dc4eecd354e503a89d35851121295afefb8911ce5bd73",
+            "reason": "Startup failed when video process exited; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-161141/mapping_process.mp4",
+            "bytes": 258,
+            "sha256": "eec6144cfeaf066dcf7dc4eecd354e503a89d35851121295afefb8911ce5bd73",
+            "reason": "Startup failed when video process exited; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-161141/rtabmap.db",
+            "bytes": 2723840,
+            "sha256": "112896d911f4ee838a87ceb19a79c6fb6ceb424bee004f738ddff65577d47234",
+            "reason": "Startup failed when video process exited; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-161141/semantic_map.ply",
+            "bytes": 60878,
+            "sha256": "ba3ca63015cec8f55c66fbb8001ddd8aa03fb9ae9fefee88f003acaf6ca2aa27",
+            "reason": "Startup failed when video process exited; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-161141/sensor_bag/sensor_bag_0.db3",
+            "bytes": 177750016,
+            "sha256": "87faa02950153e859a30c406bfdfd6b5f7f8a80a6731641989d7e72ada961f33",
+            "reason": "Startup failed when video process exited; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/camera_segmentation.mp4",
+            "bytes": 2042328,
+            "sha256": "c92f4f6b50a86da731c16efc887c250cf28ed40ed7403e57e05e791cdab62210",
+            "reason": "No valid visual odometry/map within 75 seconds; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/mapping_process.mp4",
+            "bytes": 1423438,
+            "sha256": "459ea7572bc3de9a87b17a5f58b3a794cd5f6ce1b0cc4c489df5ddbca7c056d4",
+            "reason": "No valid visual odometry/map within 75 seconds; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/rtabmap.db",
+            "bytes": 22462464,
+            "sha256": "09cc9952e7adbeafb0369ce11a26a8e87206b892a0c7a8bdc4f728119d80a061",
+            "reason": "No valid visual odometry/map within 75 seconds; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/semantic_map.ply",
+            "bytes": 112536,
+            "sha256": "54ce719806edb83e2f7fc4f228a9a14d2d631d404db906cc88816b67c5233ebc",
+            "reason": "No valid visual odometry/map within 75 seconds; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/sensor_bag/sensor_bag_0.db3",
+            "bytes": 1073786880,
+            "sha256": "8a3d62086c2ae1e7d19313b95f3fc1ca94a75d8e23942315758214a9a7549136",
+            "reason": "No valid visual odometry/map within 75 seconds; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/handpush-20261023-162626/sensor_bag/sensor_bag_1.db3",
+            "bytes": 633593856,
+            "sha256": "1303b9e505524d0a0cc23d3f1d00c3dcafce661596d92058c737eed413da8d14",
+            "reason": "No valid visual odometry/map within 75 seconds; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/camera_segmentation.mp4",
+            "bytes": 33507544,
+            "sha256": "31b303a0021ee386576623317e981b6d39a1531a4c5b9dc9c71d1687994d19f3",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/rtabmap.db",
+            "bytes": 150691840,
+            "sha256": "efb4491d94306cae649ddc54f6fe54e1f25c5a7e10a51de5aeef5de969030cc8",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/rtabmap_geometry.ply",
+            "bytes": 61738,
+            "sha256": "a944c37cfbb368b013cd7908d61dd799d16348322446fb1911df4dced3832b3f",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/semantic/semantic_map.ply",
+            "bytes": 194186,
+            "sha256": "52b587880ea7e683b14133b7628459731f9069642f23c485512506e395493b6a",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_0.db3.zstd",
+            "bytes": 119672874,
+            "sha256": "014a9383e88537286a98520becaa0cd4ffd32d8e6b18591d616a99058ce1b147",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_1.db3.zstd",
+            "bytes": 111919423,
+            "sha256": "a32072de325282a07d4ec1ad29657111b7172614698ebe3be8ff34309b65f3d1",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_10.db3.zstd",
+            "bytes": 119148433,
+            "sha256": "cb28696a4bbcb953b7cd80603034fdb9738bcc1e16072d3d8e7bfce15c164adf",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_11.db3.zstd",
+            "bytes": 45832036,
+            "sha256": "ab88844fcbd1ff0fc618c98cd9c4f8853e9305655199b1eb6ed0d654a38ab48c",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_2.db3.zstd",
+            "bytes": 115948267,
+            "sha256": "0d73509de5d581522f5d23fb7ce675297bc791c55e988c9d552335dedd84d038",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_3.db3.zstd",
+            "bytes": 109552260,
+            "sha256": "e737fa95b64ba592c7f3b7df747f5d375727ef79aaca98dd5291e5b5d55304c4",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_4.db3.zstd",
+            "bytes": 111134473,
+            "sha256": "09b2d5f9396aaaad82c0cd9581ecd2b9135ecbd5848357b209b533227f817150",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_5.db3.zstd",
+            "bytes": 112206592,
+            "sha256": "47dc5e0a206a3fa326904213a958c9eee261f5709ad9e7f1d61c9678f841f087",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_6.db3.zstd",
+            "bytes": 108478622,
+            "sha256": "9bbf958b1633232ddfdc640d5c0c973ffd38621f7c5378e46ef780f2f590a1d9",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_7.db3.zstd",
+            "bytes": 114193241,
+            "sha256": "689341424f3c79af65339406851e7760dfb9e50e980a3b4ad960561639f7cce1",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_8.db3.zstd",
+            "bytes": 108807979,
+            "sha256": "26021fdb6e250d5926ef120d669d676de321dd75f677fcaec48e97bba26c4a52",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-125057-149652/bag/bag_9.db3.zstd",
+            "bytes": 116674199,
+            "sha256": "c35146796f510ee35d26cae461a42883be5f8dfe855dd06c3ebb9aad77c55411",
+            "reason": "Earlier static wheel-input trial; graph remained one pose and TF health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/camera_segmentation.mp4",
+            "bytes": 6595349,
+            "sha256": "3005b80d1630c2cae39b0cd5a86ec696e43cd2e606b440186d72b9eedf078d60",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/rtabmap.db",
+            "bytes": 21209088,
+            "sha256": "0e2bc8f3113ed0e8bd91f45416686ed986cee8736c85ff98643f66b2d4bbff8e",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/rtabmap_geometry.ply",
+            "bytes": 46543,
+            "sha256": "67e2cf1ccdab22b2ffe1e64b30df2d642ab8625c54877d67477aa6befbc9f7c4",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/semantic/semantic_map.ply",
+            "bytes": 30035,
+            "sha256": "37316c7c9c9b0ba5e21a57b849b4537a6ee212ca8b2b4b3d9d42b9ca8298fab3",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/bag/bag_0.db3.zstd",
+            "bytes": 126958445,
+            "sha256": "585a82bb02966ef907c8c0d72e3019faeadb3ff4bd6e41e4acad48b771e21c9b",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/bag/bag_1.db3.zstd",
+            "bytes": 123750485,
+            "sha256": "37573ec1c7d1ead97179a6c91cde8a46ed7f7de8baadd60d02046e9dce90e103",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/live-20261106-124408-134149/bag/bag_2.db3.zstd",
+            "bytes": 13146557,
+            "sha256": "a34335b0bbe309319aea1be1a159e4ccecccdd3dcd74046510a4cfb1e6d122c3",
+            "reason": "Earlier static wheel-input startup trial; graph remained one pose and health failed; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/handpush-20261023-160223/rtabmap.db",
+            "bytes": 31842304,
+            "sha256": "f610a670f0fc9d0bb8130027f67c9401fe51a939555c3b787cd09f10a627072d",
+            "reason": "Repeated stationary check: 551 valid visual odometry samples but one graph pose and 0.42 m accumulated jitter; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-160223/semantic_map.ply",
+            "bytes": 71573,
+            "sha256": "6024f47726e87d84b92dd2f13c6b16ff382f3dca7f521614969d8b9dd3f61d55",
+            "reason": "Repeated stationary check: 551 valid visual odometry samples but one graph pose and 0.42 m accumulated jitter; remove derived duplicate/output"
+          },
+          {
+            "path": "runs/handpush-20261023-160223/sensor_bag/sensor_bag_0.db3",
+            "bytes": 1073807360,
+            "sha256": "06872f40d8d646f4eb10528f19265a15061d62ac074948f487c9849727900237",
+            "reason": "Repeated stationary check: 551 valid visual odometry samples but one graph pose and 0.42 m accumulated jitter; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/handpush-20261023-160223/sensor_bag/sensor_bag_1.db3",
+            "bytes": 1073991680,
+            "sha256": "3a5b070a6af57fe8ec005ce01cf9221c29e8c3ce3445ac126a64bea6d57f6136",
+            "reason": "Repeated stationary check: 551 valid visual odometry samples but one graph pose and 0.42 m accumulated jitter; remove ineffective raw recording"
+          },
+          {
+            "path": "runs/handpush-20261023-160223/sensor_bag/sensor_bag_2.db3",
+            "bytes": 361066496,
+            "sha256": "49e1ab14457a0454e0110ec8c522f47396551ad1bf99dc212849f603e77138ae",
+            "reason": "Repeated stationary check: 551 valid visual odometry samples but one graph pose and 0.42 m accumulated jitter; remove ineffective raw recording"
+          },
+          {
+            "path": "tests/demo_mapping.db3",
+            "bytes": 332005376,
+            "sha256": "b233777634dea8207677d7a76d76718b43bc7043f03d061f6c332f12a9e07be8",
+            "reason": "Exact duplicate of the official replay database retained at data/demo_mapping/demo_mapping_bag/demo_mapping.db3"
+          }
+        ],
+        "retained_regular_files_verified": 3380,
+        "status": "replaced"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "Semantic-SLAM/scripts/__pycache__",
+        "deleted_bytes": 33961,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "Semantic-SLAM/semantic/__pycache__",
+        "deleted_bytes": 2926,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "Semantic-SLAM/launch/__pycache__",
+        "deleted_bytes": 4040,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "Semantic-SLAM/tests/__pycache__",
+        "deleted_bytes": 10812,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/multisession_indoor/map4_download_confirmation.html",
+        "deleted_bytes": 2429,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/multisession_indoor/map1_download_confirmation.html",
+        "deleted_bytes": 2429,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/multisession_indoor/map3_download_confirmation.html",
+        "deleted_bytes": 2429,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/multisession_indoor/map2_download_confirmation.html",
+        "deleted_bytes": 2429,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/multisession_indoor/map5_download_confirmation.html",
+        "deleted_bytes": 2429,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/outdoor_stereo/stereo_outdoorA_download_confirmation.html",
+        "deleted_bytes": 2440,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_regenerable_cache_or_download_interstitial",
+        "path": "data/outdoor_stereo/stereo_outdoorB_download_confirmation.html",
+        "deleted_bytes": 2440,
+        "status": "deleted"
+      },
+      {
+        "action": "delete_exact_duplicate_backup",
+        "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/备份/原理文档-20261102.docx",
+        "deleted_bytes": 3333893,
+        "retained_path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/备份/原理文档-20261102_本次修改前.docx",
+        "sha256": "bacaa70855780dbb007fe4df81742f63dfc4fa5640507b7781c88a0f086b9e8e",
+        "status": "deleted"
+      },
+      {
+        "action": "delete_agent_generated_temporary_previews",
+        "path": "/tmp/slam_doc_preview",
+        "deleted_bytes": 9768639,
+        "status": "deleted"
+      }
+    ],
+    "phase": "complete",
+    "protected_files_sha256": {
+      "Semantic-SLAM/models/yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+      "Semantic-SLAM/semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+      "Semantic-SLAM/semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+      "Semantic-SLAM/semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+      "Semantic-SLAM/semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+      "Semantic-SLAM/run.sh": "01226de93e762638783542f48c75e49a74e0ed546cf65c9c6e2ff0512a6bab67",
+      "Semantic-SLAM/stop.sh": "c915e7418a4965927a36f66608a7bd5ad7acbadd7f6890765d7aac4916474d14",
+      "Semantic-SLAM/config/robot_mapping.yaml": "2c68ddd56f76fca4587bbc26a4c175967d0b4c1cd15577fa17b4a76ad4b0e62b",
+      "RTAB-Map + YOLO/语义SLAM原理文档.docx": "7983ee5df2eef72d774b99f5087613a2c6ef7c2aa9e374c9cced1a377044d9ce",
+      "RTAB-Map + YOLO/原理文档-20261102.docx": "bacaa70855780dbb007fe4df81742f63dfc4fa5640507b7781c88a0f086b9e8e",
+      "RTAB-Map + YOLO/实车测试结果_20261106/报告/语义SLAM测试报告_20261106.docx": "455bc49a5eebb4d13ec64af9cbca06665a490c79b15cddae37a5403764e2082c"
+    },
+    "kept_20261106_runs": [
+      "live-20261106-135535-618337",
+      "live-20261106-141516-790195",
+      "live-20261106-142447-525747",
+      "live-20261106-152342-779590",
+      "live-20261106-162622-926456"
+    ],
+    "run_deletion_rule": "User explicitly requested complete deletion of ineffective/idle test folders. Keep four command-vs-wheel anomaly records and one ICP record with an actual trajectory; retain all user reports and derived audit.",
+    "protected_files_unchanged": true,
+    "retained_run_checks": [
+      {
+        "run": "live-20261106-135535-618337",
+        "bag_splits": 16,
+        "all_referenced_splits_present": true,
+        "database_quick_check": "ok",
+        "database_nodes": 477
+      },
+      {
+        "run": "live-20261106-141516-790195",
+        "bag_splits": 2,
+        "all_referenced_splits_present": true,
+        "database_quick_check": "ok",
+        "database_nodes": 42
+      },
+      {
+        "run": "live-20261106-142447-525747",
+        "bag_splits": 7,
+        "all_referenced_splits_present": true,
+        "database_quick_check": "ok",
+        "database_nodes": 138
+      },
+      {
+        "run": "live-20261106-152342-779590",
+        "bag_splits": 17,
+        "all_referenced_splits_present": true,
+        "database_quick_check": "ok",
+        "database_nodes": 290
+      },
+      {
+        "run": "live-20261106-162622-926456",
+        "bag_splits": 3,
+        "all_referenced_splits_present": true,
+        "database_quick_check": "ok",
+        "database_nodes": 53
+      }
+    ],
+    "deleted_and_repacked_net_bytes": 12529353932,
+    "reclaimed_gib": 11.66887016221881,
+    "free_bytes_after": 46909976576,
+    "free_gib_after": 43.68832015991211
+  },
+  "material_organization_20261106": {
+    "scope": "User-authorized historical material classification. Runtime projects, dependencies, environments, models and other-team directories keep existing paths.",
+    "moves": [
+      {
+        "from": "RTAB-Map + YOLO/实车测试结果_20261105",
+        "to": "RTAB-Map + YOLO/测试结果/实车测试结果_20261105",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/实车测试结果_20261106",
+        "to": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/车上代码与接口整理_20261104",
+        "to": "RTAB-Map + YOLO/接口与运行",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/分模块报告资料_20261102",
+        "to": "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/文档修订资料_20261030",
+        "to": "RTAB-Map + YOLO/历史资料/文档修订资料_20261030",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/本地整理与原理修订_20261104",
+        "to": "RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/核查与计划_20261103",
+        "to": "RTAB-Map + YOLO/历史资料/核查与计划_20261103",
+        "same_inode_verified": true,
+        "kind": "directory"
+      },
+      {
+        "from": "RTAB-Map + YOLO/3D语义建图---原理文档-带部分修改建议示例.docx",
+        "to": "RTAB-Map + YOLO/参考资料/3D语义建图---原理文档-带部分修改建议示例.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/3D语义建图---测试文档-带部分修改建议示例.docx",
+        "to": "RTAB-Map + YOLO/参考资料/3D语义建图---测试文档-带部分修改建议示例.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/3D语义建图_会议纪要与Codex交接_完整版.docx",
+        "to": "RTAB-Map + YOLO/参考资料/3D语义建图_会议纪要与Codex交接_完整版.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/Jetson_ROS启动与开机自启动说明.docx",
+        "to": "RTAB-Map + YOLO/参考资料/Jetson_ROS启动与开机自启动说明.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/Jetson_ROS日常使用与手柄控制说明.docx",
+        "to": "RTAB-Map + YOLO/参考资料/Jetson_ROS日常使用与手柄控制说明.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/原理文档-20261102.docx",
+        "to": "RTAB-Map + YOLO/参考资料/原理文档-20261102.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/测试文档-20261102.rar",
+        "to": "RTAB-Map + YOLO/参考资料/测试文档-20261102.rar",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/3D语义建图原理与测试文档.docx",
+        "to": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/3D语义建图原理与测试文档_分模块版.docx",
+        "to": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档_分模块版.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/原理与测试文档.docx",
+        "to": "RTAB-Map + YOLO/历史资料/原理与测试文档.docx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/semantic_slam.rar",
+        "to": "RTAB-Map + YOLO/历史资料/semantic_slam.rar",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/地图点云.png",
+        "to": "RTAB-Map + YOLO/展示材料/地图点云.png",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/RTAB-Map建图.mp4",
+        "to": "RTAB-Map + YOLO/展示材料/RTAB-Map建图.mp4",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/RTAB-Map+YOLO.pptx",
+        "to": "RTAB-Map + YOLO/展示材料/RTAB-Map+YOLO.pptx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/RTAB-Map + YOLO 语义建图.mp4",
+        "to": "RTAB-Map + YOLO/展示材料/RTAB-Map + YOLO 语义建图.mp4",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "RTAB-Map + YOLO/效果演示_10秒.mp4",
+        "to": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "presentation/Semantic_SLAM_阶段汇报.pptx",
+        "to": "RTAB-Map + YOLO/展示材料/Semantic_SLAM_阶段汇报.pptx",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "presentation/.~lock.Semantic_SLAM_阶段汇报.pptx#",
+        "to": "RTAB-Map + YOLO/展示材料/.~lock.Semantic_SLAM_阶段汇报.pptx#",
+        "same_inode_verified": true,
+        "kind": "file"
+      },
+      {
+        "from": "MobileNetV3 + YOLOv8/MobileNet+YOLO.pptx",
+        "to": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO.pptx",
+        "sha256_verified": "941b1a9d61f8069796b08a86b8604af885ab574c5c5f02ecf4f1289da0ec35e3",
+        "kind": "file"
+      },
+      {
+        "from": "MobileNetV3 + YOLOv8/MobileNet+YOLO 演示.mp4",
+        "to": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO 演示.mp4",
+        "sha256_verified": "baf6c7e29fc772af48d974a3b0878a1378942f8432483c00905c248cde8a188c",
+        "kind": "file"
+      },
+      {
+        "from": "MobileNetV3 + YOLOv8/integration.rar",
+        "to": "MobileNetV3 + YOLOv8/历史资料/integration.rar",
+        "sha256_verified": "5f66488fbac7f9ed0cefa06831505bcf762395098a11112787d67063cf66c2f7",
+        "kind": "file"
+      }
+    ],
+    "exact_duplicates_removed": [
+      {
+        "removed": "presentation/效果演示_10秒.mp4",
+        "retained": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+        "bytes": 2261614,
+        "sha256": "07489e085f93dc30b3ffac51161ec9762c492afad6094e4fc84e2cacdc6bc8b5"
+      }
+    ],
+    "path_map": {
+      "RTAB-Map + YOLO/实车测试结果_20261105": "RTAB-Map + YOLO/测试结果/实车测试结果_20261105",
+      "RTAB-Map + YOLO/实车测试结果_20261106": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106",
+      "RTAB-Map + YOLO/车上代码与接口整理_20261104": "RTAB-Map + YOLO/接口与运行",
+      "RTAB-Map + YOLO/分模块报告资料_20261102": "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102",
+      "RTAB-Map + YOLO/文档修订资料_20261030": "RTAB-Map + YOLO/历史资料/文档修订资料_20261030",
+      "RTAB-Map + YOLO/本地整理与原理修订_20261104": "RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104",
+      "RTAB-Map + YOLO/核查与计划_20261103": "RTAB-Map + YOLO/历史资料/核查与计划_20261103",
+      "RTAB-Map + YOLO/3D语义建图---原理文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---原理文档-带部分修改建议示例.docx",
+      "RTAB-Map + YOLO/3D语义建图---测试文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---测试文档-带部分修改建议示例.docx",
+      "RTAB-Map + YOLO/3D语义建图_会议纪要与Codex交接_完整版.docx": "RTAB-Map + YOLO/参考资料/3D语义建图_会议纪要与Codex交接_完整版.docx",
+      "RTAB-Map + YOLO/Jetson_ROS启动与开机自启动说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS启动与开机自启动说明.docx",
+      "RTAB-Map + YOLO/Jetson_ROS日常使用与手柄控制说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS日常使用与手柄控制说明.docx",
+      "RTAB-Map + YOLO/原理文档-20261102.docx": "RTAB-Map + YOLO/参考资料/原理文档-20261102.docx",
+      "RTAB-Map + YOLO/测试文档-20261102.rar": "RTAB-Map + YOLO/参考资料/测试文档-20261102.rar",
+      "RTAB-Map + YOLO/3D语义建图原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档.docx",
+      "RTAB-Map + YOLO/3D语义建图原理与测试文档_分模块版.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档_分模块版.docx",
+      "RTAB-Map + YOLO/原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/原理与测试文档.docx",
+      "RTAB-Map + YOLO/semantic_slam.rar": "RTAB-Map + YOLO/历史资料/semantic_slam.rar",
+      "RTAB-Map + YOLO/地图点云.png": "RTAB-Map + YOLO/展示材料/地图点云.png",
+      "RTAB-Map + YOLO/RTAB-Map建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map建图.mp4",
+      "RTAB-Map + YOLO/RTAB-Map+YOLO.pptx": "RTAB-Map + YOLO/展示材料/RTAB-Map+YOLO.pptx",
+      "RTAB-Map + YOLO/RTAB-Map + YOLO 语义建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map + YOLO 语义建图.mp4",
+      "RTAB-Map + YOLO/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+      "presentation/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+      "presentation/Semantic_SLAM_阶段汇报.pptx": "RTAB-Map + YOLO/展示材料/Semantic_SLAM_阶段汇报.pptx",
+      "presentation/.~lock.Semantic_SLAM_阶段汇报.pptx#": "RTAB-Map + YOLO/展示材料/.~lock.Semantic_SLAM_阶段汇报.pptx#",
+      "RTAB-Map + YOLO/语义SLAM原理文档.docx": "RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx",
+      "MobileNetV3 + YOLOv8/MobileNet+YOLO.pptx": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO.pptx",
+      "MobileNetV3 + YOLOv8/MobileNet+YOLO 演示.mp4": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO 演示.mp4",
+      "MobileNetV3 + YOLOv8/integration.rar": "MobileNetV3 + YOLOv8/历史资料/integration.rar"
+    },
+    "protected_author_files": {
+      "teammate": {
+        "path": "RTAB-Map + YOLO/原理文档1106/3D语义建图---原理文档1-2部分.docx",
+        "sha256": "413816480bc9cae4a9abd1ccdaef41385e61c7c92ee3e2085d5cef66a4e08a0a",
+        "paragraph_elements": 87,
+        "images": [
+          [
+            "word/media/image1.png",
+            86050
+          ],
+          [
+            "word/media/image2.png",
+            216999
+          ],
+          [
+            "word/media/image3.png",
+            100503
+          ],
+          [
+            "word/media/image4.png",
+            88259
+          ],
+          [
+            "word/media/image5.png",
+            762292
+          ],
+          [
+            "word/media/image6.png",
+            102479
+          ]
+        ],
+        "body_text_sha256": "01074094b590047a809433414dff341f7f569bbb21ecfb1defed40fb34cc4695"
+      },
+      "user_semantic": {
+        "path": "RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx",
+        "sha256": "b828db050a12014e0f8cc7af279ccd6b1b34509724b81e7c8cc3f9572606eaad",
+        "paragraph_elements": 37,
+        "images": [
+          [
+            "word/media/image1.png",
+            1059775
+          ],
+          [
+            "word/media/image2.png",
+            1231681
+          ]
+        ],
+        "body_text_sha256": "bbd20372d8587059b2bfc049112506346201bf1e7f932213cccce7ee9ba02cd4"
+      }
+    },
+    "markdown_links_updated": [
+      "README.md",
+      "RTAB-Map + YOLO/AGENTS.md",
+      "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102/HANDPUSH_TEST_REPORT.md",
+      "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102/DEPLOYMENT_REPORT.md",
+      "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102/STATIC_TEST_REPORT.md",
+      "RTAB-Map + YOLO/历史资料/核查与计划_20261103/核查结果与修改计划.md",
+      "RTAB-Map + YOLO/历史资料/核查与计划_20261103/实车测试准备与记录模板.md",
+      "RTAB-Map + YOLO/测试结果/实车测试结果_20261105/README_先看这里.md",
+      "RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104/本轮修改与实车待补说明.md",
+      "RTAB-Map + YOLO/接口与运行/代码与接口调用说明.md",
+      "RTAB-Map + YOLO/接口与运行/雷达驱动与话题代码索引.md",
+      "RTAB-Map + YOLO/接口与运行/接口静态复核_20261104_2203.md",
+      "RTAB-Map + YOLO/接口与运行/README.md",
+      "RTAB-Map + YOLO/接口与运行/车端完整结构与下次清理.md",
+      "RTAB-Map + YOLO/接口与运行/底盘代码与控制接口核查_20261104.md",
+      "RTAB-Map + YOLO/接口与运行/接口一页速查.md",
+      "RTAB-Map + YOLO/接口与运行/接口速查与静态接收结果.md",
+      "RTAB-Map + YOLO/接口与运行/历史/代码与接口调用说明_静态接收补充前.md",
+      "RTAB-Map + YOLO/测试结果/实车测试结果_20261106/README_先看这里.md",
+      "RTAB-Map + YOLO/测试结果/实车测试结果_20261106/报告/实车测试报告_20261106_下午.md",
+      "RTAB-Map + YOLO/测试结果/实车测试结果_20261106/报告/问题分析报告_20261106.md"
+    ],
+    "verified_unchanged_runtime_files": [
+      "Semantic-SLAM/models/yolov8n-seg.pt",
+      "Semantic-SLAM/semantic/yolo_detector.py",
+      "Semantic-SLAM/semantic/semantic_grid_node.py",
+      "Semantic-SLAM/semantic/common.py",
+      "Semantic-SLAM/semantic/semantic_projector.py",
+      "Semantic-SLAM/run.sh",
+      "Semantic-SLAM/stop.sh",
+      "Semantic-SLAM/config/robot_mapping.yaml"
+    ],
+    "author_source_sha256_verified_again": {
+      "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx": "b828db050a12014e0f8cc7af279ccd6b1b34509724b81e7c8cc3f9572606eaad",
+      "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/3D语义建图---原理文档1-2部分.docx": "413816480bc9cae4a9abd1ccdaef41385e61c7c92ee3e2085d5cef66a4e08a0a"
+    },
+    "current_free_bytes": 47147692032,
+    "status": "complete",
+    "categories": [
+      "原理文档1106",
+      "测试结果",
+      "接口与运行",
+      "参考资料",
+      "历史资料",
+      "展示材料"
+    ],
+    "active_runtime_dry_run": "passed: rgbd_odometry + rtabmap + original YOLO; wheel/lidar/chassis control disabled; no sensors launched",
+    "current_index_links_checked": true,
+    "author_documents_preserved": true,
+    "historical_log_paths_preserved": "Original runtime logs/configurations retain their original absolute paths; resolve via path_map."
+  },
+  "older_mobilenet_replay_archive_20261106": {
+    "scope": "Only closed October MobileNet replay output directories. No training data, model, source, environment or active RTAB-Map baseline changed.",
+    "archived_runs": [
+      "20261014-215101-3296",
+      "20261014-215247-3593",
+      "20261014-222958-4908",
+      "20261015-094538-16349",
+      "20261015-094746-16781",
+      "20261015-141032-4154",
+      "20261015-141330-4717",
+      "20261016-213716-3446",
+      "20261016-214112-4031",
+      "20261016-214548-4828",
+      "20261016-214700-5153"
+    ],
+    "archive": "mobilenet_backbone_test/integration/runs/历史回放记录.tar.zst",
+    "source_bytes": 346365815,
+    "archive_bytes": 94131462,
+    "net_reclaimed_bytes": 252234353,
+    "verified_regular_files": 610,
+    "member_sha256": {
+      "20261014-215101-3296/map_stats.json": {
+        "bytes": 274,
+        "sha256": "cb3760da5ac291943927b4e7f80b96ab051f14da375d20cb8609dbb5f425269c"
+      },
+      "20261014-215101-3296/projector_stats.json": {
+        "bytes": 133,
+        "sha256": "d80d9ecc7f033379742a563d4517b336fa2667fb565de572b181703c31b13b9a"
+      },
+      "20261014-215101-3296/semantic_map.npz": {
+        "bytes": 642,
+        "sha256": "c8ade02af7ce6a2b32be03d86a8d00c7a919263461c477437a870f04f6a132ad"
+      },
+      "20261014-215101-3296/semantic_map.ply": {
+        "bytes": 224,
+        "sha256": "2f1580a10e8ad063ea657a4b242bb2ec9a85f29d896d17086d157403be92b33a"
+      },
+      "20261014-215101-3296/result.json": {
+        "bytes": 656,
+        "sha256": "5aacd26c7d712ad054cdac57e7a07975957f3531fb1bd605f726f6b50b9dc87c"
+      },
+      "20261014-215101-3296/events.json": {
+        "bytes": 1601,
+        "sha256": "516bc92ae355fe6893a48a868e67c87c47da458ffd84faf53f07ccee8badb41e"
+      },
+      "20261014-215101-3296/entry_console.log": {
+        "bytes": 2186,
+        "sha256": "9c817bffddbec76c9d3ac9575978d1da715be82aa10f899a4324b40a2fbb60a5"
+      },
+      "20261014-215101-3296/rtabmap.db": {
+        "bytes": 106496,
+        "sha256": "0c537c70cbd2afecd0b686e957ff03370925d6f84d9264b5ff8eda9ee6cb7af6"
+      },
+      "20261014-215101-3296/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261014-215101-3296/launch.log": {
+        "bytes": 13926,
+        "sha256": "2bb8dd04f9ae0aeb0ce5049284cca01317f26362a98901755d2f82e691ab31aa"
+      },
+      "20261014-215101-3296/ros_logs/python_3344_1791985863178.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261014-215101-3296/ros_logs/rtabmap_3340_1791985862043.log": {
+        "bytes": 6886,
+        "sha256": "1ba3485d35946f3b60c30a3e4f2944c949d09194eff90f2fa290031c65e7cde2"
+      },
+      "20261014-215101-3296/ros_logs/python_3348_1791985861960.log": {
+        "bytes": 103,
+        "sha256": "e8ec8222ff8faab5bec491feadf8da5655156140b9cae3c1b971fd86d907133d"
+      },
+      "20261014-215101-3296/ros_logs/python_3346_1791985862002.log": {
+        "bytes": 110,
+        "sha256": "1614b020a0967f461141fd90ae422eaf78e3e1dd4b010e5edf3d43bc6a334725"
+      },
+      "20261014-215101-3296/ros_logs/rgbd_sync_3338_1791985861945.log": {
+        "bytes": 1699,
+        "sha256": "d642f0866f94112df4bd3f7ac6d78b1446b941f2e013516a32b59f6279d34461"
+      },
+      "20261014-215101-3296/ros_logs/rgbd_split_3342_1791985861965.log": {
+        "bytes": 750,
+        "sha256": "ceef3ff1766392e01eeaa1c770789efde5bf66a971fa1f245dcb14d12bca7e14"
+      },
+      "20261014-215101-3296/ros_logs/2026-10-14-21-51-01-552208-xsy-3337/launch.log": {
+        "bytes": 2112,
+        "sha256": "3b8a934c891c7f7f65941f39e507d4983ed69bd9960e1a733cb53c7f4c79dd10"
+      },
+      "20261014-215247-3593/map_stats.json": {
+        "bytes": 274,
+        "sha256": "cb3760da5ac291943927b4e7f80b96ab051f14da375d20cb8609dbb5f425269c"
+      },
+      "20261014-215247-3593/errors.log": {
+        "bytes": 595,
+        "sha256": "255a0e060778c86b5d4992256f9c66d4a811807c976130370b4cb3ba96f19fb3"
+      },
+      "20261014-215247-3593/class_names.json": {
+        "bytes": 1102,
+        "sha256": "b2b27a7c8f006145c5757637182ec29bbde6f889f13a3c9c1d478bdba4b50606"
+      },
+      "20261014-215247-3593/summary.json": {
+        "bytes": 2118,
+        "sha256": "c6ec6326a333bdf5b45580020d87e665703d619d50e6a3dabc57f163e758ae54"
+      },
+      "20261014-215247-3593/projector_stats.json": {
+        "bytes": 194,
+        "sha256": "5360789c02a16528768c867d990001d58c9a08c4eecb6c558c7317c84ab2bbfe"
+      },
+      "20261014-215247-3593/observer.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261014-215247-3593/original_preservation.json": {
+        "bytes": 125,
+        "sha256": "122d96821bedcbf46d21dba0f83d97d44e6c0bd91042757687a7a97d1439cd4e"
+      },
+      "20261014-215247-3593/verification.json": {
+        "bytes": 2764,
+        "sha256": "132b6f034bad7837b79a1c901b1cf678490a9ac90da08127aa5f1aa08ca2cff3"
+      },
+      "20261014-215247-3593/semantic_map.npz": {
+        "bytes": 642,
+        "sha256": "c8ade02af7ce6a2b32be03d86a8d00c7a919263461c477437a870f04f6a132ad"
+      },
+      "20261014-215247-3593/semantic_map.ply": {
+        "bytes": 224,
+        "sha256": "2f1580a10e8ad063ea657a4b242bb2ec9a85f29d896d17086d157403be92b33a"
+      },
+      "20261014-215247-3593/detector_stats.json": {
+        "bytes": 1976,
+        "sha256": "1957fd4ad865ae8bc0cd8672633b0b0660576cc45a4b01d9adeb7caa353900b6"
+      },
+      "20261014-215247-3593/rviz_live.png": {
+        "bytes": 337782,
+        "sha256": "3cb49bc0d896f11b8575ef168b04d3f2d73d4eab51944cc7acda82d6218c84f5"
+      },
+      "20261014-215247-3593/result.json": {
+        "bytes": 384,
+        "sha256": "a1f73be11216faec3834b4f2008f53b1b2e66cc1e5c239751f1815c20eb4458f"
+      },
+      "20261014-215247-3593/export_0.log": {
+        "bytes": 775,
+        "sha256": "307742ca151e262b813060f377564772265bdda55a81d34fc179ec7ee06408a9"
+      },
+      "20261014-215247-3593/geometry_live.png": {
+        "bytes": 4824,
+        "sha256": "312eb60d64faf5c9cc58f96bd5f05c34f9c53593661ce7ff783dd6d7e9476a17"
+      },
+      "20261014-215247-3593/events.json": {
+        "bytes": 3572,
+        "sha256": "e293ebf8b23a265b2034afb285fda552d2099b542a246e48b3c26e820248efcc"
+      },
+      "20261014-215247-3593/resources_summary.json": {
+        "bytes": 324,
+        "sha256": "3c158390f3fc964fc335185fe5a9f0c691ec979affe9676f60775fc4dc6b0723"
+      },
+      "20261014-215247-3593/rtabmap.db": {
+        "bytes": 8876032,
+        "sha256": "d8c5d1e20e0a1ac7641bc57d05feedd71bbda6654022f7242c7998b1f899ca3c"
+      },
+      "20261014-215247-3593/resources.csv": {
+        "bytes": 9490,
+        "sha256": "0bdf3f5a05e0b01f571caf6600c670e44b372f25adf0e362f6a748174fede49c"
+      },
+      "20261014-215247-3593/export_1.log": {
+        "bytes": 1165,
+        "sha256": "606853465c60e96aa9f5f1f2d98b8cf89e3c67cc041a7a2234197bd4dae106fa"
+      },
+      "20261014-215247-3593/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261014-215247-3593/launch.log": {
+        "bytes": 24290,
+        "sha256": "d7279954e5a1e52e8423ee842e0e72c7de3ede252730aa16b8948894daed252e"
+      },
+      "20261014-215247-3593/observed_annotated.jpg": {
+        "bytes": 39343,
+        "sha256": "303257736372aa6ffa55bf4722151d95ae8aa8c99bc0a5f27109ccb223201373"
+      },
+      "20261014-215247-3593/bag.log": {
+        "bytes": 600,
+        "sha256": "0e73d9cd8370efb41a2fd39ca245c8973376a2344d2eeaad4ed4835e98ae0203"
+      },
+      "20261014-215247-3593/rviz_during_run.png": {
+        "bytes": 185811,
+        "sha256": "4aa53cb4169606fced1949b87968d48647aec4e774e9473070c0c31fa3dac51e"
+      },
+      "20261014-215247-3593/ros_logs/python_3802_1791985971416.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261014-215247-3593/ros_logs/python_3642_1791985967911.log": {
+        "bytes": 931,
+        "sha256": "c4351670c920dc0df36b6ea931730840a191fb3cf25f16251e105c05f5a5b7ab"
+      },
+      "20261014-215247-3593/ros_logs/python_3640_1791985968923.log": {
+        "bytes": 669,
+        "sha256": "d753122e547818d1e9edfc0040cd72ef1ca0dbdf87d830099bbbe3eed3752913"
+      },
+      "20261014-215247-3593/ros_logs/python_3644_1791985967918.log": {
+        "bytes": 103,
+        "sha256": "6fae185f5d6d1963eb590cf6d6f2cc53a281ef470cafb264858873b20ef2c0a1"
+      },
+      "20261014-215247-3593/ros_logs/rgbd_sync_3634_1791985967870.log": {
+        "bytes": 1699,
+        "sha256": "cd044e25257b3283f9ce9bc64b93f56a0fedfb333904704d349408faa8638185"
+      },
+      "20261014-215247-3593/ros_logs/rtabmap_3636_1791985967891.log": {
+        "bytes": 12841,
+        "sha256": "4a67f15e3f01bfa9f797348b2e6caf8521fb6b1ba4382a8e23e8a85a15515db3"
+      },
+      "20261014-215247-3593/ros_logs/rgbd_split_3638_1791985967863.log": {
+        "bytes": 750,
+        "sha256": "ec8074e950e082e0061f0918fa68d602d0f9cf2ca74583a1b0969cadff3a938d"
+      },
+      "20261014-215247-3593/ros_logs/rviz2_3646_1791985967818.log": {
+        "bytes": 1653,
+        "sha256": "8cb2c7aeefab5234c1a5d6b0aecb8ee6baa5a9cccd79405b4e956bcb7600a191"
+      },
+      "20261014-215247-3593/ros_logs/python3_3816_1791985974418.log": {
+        "bytes": 501,
+        "sha256": "df33e88363304a59776e8afc323ceb3786161dfabd9d597b20b6b93df1b753d0"
+      },
+      "20261014-215247-3593/ros_logs/2026-10-14-21-52-47-677482-xsy-3633/launch.log": {
+        "bytes": 1990,
+        "sha256": "cbb9f1ceb56cee2430633acf9542fea29daba890fe97f4391ebcfafbf83dc2e1"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "a7ceddcf07fb361ded1fe4bc0f1d68c3bb90b9cc9b19367ad4fdbb774ec3c8cf"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4348,
+        "sha256": "eb095c13d8517a7112ba9303fd84651525a0fa6cd41abbbae7749c5f11a74db9"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "053f77e1f4c9b4004699306f6378d4c45e5347c83fb36529e66ba6112917adb0"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "0542d44a8c054cf265ee32290be0fdf397e74f90807b3a7d63a4df38b56fc4f3"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "d717d90a26a9bd853fe9aaa722962060bb307165787bbfad902219c213723243"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1405,
+        "sha256": "1ca0da859a65339891b765904971e93df764531baa75bf7d1659405b7eac2d7e"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1751,
+        "sha256": "e9897d3765bf8aaf0c0cffe8d53c30b868fc50ba1f5f263e51b73124e293cf90"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1268,
+        "sha256": "527957c51d57543294d00c3c6f05ed71c79c06fb96782e043f7578de4514e215"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1406,
+        "sha256": "780dfb9aca8fb7f0650891cd9cbc04fdc9162687aeb7c0f6b1b5be0ee4c45b9b"
+      },
+      "20261014-215247-3593/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261014-215247-3593/exports/rgbd_cloud.ply": {
+        "bytes": 667830,
+        "sha256": "18a48ec3c548484eb1e9d5b535a19af96485cfc4b3fbc8bcc5855ea764219fc0"
+      },
+      "20261014-215247-3593/exports/geometry.pgm": {
+        "bytes": 232775,
+        "sha256": "d9ac9fbc53f630f2e02dd95f26f7e60ddea3525b820427c8360c359ec738e720"
+      },
+      "20261014-215247-3593/exports/geometry.yaml": {
+        "bytes": 122,
+        "sha256": "c9c68d322d3c4fb31f939c81c765dd57bc525ca76740b18a09cf1a637d71fbd4"
+      },
+      "20261014-215247-3593/exports/geometry_poses.txt": {
+        "bytes": 1634,
+        "sha256": "acecdb848faab033df0b45b3a4b007cd6872d7e53121e41c7989abaf6d9f6bfc"
+      },
+      "20261014-215247-3593/exports/geometry.png": {
+        "bytes": 4030,
+        "sha256": "542532ede950c5c73c55a3b3cf395a0ab75f44c13724ceb253c5f6c716b9cf21"
+      },
+      "20261014-222958-4908/map_stats.json": {
+        "bytes": 274,
+        "sha256": "cb3760da5ac291943927b4e7f80b96ab051f14da375d20cb8609dbb5f425269c"
+      },
+      "20261014-222958-4908/class_names.json": {
+        "bytes": 1102,
+        "sha256": "b2b27a7c8f006145c5757637182ec29bbde6f889f13a3c9c1d478bdba4b50606"
+      },
+      "20261014-222958-4908/observer.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261014-222958-4908/verification.json": {
+        "bytes": 2764,
+        "sha256": "6c5d9632861fa2305d951b954a2e33fa685ee51460e88747d3bb6091e13c15d8"
+      },
+      "20261014-222958-4908/semantic_map.npz": {
+        "bytes": 642,
+        "sha256": "c8ade02af7ce6a2b32be03d86a8d00c7a919263461c477437a870f04f6a132ad"
+      },
+      "20261014-222958-4908/semantic_map.ply": {
+        "bytes": 224,
+        "sha256": "2f1580a10e8ad063ea657a4b242bb2ec9a85f29d896d17086d157403be92b33a"
+      },
+      "20261014-222958-4908/rviz_live.png": {
+        "bytes": 350377,
+        "sha256": "60deaed7e214a3cb4ccc78178bab7c708a7b950b8c9539591d3d06e7c3231ea4"
+      },
+      "20261014-222958-4908/geometry_live.png": {
+        "bytes": 6057,
+        "sha256": "3b4e3a345695425ccae4315544be3c795912448f27b11f517d9bb5ba4319c5ac"
+      },
+      "20261014-222958-4908/events.json": {
+        "bytes": 3258,
+        "sha256": "c742e3cb1afd58f383cfe1c9df681ef6d883c24fec7d20dd45f6fcbee2470968"
+      },
+      "20261014-222958-4908/rtabmap.db": {
+        "bytes": 13221888,
+        "sha256": "57ee7b2be75ae2787c79ab1082a2bb9aeed82c4fdb5344c6a3d96c7bb09501b4"
+      },
+      "20261014-222958-4908/resources.csv": {
+        "bytes": 196573,
+        "sha256": "56d275477479213545538d93d69b93ade05f1b434e0e90a5cdc14990030dbc14"
+      },
+      "20261014-222958-4908/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261014-222958-4908/launch.log": {
+        "bytes": 23783,
+        "sha256": "e448dcbe03bc7c2ce632fc366621082c57d7864e6b727bb9238449d0aa51708c"
+      },
+      "20261014-222958-4908/rviz_live.xwd": {
+        "bytes": 6316005,
+        "sha256": "9237415ff0480ca54c2bccba76d4871da1136ef629548dce27466d7bf2837372"
+      },
+      "20261014-222958-4908/observed_annotated.jpg": {
+        "bytes": 39343,
+        "sha256": "303257736372aa6ffa55bf4722151d95ae8aa8c99bc0a5f27109ccb223201373"
+      },
+      "20261014-222958-4908/bag.log": {
+        "bytes": 541,
+        "sha256": "5f8d1ed6df56c1f40c723042ccbd17721975870d92f751629a528bdf3c187ab4"
+      },
+      "20261014-222958-4908/ros_logs/rgbd_sync_4949_1791988198611.log": {
+        "bytes": 2152,
+        "sha256": "b3807a97993c167272783013c234153ba047723d7670670c38131422f584fc42"
+      },
+      "20261014-222958-4908/ros_logs/rtabmap_4951_1791988198635.log": {
+        "bytes": 13856,
+        "sha256": "a4e336eb706d7a1ef13a28c84f7faaf71cbe3a9e20d480b89d3323a079efc291"
+      },
+      "20261014-222958-4908/ros_logs/python_4957_1791988198646.log": {
+        "bytes": 931,
+        "sha256": "bdaa37bc20b731e7a061d04c861f92ca6b36897e8e3bdf5e2aa2f6bd2ad74a71"
+      },
+      "20261014-222958-4908/ros_logs/python_4959_1791988198658.log": {
+        "bytes": 103,
+        "sha256": "c0b027d602f46cc29f37a34fe2190db72c8e756c4ab5786f6d3d39080560f029"
+      },
+      "20261014-222958-4908/ros_logs/python_4955_1791988199448.log": {
+        "bytes": 670,
+        "sha256": "581f6e8442f546fecf4a333f41b2d3fa246ef00804178d7cdc8dee49a3b7d2fb"
+      },
+      "20261014-222958-4908/ros_logs/python_5113_1791988200508.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261014-222958-4908/ros_logs/rviz2_4961_1791988198552.log": {
+        "bytes": 1679,
+        "sha256": "04c5f058c81280d20b06120dd39e42444c4a530b0651777b855beda734ce034f"
+      },
+      "20261014-222958-4908/ros_logs/python3_5129_1791988203437.log": {
+        "bytes": 501,
+        "sha256": "6d947f65f9f6c073ada8e3cb02e63d59d1cbd418174d5d4ce9a59da619439b24"
+      },
+      "20261014-222958-4908/ros_logs/rgbd_split_4953_1791988198625.log": {
+        "bytes": 679,
+        "sha256": "0b33f083d831f707f3050d6401e09625d0e2b4e07e15331d89dbc21ceb2b007a"
+      },
+      "20261014-222958-4908/ros_logs/2026-10-14-22-29-58-400776-xsy-4948/launch.log": {
+        "bytes": 765,
+        "sha256": "9e800148f0e0bd5c5f6edff9a3a39137e3c8764c8e771c6969616a3b12da0c8d"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "da8bea1ba4c229b240e38b4cf46948ca0993ad9be1a869f383d74935a2c4023d"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3283,
+        "sha256": "b9b887daee631f356467aa37a54336afdf694e210e2bc2a98595abbd167f6636"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "b2c12a5866e646504013812cdcfe4e68cf441929cee11b25635a66b7c6a69ce5"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "1110d180671fde84168639c4c5c81f06c57244aaa471099fdb42381c6e14e688"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "2df1ac96d10cadc7a24f317563c84eabf0679701c2379b1409701ba0ece032cc"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "637e21757e42d6d9ac236256cd0fedcc82b888086499a38ac918ad5b3bc64c9c"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1751,
+        "sha256": "e9897d3765bf8aaf0c0cffe8d53c30b868fc50ba1f5f263e51b73124e293cf90"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1268,
+        "sha256": "527957c51d57543294d00c3c6f05ed71c79c06fb96782e043f7578de4514e215"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261014-222958-4908/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "bc441003f84d1d8a5b4f000e671329639eff4628ae13aa9ffb0fd8cdd60dd7d0"
+      },
+      "20261015-094538-16349/map_stats.json": {
+        "bytes": 274,
+        "sha256": "cb3760da5ac291943927b4e7f80b96ab051f14da375d20cb8609dbb5f425269c"
+      },
+      "20261015-094538-16349/errors.log": {
+        "bytes": 967,
+        "sha256": "77d0a78b3dcace8845938be388185f34a38942cb618fd538b5a897459fc2d593"
+      },
+      "20261015-094538-16349/summary.json": {
+        "bytes": 911,
+        "sha256": "fea5e07b0c3945fdf1e33a5667554d38f7eeeb1718711f6fd38273435d49d4c9"
+      },
+      "20261015-094538-16349/projector_stats.json": {
+        "bytes": 133,
+        "sha256": "d80d9ecc7f033379742a563d4517b336fa2667fb565de572b181703c31b13b9a"
+      },
+      "20261015-094538-16349/original_preservation.json": {
+        "bytes": 125,
+        "sha256": "122d96821bedcbf46d21dba0f83d97d44e6c0bd91042757687a7a97d1439cd4e"
+      },
+      "20261015-094538-16349/semantic_map.npz": {
+        "bytes": 642,
+        "sha256": "c8ade02af7ce6a2b32be03d86a8d00c7a919263461c477437a870f04f6a132ad"
+      },
+      "20261015-094538-16349/semantic_map.ply": {
+        "bytes": 224,
+        "sha256": "2f1580a10e8ad063ea657a4b242bb2ec9a85f29d896d17086d157403be92b33a"
+      },
+      "20261015-094538-16349/result.json": {
+        "bytes": 1192,
+        "sha256": "be68b905ab0f6a219f7332ba734cfa1c4fbf081a049c80f6242d09540e82d226"
+      },
+      "20261015-094538-16349/events.json": {
+        "bytes": 1604,
+        "sha256": "9a712b2f5fbab5b640919a5182b24ce74bd4a2ab1e3d9d0b3a44ba7ef73f83c0"
+      },
+      "20261015-094538-16349/rtabmap.db": {
+        "bytes": 106496,
+        "sha256": "24ceb1935904c12b4939b5fdbcbcebc47d4be2a5bb7ae2f59d61644b9ac75cac"
+      },
+      "20261015-094538-16349/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261015-094538-16349/launch.log": {
+        "bytes": 15209,
+        "sha256": "5bacf40bf243b4a5b82c31213223678b2cefa342eeb46a925ccb2df6de4ecf95"
+      },
+      "20261015-094538-16349/ros_logs/rtabmap_16392_1792028739098.log": {
+        "bytes": 6887,
+        "sha256": "b3948b77b4ab43545cc1486449e6ea5811d74291be43777453bf0a4b5654be23"
+      },
+      "20261015-094538-16349/ros_logs/python_16398_1792028738867.log": {
+        "bytes": 110,
+        "sha256": "9d82fe52ef3fd4995831d59ce0c841dc434b11cbbc8b49923bdd732c4153d06c"
+      },
+      "20261015-094538-16349/ros_logs/rgbd_sync_16390_1792028739098.log": {
+        "bytes": 1699,
+        "sha256": "db409c8669b0820f0db165bedb696b48d3b5c1d75a88512cdf0984fec019ac27"
+      },
+      "20261015-094538-16349/ros_logs/rgbd_split_16394_1792028739101.log": {
+        "bytes": 750,
+        "sha256": "485aef66825b3482eb278c365932f3bea0d9dd8dd3f4552db9493ecd1c586357"
+      },
+      "20261015-094538-16349/ros_logs/python_16400_1792028738776.log": {
+        "bytes": 103,
+        "sha256": "74732ef71497781def360963a814905ff1ebc1e712aa52ec99a444c3b398a776"
+      },
+      "20261015-094538-16349/ros_logs/2026-10-15-09-45-38-421177-xsy-16389/launch.log": {
+        "bytes": 2593,
+        "sha256": "7fefc1f694c4c009da90cd6978f7f50c95980fe2b46dc4c9da4858e08b4153ff"
+      },
+      "20261015-094746-16781/map_stats.json": {
+        "bytes": 2300,
+        "sha256": "bba0418eb6da5a8825ae8067027c3bf7b9a5a9f826b99a034ab7190e3e005a1a"
+      },
+      "20261015-094746-16781/errors.log": {
+        "bytes": 310,
+        "sha256": "3f989b80ddfb5725e7f3575885a914c80e60b95c43574470bdf1b329cf59d310"
+      },
+      "20261015-094746-16781/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261015-094746-16781/latest_detection.json": {
+        "bytes": 294,
+        "sha256": "e2cc15595a7dd504050f4f8bcdd335f825860a56c0c3816139fec4341c3d5a5b"
+      },
+      "20261015-094746-16781/summary.json": {
+        "bytes": 2243,
+        "sha256": "fae8c08537c5cc3d9b337c583ab89aaae2b8e77695c4fd97d9b78f4d36437364"
+      },
+      "20261015-094746-16781/projector_stats.json": {
+        "bytes": 200,
+        "sha256": "944b90e9ebc3ba1dbf5863da1e2d45d2b83ef4405049deffc5652cd8a647bf6b"
+      },
+      "20261015-094746-16781/observer.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261015-094746-16781/original_preservation.json": {
+        "bytes": 125,
+        "sha256": "122d96821bedcbf46d21dba0f83d97d44e6c0bd91042757687a7a97d1439cd4e"
+      },
+      "20261015-094746-16781/verification.json": {
+        "bytes": 6450,
+        "sha256": "96f0485704b32186c1231a3ed2ea6bb2a2a227e775452e8b6fd9ecc9096a139c"
+      },
+      "20261015-094746-16781/semantic_map.npz": {
+        "bytes": 139278,
+        "sha256": "7ad713b6d087bb66033357d6b8f85726536fd116f27434c336012f35847687ca"
+      },
+      "20261015-094746-16781/semantic_map.ply": {
+        "bytes": 278160,
+        "sha256": "74ff80d1f0d676a342c3da8fbead4163796155ee4598bebbedf56023f9cd17f0"
+      },
+      "20261015-094746-16781/detector_stats.json": {
+        "bytes": 1135,
+        "sha256": "b22764fbbfb80b8a4877c4496a9546955d018e5f715282c92cbfadad03a98e67"
+      },
+      "20261015-094746-16781/rviz_live.png": {
+        "bytes": 262666,
+        "sha256": "78a49c295c4bdb2810277f748fd93baeead7d7672eed695dade8324b7fe84f68"
+      },
+      "20261015-094746-16781/result.json": {
+        "bytes": 385,
+        "sha256": "257c13ee2f7eb71290309af03fc66850bd83f1db8b1df781cd46a2e6f819c33a"
+      },
+      "20261015-094746-16781/export_0.log": {
+        "bytes": 777,
+        "sha256": "4483d472bf6ea4f6308b562aba4991a59c2c4103a0d4d13131f511d100d252e7"
+      },
+      "20261015-094746-16781/geometry_live.png": {
+        "bytes": 2973,
+        "sha256": "9b64e36b88850ba8f1a6123a1dbe2ac50f1d1a29198f4e25f8a1d569b726c579"
+      },
+      "20261015-094746-16781/events.json": {
+        "bytes": 3263,
+        "sha256": "059302fcc56a6b948bd3587da0ccdc8f53356d28b6391f699042b68bb54dffd9"
+      },
+      "20261015-094746-16781/resources_summary.json": {
+        "bytes": 320,
+        "sha256": "680ff338e10b332c4b1ea7578008b1a90e817636030951172d5921131a431618"
+      },
+      "20261015-094746-16781/rtabmap.db": {
+        "bytes": 7094272,
+        "sha256": "4c8a89ec82f0272833df7551b06878f243f6ee1b14cc4335fedca5892b4b2ac5"
+      },
+      "20261015-094746-16781/resources.csv": {
+        "bytes": 5127,
+        "sha256": "b91812eb22c4e94a8706b958bff8a2aab830e5f7b605fb251b128c8b9b35f9ea"
+      },
+      "20261015-094746-16781/export_1.log": {
+        "bytes": 1169,
+        "sha256": "ea4d56c39831acdff22c8ecdefe364425f5b5efd726338d36bbe15d3bdf213a4"
+      },
+      "20261015-094746-16781/latest_instance_mask.png": {
+        "bytes": 2107,
+        "sha256": "a6e8d9f903ea2054e8a863916e8bb3c64bdbe54a50af881cce60a3d946cb8c4a"
+      },
+      "20261015-094746-16781/latest_class_mask.png": {
+        "bytes": 1684,
+        "sha256": "10e1e596d999e50ad451a6b43347d359ff06990607ca7fc585a9a66a2ce5e2b8"
+      },
+      "20261015-094746-16781/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261015-094746-16781/launch.log": {
+        "bytes": 21301,
+        "sha256": "0abc31d3a3acf8a73f8f88b34462a2f882584e675c46cb1e7728b6517ad7a7e4"
+      },
+      "20261015-094746-16781/observed_annotated.jpg": {
+        "bytes": 30239,
+        "sha256": "0fcd586a6067a3ba3f2f5464cf1c4f664d81020381135bce8c0c062da041c36f"
+      },
+      "20261015-094746-16781/bag.log": {
+        "bytes": 600,
+        "sha256": "2ffc2d97293989b362dda3a51281f335b8a2e85a4109b37e56b3d08b88c62179"
+      },
+      "20261015-094746-16781/latest_annotated.jpg": {
+        "bytes": 37537,
+        "sha256": "d9c5134852feaa4635acadb21934d7f1ff20cade02d9a9f1ade10cabb5c3bf62"
+      },
+      "20261015-094746-16781/ros_logs/python3_17025_1792028872736.log": {
+        "bytes": 501,
+        "sha256": "64d5cdeb9b140e9d846c3e26c5767de363d0c5c2364f559c877937b1f112a064"
+      },
+      "20261015-094746-16781/ros_logs/python_16848_1792028867243.log": {
+        "bytes": 581,
+        "sha256": "f182de208d2f174ac2cb85bcd1cc09b71f5c9e2cea6533d25a4b4016bf466d6c"
+      },
+      "20261015-094746-16781/ros_logs/python_16850_1792028867242.log": {
+        "bytes": 399,
+        "sha256": "1856bb45203ef4e8d4eacb410927ba2c8d639e03df4b0099b2fa1f2ff3b951c6"
+      },
+      "20261015-094746-16781/ros_logs/python_17011_1792028869539.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261015-094746-16781/ros_logs/rtabmap_16842_1792028867215.log": {
+        "bytes": 10814,
+        "sha256": "616de171964dbc252fec53d559cf52295694ede71c8488e6376a1c2f2951638d"
+      },
+      "20261015-094746-16781/ros_logs/rviz2_16852_1792028867176.log": {
+        "bytes": 1750,
+        "sha256": "7543594b0a5de9bc2597877e80f8970d600cc51057f625ea2407b0dd4a67c45b"
+      },
+      "20261015-094746-16781/ros_logs/rgbd_sync_16840_1792028867203.log": {
+        "bytes": 1699,
+        "sha256": "1be387a1f3f7b3252c28c3ba588997c22e917b7e73dad56e7885d634b7539bcb"
+      },
+      "20261015-094746-16781/ros_logs/python_16846_1792028867941.log": {
+        "bytes": 424,
+        "sha256": "4ae410e9d8a5b6cbf89a397ff0e3ea1f2d7435b025d4a53baa149f8789d34f71"
+      },
+      "20261015-094746-16781/ros_logs/rgbd_split_16844_1792028867208.log": {
+        "bytes": 750,
+        "sha256": "e5a43239515402134fb0f64862ffc78a5206c43b45ccc1c198c5ca8fae5d862c"
+      },
+      "20261015-094746-16781/ros_logs/2026-10-15-09-47-46-965726-xsy-16839/launch.log": {
+        "bytes": 2006,
+        "sha256": "881c236fd7fdb135644e321c14b2aa8b73b4b4fe59ae8c8c205cb0f6de6948b9"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "abea45f8e9226f7a4815bfaed809633f84302318ec4a2ebe0fbaa4e04f7258c6"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "b2c12a5866e646504013812cdcfe4e68cf441929cee11b25635a66b7c6a69ce5"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "1110d180671fde84168639c4c5c81f06c57244aaa471099fdb42381c6e14e688"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261015-094746-16781/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261015-094746-16781/exports/rgbd_cloud.ply": {
+        "bytes": 541877,
+        "sha256": "28a8b59c2c843552b31a0f0efb62e1fe3c39a39009e878c5315809e99d877a2b"
+      },
+      "20261015-094746-16781/exports/geometry.pgm": {
+        "bytes": 132095,
+        "sha256": "9935649a4d1d16a23754c81b5410859a5f767cadb7950025b9ea4750afbb3c9f"
+      },
+      "20261015-094746-16781/exports/geometry.yaml": {
+        "bytes": 122,
+        "sha256": "ec0e5452c61865e24c50bfe14749943c6c3dde593c3ac706ae9364fc5191f524"
+      },
+      "20261015-094746-16781/exports/geometry_poses.txt": {
+        "bytes": 1453,
+        "sha256": "f073a681ec7fff4849638ec015dcb0cacab84b2ecb141e8f3752d8de4e12ddb2"
+      },
+      "20261015-094746-16781/exports/geometry.png": {
+        "bytes": 2677,
+        "sha256": "5419cf0c0af3c7f60149cb8590932972be366d93fd7858fb9280c44e6d51fb35"
+      },
+      "20261015-141032-4154/map_stats.json": {
+        "bytes": 2347,
+        "sha256": "2e0faf59907113759a04288fc5bffc1847d867a6d42968ba3e0f9b28f49143d6"
+      },
+      "20261015-141032-4154/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261015-141032-4154/latest_detection.json": {
+        "bytes": 294,
+        "sha256": "cf96f0f429c5d0b478e503922b69f9f285c7be99587b4a2c27bbcbc83967f5ec"
+      },
+      "20261015-141032-4154/projector_stats.json": {
+        "bytes": 205,
+        "sha256": "6b42e79a8fdd5b3d2910bfa462be020c3c3caa6ac6bd668f151d8b69f5c57e83"
+      },
+      "20261015-141032-4154/observer.log": {
+        "bytes": 27423508,
+        "sha256": "5696966937271aba7f38a1dd4a6a5d64752a250b8a81f3f0f2ec0c668b3c92d4"
+      },
+      "20261015-141032-4154/verification.json": {
+        "bytes": 6502,
+        "sha256": "1e2b67a7b610b6e1ce3ac5716cccc41ead7e6e05d8bd1fb4d45c8bb045618460"
+      },
+      "20261015-141032-4154/semantic_map.npz": {
+        "bytes": 295586,
+        "sha256": "78f2f8177cb08bd19627edc6a813c069831aba10b59f9ec6cfb6fcec17620633"
+      },
+      "20261015-141032-4154/semantic_map.ply": {
+        "bytes": 577114,
+        "sha256": "cb6d16c21d441d5ca3cc4be3e379b613539eab16dfe6d31684b90c7f71c135c5"
+      },
+      "20261015-141032-4154/detector_stats.json": {
+        "bytes": 2171,
+        "sha256": "7986adfe3d5bf0855ce6c8659e7811cf983d7f1ab52ba70d12242a975169101f"
+      },
+      "20261015-141032-4154/rviz_live.png": {
+        "bytes": 460156,
+        "sha256": "e8d223d4e6f258d9cac0169be4c2d4a8ea9c489368ea60b3dd2b03cb6f2652dc"
+      },
+      "20261015-141032-4154/geometry_live.png": {
+        "bytes": 4404,
+        "sha256": "925c69d38f79453650a9ea9e90822ab1215377b38aa3c9c858d698016f6a36a9"
+      },
+      "20261015-141032-4154/events.json": {
+        "bytes": 3355,
+        "sha256": "c535a37c334eedfddff95bba78d3c707a271a912061f6026738ee33b9a82bd53"
+      },
+      "20261015-141032-4154/resources_summary.json": {
+        "bytes": 322,
+        "sha256": "4ca9f17d225af48ba8647effe4531c79b3da4212f15bb6356bc446c61fd6b32b"
+      },
+      "20261015-141032-4154/rtabmap.db": {
+        "bytes": 9928704,
+        "sha256": "a40f619d29c8045cfd52f2a2cf60ff8ec57226ecd27235bd7e3e7f422c1bb0c6"
+      },
+      "20261015-141032-4154/resources.csv": {
+        "bytes": 11514,
+        "sha256": "b0ae0ab16937ac5299a7bcef54c55b95f90c800f0ffe052fab1e50393473930e"
+      },
+      "20261015-141032-4154/latest_instance_mask.png": {
+        "bytes": 2107,
+        "sha256": "a6e8d9f903ea2054e8a863916e8bb3c64bdbe54a50af881cce60a3d946cb8c4a"
+      },
+      "20261015-141032-4154/latest_class_mask.png": {
+        "bytes": 1684,
+        "sha256": "10e1e596d999e50ad451a6b43347d359ff06990607ca7fc585a9a66a2ce5e2b8"
+      },
+      "20261015-141032-4154/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261015-141032-4154/launch.log": {
+        "bytes": 26015,
+        "sha256": "ccc802557084a8d3b16a775566f5eef434db9844765b77a6d01e5885394475e3"
+      },
+      "20261015-141032-4154/rviz_live.xwd": {
+        "bytes": 5507237,
+        "sha256": "4107b5a86c77f38785190ef3fe39ecf924f2a76ac1ef5b14095d90aa01a8f4ed"
+      },
+      "20261015-141032-4154/observed_annotated.jpg": {
+        "bytes": 47545,
+        "sha256": "b80a854f9ed7bc730fc06e73eaa48a17c44f437a9cb0943d854105759c8c554d"
+      },
+      "20261015-141032-4154/bag.log": {
+        "bytes": 541,
+        "sha256": "5b76fe7371933bb2a15952a2855e920dbf308ea3ea8d948a473a41ea16768d2c"
+      },
+      "20261015-141032-4154/latest_annotated.jpg": {
+        "bytes": 37537,
+        "sha256": "d9c5134852feaa4635acadb21934d7f1ff20cade02d9a9f1ade10cabb5c3bf62"
+      },
+      "20261015-141032-4154/ros_logs/python_4361_1792044637918.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261015-141032-4154/ros_logs/python_4204_1792044633679.log": {
+        "bytes": 938,
+        "sha256": "2553cf66411d1deb0cd55950c840c18e89611e2adb13748fff8abb4411a2c5b9"
+      },
+      "20261015-141032-4154/ros_logs/rgbd_sync_4196_1792044633995.log": {
+        "bytes": 1699,
+        "sha256": "797191fa539a7954d0aa157a9d715b2d4938568d8a9069910de54065ded0a768"
+      },
+      "20261015-141032-4154/ros_logs/python_4202_1792044635657.log": {
+        "bytes": 673,
+        "sha256": "f5e4873a01de1dd09f3638caf60114f5732c0fba078d631e69dbdf4d8357853f"
+      },
+      "20261015-141032-4154/ros_logs/python3_4386_1792044640812.log": {
+        "bytes": 501,
+        "sha256": "2d2933ba662536bccdcd09e9b81e7161899a85eac82da34a1eda4c91409aa3c9"
+      },
+      "20261015-141032-4154/ros_logs/python_4206_1792044633523.log": {
+        "bytes": 399,
+        "sha256": "778d7ff8852b8cfbfad78cf04a0f7b217fd4a7cf3ed78134f6a4c02340f7d243"
+      },
+      "20261015-141032-4154/ros_logs/rviz2_4208_1792044633453.log": {
+        "bytes": 1910,
+        "sha256": "ae255aad90a5857970278c3fabb1e38923172769bb3a48c604e59adb4e717636"
+      },
+      "20261015-141032-4154/ros_logs/rgbd_split_4200_1792044634004.log": {
+        "bytes": 750,
+        "sha256": "d67d9ee894342e30141acc802bf877484bbf229b3a603c271bfe7724bd5b82bc"
+      },
+      "20261015-141032-4154/ros_logs/rtabmap_4198_1792044633998.log": {
+        "bytes": 13112,
+        "sha256": "0aa5a16dd109a2c97a5d511a8c60560dbbfcedc86d35580d15dde556ff704a8a"
+      },
+      "20261015-141032-4154/ros_logs/2026-10-15-14-10-33-199510-xsy-4195/launch.log": {
+        "bytes": 2984,
+        "sha256": "e3c046fcfdb8dfb176f92b58fab05320d4edeb08ba94fc240992e214751e5011"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "11f9a6854e969a6c833757b0b75b0101f163b417eb71be24886aa2c56cc044d7"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3284,
+        "sha256": "28bb635624c399e47cddd40c10e7ce7b608a1465f6eedff493ccc12229f0525e"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "70d2610444d68c383dca2d574d118cdb0c2539dde76adae3069f0f7c90e930f6"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/aa/9700216eacac3dcd4e415f20afcabcfaf11f7d": {
+        "bytes": 2772,
+        "sha256": "e1b7019b98a94fb6913c6a44e4d4ec572d6fbd52c5297e9ccf267bbb281d791d"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2915,
+        "sha256": "e40956cbfc0951b681516420d33df366d164fc981c9e4a9f907583d7a5f5607e"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "7e4c2fbba1384d0280b666d029174a3f10b06ef1bf493a534f16bdf0f0e4239b"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "98cdab5fbff322f17470535b274ec1b5608e785619b69831de7e5127fa70fd74"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "ff2de8fc29ec65f2db8b46adbea70b0fbcb2112cb6222630fc412e3b8d735043"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "503df3bc3a3b9b05ce0fe6f0ac81fd67a4b101c7f1f37de13d0b53b5b428a8c4"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1752,
+        "sha256": "4687cff3881b820248c7d696005a9113f5e543e04243e0e57567e082d8dc114f"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1266,
+        "sha256": "edc90aa63ebef0d6d0af115bd4fa05a3ebf361a82c130c408bcf0a6cb7f33099"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1519,
+        "sha256": "d05c7664222a3c1dc367ba1aad062185acc611eec7f9cccdb52227d29be10264"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2940,
+        "sha256": "ebdb8d69cd46ca7e8a2f3cc6ac311c0efa4bb038958298602a75b7686f92f8dc"
+      },
+      "20261015-141032-4154/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "d331a40ab23d0fe2fbc5f95ceeaf0a14ed2102bbc26f3223d31528da58291a3b"
+      },
+      "20261015-141330-4717/map_stats.json": {
+        "bytes": 2330,
+        "sha256": "6fde854606a0f4e8aa638c98c50081a03d57d8c38c8220577c56c2d1f76e520f"
+      },
+      "20261015-141330-4717/errors.log": {
+        "bytes": 1307,
+        "sha256": "28613b3d1b4283f0b5bac6100276d2d33dbd43b0f954e64c8cb7b8ecce6f1907"
+      },
+      "20261015-141330-4717/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261015-141330-4717/latest_detection.json": {
+        "bytes": 286,
+        "sha256": "0a50e54c450a19d3d19012217599a00229911101b6a99b2ff80b5da2df4a85c3"
+      },
+      "20261015-141330-4717/summary.json": {
+        "bytes": 2138,
+        "sha256": "d2ad9934fb76ead2ea35c2a08eec84455b26f84ae85678a182891ea2104e6fa3"
+      },
+      "20261015-141330-4717/projector_stats.json": {
+        "bytes": 205,
+        "sha256": "25c1ff99d2482f3ac5521e38685179a6bf901f660850e218d3db63c52010e361"
+      },
+      "20261015-141330-4717/observer.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261015-141330-4717/original_preservation.json": {
+        "bytes": 125,
+        "sha256": "122d96821bedcbf46d21dba0f83d97d44e6c0bd91042757687a7a97d1439cd4e"
+      },
+      "20261015-141330-4717/verification.json": {
+        "bytes": 6502,
+        "sha256": "0766ee9dd9575778f11c32587f3adef0302680b838c77d2a881ee691d2295bfc"
+      },
+      "20261015-141330-4717/semantic_map.npz": {
+        "bytes": 272598,
+        "sha256": "41ae6164556db172e98ddd86f45868150dd5382d5a0562dae5d2ca5bfde251fa"
+      },
+      "20261015-141330-4717/semantic_map.ply": {
+        "bytes": 533713,
+        "sha256": "274b8c838da6d148d19bac1b104011d44a1ddce25c19f9011c91602444fd6d02"
+      },
+      "20261015-141330-4717/detector_stats.json": {
+        "bytes": 2153,
+        "sha256": "86fd8c4ac045d3415b2467bde1ef47a0c93e9af938194adae7e6cfdae78e349d"
+      },
+      "20261015-141330-4717/rviz_live.png": {
+        "bytes": 353478,
+        "sha256": "541a5aa2161758e1ed2e6b831b492f9217dcef689af0a67700b79967df086e64"
+      },
+      "20261015-141330-4717/result.json": {
+        "bytes": 655,
+        "sha256": "2776cae74bb42f38952486ccdad50f0915cfd701c72e5e62d19287775945102d"
+      },
+      "20261015-141330-4717/export_0.log": {
+        "bytes": 775,
+        "sha256": "f61204fb0aa9813aa53b29aee51a425ea6af485fedf0769618aa1c0bdd8a62a5"
+      },
+      "20261015-141330-4717/geometry_live.png": {
+        "bytes": 4404,
+        "sha256": "925c69d38f79453650a9ea9e90822ab1215377b38aa3c9c858d698016f6a36a9"
+      },
+      "20261015-141330-4717/events.json": {
+        "bytes": 3868,
+        "sha256": "c00b395d71159dd8510342b26767f78f1747aba8d2f62062626b05dfd95b5a45"
+      },
+      "20261015-141330-4717/resources_summary.json": {
+        "bytes": 318,
+        "sha256": "33c880a173523a749fcac636eeaa47f27a9dfa3a8409fbf913dfc6ed3eb09587"
+      },
+      "20261015-141330-4717/rtabmap.db": {
+        "bytes": 7294976,
+        "sha256": "fdcfb84e3ca9bd454d0e43d41f7ea2cbc1a0a802348611c90fa5002d34785035"
+      },
+      "20261015-141330-4717/resources.csv": {
+        "bytes": 45107,
+        "sha256": "7470a716165dab3c5def9152e642da08620cbfb98af5c2b04223795d4a72261a"
+      },
+      "20261015-141330-4717/export_1.log": {
+        "bytes": 1165,
+        "sha256": "2d2861a82b7d41a532818839f70ec704df3e01a79e7422713468ff67f51b14ee"
+      },
+      "20261015-141330-4717/latest_instance_mask.png": {
+        "bytes": 3318,
+        "sha256": "28f1dfc2443e1549d51900c550a4f6490c796a85046ec7cde34cc0e3b042692a"
+      },
+      "20261015-141330-4717/latest_class_mask.png": {
+        "bytes": 2779,
+        "sha256": "40757e1d31871318045b1aee314aa57f72cee643fa8f2276aa990265ac76cef6"
+      },
+      "20261015-141330-4717/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261015-141330-4717/launch.log": {
+        "bytes": 27751,
+        "sha256": "692a55ada10956704b6a9954e91f7c396168aa1a2ddee03948d21cd2f3b6f1da"
+      },
+      "20261015-141330-4717/observed_annotated.jpg": {
+        "bytes": 38751,
+        "sha256": "afba00947075dd3ce85efc8f5e41e5015b3c494dad3e314aab76856a08f36520"
+      },
+      "20261015-141330-4717/bag.log": {
+        "bytes": 541,
+        "sha256": "fc0cd668af5d1b20ea571cae3e62aaf7dab54ca227d0c83df83b54abed5f9865"
+      },
+      "20261015-141330-4717/latest_annotated.jpg": {
+        "bytes": 42708,
+        "sha256": "22fb8d36ad35be6d4a492511604f0bdeff7d1ceeddcac059be4654efc6705707"
+      },
+      "20261015-141330-4717/ros_logs/rgbd_sync_4764_1792044811039.log": {
+        "bytes": 1699,
+        "sha256": "e78e4c34462cdebeee9929616cc6fd633e62d0a6fa137e92f326242dfef1fca3"
+      },
+      "20261015-141330-4717/ros_logs/python3_4937_1792044815968.log": {
+        "bytes": 501,
+        "sha256": "df54de3a52f45b70ac7d7f5e6f0c818910041a0365d3432af9c8acb2b7db67a9"
+      },
+      "20261015-141330-4717/ros_logs/python_4772_1792044811094.log": {
+        "bytes": 934,
+        "sha256": "8030a3cd59f9c484383d4c7f3ea4d1479db31b12ab19dafdc8d2253bb11ec446"
+      },
+      "20261015-141330-4717/ros_logs/python_4770_1792044811783.log": {
+        "bytes": 673,
+        "sha256": "700dca8ea0cb000c199fc6c2556d89c1143466b9e8d8e5bbb8101f1d099ff7e2"
+      },
+      "20261015-141330-4717/ros_logs/rtabmap_4766_1792044811072.log": {
+        "bytes": 15407,
+        "sha256": "3c8b96a0e808cc71629491f276470052a0b041b279420ce719e8678d27d30543"
+      },
+      "20261015-141330-4717/ros_logs/rgbd_split_4768_1792044811054.log": {
+        "bytes": 750,
+        "sha256": "e7a4907643aa578936bc3fc0c3e165c1bfaed422f0206335b2597d83e788b2e7"
+      },
+      "20261015-141330-4717/ros_logs/python_4924_1792044813021.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261015-141330-4717/ros_logs/python_4774_1792044811088.log": {
+        "bytes": 399,
+        "sha256": "aa2ed58810e40abc343d06977f7a35c6891fa1a27bf55306ef70b3c4aa6fea0f"
+      },
+      "20261015-141330-4717/ros_logs/rviz2_4776_1792044810993.log": {
+        "bytes": 1645,
+        "sha256": "cdd885536e5cba2f1a920e10c3b3217c0bd146c4382db4b44248c5afa6bbc01a"
+      },
+      "20261015-141330-4717/ros_logs/2026-10-15-14-13-30-857763-xsy-4763/launch.log": {
+        "bytes": 2968,
+        "sha256": "bf1a12c19b2f8117eb9ecbd17ff16b300041338822e6be1c61173d212751c0cc"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "11f9a6854e969a6c833757b0b75b0101f163b417eb71be24886aa2c56cc044d7"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3284,
+        "sha256": "55ef81d968f17805b2596d3cd06d019c28d71e6e64152695be18ada61d9898dc"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "4bd90502bbf020125336bd24f5240b44c495bb1181fab437da38b5e5b83877b1"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/aa/9700216eacac3dcd4e415f20afcabcfaf11f7d": {
+        "bytes": 2772,
+        "sha256": "e1b7019b98a94fb6913c6a44e4d4ec572d6fbd52c5297e9ccf267bbb281d791d"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2915,
+        "sha256": "e40956cbfc0951b681516420d33df366d164fc981c9e4a9f907583d7a5f5607e"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "74f9fbc180e72b75b5a0ffb175eb994c544626cecdbaab9c9a031cd0005bb04a"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "98cdab5fbff322f17470535b274ec1b5608e785619b69831de7e5127fa70fd74"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "d1a4fa3760d9c82687df4f973f734a30467b29aaa388d6f54315cb0d35b7f7bc"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "9ee2b736081afb3fac03d4a95f3ce93d7a1e62841a074eee047b6a6d6b75bfa3"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1405,
+        "sha256": "8d27cf17bd60497c41eaa5996df33ff8408dc914aa259edba07e4cab6bf28ffa"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1752,
+        "sha256": "4687cff3881b820248c7d696005a9113f5e543e04243e0e57567e082d8dc114f"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1266,
+        "sha256": "edc90aa63ebef0d6d0af115bd4fa05a3ebf361a82c130c408bcf0a6cb7f33099"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1406,
+        "sha256": "190b99ff919af00f14992256489daed24506a7bf651b2e3016c44de391a0e280"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1519,
+        "sha256": "d05c7664222a3c1dc367ba1aad062185acc611eec7f9cccdb52227d29be10264"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2940,
+        "sha256": "ebdb8d69cd46ca7e8a2f3cc6ac311c0efa4bb038958298602a75b7686f92f8dc"
+      },
+      "20261015-141330-4717/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "d331a40ab23d0fe2fbc5f95ceeaf0a14ed2102bbc26f3223d31528da58291a3b"
+      },
+      "20261015-141330-4717/exports/rgbd_cloud.ply": {
+        "bytes": 630878,
+        "sha256": "573c72de778ed6d90d3b47852782f849a5ef73208f8878db48f69e61fc8b5e3d"
+      },
+      "20261015-141330-4717/exports/geometry.pgm": {
+        "bytes": 204209,
+        "sha256": "61d7747ce7701d46e2b96259787e4e5bb69169e1955af4f4c193515c23ee47e2"
+      },
+      "20261015-141330-4717/exports/geometry.yaml": {
+        "bytes": 121,
+        "sha256": "12014f5c28b4af39443d1425836515ca17f6a14c8b7bf4679d9a811e52a20c90"
+      },
+      "20261015-141330-4717/exports/geometry_poses.txt": {
+        "bytes": 1378,
+        "sha256": "5da17e9ce450b2e7adbe95cc0786e34e4e171401d281c926e47ebfb9fc6cbb00"
+      },
+      "20261015-141330-4717/exports/geometry.png": {
+        "bytes": 4017,
+        "sha256": "85e39e5a7e4fb8ccb1d68f64e056030c1f8cbdecedfea2f38c5a2d02bf85d57d"
+      },
+      "20261016-213716-3446/map_stats.json": {
+        "bytes": 2348,
+        "sha256": "86cb6471a3f91cca81ea16d18e635ddf7efaf8915e0bd7173951bc021a0ada38"
+      },
+      "20261016-213716-3446/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261016-213716-3446/latest_detection.json": {
+        "bytes": 298,
+        "sha256": "d446d07758422db9e272994b2d585ffbd987403db882946f043c001c88218ec9"
+      },
+      "20261016-213716-3446/projector_stats.json": {
+        "bytes": 205,
+        "sha256": "2104578af7f68381383aa5dea5faf095fb890d5b20b73e51545703b87a36b2fd"
+      },
+      "20261016-213716-3446/observer.log": {
+        "bytes": 99757582,
+        "sha256": "7f29e1a4657d3bcd56709112d211319ee6d385402dcdf031109940c3e2bf5dfd"
+      },
+      "20261016-213716-3446/verification.json": {
+        "bytes": 6365,
+        "sha256": "f0e573dfc0249bdd90fb15bc00e6053e78e8194595692ce80e3c976717cf7f52"
+      },
+      "20261016-213716-3446/semantic_map.npz": {
+        "bytes": 546688,
+        "sha256": "767e04c315feb0c3147e235852f39a7853cffe133baa638f8f031ab39bde5144"
+      },
+      "20261016-213716-3446/semantic_map.ply": {
+        "bytes": 1070096,
+        "sha256": "ac37cda5ff973fbc7bb23db88ba21cbd816644f89a9db091a9fbece16c830a6b"
+      },
+      "20261016-213716-3446/detector_stats.json": {
+        "bytes": 3017,
+        "sha256": "2d28d55885de3a8e764fc06762273aad4713f1f54f1e2e7381f0b988cde6eb19"
+      },
+      "20261016-213716-3446/rviz_live.png": {
+        "bytes": 287892,
+        "sha256": "2863cf4adc7c841e517b6816f8c50f1b8ac93b31f1662a9ce96bef764f3aab2e"
+      },
+      "20261016-213716-3446/geometry_live.png": {
+        "bytes": 8445,
+        "sha256": "ddd7a686d0ef823d20b76aed7e0834cb533479f09f6f0c8fa664f9b70a3759d9"
+      },
+      "20261016-213716-3446/events.json": {
+        "bytes": 3700,
+        "sha256": "c1d78def081c9e7b81fbe5da54ebce10183da9683193207015e7c985bae48eb5"
+      },
+      "20261016-213716-3446/resources_summary.json": {
+        "bytes": 324,
+        "sha256": "1abc61677281c70bbdede65e6c1709822069f694fca5de1aaaeeebaf9fbe8551"
+      },
+      "20261016-213716-3446/rtabmap.db": {
+        "bytes": 11460608,
+        "sha256": "36d84b646b555d49493962a50a712b1cca0091fe6c2ed9fe7fe8862fb11c20ea"
+      },
+      "20261016-213716-3446/resources.csv": {
+        "bytes": 15495,
+        "sha256": "495af0db44d852f8974be7d19ebc8f07f17b70f381839f346097a8b58fa27d12"
+      },
+      "20261016-213716-3446/latest_instance_mask.png": {
+        "bytes": 3558,
+        "sha256": "e1e61da1cd3c3b7d3896c94341e136014f0725798f9daf0c5a36d6fd19fac1c3"
+      },
+      "20261016-213716-3446/latest_class_mask.png": {
+        "bytes": 2807,
+        "sha256": "a37fc5ff46a547ee2bf2b7ff955c6127cdf0b1739e1a90090ff04172a0cbd55f"
+      },
+      "20261016-213716-3446/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261016-213716-3446/launch.log": {
+        "bytes": 31255,
+        "sha256": "df63e4809dc5f7a60e1adf932c703a22c2f57ca396d0b2e2acfedfa9831238e8"
+      },
+      "20261016-213716-3446/rviz_live.xwd": {
+        "bytes": 6338181,
+        "sha256": "4919e6ae18b874c7464ffd8e95d62d5fbefd58067f3f67f8b94fcf579e41abdf"
+      },
+      "20261016-213716-3446/observed_annotated.jpg": {
+        "bytes": 45129,
+        "sha256": "f3f7757936c56b9f04b2dc2488b21c3c34da5db0f966098d4a5cb4101d1216d2"
+      },
+      "20261016-213716-3446/bag.log": {
+        "bytes": 541,
+        "sha256": "c78510f170c472860cc1c9226c226b758fb4b2fe1698719ec163cef5a8c6492d"
+      },
+      "20261016-213716-3446/latest_annotated.jpg": {
+        "bytes": 48780,
+        "sha256": "18bb8a76272248856e15d8e5b60ebadc9babd86b9e0c4dae27bc5d34f49c7c90"
+      },
+      "20261016-213716-3446/ros_logs/rgbd_split_3491_1792157837657.log": {
+        "bytes": 750,
+        "sha256": "3130c40851eea425ae029716c102b50e7e42e9998fa190fcb8fef4d09415d941"
+      },
+      "20261016-213716-3446/ros_logs/python_3652_1792157841647.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261016-213716-3446/ros_logs/rtabmap_3489_1792157837647.log": {
+        "bytes": 16716,
+        "sha256": "8779000c9c9f8875a9868e3e22a846f584de001825458884aaba861639c19eeb"
+      },
+      "20261016-213716-3446/ros_logs/python_3493_1792157839289.log": {
+        "bytes": 917,
+        "sha256": "b2f0dfd2b84e7f17c72bfb6f3979cf8e1adca68ea9ddd7f7f02728e24e6479b7"
+      },
+      "20261016-213716-3446/ros_logs/python_3497_1792157837344.log": {
+        "bytes": 399,
+        "sha256": "506e4190e0804446deacb63925b2f93dc1a9061993c43e5e80564f84c896b881"
+      },
+      "20261016-213716-3446/ros_logs/rviz2_3499_1792157837264.log": {
+        "bytes": 1716,
+        "sha256": "6ef39bd653a7a4720b1b15f38731b914d0ea82c673adb52fb651a568064cf55a"
+      },
+      "20261016-213716-3446/ros_logs/python_3495_1792157837430.log": {
+        "bytes": 1298,
+        "sha256": "08b00a3d21d8deb41ce71633c121fa8121dd8c8e1cf590afac6caa2c395bcb2e"
+      },
+      "20261016-213716-3446/ros_logs/rgbd_sync_3487_1792157837648.log": {
+        "bytes": 1699,
+        "sha256": "cc57933f00bb9e0651244aa85e8a5e7bee9daf0c9a8390ab87d9188dce2c0bf8"
+      },
+      "20261016-213716-3446/ros_logs/python3_3667_1792157844608.log": {
+        "bytes": 501,
+        "sha256": "c22ad909903b41f92ad45a79d5d0107a45a99cbddb307b3af9f08d1c94a3732c"
+      },
+      "20261016-213716-3446/ros_logs/2026-10-16-21-37-17-043413-xsy-3486/launch.log": {
+        "bytes": 2984,
+        "sha256": "a5d63b3eae065836d90af1d98d178e0a4991dead820375c2598b59c354815ac9"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "eef2dfd6f31bc04f612dff24ac25e37a6dfef9a72da38b05b3d5db78ccd48e27"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/9d/d4c0da487bb213d3f737914d87b305c6205621": {
+        "bytes": 2774,
+        "sha256": "5995beec2e693e5fb158ea4c19aeebb18309c58f950e3ddaa4a69a838ef98f38"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3283,
+        "sha256": "b9b887daee631f356467aa37a54336afdf694e210e2bc2a98595abbd167f6636"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "b2c12a5866e646504013812cdcfe4e68cf441929cee11b25635a66b7c6a69ce5"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/18/9d89dae7f8be5a145be4465280f589aadb02a4": {
+        "bytes": 1250,
+        "sha256": "57fbfe7a7c6520ac7fe0da6c167f0ffdebde4ffe743a30281fb7c0c294b3f7bd"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2915,
+        "sha256": "b1d721b26998f405c28fe949504199c9e313ea07acd45353bd04049df9a5ce11"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "1110d180671fde84168639c4c5c81f06c57244aaa471099fdb42381c6e14e688"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "09e6c6620603b8f3c92ded1d3de5a729aecd3f4c57c83d6b0130a234dde6fb46"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "cd7554bba8abe32011b3ed1da2d3aeda6a2eecf801d15b42c86285d13036f2fb"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "503df3bc3a3b9b05ce0fe6f0ac81fd67a4b101c7f1f37de13d0b53b5b428a8c4"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/96/4e7e4e3cee4f60eea2ce19d59d017129f3571a": {
+        "bytes": 1770,
+        "sha256": "790dccb9de42c42e1b9f94121b5aae4297fea238edf12f050bd91072d13e8824"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/46/6a8743ce0bb02bc563de83a8c46a7ec2fa049f": {
+        "bytes": 1465,
+        "sha256": "38cc5f70643e6a6baa30276044fd56421791cc9baf0cb9678854089e72f89adf"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/b4/1c035ce636e7a697376271cd451305e5fb9d0f": {
+        "bytes": 2704,
+        "sha256": "549e7fc6d2f9698048fb8c7a8892ce3107abbc675595d583a71064aa00372274"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1751,
+        "sha256": "0f2892b5f985688baf766668ac92b52b34e59be89d71e7fdc4dd84f6504aa190"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1267,
+        "sha256": "dfab0d895d1df46997d7cf03b17927483eda6df4d7c4a651fad04473d67386d8"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/04/34ccf38dba7b2ce24f2140bc6bc328f1dfac8f": {
+        "bytes": 1832,
+        "sha256": "389bc434a298ee25680dcd647a68fccec54af01c4ab107bb8060e37b5643e473"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1517,
+        "sha256": "0660e77ce3672a9b6b2148d229b78ebcb32ec1c56c622e164ff318f21e038224"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2939,
+        "sha256": "119dc61d8315ca6f2bcee810f484ffb89431413afb23ca0891f08b6fc802d1b7"
+      },
+      "20261016-213716-3446/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "1c324160e837a3beedabf7f5792d56d8c44678534c57a2e02b06c372883bdc9a"
+      },
+      "20261016-214112-4031/map_stats.json": {
+        "bytes": 2132,
+        "sha256": "49d97418d35af81bb1bb3e4589652971a8e66991a4703cb4d0afa25c8f277136"
+      },
+      "20261016-214112-4031/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261016-214112-4031/latest_detection.json": {
+        "bytes": 295,
+        "sha256": "6f2d21606c8eea0de0372c7c7ae5e963a5c4dd392ea54a905b7d79aee0262976"
+      },
+      "20261016-214112-4031/projector_stats.json": {
+        "bytes": 205,
+        "sha256": "c454f65f31415ef250e718b41d5d4eb7752415afdd5d05456c39421a80c479b3"
+      },
+      "20261016-214112-4031/observer.log": {
+        "bytes": 55396241,
+        "sha256": "e949a849a435539d3d539fab5e053bc0a48693abd0e0716625abcdff00173c35"
+      },
+      "20261016-214112-4031/verification.json": {
+        "bytes": 6360,
+        "sha256": "cb6ac1a9d55f065b280b6a43eea6b50d186d97bb2d3e3ab4adf20cdc5edfeeb4"
+      },
+      "20261016-214112-4031/semantic_map.npz": {
+        "bytes": 569298,
+        "sha256": "2ade56cf6fa991b67fa746d4800b6189ce955f8f2c5db059264e12957456527d"
+      },
+      "20261016-214112-4031/semantic_map.ply": {
+        "bytes": 1111266,
+        "sha256": "8b45dd9b4ed705d3cf4f10c4469b7b9a8b65084c4646d3d91ac177a4a72f1185"
+      },
+      "20261016-214112-4031/detector_stats.json": {
+        "bytes": 2988,
+        "sha256": "5a3510a9f7bd8f15df16859448da80d8c41dfd8d3277a18437c831b5ef1f3023"
+      },
+      "20261016-214112-4031/rviz_live.png": {
+        "bytes": 418213,
+        "sha256": "b95758d7947609e8dec9841a6500fba1ee8ab85721a5e147444ed27a51887554"
+      },
+      "20261016-214112-4031/geometry_live.png": {
+        "bytes": 8445,
+        "sha256": "ddd7a686d0ef823d20b76aed7e0834cb533479f09f6f0c8fa664f9b70a3759d9"
+      },
+      "20261016-214112-4031/events.json": {
+        "bytes": 3698,
+        "sha256": "138e47a50ee7a7d961a130742de609e0ff1e3c466096ae1113d128aae42429ed"
+      },
+      "20261016-214112-4031/resources_summary.json": {
+        "bytes": 324,
+        "sha256": "e02bea5754e9e491bec1783c38869364f20d8a404063f4e299fe7b55c3678434"
+      },
+      "20261016-214112-4031/rtabmap.db": {
+        "bytes": 20762624,
+        "sha256": "4bb9ed13a0d438d11046531e089a9d9cc1cfa57a8611e1bc15d3970fd6b04d5d"
+      },
+      "20261016-214112-4031/resources.csv": {
+        "bytes": 16117,
+        "sha256": "656cf4d221a0f1d7fc65bc9e5472192ea02e93f18dbcb1339b2ea2fe8ccf428c"
+      },
+      "20261016-214112-4031/latest_instance_mask.png": {
+        "bytes": 3584,
+        "sha256": "3d13d1a44d4283a242c921aeb8bc1dd3cf8e9a5a33f2bf248f6e717b033c9c0b"
+      },
+      "20261016-214112-4031/latest_class_mask.png": {
+        "bytes": 2880,
+        "sha256": "5cb19afd4b4694c77356ab0fb19e9fcb7d1cc328efadf336e999c20df6f67152"
+      },
+      "20261016-214112-4031/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261016-214112-4031/launch.log": {
+        "bytes": 30125,
+        "sha256": "f2c4d9c976fcee66dded5cdc51f571914078ea0fc7bbd7afb4971b438fa334e0"
+      },
+      "20261016-214112-4031/rviz_live.xwd": {
+        "bytes": 6338181,
+        "sha256": "9b9d09c6cfd9a67c5842921cce058ac10317399670cbbd808d78b59c5aca857e"
+      },
+      "20261016-214112-4031/observed_annotated.jpg": {
+        "bytes": 41925,
+        "sha256": "e519c0e41eb86f85c4340f3a427d6dc453e927b459de7650f65a0c35010117b0"
+      },
+      "20261016-214112-4031/bag.log": {
+        "bytes": 541,
+        "sha256": "40508a47faf5485be0eb9a78999fb75702207887577eb62b8749cd61b439cc4f"
+      },
+      "20261016-214112-4031/latest_annotated.jpg": {
+        "bytes": 47098,
+        "sha256": "aadc8756e3efb817064e6d85fa9abfecef092edff2b9809965dddf7474659386"
+      },
+      "20261016-214112-4031/ros_logs/rtabmap_4075_1792158072670.log": {
+        "bytes": 16356,
+        "sha256": "e1e85eb756fde0d99e75cfdc02a41c3ecf6e923da599d410d8566c0ffa33bec4"
+      },
+      "20261016-214112-4031/ros_logs/python_4233_1792158074571.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261016-214112-4031/ros_logs/rviz2_4085_1792158072597.log": {
+        "bytes": 2395,
+        "sha256": "46719e9dc7239496fa1f7031c4d49296a85c6f68103f39a93e5c37451d243598"
+      },
+      "20261016-214112-4031/ros_logs/rgbd_sync_4073_1792158072650.log": {
+        "bytes": 1699,
+        "sha256": "ad7cb719330b907bc9086a581971dad59ee68bee8eede5df320456d7940dc2d9"
+      },
+      "20261016-214112-4031/ros_logs/python_4083_1792158072694.log": {
+        "bytes": 103,
+        "sha256": "19605a86cf7a286b553b370812c2ad58486eb48fd1bcd32f9ef2125c0186e0dd"
+      },
+      "20261016-214112-4031/ros_logs/rgbd_split_4077_1792158072650.log": {
+        "bytes": 750,
+        "sha256": "47e0818be015d32d91c45566fc88662091dda2626a3e0f54fb8a1a267d5b69b8"
+      },
+      "20261016-214112-4031/ros_logs/python_4079_1792158073479.log": {
+        "bytes": 913,
+        "sha256": "d9c1639f285886c2a4fb6fb8f794b54a74c279765f302864f61858745360d63d"
+      },
+      "20261016-214112-4031/ros_logs/python3_4246_1792158077488.log": {
+        "bytes": 501,
+        "sha256": "01b664c3ed6faef593108eb62d06dd1e87fca61f7f1e28c6bfd6035a0b32cca6"
+      },
+      "20261016-214112-4031/ros_logs/python_4081_1792158072694.log": {
+        "bytes": 1292,
+        "sha256": "6c7aa68600ee50fdab7c1efa39154c8012dd048575d8e929c7a6cb339222d638"
+      },
+      "20261016-214112-4031/ros_logs/2026-10-16-21-41-12-456042-xsy-4072/launch.log": {
+        "bytes": 2984,
+        "sha256": "8f9defcf50d62ebc5f13acafdceaffa1a16540e51ac6e8d1b2bc4fd61106899c"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "d7fdcbcb7e16a93524ed15574bec89e18c168fa5a1cbd0100162f06b9f6c2186"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3284,
+        "sha256": "28bb635624c399e47cddd40c10e7ce7b608a1465f6eedff493ccc12229f0525e"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "70d2610444d68c383dca2d574d118cdb0c2539dde76adae3069f0f7c90e930f6"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/aa/9700216eacac3dcd4e415f20afcabcfaf11f7d": {
+        "bytes": 2772,
+        "sha256": "e1b7019b98a94fb6913c6a44e4d4ec572d6fbd52c5297e9ccf267bbb281d791d"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/18/9d89dae7f8be5a145be4465280f589aadb02a4": {
+        "bytes": 1250,
+        "sha256": "57fbfe7a7c6520ac7fe0da6c167f0ffdebde4ffe743a30281fb7c0c294b3f7bd"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2915,
+        "sha256": "8358a93656dff90046b08cf203878786184f40281ea84e0c3d0cf5d5938ee894"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "7e4c2fbba1384d0280b666d029174a3f10b06ef1bf493a534f16bdf0f0e4239b"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "98cdab5fbff322f17470535b274ec1b5608e785619b69831de7e5127fa70fd74"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "ff2de8fc29ec65f2db8b46adbea70b0fbcb2112cb6222630fc412e3b8d735043"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "503df3bc3a3b9b05ce0fe6f0ac81fd67a4b101c7f1f37de13d0b53b5b428a8c4"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/96/4e7e4e3cee4f60eea2ce19d59d017129f3571a": {
+        "bytes": 1770,
+        "sha256": "790dccb9de42c42e1b9f94121b5aae4297fea238edf12f050bd91072d13e8824"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/46/6a8743ce0bb02bc563de83a8c46a7ec2fa049f": {
+        "bytes": 1465,
+        "sha256": "38cc5f70643e6a6baa30276044fd56421791cc9baf0cb9678854089e72f89adf"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1752,
+        "sha256": "4687cff3881b820248c7d696005a9113f5e543e04243e0e57567e082d8dc114f"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1266,
+        "sha256": "edc90aa63ebef0d6d0af115bd4fa05a3ebf361a82c130c408bcf0a6cb7f33099"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/04/34ccf38dba7b2ce24f2140bc6bc328f1dfac8f": {
+        "bytes": 1832,
+        "sha256": "389bc434a298ee25680dcd647a68fccec54af01c4ab107bb8060e37b5643e473"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3123,
+        "sha256": "9db322165f14516f70fb9860bceb3e0fbf40ca7ca034ba779a0c795946522bed"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1519,
+        "sha256": "d05c7664222a3c1dc367ba1aad062185acc611eec7f9cccdb52227d29be10264"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2939,
+        "sha256": "c224eff647cfa06a3d753f977c5027f9db28e6cf8322d77bf9271dcd4629edd2"
+      },
+      "20261016-214112-4031/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "d331a40ab23d0fe2fbc5f95ceeaf0a14ed2102bbc26f3223d31528da58291a3b"
+      },
+      "20261016-214548-4828/map_stats.json": {
+        "bytes": 2098,
+        "sha256": "c2a1d60a2cd341cfaf5a7539752932a2f6f9d341a566e95d4cb23a443ecb7d3e"
+      },
+      "20261016-214548-4828/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261016-214548-4828/latest_detection.json": {
+        "bytes": 291,
+        "sha256": "5108c6f8704557be2107f665c7b8f66216e74938b1225ae5a5dab4ce88580824"
+      },
+      "20261016-214548-4828/projector_stats.json": {
+        "bytes": 200,
+        "sha256": "e17e8144d033257fe2d787690c47e45567002ea671581af1e77b9779e575420d"
+      },
+      "20261016-214548-4828/observer.log": {
+        "bytes": 5305075,
+        "sha256": "0b946e08e6882a6c3c6611e13b99b241448c349305081bdac28200a17c418736"
+      },
+      "20261016-214548-4828/verification.json": {
+        "bytes": 6350,
+        "sha256": "138d42fbf66fb006b7cfbd0dd282419499b60003a4d52e2be7808db028f1188e"
+      },
+      "20261016-214548-4828/semantic_map.npz": {
+        "bytes": 137914,
+        "sha256": "718e480fd540c70128cb7dca1d0e07d650cbcf2b96419322b332405df96388c2"
+      },
+      "20261016-214548-4828/semantic_map.ply": {
+        "bytes": 275216,
+        "sha256": "6751cfc14e2168221cd16c55389a99808f14587b484c9b52c431894184cd1d9a"
+      },
+      "20261016-214548-4828/detector_stats.json": {
+        "bytes": 807,
+        "sha256": "925649a7f99689eb264a0cfd7143e76866739ef549708d5a013a9c900271771b"
+      },
+      "20261016-214548-4828/geometry_live.png": {
+        "bytes": 8445,
+        "sha256": "ddd7a686d0ef823d20b76aed7e0834cb533479f09f6f0c8fa664f9b70a3759d9"
+      },
+      "20261016-214548-4828/events.json": {
+        "bytes": 2193,
+        "sha256": "2f2896f4adad1d5e59feb0a52c6338d8ec764e6d72497af1ff6c482cb91f87cb"
+      },
+      "20261016-214548-4828/resources_summary.json": {
+        "bytes": 322,
+        "sha256": "0e43479d8d920612d11266524e4f21562f4c3ec720070d6094b6edc535e08d6a"
+      },
+      "20261016-214548-4828/rtabmap.db": {
+        "bytes": 2252800,
+        "sha256": "510df6df1b4b6c239a522615bb3fa8ccf28707c1e189f2c8de75395dd842a114"
+      },
+      "20261016-214548-4828/resources.csv": {
+        "bytes": 3200,
+        "sha256": "5452d2369338f79aead8c93f92fb548a337d85360108375fdbe3a8e1bdd2080f"
+      },
+      "20261016-214548-4828/latest_instance_mask.png": {
+        "bytes": 1957,
+        "sha256": "2ec8a7c8acaffbd6f744a14fc299da8a491f08a5e8c867f9cf1751cd3d95ace1"
+      },
+      "20261016-214548-4828/latest_class_mask.png": {
+        "bytes": 1677,
+        "sha256": "fcf749d19b1beff7236476ac78849cde1d3ac1a2c718bb2c57ce5a01f619ac8c"
+      },
+      "20261016-214548-4828/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261016-214548-4828/launch.log": {
+        "bytes": 19185,
+        "sha256": "5236259004bfb3d0d2a0958f6d7309a1529ef4f2291f46d018638bd2fc2811d9"
+      },
+      "20261016-214548-4828/observed_annotated.jpg": {
+        "bytes": 42664,
+        "sha256": "9f0e9fd9fd3592ecf091d81881596b23c92546e00dd695917dfbe7e289d0274c"
+      },
+      "20261016-214548-4828/bag.log": {
+        "bytes": 541,
+        "sha256": "0ffc002e3cb195fde94445fd8f039aa19fdcd3ade9b0a11587d2e9d400e6d46f"
+      },
+      "20261016-214548-4828/latest_annotated.jpg": {
+        "bytes": 54722,
+        "sha256": "b3784acb83e2799d033792496391051c3d0099822f5c1ab06e4ae64f232473cb"
+      },
+      "20261016-214548-4828/ros_logs/python_4879_1792158349275.log": {
+        "bytes": 103,
+        "sha256": "69c3489388fc754a30c5131a4935bd13d1e33e224e33ae9486c309452bbce5c6"
+      },
+      "20261016-214548-4828/ros_logs/rviz2_4881_1792158349173.log": {
+        "bytes": 1133,
+        "sha256": "c26a576c3d3a29f1bc101b6c8f8710b1c55602208f96a629f596f08c813b1ae2"
+      },
+      "20261016-214548-4828/ros_logs/rtabmap_4871_1792158349255.log": {
+        "bytes": 9172,
+        "sha256": "370c4fa33ccb337ac0abc6b37e1b76bc8493ee4dea294feba099a696a314ee6b"
+      },
+      "20261016-214548-4828/ros_logs/python3_5050_1792158354082.log": {
+        "bytes": 501,
+        "sha256": "c01de82f6e4023f2104a25ef74b1906ac9aacfaf5a52e2e3ab1e8505c619c520"
+      },
+      "20261016-214548-4828/ros_logs/python_4877_1792158349275.log": {
+        "bytes": 463,
+        "sha256": "68d3a7b83876686dde73da2b7e7495987bb9490b2badb45484e94fb7a0542677"
+      },
+      "20261016-214548-4828/ros_logs/rgbd_split_4873_1792158349230.log": {
+        "bytes": 750,
+        "sha256": "99cb165fb8954358e7ed7382db7acc69b218c634e1c5142cc443966e24efe950"
+      },
+      "20261016-214548-4828/ros_logs/python_5037_1792158351140.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261016-214548-4828/ros_logs/python_4875_1792158350082.log": {
+        "bytes": 339,
+        "sha256": "0328cc63be35ff63b20e56ef8dd5f7dac837cd14205af5c6fd9e6123c39163a4"
+      },
+      "20261016-214548-4828/ros_logs/rgbd_sync_4869_1792158349227.log": {
+        "bytes": 1699,
+        "sha256": "6a6c3cf187b7fe7871f9fffd73a75e499c43ae8156cb1913932f64e5b1690014"
+      },
+      "20261016-214548-4828/ros_logs/2026-10-16-21-45-49-041191-xsy-4868/launch.log": {
+        "bytes": 2984,
+        "sha256": "4fcbd621af561046bbf605c7701a90110993cd7d0bf4d6f35f1767bf05c9a5c9"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "5c74f24f541745270a12832fafedf72c3a73b931c4d955e1c341b231f374b22f"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/9d/d4c0da487bb213d3f737914d87b305c6205621": {
+        "bytes": 2774,
+        "sha256": "5995beec2e693e5fb158ea4c19aeebb18309c58f950e3ddaa4a69a838ef98f38"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3283,
+        "sha256": "b9b887daee631f356467aa37a54336afdf694e210e2bc2a98595abbd167f6636"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "b2c12a5866e646504013812cdcfe4e68cf441929cee11b25635a66b7c6a69ce5"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/18/9d89dae7f8be5a145be4465280f589aadb02a4": {
+        "bytes": 1250,
+        "sha256": "57fbfe7a7c6520ac7fe0da6c167f0ffdebde4ffe743a30281fb7c0c294b3f7bd"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2915,
+        "sha256": "094fa095540f2b84fd9880ef745d3a1ded54a396b7ae28afb987c01520185faa"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "1110d180671fde84168639c4c5c81f06c57244aaa471099fdb42381c6e14e688"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "98cdab5fbff322f17470535b274ec1b5608e785619b69831de7e5127fa70fd74"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "cd7554bba8abe32011b3ed1da2d3aeda6a2eecf801d15b42c86285d13036f2fb"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "503df3bc3a3b9b05ce0fe6f0ac81fd67a4b101c7f1f37de13d0b53b5b428a8c4"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/96/4e7e4e3cee4f60eea2ce19d59d017129f3571a": {
+        "bytes": 1769,
+        "sha256": "94e2873dde15bf06fa47f3bbf2529b3ad547c4f2de519bd9cb980f8df9b9dcb2"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/46/6a8743ce0bb02bc563de83a8c46a7ec2fa049f": {
+        "bytes": 1465,
+        "sha256": "38cc5f70643e6a6baa30276044fd56421791cc9baf0cb9678854089e72f89adf"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/b4/1c035ce636e7a697376271cd451305e5fb9d0f": {
+        "bytes": 2704,
+        "sha256": "549e7fc6d2f9698048fb8c7a8892ce3107abbc675595d583a71064aa00372274"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1751,
+        "sha256": "8b470ef2ac787e57bcc31c0129598e8737d46486834d67f574ae1b9540027acb"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1266,
+        "sha256": "edc90aa63ebef0d6d0af115bd4fa05a3ebf361a82c130c408bcf0a6cb7f33099"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/04/34ccf38dba7b2ce24f2140bc6bc328f1dfac8f": {
+        "bytes": 1832,
+        "sha256": "b8912fbee01537032ce8f7ad070c54b7888726a1f2e7b66d23ab338dacfd58f4"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1517,
+        "sha256": "0f3b1f9a0d413feab4734c73d712b63f1b1f6e76107f1d9688d7fba970b48be1"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2939,
+        "sha256": "6a7bc88f90a5143e9b6eaec34859f2e3fce80eb1aa3738cb2803b762c173ae45"
+      },
+      "20261016-214548-4828/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "db99017419829e0373fb421f56691a2d70f500e9b9402703ea1ef1bb2148ed09"
+      },
+      "20261016-214700-5153/map_stats.json": {
+        "bytes": 2133,
+        "sha256": "b95cef8cc29d63f1d19f96237f0f511a9ad70e87084550e3c9e8f82d288edf7e"
+      },
+      "20261016-214700-5153/class_names.json": {
+        "bytes": 1493,
+        "sha256": "e913bb1d066d418ffa32d599b5acb0e95d428c13f3faba01fea09c3c045e19cd"
+      },
+      "20261016-214700-5153/latest_detection.json": {
+        "bytes": 296,
+        "sha256": "f1a5d2af2d673dbe18a58db99ab1cb24b13589f3c7087a42a2fce0fdfbe9b418"
+      },
+      "20261016-214700-5153/projector_stats.json": {
+        "bytes": 205,
+        "sha256": "49f01a80dc02559ec32aa2f271122f5d25a722ba1c94dfbc78ab91b04d7b6c27"
+      },
+      "20261016-214700-5153/observer.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261016-214700-5153/verification.json": {
+        "bytes": 6350,
+        "sha256": "6b525f74d9ae17f4cc444aad0b01ceb9e1896c53daad692c1c843412adb4e9d4"
+      },
+      "20261016-214700-5153/semantic_map.npz": {
+        "bytes": 530365,
+        "sha256": "a28b882704efa37519acd27d6fa3a98f374dcf5fd624fddaadd3706acbc09874"
+      },
+      "20261016-214700-5153/semantic_map.ply": {
+        "bytes": 1037735,
+        "sha256": "b6709c09ec1129d441741ef8515454f9c3c6ef0960c36d13a6513334ffc7f1f9"
+      },
+      "20261016-214700-5153/detector_stats.json": {
+        "bytes": 2965,
+        "sha256": "5f6efdf9209ab05abc40ffbf4a143dfbac129a450a3751e0dd336b0101ea7523"
+      },
+      "20261016-214700-5153/rviz_live.png": {
+        "bytes": 496138,
+        "sha256": "34a44ae0b16bf0518602c9087ef27fef867fd5066661fc9bda83c434158c34a5"
+      },
+      "20261016-214700-5153/geometry_live.png": {
+        "bytes": 8445,
+        "sha256": "ddd7a686d0ef823d20b76aed7e0834cb533479f09f6f0c8fa664f9b70a3759d9"
+      },
+      "20261016-214700-5153/events.json": {
+        "bytes": 3699,
+        "sha256": "10b77969f939148c90d4f38263a7ba0cde2c5b6fe6fdc5e619109af4122c742a"
+      },
+      "20261016-214700-5153/resources_summary.json": {
+        "bytes": 322,
+        "sha256": "a067838ca8ed77019a94c4b8912ecdc0790b374855cea2cb5f91674c5abab958"
+      },
+      "20261016-214700-5153/rtabmap.db": {
+        "bytes": 19341312,
+        "sha256": "db8c64381437cde67a5beb9b24318c53cca2bcd3f4327d207e44b87bd17352f7"
+      },
+      "20261016-214700-5153/resources.csv": {
+        "bytes": 14616,
+        "sha256": "0e94e3a2ad2b86bf4cf62441c04951df47edb135ec1ea8857d12b1443b688fc2"
+      },
+      "20261016-214700-5153/latest_instance_mask.png": {
+        "bytes": 3679,
+        "sha256": "a85b0bfeff9706b02ad0a416cf70ea53a11446a0d3582e79556d6cb513de883f"
+      },
+      "20261016-214700-5153/latest_class_mask.png": {
+        "bytes": 2968,
+        "sha256": "3fcee26e8fa5719a7dff60232e37fa1ad6067b293d053962652db2aa3d5fe3f8"
+      },
+      "20261016-214700-5153/bag_inspection.json": {
+        "bytes": 5310,
+        "sha256": "2a561d0d7c6d8666fa44467cbcbdc26573908bed64cf1070cbb97d7399d307ac"
+      },
+      "20261016-214700-5153/launch.log": {
+        "bytes": 28114,
+        "sha256": "d047543e0a915143de14d112da94df03a8d137dd0ea41bfcb7b78480dc853b0c"
+      },
+      "20261016-214700-5153/rviz_live.xwd": {
+        "bytes": 6338181,
+        "sha256": "c52d1fc9dece088ff6bc974b43491c0c78e4d72b9332cc9ae68e384af6661146"
+      },
+      "20261016-214700-5153/observed_annotated.jpg": {
+        "bytes": 43363,
+        "sha256": "952b311250685ac46a3a5e2d14c1ab87bf159cf620d0a2fee9a038eb0e80a2c0"
+      },
+      "20261016-214700-5153/bag.log": {
+        "bytes": 541,
+        "sha256": "12592d1523f8256aef710557cd4b8f676292ec25c9136028e9c87b58b6a96313"
+      },
+      "20261016-214700-5153/latest_annotated.jpg": {
+        "bytes": 47058,
+        "sha256": "bf9fae65285f214e21c7d0ec192d4a67bdbdee2ea3b3f4f83ce7d61e0e25c840"
+      },
+      "20261016-214700-5153/ros_logs/rgbd_sync_5194_1792158421338.log": {
+        "bytes": 1699,
+        "sha256": "f55b00e929790e2485bc3d160bc5c3f8492ec69acfaf8874f53daedd812a6108"
+      },
+      "20261016-214700-5153/ros_logs/python_5202_1792158421368.log": {
+        "bytes": 1294,
+        "sha256": "8159cc36c05f364839bb4c8d61fc7d688fa23e75919b51455717cfcb69c9abe5"
+      },
+      "20261016-214700-5153/ros_logs/python_5200_1792158422105.log": {
+        "bytes": 914,
+        "sha256": "fee42b78edd22c220acf5d20657404e77e2af79ff563438871f1a7a32345e94c"
+      },
+      "20261016-214700-5153/ros_logs/rtabmap_5196_1792158421340.log": {
+        "bytes": 14833,
+        "sha256": "0b8b0925f3f8144d36880acdb3d1cdf23aad92b10743120067e319dae66ea100"
+      },
+      "20261016-214700-5153/ros_logs/python3_5367_1792158426130.log": {
+        "bytes": 501,
+        "sha256": "d6024779ae4b03c49c58063ec1bb47b1610f15fbf8ea2f823d54dcc7607ce02b"
+      },
+      "20261016-214700-5153/ros_logs/python_5354_1792158423196.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "20261016-214700-5153/ros_logs/python_5204_1792158421372.log": {
+        "bytes": 103,
+        "sha256": "b3fa82dc05c9a91699b5092907c7f2a548d96103bf206efaa34f264ce364d7f9"
+      },
+      "20261016-214700-5153/ros_logs/rviz2_5206_1792158421273.log": {
+        "bytes": 2201,
+        "sha256": "ad32aa8e3d7e65f192b984e79e5beb822929e75a4c9d0eed16964f891a787688"
+      },
+      "20261016-214700-5153/ros_logs/rgbd_split_5198_1792158421331.log": {
+        "bytes": 750,
+        "sha256": "4a5751c155307815d961387f98894e70fda822385bfac62710d4e0acaa149001"
+      },
+      "20261016-214700-5153/ros_logs/2026-10-16-21-47-01-121345-xsy-5193/launch.log": {
+        "bytes": 2984,
+        "sha256": "eafda6e210d1ebf9553ca7c8534eb1d0957de10a2dc0416a790a453f7422bd00"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/index": {
+        "bytes": 1310728,
+        "sha256": "d7fdcbcb7e16a93524ed15574bec89e18c168fa5a1cbd0100162f06b9f6c2186"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/64/4948ba2d5b2cd962c05853d4a250dde8eb1861": {
+        "bytes": 2899,
+        "sha256": "fb05a9bde02f1e50196f3abc7eab72b5448395bd3e868f632a1d9576bda9dfb8"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/82/1e25a52938381acd796ad6450126189ac08235": {
+        "bytes": 4127,
+        "sha256": "73e8ad199f701c91db78e2aaaf0b97ceaa907c3b0500c27f48e978702cc4e32a"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/f0/12fa7cbb272d844fa2a24a9b6a97d8472b3799": {
+        "bytes": 3283,
+        "sha256": "b9b887daee631f356467aa37a54336afdf694e210e2bc2a98595abbd167f6636"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/7b/f4fc5e745a9b93886a74a24c667154d1573f9e": {
+        "bytes": 4349,
+        "sha256": "b2c12a5866e646504013812cdcfe4e68cf441929cee11b25635a66b7c6a69ce5"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/aa/9700216eacac3dcd4e415f20afcabcfaf11f7d": {
+        "bytes": 2772,
+        "sha256": "e1b7019b98a94fb6913c6a44e4d4ec572d6fbd52c5297e9ccf267bbb281d791d"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/b1/679b1f419a6a09c9cf19dc656983ff84a04240": {
+        "bytes": 3159,
+        "sha256": "bca0ef7d4f4c087aa4cfee9ae2e0de6ad8b6fee0e65ce5f93d4eae95f9fc89f2"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/18/9d89dae7f8be5a145be4465280f589aadb02a4": {
+        "bytes": 1250,
+        "sha256": "57fbfe7a7c6520ac7fe0da6c167f0ffdebde4ffe743a30281fb7c0c294b3f7bd"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/ad/9c25a33c7d05a98ba9d2593d17b025cf8c577f": {
+        "bytes": 2916,
+        "sha256": "6bb0ae29a5430fab17a616f38173025d68a47657ce753723dafc5806e29545e8"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/cc/1f5ae6f4b615da54591107f95a6c268be08331": {
+        "bytes": 4666,
+        "sha256": "1110d180671fde84168639c4c5c81f06c57244aaa471099fdb42381c6e14e688"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/6b/a0cff04353492e2539fe5e73b6a8c307f0878d": {
+        "bytes": 1493,
+        "sha256": "98cdab5fbff322f17470535b274ec1b5608e785619b69831de7e5127fa70fd74"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/9a/abddf02341945dfed66e9ac1ae5629c7d826b3": {
+        "bytes": 1388,
+        "sha256": "ff2de8fc29ec65f2db8b46adbea70b0fbcb2112cb6222630fc412e3b8d735043"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/1a/1efbceb5cd346196e3b52d6296c9a8e1726fda": {
+        "bytes": 2513,
+        "sha256": "23ccef899a067a728a1a4fb10d2ba42c22dbe06656202e3d6eca2dc0228f6f63"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/1a/3db394a3753fa386c72a5c6c0bbe433bbef3c1": {
+        "bytes": 2537,
+        "sha256": "5e7de55baeb92b0db1dfd2fbe7762ca3bd7b21edda849072f9773ce0c9067816"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/6e/d460b866dca9fe90a459cd0e573810f43e08b2": {
+        "bytes": 2569,
+        "sha256": "ee2d53d104d145c1f79f71b75959542e6074b233e493551938f9c1a768f7803f"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/6a/3f7bd0416150e76fa3a51cce05b0c2a876b2f4": {
+        "bytes": 321,
+        "sha256": "503df3bc3a3b9b05ce0fe6f0ac81fd67a4b101c7f1f37de13d0b53b5b428a8c4"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/96/4e7e4e3cee4f60eea2ce19d59d017129f3571a": {
+        "bytes": 1770,
+        "sha256": "790dccb9de42c42e1b9f94121b5aae4297fea238edf12f050bd91072d13e8824"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/46/6a8743ce0bb02bc563de83a8c46a7ec2fa049f": {
+        "bytes": 1465,
+        "sha256": "38cc5f70643e6a6baa30276044fd56421791cc9baf0cb9678854089e72f89adf"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/f5/c320bdbc3b0c32f8d8fc6a22233c9d25859fe7": {
+        "bytes": 1403,
+        "sha256": "645b7055134e1f6d16dcccb1f31ef3b1e8b789d69a09c33b1f194d346a26e74a"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/cb/5fa6bd7255718cdc8783208dc37d9d2b4e7a4b": {
+        "bytes": 2577,
+        "sha256": "fb80516c31170248b423c1c6fe951ef071fbe859035a804cdd31db3b7c9c8230"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/78/380fe94c784e2086fd409bafbda0e0cec85c71": {
+        "bytes": 2171,
+        "sha256": "4156693673ffb550d4ae0fb298cf140b3094e8c95482608c0c6b5d24bd223e1c"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/b0/b103cef2c5150d4f2822b3b40bcf09c33429f5": {
+        "bytes": 2164,
+        "sha256": "c789bf7277c77dd123e145a55ca635d8ba9fe2ecd4895574f8c9bd10d2424a1b"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/57/73da275f221bab7ec3db72215147cc104b9311": {
+        "bytes": 1752,
+        "sha256": "4687cff3881b820248c7d696005a9113f5e543e04243e0e57567e082d8dc114f"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/29/e30e84bd9065da2f06991c69901fdd2395f0f4": {
+        "bytes": 4476,
+        "sha256": "4d3703567ebe1fc3b26360af06d15225c7abee058d93160f2251c733006bfc0f"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/6c/6882637923f9e8123cfe365c3cc74664049945": {
+        "bytes": 2600,
+        "sha256": "e100a6f1538a423e8150eec03097e088ea414248317a7cf4a19d80587631c21f"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/09/e242173c4fc44a2a7276e18930d05ac933b15a": {
+        "bytes": 1266,
+        "sha256": "edc90aa63ebef0d6d0af115bd4fa05a3ebf361a82c130c408bcf0a6cb7f33099"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/ba/2c72319e09c1b40f5bd4cf0e2b121c3cf2efb5": {
+        "bytes": 3702,
+        "sha256": "d30033381fb5ef2221c65cc0ded8f5058a4b3136ec57772f01b766c1c1e3fc08"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/d4/6e37ee8bde6c99caa62cd4305a030dac08b879": {
+        "bytes": 1404,
+        "sha256": "071f3582924396dfe2ffb84213cd536da668975e668179123d3f2be782050efc"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/e3/fd997f7094997eb3069549cad8d77a197d30fc": {
+        "bytes": 4064,
+        "sha256": "5ffb080c1052944ca572d08c51ce8b4d10c92cd661ba7c38c37c41f6efd5124a"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/04/34ccf38dba7b2ce24f2140bc6bc328f1dfac8f": {
+        "bytes": 1832,
+        "sha256": "389bc434a298ee25680dcd647a68fccec54af01c4ab107bb8060e37b5643e473"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/33/8da4517a298919453e58913773e498e34dadef": {
+        "bytes": 1637,
+        "sha256": "e5462863d7aae39e044fe968d5740c12c9cf3e1427b10c187baabd8447424d34"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/6d/66a2c226477b41678541ede7d4025d3d4019ea": {
+        "bytes": 3122,
+        "sha256": "877edae9c13139c6d023a556a2d241e276a4e95c6ae8db4d7ce92f0a4ffc959e"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/90/8e113718332b081101a917b1c4d3f50d0a7659": {
+        "bytes": 1519,
+        "sha256": "d05c7664222a3c1dc367ba1aad062185acc611eec7f9cccdb52227d29be10264"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/8c/0b1ba7bfdf528a6c81121f88dab1a4064ed021": {
+        "bytes": 2940,
+        "sha256": "1aabf64e0969e46b1fe3de25e3527f4615af27945cf51b534192b8413afa29ae"
+      },
+      "20261016-214700-5153/gui_cache/mesa_shader_cache/f8/34267de0cf5d8cf7f8bd726a8ca5d856b4fc81": {
+        "bytes": 2268,
+        "sha256": "d331a40ab23d0fe2fbc5f95ceeaf0a14ed2102bbc26f3223d31528da58291a3b"
+      }
+    }
+  }
+}

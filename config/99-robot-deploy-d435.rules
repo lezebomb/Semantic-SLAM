@@ -1,0 +1,2 @@
+# Only Intel RealSense D435 (8086:0b07); tjark is already in group video.
+SUBSYSTEM=="usb", ATTR{idVendor}=="8086", ATTR{idProduct}=="0b07", GROUP="video", MODE="0660"

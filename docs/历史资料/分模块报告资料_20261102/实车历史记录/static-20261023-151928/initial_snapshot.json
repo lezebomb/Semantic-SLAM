@@ -1,0 +1,50 @@
+{
+  "hostname": "tjark",
+  "user": "tjark",
+  "architecture": "aarch64",
+  "hardware": "NVIDIA Jetson Orin NX Engineering Reference Developer Kit",
+  "output": "/home/tjark/yolo_rtabmap/runs/static-20261023-151928",
+  "checks": {
+    "uptime": {
+      "stdout": " 15:19:28 up 4 min,  1 user,  load average: 0.20, 0.20, 0.09\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "network": {
+      "stdout": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \neth0             DOWN           \neth1             UP             192.168.10.102/24 fe80::3c31:1f30:4047:3930/64 \nwlan0            UP             100.80.72.217/15 2001:da8:8002:6bd1:6235:638d:c8f3:bfb2/64 2001:da8:8002:6bd1:7dfd:6165:5147:2197/64 fe80::afa:b818:bcbb:3a63/64 \ncan0             DOWN           \nl4tbr0           DOWN           192.168.55.1/24 fe80::1/128 \nusb0             DOWN           \nusb1             DOWN           \n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "routes": {
+      "stdout": "default via 100.81.255.254 dev wlan0 proto dhcp metric 600 \ndefault via 192.168.10.1 dev eth1 proto dhcp metric 20100 \ndefault via 192.168.55.100 dev l4tbr0 metric 32766 linkdown \n100.80.0.0/15 dev wlan0 proto kernel scope link src 100.80.72.217 metric 600 \n169.254.0.0/16 dev l4tbr0 scope link metric 1000 linkdown \n192.168.10.0/24 dev eth1 proto kernel scope link src 192.168.10.102 metric 100 \n192.168.55.0/24 dev l4tbr0 proto kernel scope link src 192.168.55.1 linkdown \n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "usb": {
+      "stdout": "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 001 Device 007: ID 8086:0b07 Intel Corp. RealSense D435\nBus 001 Device 005: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 003: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 006: ID 0bda:c822 Realtek Semiconductor Corp. Bluetooth Radio\nBus 001 Device 004: ID 1a86:7523 QinHeng Electronics CH340 serial converter\nBus 001 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "ports": {
+      "stdout": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          \nudp   UNCONN 0      0         127.0.0.53:53         0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:67         0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:111        0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:49418      0.0.0.0:*          \nudp   UNCONN 0      0                  *:34769            *:*          \nudp   UNCONN 0      0                  *:5353             *:*          \nudp   UNCONN 0      0                  *:111              *:*          \ntcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          \ntcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*          \ntcp   LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          \ntcp   LISTEN 0      1          127.0.0.1:4101       0.0.0.0:*          \ntcp   LISTEN 0      128             [::]:22            [::]:*          \ntcp   LISTEN 0      4096            [::]:111           [::]:*          \ntcp   LISTEN 0      1              [::1]:4101          [::]:*          \n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "storage": {
+      "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p1  116G   24G   86G  22% /\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "dev_serial": {
+      "stdout": "crw-rw----+ 1 root video 81, 0 Jan  1  1970 /dev/video0\ncrw-rw----+ 1 root video 81, 1 Jan  1  1970 /dev/video1\ncrw-rw----+ 1 root video 81, 2 Jan  1  1970 /dev/video2\ncrw-rw----+ 1 root video 81, 3 Jan  1  1970 /dev/video3\ncrw-rw----+ 1 root video 81, 4 Jan  1  1970 /dev/video4\ncrw-rw----+ 1 root video 81, 5 Jan  1  1970 /dev/video5\n",
+      "stderr": "",
+      "returncode": 2
+    },
+    "home_entries": {
+      "stdout": "Desktop\nDocuments\nDownloads\nMusic\nPictures\nPublic\nTemplates\nVideos\nfinal1022.tar.gz\nyolo_rtabmap\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  },
+  "robot_processes": []
+}

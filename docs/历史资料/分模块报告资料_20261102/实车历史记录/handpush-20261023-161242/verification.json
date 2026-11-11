@@ -1,0 +1,433 @@
+{
+  "topics": {
+    "/semantic/input/rgb": {
+      "count": 1388,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "rgb8"
+    },
+    "/semantic/input/depth": {
+      "count": 1373,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "16UC1"
+    },
+    "/data_throttled_camera_info": {
+      "count": 1388,
+      "frame_id": "camera_color_optical_frame"
+    },
+    "/cloud_map": {
+      "count": 8,
+      "frame_id": "map",
+      "points": 48027,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb"
+      ]
+    },
+    "/map": {
+      "count": 15,
+      "frame_id": "map",
+      "width": 191,
+      "height": 204,
+      "resolution": 0.05000000074505806,
+      "known_cells": 10788
+    },
+    "/mapData": {
+      "count": 64,
+      "frame_id": "map",
+      "nodes_in_message": 1
+    },
+    "/mapGraph": {
+      "count": 15,
+      "frame_id": "map",
+      "poses": 15
+    },
+    "/info": {
+      "count": 64,
+      "frame_id": "map"
+    },
+    "/semantic/label_image": {
+      "count": 124,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "mono8",
+      "last_nonzero_pixels": 62137
+    },
+    "/semantic/detector_status": {
+      "count": 124,
+      "last": {
+        "frame": 124,
+        "inference_ms": 86.68,
+        "capture_stamp_ns": 1792743267989049072,
+        "rgb_depth_delta_ms": 0.0,
+        "detections": [
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 879,
+            "confidence": 0.566304087638855,
+            "pixels": 4958
+          },
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 880,
+            "confidence": 0.6687072515487671,
+            "pixels": 7025
+          },
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 881,
+            "confidence": 0.7550831437110901,
+            "pixels": 4080
+          },
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 882,
+            "confidence": 0.8416031002998352,
+            "pixels": 27129
+          },
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 883,
+            "confidence": 0.852116584777832,
+            "pixels": 20754
+          }
+        ]
+      }
+    },
+    "/semantic/instance_image": {
+      "count": 124,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "mono16",
+      "last_nonzero_pixels": 62137
+    },
+    "/semantic/image_annotated": {
+      "count": 124,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "bgr8"
+    },
+    "/semantic/points_camera": {
+      "count": 111,
+      "frame_id": "camera_color_optical_frame",
+      "points": 3023,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        56
+      ]
+    },
+    "/semantic/pointcloud": {
+      "count": 99,
+      "frame_id": "map",
+      "points": 136,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        2
+      ]
+    },
+    "/semantic/map": {
+      "count": 64,
+      "frame_id": "map",
+      "points": 19215,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        2,
+        56,
+        62
+      ]
+    },
+    "/semantic/map_status": {
+      "count": 98,
+      "last": {
+        "received": 113,
+        "transformed": 99,
+        "transformed_points": 252192,
+        "tf_retries": 1700,
+        "tf_dropped": 14,
+        "queue_dropped": 0,
+        "evicted_voxels": 0,
+        "map_frame": "map",
+        "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1792743267.989049 but the latest data is at time 1792743249.509619, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+        "transform_samples": [
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792743175457721436,
+            "translation": [
+              -0.0004460676134685687,
+              0.015600705257675122,
+              -8.734137440752511e-05
+            ],
+            "quaternion": [
+              -0.4964636977442711,
+              0.5026690038241615,
+              -0.4993963847293864,
+              0.5014488212527064
+            ],
+            "camera_point": [
+              0.43524792790412903,
+              0.03325522318482399,
+              0.9140000343322754
+            ],
+            "map_point": [
+              0.9117978338294302,
+              -0.4231562814174201,
+              -0.0353875155572706
+            ]
+          },
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792743175724622070,
+            "translation": [
+              0.0013082898196371136,
+              0.015642399331274336,
+              0.0005680197889424114
+            ],
+            "quaternion": [
+              -0.49642844921240215,
+              0.5027531773408457,
+              -0.49932326244358044,
+              0.5014721498437908
+            ],
+            "camera_point": [
+              0.4403323829174042,
+              0.033182453364133835,
+              0.9120000600814819
+            ],
+            "map_point": [
+              0.9115176204940917,
+              -0.4282038345714298,
+              -0.03489022677171807
+            ]
+          },
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792743177192646729,
+            "translation": [
+              -0.0005060656684773835,
+              0.015738940629646925,
+              -0.00022025227245517798
+            ],
+            "quaternion": [
+              -0.49655667371824747,
+              0.5025255561953063,
+              -0.49956167998415163,
+              0.5013358784765759
+            ],
+            "camera_point": [
+              0.4276287257671356,
+              0.032673075795173645,
+              0.8980000615119934
+            ],
+            "map_point": [
+              0.8957537144377024,
+              -0.4153934400323055,
+              -0.034589488043197225
+            ]
+          }
+        ],
+        "voxels": 19215
+      }
+    }
+  },
+  "mask_nonzero_messages": 113,
+  "instance_nonzero_messages": 113,
+  "semantic_cloud_nonempty": 99,
+  "semantic_map_nonempty": 64,
+  "finite_clouds": 274,
+  "tf_checks": 92,
+  "max_tf_point_error_m": 4.6621753924114273e-07,
+  "detector_frames_with_instances": 113,
+  "camera_frames": {},
+  "depth_encodings": {
+    "16UC1": 1373
+  },
+  "odometry": {
+    "messages": 493,
+    "valid_messages": 426,
+    "distance_m": 6.4536986104335785,
+    "last_arrival_wall_time": 1792743268.3032496,
+    "frame": "camera_odom",
+    "child_frame": "camera_link",
+    "last_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_covariance_x": 9999.0
+  },
+  "geometry_tf_checks": 28,
+  "loop_closures": 0,
+  "proximity_detections": 0,
+  "nodes": [
+    "semantic_grid_node",
+    "semantic_verifier",
+    "handpush_video_recorder"
+  ],
+  "ros_topics": [
+    {
+      "name": "/camera/camera/aligned_depth_to_color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/cloud_map",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/handpush/odom",
+      "types": [
+        "nav_msgs/msg/Odometry"
+      ]
+    },
+    {
+      "name": "/info",
+      "types": [
+        "rtabmap_msgs/msg/Info"
+      ]
+    },
+    {
+      "name": "/map",
+      "types": [
+        "nav_msgs/msg/OccupancyGrid"
+      ]
+    },
+    {
+      "name": "/mapData",
+      "types": [
+        "rtabmap_msgs/msg/MapData"
+      ]
+    },
+    {
+      "name": "/mapGraph",
+      "types": [
+        "rtabmap_msgs/msg/MapGraph"
+      ]
+    },
+    {
+      "name": "/parameter_events",
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ]
+    },
+    {
+      "name": "/rosout",
+      "types": [
+        "rcl_interfaces/msg/Log"
+      ]
+    },
+    {
+      "name": "/semantic/detector_status",
+      "types": [
+        "std_msgs/msg/String"
+      ]
+    },
+    {
+      "name": "/semantic/image_annotated",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/instance_image",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/label_image",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/map",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/semantic/map_status",
+      "types": [
+        "std_msgs/msg/String"
+      ]
+    },
+    {
+      "name": "/semantic/pointcloud",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/semantic/points_camera",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/tf",
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ]
+    },
+    {
+      "name": "/tf_static",
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ]
+    }
+  ],
+  "success": true,
+  "verification_policy": "interface_allow_empty",
+  "pipeline_tf_checks": 24,
+  "segmentation_state": "predictions_present",
+  "semantic_transform_validation": "exercised_on_real_model_outputs"
+}

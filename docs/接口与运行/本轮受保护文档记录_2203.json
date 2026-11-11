@@ -1,0 +1,13 @@
+{
+  "policy": "本轮未回写这两个用户文档",
+  "files": [
+    {
+      "path": "/home/xsy/ros2/RTAB-Map + YOLO/车上代码与接口整理_20261104/语义SLAM_车上代码与接口调用说明_20261104.docx",
+      "sha256": "8b5985df71e7a796648b909142cb9f87014586862c2e791f90e9ca4e8d10ae65"
+    },
+    {
+      "path": "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/语义SLAM_方案概述与原理阐述_20261104.docx",
+      "sha256": "84d6e7bf79df7bb2d06663d5ed2a2969d03fb7e02997c25655b480f18c118a8e"
+    }
+  ]
+}

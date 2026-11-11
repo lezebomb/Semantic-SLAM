@@ -1,0 +1,71 @@
+{
+  "frame": 75,
+  "inference_ms": 90.23,
+  "capture_stamp_ns": 1792744195599198975,
+  "rgb_depth_delta_ms": 0.0,
+  "detections": [
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 501,
+      "confidence": 0.3867450952529907,
+      "pixels": 5421
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 502,
+      "confidence": 0.41584184765815735,
+      "pixels": 1324
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 503,
+      "confidence": 0.4331991970539093,
+      "pixels": 4495
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 504,
+      "confidence": 0.5836120247840881,
+      "pixels": 1587
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 505,
+      "confidence": 0.623693585395813,
+      "pixels": 2234
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 506,
+      "confidence": 0.8020864725112915,
+      "pixels": 2519
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 507,
+      "confidence": 0.805247962474823,
+      "pixels": 2476
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 508,
+      "confidence": 0.8842395544052124,
+      "pixels": 10938
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 509,
+      "confidence": 0.8894044160842896,
+      "pixels": 16240
+    }
+  ]
+}

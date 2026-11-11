@@ -1,0 +1,86 @@
+[
+  {
+    "file": "LICENSE",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "README.md",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "SOURCE_MANIFEST.json",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "config/live.yaml",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "config/semantic_indoor.rviz",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "launch/indoor_semantic.launch.py",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "launch/live_semantic.launch.py",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "launch/semantic_only.launch.py",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "licenses/rtabmap_ros-BSD.txt",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "requirements.txt",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "run.sh",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "run_live.sh",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "scripts/capture_rviz.py",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "scripts/inspect_bag.py",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "scripts/observe_ros.py",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "scripts/ros_env.sh",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "scripts/run_demo.py",
+    "same_as_local_preparation": false
+  },
+  {
+    "file": "semantic/common.py",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "semantic/semantic_grid_node.py",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "semantic/semantic_projector.py",
+    "same_as_local_preparation": true
+  },
+  {
+    "file": "semantic/yolo_detector.py",
+    "same_as_local_preparation": false
+  }
+]

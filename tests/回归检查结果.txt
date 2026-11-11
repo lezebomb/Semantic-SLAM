@@ -1,0 +1,21 @@
+test_geometry_ownership_cannot_be_overridden_by_config (test_live_mapping.ConfigurationTests) ... ok
+test_recording_does_not_mix_global_dynamic_tf (test_live_mapping.ConfigurationTests) ... ok
+test_replay_never_reuses_old_map_or_controls (test_live_mapping.ConfigurationTests) ... ok
+test_empty_scene_after_initial_check_does_not_stop_geometry (test_live_mapping.RuntimePolicyTests) ... ok
+test_external_map_tf_is_never_imported (test_live_mapping.RuntimePolicyTests) ... ok
+test_numeric_gpu_id_remains_a_ros_string (test_live_mapping.RuntimePolicyTests) ... getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+[37;1m2026-11-05 22:53:43.089 [31;1m[[37;1mTRANSPORT[31;1m Error] [37mAll whitelist interfaces were filtered out[34;1m -> Function [36mUDPv4Transport[m
+[37;1m2026-11-05 22:53:43.089 [31;1m[[37;1mTRANSPORT_UDP[31;1m Error] [37mError creating socket: Operation not permitted[34;1m -> Function [36minit[m
+[37;1m2026-11-05 22:53:43.089 [31;1m[[37;1mRTPS_PARTICIPANT[31;1m Error] [37mUser transport failed to register.[34;1m -> Function [36mRTPSParticipantImpl[m
+ok
+test_empty_predictions_are_a_valid_interface (test_verification_policy.VerificationPolicyTests) ... ok
+test_missing_output_or_bad_transform_is_a_failure (test_verification_policy.VerificationPolicyTests) ... ok
+test_strict_policy_still_requires_nonempty_predictions (test_verification_policy.VerificationPolicyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.231s
+
+OK

@@ -1,0 +1,54 @@
+{
+  "identity": "aarch64\n",
+  "usb": "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 001 Device 007: ID 8086:0b07 Intel Corp. RealSense D435\nBus 001 Device 005: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 003: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 006: ID 0bda:c822 Realtek Semiconductor Corp. Bluetooth Radio\nBus 001 Device 004: ID 1a86:7523 QinHeng Electronics CH340 serial converter\nBus 001 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\n",
+  "can": "5: can0: <NOARP,ECHO> mtu 16 qdisc noop state DOWN mode DEFAULT group default qlen 10\n    link/can  promiscuity 0 minmtu 0 maxmtu 0 \n    can state STOPPED (berr-counter tx 0 rx 0) restart-ms 0 \n\t  mttcan: tseg1 2..255 tseg2 0..127 sjw 1..127 brp 1..511 brp-inc 1\n\t  mttcan: dtseg1 1..31 dtseg2 0..15 dsjw 1..15 dbrp 1..15 dbrp-inc 1\n\t  clock 50000000 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 parentbus platform parentdev c310000.mttcan \n",
+  "sockets": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          \nudp   UNCONN 0      0         127.0.0.53:53         0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:67         0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:111        0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:49418      0.0.0.0:*          \nudp   UNCONN 0      0                  *:34769            *:*          \nudp   UNCONN 0      0                  *:5353             *:*          \nudp   UNCONN 0      0                  *:111              *:*          \ntcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          \ntcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*          \ntcp   LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          \ntcp   LISTEN 0      1          127.0.0.1:4101       0.0.0.0:*          \ntcp   LISTEN 0      128             [::]:22            [::]:*          \ntcp   LISTEN 0      4096            [::]:111           [::]:*          \ntcp   LISTEN 0      1              [::1]:4101          [::]:*          \n",
+  "network": "192.168.10.1 dev eth1 lladdr 4c:10:d5:9e:de:83 STALE\n192.168.10.160 dev eth1 lladdr 88:c9:b3:90:95:01 REACHABLE\n192.168.10.101 dev eth1 lladdr 70:08:94:c0:0f:bb DELAY\n100.81.255.254 dev wlan0 lladdr 9c:54:c2:0d:50:02 STALE\n2001:da8:8002:6bd1::1 dev wlan0 lladdr 9c:54:c2:0d:50:02 router STALE\nfe80::9e54:c2ff:fe0d:5002 dev wlan0 lladdr 9c:54:c2:0d:50:02 router STALE\n",
+  "serial_devices": [
+    "/dev/ttyTHS1",
+    "/dev/ttyTHS3",
+    "/dev/ttyTHS2"
+  ],
+  "home_entries": [
+    "final1022.tar.gz",
+    "Desktop",
+    "Videos",
+    "Downloads",
+    "Public",
+    "yolo_rtabmap",
+    "Documents",
+    "Music",
+    "Templates",
+    "Pictures"
+  ],
+  "source_entries": {
+    "/opt": [
+      "nvidia",
+      "ota_package",
+      "ros"
+    ]
+  },
+  "startup_files": {},
+  "robot_processes": [
+    {
+      "pid": "579",
+      "cmd": "/usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers"
+    },
+    {
+      "pid": "587",
+      "cmd": "python3 /opt/nvidia/pva-allow-2/bin/nvidiaPvaAllowd.py"
+    },
+    {
+      "pid": "635",
+      "cmd": "/usr/libexec/switcheroo-control"
+    },
+    {
+      "pid": "751",
+      "cmd": "/usr/sbin/nvfancontrol &"
+    },
+    {
+      "pid": "2452",
+      "cmd": "python3 -"
+    }
+  ]
+}

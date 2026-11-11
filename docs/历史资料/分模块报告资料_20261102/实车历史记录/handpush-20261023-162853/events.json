@@ -1,0 +1,105 @@
+[
+  {
+    "event": "started",
+    "wall_time": 1792744133.1821227,
+    "name": "camera_driver",
+    "pid": 5937
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744133.1834679,
+    "name": "lidar_driver",
+    "pid": 5938
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744133.184938,
+    "name": "tegrastats",
+    "pid": 5939
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.188903,
+    "name": "odometry",
+    "pid": 6000
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.191091,
+    "name": "mapping",
+    "pid": 6001
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.1926923,
+    "name": "yolo_detector",
+    "pid": 6002
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.194629,
+    "name": "semantic_projector",
+    "pid": 6003
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.200112,
+    "name": "semantic_grid_node",
+    "pid": 6004
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.2099893,
+    "name": "observer",
+    "pid": 6005
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.2217386,
+    "name": "recording",
+    "pid": 6006
+  },
+  {
+    "event": "started",
+    "wall_time": 1792744137.2461596,
+    "name": "video",
+    "pid": 6007
+  },
+  {
+    "event": "READY_FOR_MANUAL_PUSH",
+    "wall_time": 1792744147.0386267,
+    "map_poses": 1,
+    "odometry": {
+      "messages": 17,
+      "valid_messages": 17,
+      "distance_m": 0.02369501882665602,
+      "last_arrival_wall_time": 1792744146.598165,
+      "frame": "camera_odom",
+      "child_frame": "camera_link",
+      "last_position": [
+        0.0019655711948871613,
+        0.00022024480858817697,
+        -0.00035769899841398
+      ],
+      "last_covariance_x": 4.7567889932211264e-05
+    }
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792744155.0902429
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792744161.5467582
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792744176.1442034
+  },
+  {
+    "event": "finished",
+    "wall_time": 1792744281.3098586,
+    "phase": "user_stopped",
+    "output": "/home/tjark/yolo_rtabmap/runs/handpush-20261023-162853"
+  }
+]

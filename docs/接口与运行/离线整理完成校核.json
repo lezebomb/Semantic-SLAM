@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "scope": "Offline consolidation after power/network loss; no further remote check performed.",
+  "human_csv_rows": 33,
+  "original_copied_source_files_unchanged": 37,
+  "subscriber_examples_static_checks": "2 passed; no publishers or control clients",
+  "user_edited_interface_word_preserved": true,
+  "user_edited_body_blocks_in_supplement": 79,
+  "static_data_scope": "Recorded passive reception before disconnection; no motion, new driver launch, model inference or mapping test.",
+  "ros1_ros2_roles_documented": true,
+  "automatic_motion_status": "Interface identified, autonomy and stopping unverified, no control code or commands deployed.",
+  "code_archive_sha256": "b40cb01615ac1cd3c0e06578fbfb5ab1ee6b1e7b9fca43830a6d75f693e50c3c",
+  "historical_scan_evidence_added": true,
+  "scan_driver_source_index_added": true,
+  "latest_update_note": "22:03复核见本次整理校核_20261104_2203.json；早期统计保留",
+  "latest_interface_rows": 39,
+  "local_interface_information_review_20261105": "仅本地复核已有证据；更正TF旧字段和待确认项；没有新增实测结果或连接车辆"
+}

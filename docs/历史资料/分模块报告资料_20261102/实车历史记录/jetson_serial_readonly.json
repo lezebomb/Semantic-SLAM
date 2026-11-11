@@ -1,0 +1,17 @@
+{
+  "kernel_serial_config": [
+    "CONFIG_USB_SERIAL=m",
+    "# CONFIG_USB_SERIAL_GENERIC is not set",
+    "# CONFIG_USB_SERIAL_CH341 is not set"
+  ],
+  "/sys/bus/usb/devices/1-2.2": {
+    "idVendor": "1a86",
+    "idProduct": "7523",
+    "product": "USB Serial"
+  },
+  "tty_devices": [
+    "/dev/ttyTHS1",
+    "/dev/ttyTHS3",
+    "/dev/ttyTHS2"
+  ]
+}

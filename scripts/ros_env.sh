@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# Project runtime: x86 local environment or the existing ARM64 Jetson environment.
+if [[ "$(uname -m)" == "aarch64" ]]; then
+    _semantic_env_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+    source "$_semantic_env_dir/ros_env_jetson.sh"
+    return $?
+fi
 # Source this file from run.sh/setup.sh; the semantic nodes need Humble Python 3.10.
 ROS_SETUP="${ROS_SETUP:-/opt/ros/humble/setup.bash}"
 if [ ! -f "$ROS_SETUP" ]; then
@@ -22,3 +28,7 @@ if [ ! -f "$RTABMAP_SHARE/launch/robot_mapping_demo.launch.py" ]; then
     echo "Missing robot_mapping_demo.launch.py; use the RTAB-Map revision in README.md." >&2
     return 1
 fi
+
+_semantic_local_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+export SEMANTIC_PYTHON="${SEMANTIC_PYTHON:-$_semantic_local_root/.venv/bin/python}"
+unset _semantic_local_root

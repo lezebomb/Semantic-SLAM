@@ -1,0 +1,89 @@
+{
+  "recording_date": "2026-10-23",
+  "revision_date": "2026-10-30",
+  "figure_4": {
+    "source": "live_robot_test_20261023/handpush-20261023-162853/camera_segmentation.mp4",
+    "source_frame_index": 210.0,
+    "source_fps": 3.0,
+    "source_time_s": 70.0,
+    "processing": "Split actual recorded original/annotated panels, crop status bars, add panel labels. No inference rerun."
+  },
+  "figure_5": {
+    "source_session": "handpush-20261023-161242",
+    "processing": "Render actual saved occupancy, graph poses and 3D semantic voxels; no alignment to external ground truth."
+  },
+  "figure_6": {
+    "source_session": "handpush-20261023-161242",
+    "cpu_definition": "Whole-system CPU, 0-100%; nominal 0.5s sampling. Latency from measured GPU-synchronized predict."
+  },
+  "files": {
+    "live_robot_test_20261023/handpush-20261023-162853/camera_segmentation.mp4": {
+      "bytes": 3952278,
+      "sha256": "3c3f6c8e8587006b55f1d8ec5cd54726193f4d9cbdaf0f86fbbfcf8fd943b4fb"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/geometry_map.png": {
+      "bytes": 4050,
+      "sha256": "ed944395279612ed444879fe7e5aaf4c34b18a2d46b165ef2825cbe19dcb59c6"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/geometry_map.yaml": {
+      "bytes": 164,
+      "sha256": "365ea57d9b294bf24d22b5b308f7d6490f1c42f18aeb42f7f118ef0b09077c28"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/trajectory.csv": {
+      "bytes": 2202,
+      "sha256": "5c381d01a8161443b4021e4f00596bc556dd7bdb95120377b131237d878b07a5"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/semantic_map.npz": {
+      "bytes": 242618,
+      "sha256": "7736135a51ed5f52dc7c8727afc56501a85797be537e7e77e46887fa289bf52c"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/resources.json": {
+      "bytes": 178364,
+      "sha256": "49a50cd5e51fff000b24bbe0557318f27eadfeecc578bbb72cd57e8ec3e79abb"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/detector_stats.json": {
+      "bytes": 1669,
+      "sha256": "a779f996fb43d13cc21ae69d58e2c65d9191dad58d5c1f7a58a264a2d5c475d1"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/map_stats.json": {
+      "bytes": 2356,
+      "sha256": "ce734b4a600502e665864df1fb42e418fae7940c560b8b432735417d7cd41aae"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/verification.json": {
+      "bytes": 9903,
+      "sha256": "8edb4822d9401d7f1093916a98066a6270aed296afeddf9699b2156d16d62519"
+    },
+    "live_robot_test_20261023/handpush-20261023-161242/bag_integrity.json": {
+      "bytes": 877,
+      "sha256": "5bc54844da6c37e017a3699d2e2d77c7699dd318ba660eecd465aeb81594cb7e"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/resources.json": {
+      "bytes": 236215,
+      "sha256": "282a9eeaf17c558d8b284b6ddd4e294a4a02d9eb52daa1096fe1e6321f5ede06"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/detector_stats.json": {
+      "bytes": 2330,
+      "sha256": "075a6e1f518996996ceb52e50a9b7aae7be1102ae3351ce518a9bb74656e6fb1"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/projector_stats.json": {
+      "bytes": 208,
+      "sha256": "28a18dc4596e372721548320763e3d34dbe13d9e47c79d22c0c13ebb8a0fc6c6"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/map_stats.json": {
+      "bytes": 2381,
+      "sha256": "7ab4de0f2acbcabc83bedc65d2cb4e92c35d2cb474af61dc559db1735d6cf708"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/verification.json": {
+      "bytes": 9444,
+      "sha256": "11dc8314a45967db98484af12143942abc09c5585c93596443d2dcb81597be53"
+    },
+    "live_robot_test_20261023/handpush-20261023-162853/recording.log": {
+      "bytes": 2791,
+      "sha256": "50e12c4164d7a647c7affeb37f593f3170f6404b4cb78031c3eeff2659e69a04"
+    },
+    "live_robot_test_20261023/static-20261023-151928/scan/result.json": {
+      "bytes": 831,
+      "sha256": "cd0b77b5117d2031ebaac6f045cf14c60674ce148c82859a001c3acf3103849a"
+    }
+  }
+}

@@ -1,0 +1,1810 @@
+[
+  {
+    "wall_time": 1792740244.0885887,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 0.0,
+        "rss_mib": 6.91796875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 0.0,
+        "rss_mib": 6.921875
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 0.0,
+        "rss_mib": 7.18359375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 23.58984375
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 95.34765625
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740244.615741,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 85.3,
+        "rss_mib": 57.35546875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 89.1,
+        "rss_mib": 39.97265625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 96.7,
+        "rss_mib": 37.97265625
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 23.58984375
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 15.2,
+        "rss_mib": 95.34765625
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740245.1379645,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 95.7,
+        "rss_mib": 108.6953125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 70.8,
+        "rss_mib": 58.44921875
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 63.2,
+        "rss_mib": 57.125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 3.8,
+        "rss_mib": 24.05078125
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 97.76171875
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740245.661516,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 42.0,
+        "rss_mib": 129.2109375
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 5.7,
+        "rss_mib": 58.44921875
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 45.8,
+        "rss_mib": 62.05859375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 1.9,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 24.8,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740246.1856434,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 74.5,
+        "rss_mib": 305.83984375
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 63.359375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740246.7099845,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "python",
+        "cpu_percent": 91.5,
+        "rss_mib": 379.2109375
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.08203125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740247.233706,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 89.8,
+        "rss_mib": 404.21875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 17.2,
+        "rss_mib": 62.09375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740247.7569551,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 91.7,
+        "rss_mib": 419.421875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.1015625
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740248.2803285,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 99.4,
+        "rss_mib": 427.921875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.10546875
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740248.8071892,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 98.7,
+        "rss_mib": 438.234375
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.0,
+        "rss_mib": 62.11328125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 3.8,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.0,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740249.33127,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 93.5,
+        "rss_mib": 452.96875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.1171875
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 1.9,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740249.8565712,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 93.2,
+        "rss_mib": 467.953125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.0,
+        "rss_mib": 62.12109375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.0,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740250.3787868,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 95.7,
+        "rss_mib": 483.16015625
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.4609375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 15.3,
+        "rss_mib": 62.125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.09765625
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.83203125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740250.9027414,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 97.3,
+        "rss_mib": 493.47265625
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.07421875
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 15.3,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740251.4259062,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 91.8,
+        "rss_mib": 538.6875
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 21.0,
+        "rss_mib": 62.078125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740251.9493241,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 76.4,
+        "rss_mib": 680.5703125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 17.2,
+        "rss_mib": 62.08203125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 1.9,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740252.4734206,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 84.0,
+        "rss_mib": 941.28515625
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 21.0,
+        "rss_mib": 62.08203125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740252.9982157,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 93.4,
+        "rss_mib": 1131.1484375
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 17.2,
+        "rss_mib": 62.08203125
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 19.1,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740253.52059,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 95.7,
+        "rss_mib": 1152.8828125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.0859375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 1.9,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740254.0428855,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 99.6,
+        "rss_mib": 1151.33203125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.40625
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 17.2,
+        "rss_mib": 62.0859375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 17.2,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740254.5650043,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2197,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.76171875
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.7734375
+      },
+      {
+        "pid": 2202,
+        "name": "pt_main_thread",
+        "cpu_percent": 80.4,
+        "rss_mib": 1047.48828125
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 1.9,
+        "rss_mib": 58.984375
+      },
+      {
+        "pid": 2199,
+        "name": "python",
+        "cpu_percent": 19.1,
+        "rss_mib": 62.0859375
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 1.9,
+        "rss_mib": 24.04296875
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 15.3,
+        "rss_mib": 102.78125
+      }
+    ]
+  },
+  {
+    "wall_time": 1792740255.0992112,
+    "processes": [
+      {
+        "pid": 2127,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2128,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2129,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2198,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.77734375
+      },
+      {
+        "pid": 2200,
+        "name": "timeout",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.0
+      },
+      {
+        "pid": 2201,
+        "name": "python",
+        "cpu_percent": 5.6,
+        "rss_mib": 59.296875
+      },
+      {
+        "pid": 2132,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.859375
+      },
+      {
+        "pid": 2131,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 24.0078125
+      },
+      {
+        "pid": 2130,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 33.96484375
+      },
+      {
+        "pid": 2167,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 22.5,
+        "rss_mib": 102.78125
+      }
+    ]
+  }
+]

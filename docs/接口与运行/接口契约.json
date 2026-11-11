@@ -1,0 +1,2037 @@
+{
+  "captured_at": "2026-11-04T20:34:16.672145+08:00",
+  "source_root": "/home/tjark/yolo_rtabmap",
+  "runtime_graph_evidence": [
+    "ros_graph_domain0.json",
+    "ros_graph_domain77.json"
+  ],
+  "active_semantic_endpoints_seen": false,
+  "input_names_are_launch_defaults_not_runtime_confirmation": true,
+  "topics": [
+    {
+      "topic": "/camera/camera/color/image_raw",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "bgr8/rgb8 convertible",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "RGB capture stamp; optical frame; measured Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/camera/camera/aligned_depth_to_color/image_raw",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "16UC1 mm / 32FC1 m; RGB-registered",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "Depth capture stamp; same optical frame/resolution; Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/camera/camera/color/camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "valid rectified K; zero distortion",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "Matched camera calibration; Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/label_image",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "mono8; background=0, class=COCO+1",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/instance_image",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "mono16; observation ID 1..65535",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/paired_depth",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "same input depth encoding",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/paired_camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "paired input intrinsics",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Header overwritten with matched depth header",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/image_annotated",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "RViz / downstream viewer",
+      "encoding_or_fields": "bgr8",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "RGB content; depth capture header; RGB-depth delta in detector_status",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/points_camera",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_projector",
+      "subscriber": "semantic_grid_node",
+      "encoding_or_fields": "x,y,z,rgb FLOAT32; class_id,instance_id UINT32",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture stamp; camera optical frame; nonempty valid clouds only",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/pointcloud",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_grid_node",
+      "subscriber": "downstream viewer / consumer",
+      "encoding_or_fields": "x,y,z,rgb FLOAT32; class_id,instance_id UINT32",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture stamp; map; nonempty valid clouds only",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/map",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_grid_node",
+      "subscriber": "RViz / downstream map consumer",
+      "encoding_or_fields": "same 24-byte point structure",
+      "qos": "RELIABLE / TRANSIENT_LOCAL, depth=1",
+      "timestamp_frame_rate": "Map frame; current publish stamp; 1 s update timer, dirty only; not pipeline FPS",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/detector_status",
+      "type": "std_msgs/msg/String",
+      "publisher": "yolo_detector",
+      "subscriber": "observer / diagnostics",
+      "encoding_or_fields": "JSON: frame,inference_ms,capture_stamp_ns,rgb_depth_delta_ms,detections",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Per processed bundle",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/semantic/map_status",
+      "type": "std_msgs/msg/String",
+      "publisher": "semantic_grid_node",
+      "subscriber": "observer / diagnostics",
+      "encoding_or_fields": "JSON: TF,queue,voxel counters",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "1 s timer after first transformed cloud",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/tf; /tf_static",
+      "type": "tf2_msgs/msg/TFMessage",
+      "publisher": "geometry / odometry / calibrated transforms owners",
+      "subscriber": "semantic_grid_node TF buffer",
+      "encoding_or_fields": "TF edges; required map to camera at capture time",
+      "qos": "tf2 defaults; actual endpoints unobserved",
+      "timestamp_frame_rate": "Frame names and calibration pending; no zero transform fabricated",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "subscribed_no_messages",
+        "measured_hz": null,
+        "domain0_messages": {
+          "/tf": 0,
+          "/tf_static": 0
+        },
+        "domain77_messages": {
+          "/tf": 0,
+          "/tf_static": 0
+        }
+      }
+    },
+    {
+      "topic": "/map",
+      "type": "nav_msgs/msg/OccupancyGrid",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/mapData",
+      "type": "rtabmap_msgs/msg/MapData",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/mapGraph",
+      "type": "rtabmap_msgs/msg/MapGraph",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/scan",
+      "type": "sensor_msgs/msg/LaserScan",
+      "publisher": "external owner, endpoint unobserved",
+      "subscriber": "geometry stack if configured; not the three semantic nodes",
+      "encoding_or_fields": "actual source/frames pending",
+      "qos": "not observed",
+      "timestamp_frame_rate": "Not an asserted fused sensor",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/odom",
+      "type": "nav_msgs/msg/Odometry",
+      "publisher": "external owner, endpoint unobserved",
+      "subscriber": "geometry stack if configured; not the three semantic nodes",
+      "encoding_or_fields": "actual source/frames pending",
+      "qos": "not observed",
+      "timestamp_frame_rate": "Not an asserted fused sensor",
+      "evidence_status": "source_confirmed_runtime_not_observed",
+      "runtime_observation": {
+        "status": "not_observed_in_inspection_window",
+        "measured_hz": null
+      }
+    },
+    {
+      "topic": "/encoder",
+      "type": "std_msgs/msg/Float32MultiArray",
+      "publisher": "ROS1 /serial_node -> ROS2 /ros_bridge",
+      "subscriber": "ROS2 feedback consumers",
+      "encoding_or_fields": "raw array; layout empty; meanings and units unconfirmed",
+      "qos": "Observed bridge: RELIABLE / VOLATILE; reported depth=0. Receiver used BEST_EFFORT / VOLATILE, depth=3.",
+      "timestamp_frame_rate": "No Header in this message; receive rate only",
+      "evidence_status": "received_static_feedback",
+      "runtime_observation": {
+        "started_at": "2026-11-04T21:13:05.141963+08:00",
+        "finished_at": "2026-11-04T21:13:18.290555+08:00",
+        "window_seconds": 10.04509548599981,
+        "messages": 178,
+        "measured_hz": 19.498914405706884,
+        "last_sample": {
+          "data": [
+            0.0,
+            0.0,
+            5893723.0,
+            0.020943952724337578,
+            0.388700008392334
+          ],
+          "layout": []
+        },
+        "ros1_messages": 156,
+        "ros1_receive_hz": 19.524517503029394
+      }
+    },
+    {
+      "topic": "/chassis_charge",
+      "type": "std_msgs/msg/Float32MultiArray",
+      "publisher": "ROS1 /serial_node -> ROS2 /ros_bridge",
+      "subscriber": "ROS2 feedback consumers",
+      "encoding_or_fields": "raw array; layout empty; meanings and units unconfirmed",
+      "qos": "Observed bridge: RELIABLE / VOLATILE; reported depth=0. Receiver used BEST_EFFORT / VOLATILE, depth=3.",
+      "timestamp_frame_rate": "No Header in this message; receive rate only",
+      "evidence_status": "received_static_feedback",
+      "runtime_observation": {
+        "started_at": "2026-11-04T21:13:05.141963+08:00",
+        "finished_at": "2026-11-04T21:13:18.290555+08:00",
+        "window_seconds": 10.04509548599981,
+        "messages": 177,
+        "measured_hz": 19.495234907336553,
+        "last_sample": {
+          "data": [
+            21.543392181396484,
+            0.8382641077041626,
+            0.0
+          ],
+          "layout": []
+        },
+        "ros1_messages": 156,
+        "ros1_receive_hz": 19.520248485357612
+      }
+    },
+    {
+      "topic": "/chassis_docking",
+      "type": "std_msgs/msg/Bool",
+      "publisher": "ROS1 /serial_node -> ROS2 /ros_bridge",
+      "subscriber": "ROS2 feedback consumers",
+      "encoding_or_fields": "raw Bool; detailed state semantics pending",
+      "qos": "Observed bridge: RELIABLE / VOLATILE; reported depth=0. Receiver used BEST_EFFORT / VOLATILE, depth=3.",
+      "timestamp_frame_rate": "No Header in this message; receive rate only",
+      "evidence_status": "received_static_feedback",
+      "runtime_observation": {
+        "started_at": "2026-11-04T21:13:05.141963+08:00",
+        "finished_at": "2026-11-04T21:13:18.290555+08:00",
+        "window_seconds": 10.04509548599981,
+        "messages": 177,
+        "measured_hz": 19.49490949792631,
+        "last_sample": {
+          "data": false
+        },
+        "ros1_messages": 157,
+        "ros1_receive_hz": 19.512448803310303
+      }
+    },
+    {
+      "topic": "/chassis_initok",
+      "type": "std_msgs/msg/Bool",
+      "publisher": "ROS1 /serial_node -> ROS2 /ros_bridge",
+      "subscriber": "ROS2 feedback consumers",
+      "encoding_or_fields": "raw Bool; detailed state semantics pending",
+      "qos": "Observed bridge: RELIABLE / VOLATILE; reported depth=0. Receiver used BEST_EFFORT / VOLATILE, depth=3.",
+      "timestamp_frame_rate": "No Header in this message; receive rate only",
+      "evidence_status": "publisher_observed_no_message_in_window",
+      "runtime_observation": {
+        "started_at": "2026-11-04T21:13:05.141963+08:00",
+        "finished_at": "2026-11-04T21:13:18.290555+08:00",
+        "window_seconds": 10.04509548599981,
+        "messages": 0,
+        "measured_hz": null,
+        "last_sample": null,
+        "ros1_messages": 0,
+        "ros1_receive_hz": null
+      }
+    },
+    {
+      "topic": "/ultrasound_value",
+      "type": "std_msgs/msg/Float32MultiArray",
+      "publisher": "ROS1 /serial_node -> ROS2 /ros_bridge",
+      "subscriber": "ROS2 feedback consumers",
+      "encoding_or_fields": "raw array; layout empty; meanings and units unconfirmed",
+      "qos": "Observed bridge: RELIABLE / VOLATILE; reported depth=0. Receiver used BEST_EFFORT / VOLATILE, depth=3.",
+      "timestamp_frame_rate": "No Header in this message; receive rate only",
+      "evidence_status": "publisher_observed_no_message_in_window",
+      "runtime_observation": {
+        "started_at": "2026-11-04T21:13:05.141963+08:00",
+        "finished_at": "2026-11-04T21:13:18.290555+08:00",
+        "window_seconds": 10.04509548599981,
+        "messages": 0,
+        "measured_hz": null,
+        "last_sample": null,
+        "ros1_messages": 0,
+        "ros1_receive_hz": null
+      }
+    }
+  ],
+  "services": [
+    {
+      "name": "/semantic/save_map",
+      "type": "std_srvs/srv/Trigger",
+      "server": "semantic_grid_node",
+      "effect": "Save semantic_map.ply,semantic_map.npz,map_stats.json to configured output_dir; does not save RTAB-Map db or stop chassis",
+      "runtime_observed": false
+    }
+  ],
+  "runtime_verified_environment": {
+    "file": "/etc/jetson-ros/ros2-env.sh",
+    "ROS_DOMAIN_ID": "0",
+    "ROS_LOCALHOST_ONLY": "0",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "FASTRTPS_DEFAULT_PROFILES_FILE": "/etc/jetson-ros/udp_only.xml"
+  },
+  "live_wrapper_defaults": {
+    "ROS_DOMAIN_ID": "77 unless already defined",
+    "ROS_LOCALHOST_ONLY": "1 unless already defined",
+    "device": "0",
+    "rviz": false,
+    "use_sim_time": false
+  },
+  "additional_camera_input_profiles": [
+    {
+      "status": "source_confirmed_candidate_not_runtime_verified",
+      "owner_source": "/home/tjark/opl_week7/scripts/field/camera_http_ros2.py",
+      "historical_report": "测试文档-20261102/二、环境感知技术.docx, paragraphs 0092-0095",
+      "rgb_topic": "/camera/color/image_rect_raw",
+      "depth_topic": "/camera/aligned_depth_to_color/image_raw",
+      "camera_info_topic": "/camera/color/camera_info",
+      "source_depth_encoding": "32FC1",
+      "source_depth_units": "m",
+      "source_frame_default": "opl_camera_color_optical_frame",
+      "environment": "inherited from publisher terminal; not confirmed at runtime",
+      "status_uri": "http://192.168.10.103:8765/status",
+      "readonly_status_result": "Connection refused",
+      "not_executed": [
+        "camera adapter",
+        "static TF script",
+        "record/stop HTTP endpoints"
+      ]
+    }
+  ],
+  "revision": "2026-11-04 passive static reception supplement; robot subsequently reported powered off",
+  "availability_note": "用户已告知车辆断电；22:03轮次静态核查已补入。此前static_receive保留21时记录；新证据见static_receive_2203，不代表当前在线。",
+  "static_receive": {
+    "ros2_domain0": {
+      "started_at": "2026-11-04T21:13:05.141963+08:00",
+      "domain": "0",
+      "topics": {
+        "/encoder": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 178,
+          "first_samples": [
+            {
+              "data": [
+                0.0,
+                0.0,
+                5884641.0,
+                0.020943952724337578,
+                0.388700008392334
+              ],
+              "layout": []
+            },
+            {
+              "data": [
+                0.0,
+                0.0,
+                5884693.0,
+                0.020943952724337578,
+                0.388700008392334
+              ],
+              "layout": []
+            }
+          ],
+          "last_sample": {
+            "data": [
+              0.0,
+              0.0,
+              5893723.0,
+              0.020943952724337578,
+              0.388700008392334
+            ],
+            "layout": []
+          },
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": 19.498914405706884
+        },
+        "/chassis_initok": {
+          "type": "std_msgs/msg/Bool",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Bool",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_charge": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 177,
+          "first_samples": [
+            {
+              "data": [
+                21.543392181396484,
+                0.8629187941551208,
+                0.0
+              ],
+              "layout": []
+            },
+            {
+              "data": [
+                21.54397201538086,
+                0.8646242618560791,
+                0.0
+              ],
+              "layout": []
+            }
+          ],
+          "last_sample": {
+            "data": [
+              21.543392181396484,
+              0.8382641077041626,
+              0.0
+            ],
+            "layout": []
+          },
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": 19.495234907336553
+        },
+        "/ultrasound_value": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_docking": {
+          "type": "std_msgs/msg/Bool",
+          "count": 177,
+          "first_samples": [
+            {
+              "data": false
+            },
+            {
+              "data": false
+            }
+          ],
+          "last_sample": {
+            "data": false
+          },
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Bool",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": 19.49490949792631
+        },
+        "/tf": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/tf_static": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        }
+      },
+      "tf_edges": {},
+      "tf_checks": [],
+      "control_publications": 0,
+      "mode": "passive_static_receive",
+      "other_nodes": [
+        {
+          "name": "ros_bridge",
+          "namespace": "/"
+        },
+        {
+          "name": "_ros2cli_daemon_0_aa1686eea3fd4617b383dadd2465ad69",
+          "namespace": "/"
+        }
+      ],
+      "window_seconds": 10.04509548599981,
+      "finished_at": "2026-11-04T21:13:18.290555+08:00"
+    },
+    "ros1_chassis": {
+      "started_at": "2026-11-04T21:13:56.755579+08:00",
+      "mode": "passive_static_chassis_feedback",
+      "topics": {
+        "/encoder": {
+          "count": 156,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [
+            {
+              "data": [
+                0.0,
+                0.0,
+                5932429.0,
+                0.020943952724337578,
+                0.388700008392334
+              ],
+              "layout": []
+            },
+            {
+              "data": [
+                0.0,
+                0.0,
+                5932481.0,
+                0.020943952724337578,
+                0.388700008392334
+              ],
+              "layout": []
+            }
+          ],
+          "last_sample": {
+            "data": [
+              0.0,
+              0.0,
+              5940374.0,
+              0.020943952724337578,
+              0.388700008392334
+            ],
+            "layout": []
+          },
+          "received_hz": 19.524517503029394
+        },
+        "/chassis_charge": {
+          "count": 156,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [
+            {
+              "data": [
+                21.543392181396484,
+                0.8875742554664612,
+                0.0
+              ],
+              "layout": []
+            },
+            {
+              "data": [
+                21.50147819519043,
+                0.8382641077041626,
+                0.0
+              ],
+              "layout": []
+            }
+          ],
+          "last_sample": {
+            "data": [
+              21.58530616760254,
+              0.8382641077041626,
+              0.0
+            ],
+            "layout": []
+          },
+          "received_hz": 19.520248485357612
+        },
+        "/ultrasound_value": {
+          "count": 0,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/chassis_initok": {
+          "count": 0,
+          "type": "std_msgs/Bool",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/chassis_docking": {
+          "count": 157,
+          "type": "std_msgs/Bool",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [
+            {
+              "data": false
+            },
+            {
+              "data": false
+            }
+          ],
+          "last_sample": {
+            "data": false
+          },
+          "received_hz": 19.512448803310303
+        }
+      },
+      "control_publications": 0,
+      "registered_topic_types": {
+        "/rosout_agg": "rosgraph_msgs/Log",
+        "/rosout": "rosgraph_msgs/Log",
+        "/diagnostics": "diagnostic_msgs/DiagnosticArray",
+        "/encoder": "std_msgs/Float32MultiArray",
+        "/chassis_initok": "std_msgs/Bool",
+        "/chassis_charge": "std_msgs/Float32MultiArray",
+        "/ultrasound_value": "std_msgs/Float32MultiArray",
+        "/chassis_docking": "std_msgs/Bool",
+        "/cmd_vel_filtered": "geometry_msgs/Twist",
+        "/chassis_param": "std_msgs/Float32MultiArray",
+        "/charge_enable": "std_msgs/Bool",
+        "/cmd_vel": "geometry_msgs/Twist",
+        "/probe_bridge_test": "geometry_msgs/Twist"
+      },
+      "window_seconds": 8.033179714999278,
+      "finished_at": "2026-11-04T21:14:04.982079+08:00"
+    },
+    "ros2_domain77": {
+      "started_at": "2026-11-04T21:14:58.544764+08:00",
+      "domain": "77",
+      "topics": {
+        "/encoder": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_initok": {
+          "type": "std_msgs/msg/Bool",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_charge": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/ultrasound_value": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_docking": {
+          "type": "std_msgs/msg/Bool",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/tf": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/tf_static": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [],
+          "subscriber_nodes": [],
+          "received_hz": null
+        }
+      },
+      "tf_edges": {},
+      "tf_checks": [],
+      "control_publications": 0,
+      "mode": "passive_static_receive",
+      "other_nodes": [],
+      "window_seconds": 10.012352239000393,
+      "finished_at": "2026-11-04T21:15:11.650064+08:00"
+    },
+    "camera_status": {
+      "checked_at": "2026-11-04T21:14:04.237107+08:00",
+      "http_status_reads": [
+        {
+          "checked_at": 1793798044.2377028,
+          "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+        },
+        {
+          "checked_at": 1793798045.2430701,
+          "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+        }
+      ],
+      "camera_related_processes": [],
+      "usb_listing": "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 001 Device 010: ID 8086:0b07 Intel Corp. RealSense D435\nBus 001 Device 008: ID 413c:2113 Dell Computer Corp. KB216 Wired Keyboard\nBus 001 Device 009: ID 30fa:1701 INSTANT USB GAMING MOUSE \nBus 001 Device 005: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 003: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 006: ID 0bda:c822 Realtek Semiconductor Corp. Bluetooth Radio\nBus 001 Device 004: ID 1a86:7523 QinHeng Electronics CH340 serial converter\nBus 001 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub\nBus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\n"
+    },
+    "control_publications": 0,
+    "driver_or_business_process_started": false,
+    "array_field_meanings_confirmed": false,
+    "odom_or_capture_time_tf_validated": false,
+    "chassis_source_lookup": "Interrupted by vehicle disconnection; output incomplete, not used as evidence."
+  },
+  "human_csv_schema": {
+    "language": "Chinese",
+    "path": "话题接口表.csv",
+    "columns": [
+      "话题或服务",
+      "类别",
+      "本次状态_2203",
+      "本次接收条数",
+      "本次接收频率_Hz",
+      "ROS版本与域",
+      "消息或服务类型",
+      "发布方",
+      "接收方与用途",
+      "核查状态_断电前",
+      "接收频率_Hz",
+      "数据格式与单位",
+      "时间戳与坐标系",
+      "QoS",
+      "调用方式",
+      "证据来源与窗口",
+      "待确认项",
+      "本次核查时间",
+      "本次证据",
+      "后续核验事项"
+    ],
+    "rows": 39,
+    "historical_columns_retained": true,
+    "current_session_columns": [
+      "本次核查时间",
+      "本次状态_2203",
+      "本次接收条数",
+      "本次接收频率_Hz",
+      "本次证据",
+      "后续核验事项"
+    ]
+  },
+  "control_interfaces": [
+    {
+      "name": "/cmd_vel",
+      "type_as_recorded": "geometry_msgs/msg/Twist",
+      "ros_version": "ROS2 → ROS1",
+      "role": "control, not invoked in this audit"
+    },
+    {
+      "name": "/cmd_vel_filtered",
+      "type_as_recorded": "geometry_msgs/Twist",
+      "ros_version": "ROS1",
+      "role": "control, not invoked in this audit"
+    },
+    {
+      "name": "/chassis_param",
+      "type_as_recorded": "std_msgs/Float32MultiArray",
+      "ros_version": "ROS1；ROS2端未验证",
+      "role": "control, not invoked in this audit"
+    },
+    {
+      "name": "/charge_enable",
+      "type_as_recorded": "std_msgs/Bool",
+      "ros_version": "ROS1；ROS2端未验证",
+      "role": "control, not invoked in this audit"
+    }
+  ],
+  "control_contract_notes": {
+    "command_interface": "ROS2 /cmd_vel, geometry_msgs/msg/Twist -> ROS1 /cmd_vel -> /cmd_vel_filtered -> MCU",
+    "gamepad_script_validation_only": {
+      "linear_max_m_s": 0.2,
+      "angular_max_rad_s": 0.4,
+      "source": "/home/tjark/teleop/start-gamesir.sh",
+      "applies_to_direct_cmd_vel_publishers": false
+    },
+    "relay_limits_or_obstacle_avoidance": false,
+    "mcu_timeout_stop_verified": false,
+    "new_programmatic_motion_test_performed": false,
+    "autonomous_navigation_verified": false,
+    "current_action": "No motion commands or controller changes; vehicle reported powered off."
+  },
+  "historical_scan_validation": {
+    "date": "2026-10-23",
+    "source": "/home/xsy/ros2/live_robot_test_20261023/static-20261023-151928/scan/result.json",
+    "sha256": "cd0b77b5117d2031ebaac6f045cf14c60674ce148c82859a001c3acf3103849a",
+    "device": "LakiBeam1",
+    "topic": "/scan",
+    "type": "sensor_msgs/msg/LaserScan",
+    "domain_id": 77,
+    "messages": 101,
+    "seconds": 10.0,
+    "arrival_hz": 10.010928927105342,
+    "frame_id": "laser",
+    "samples_per_scan": 3600,
+    "publisher": [
+      {
+        "node": "laser_scan_publisher",
+        "namespace": "/",
+        "reliability": "ReliabilityPolicy.RELIABLE",
+        "durability": "DurabilityPolicy.VOLATILE"
+      }
+    ],
+    "latest_20261104_status": "No scan publisher observed in inspected Domain 0 and 77 windows; no new scan reception validation."
+  },
+  "scan_source_code_index": {
+    "local_driver_source": "/home/xsy/ros2/jetson_deploy_20261023/lidar_vm_ws/src/lakibeam1/src/lakibeam1_scan.cpp",
+    "sha256": "f3b6aaf9f0ab0d8435a578143c4bba8a7d3cfebf18d87f6bc5c30db385513f55",
+    "source_status": "Historical 2026-10-23 deployment source copy; current robot build source not rechecked after disconnection",
+    "publisher_creation_line": 33,
+    "udp_receive_line": 143,
+    "publish_line": 239,
+    "subscriber_example": "reference/legacy_robot_tools/scripts/validate_scan.py:39",
+    "configured_sensorip": "192.168.10.160",
+    "configured_hostip": "192.168.10.102",
+    "udp_port": 2368,
+    "output_topic": "/scan",
+    "frame_id": "laser"
+  },
+  "static_receive_2203": {
+    "device": "tjark@192.168.10.102",
+    "ros2_domain0": {
+      "started_at": "2026-11-04T22:07:56.337889+08:00",
+      "domain": "0",
+      "topics": {
+        "/encoder": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/chassis_odom_node"
+          ],
+          "received_hz": null
+        },
+        "/chassis_initok": {
+          "type": "std_msgs/msg/Bool",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Bool",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_charge": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/ultrasound_value": {
+          "type": "std_msgs/msg/Float32MultiArray",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Float32MultiArray",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/chassis_docking": {
+          "type": "std_msgs/msg/Bool",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/ros_bridge",
+              "type": "std_msgs/msg/Bool",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [],
+          "received_hz": null
+        },
+        "/tf": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 1363,
+          "first_samples": [
+            {
+              "edges": 2
+            },
+            {
+              "edges": 2
+            }
+          ],
+          "last_sample": {
+            "edges": 2
+          },
+          "publishers": [
+            {
+              "node": "/cartographer_node",
+              "type": "tf2_msgs/msg/TFMessage",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            },
+            {
+              "node": "/chassis_odom_node",
+              "type": "tf2_msgs/msg/TFMessage",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge",
+            "/transform_listener_impl_aaab155b0480",
+            "/transform_listener_impl_aaaacaab40a0",
+            "/rosbag2_recorder"
+          ],
+          "received_hz": 137.14836612602286
+        },
+        "/tf_static": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "count": 2,
+          "first_samples": [
+            {
+              "edges": 1
+            },
+            {
+              "edges": 4
+            }
+          ],
+          "last_sample": {
+            "edges": 4
+          },
+          "publishers": [
+            {
+              "node": "/static_transform_publisher_M4p2EQxpVCWnjpZN",
+              "type": "tf2_msgs/msg/TFMessage",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            },
+            {
+              "node": "/camera/camera",
+              "type": "tf2_msgs/msg/TFMessage",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            },
+            {
+              "node": "/static_transform_publisher_FKHgU1SSedPkqYe1",
+              "type": "tf2_msgs/msg/TFMessage",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge",
+            "/transform_listener_impl_aaab155b0480",
+            "/transform_listener_impl_aaaacaab40a0",
+            "/rosbag2_recorder"
+          ],
+          "received_hz": 101.29704792056032
+        },
+        "/camera/camera/aligned_depth_to_color/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "count": 130,
+          "first_samples": [
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279656372559,
+              "width": 640,
+              "height": 480,
+              "k": [
+                604.2891845703125,
+                0.0,
+                332.23675537109375,
+                0.0,
+                603.649169921875,
+                246.0366668701172,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            },
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279723088135,
+              "width": 640,
+              "height": 480,
+              "k": [
+                604.2891845703125,
+                0.0,
+                332.23675537109375,
+                0.0,
+                603.649169921875,
+                246.0366668701172,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_color_optical_frame",
+            "stamp_ns": 1793801289597195313,
+            "width": 640,
+            "height": 480,
+            "k": [
+              604.2891845703125,
+              0.0,
+              332.23675537109375,
+              0.0,
+              603.649169921875,
+              246.0366668701172,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "distortion_model": "plumb_bob"
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/CameraInfo",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge"
+          ],
+          "received_hz": 13.024261304395141,
+          "arrival_minus_header_ms_summary": {
+            "p50": 83.096,
+            "p95": 99.323,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/camera/camera/aligned_depth_to_color/image_raw": {
+          "type": "sensor_msgs/msg/Image",
+          "count": 116,
+          "first_samples": [
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279723088135,
+              "width": 640,
+              "height": 480,
+              "encoding": "16UC1",
+              "step": 1280,
+              "payload_bytes": 614400
+            },
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279789803467,
+              "width": 640,
+              "height": 480,
+              "encoding": "16UC1",
+              "step": 1280,
+              "payload_bytes": 614400
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_color_optical_frame",
+            "stamp_ns": 1793801289597195313,
+            "width": 640,
+            "height": 480,
+            "encoding": "16UC1",
+            "step": 1280,
+            "payload_bytes": 614400
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/Image",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge",
+            "/rgbd_compressed_pair_throttle"
+          ],
+          "received_hz": 11.642663224799072,
+          "arrival_minus_header_ms_summary": {
+            "p50": 82.858,
+            "p95": 100.15,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/camera/camera/color/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "count": 116,
+          "first_samples": [
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279723088135,
+              "width": 640,
+              "height": 480,
+              "k": [
+                604.2891845703125,
+                0.0,
+                332.23675537109375,
+                0.0,
+                603.649169921875,
+                246.0366668701172,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            },
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279789803467,
+              "width": 640,
+              "height": 480,
+              "k": [
+                604.2891845703125,
+                0.0,
+                332.23675537109375,
+                0.0,
+                603.649169921875,
+                246.0366668701172,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_color_optical_frame",
+            "stamp_ns": 1793801289597195313,
+            "width": 640,
+            "height": 480,
+            "k": [
+              604.2891845703125,
+              0.0,
+              332.23675537109375,
+              0.0,
+              603.649169921875,
+              246.0366668701172,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "distortion_model": "plumb_bob"
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/CameraInfo",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge"
+          ],
+          "received_hz": 11.636952491696663,
+          "arrival_minus_header_ms_summary": {
+            "p50": 91.561,
+            "p95": 108.933,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/camera/camera/color/image_raw": {
+          "type": "sensor_msgs/msg/Image",
+          "count": 81,
+          "first_samples": [
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279656372559,
+              "width": 640,
+              "height": 480,
+              "encoding": "rgb8",
+              "step": 1920,
+              "payload_bytes": 921600
+            },
+            {
+              "frame_id": "camera_color_optical_frame",
+              "stamp_ns": 1793801279789803467,
+              "width": 640,
+              "height": 480,
+              "encoding": "rgb8",
+              "step": 1920,
+              "payload_bytes": 921600
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_color_optical_frame",
+            "stamp_ns": 1793801289530482422,
+            "width": 640,
+            "height": 480,
+            "encoding": "rgb8",
+            "step": 1920,
+            "payload_bytes": 921600
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/Image",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge"
+          ],
+          "received_hz": 8.118805792767072,
+          "arrival_minus_header_ms_summary": {
+            "p50": 94.235,
+            "p95": 123.389,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/camera/camera/depth/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "count": 115,
+          "first_samples": [
+            {
+              "frame_id": "camera_depth_optical_frame",
+              "stamp_ns": 1793801279656372559,
+              "width": 640,
+              "height": 480,
+              "k": [
+                387.46600341796875,
+                0.0,
+                326.02020263671875,
+                0.0,
+                387.46600341796875,
+                242.14561462402344,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            },
+            {
+              "frame_id": "camera_depth_optical_frame",
+              "stamp_ns": 1793801279723088135,
+              "width": 640,
+              "height": 480,
+              "k": [
+                387.46600341796875,
+                0.0,
+                326.02020263671875,
+                0.0,
+                387.46600341796875,
+                242.14561462402344,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "d": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "distortion_model": "plumb_bob"
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_depth_optical_frame",
+            "stamp_ns": 1793801289597195313,
+            "width": 640,
+            "height": 480,
+            "k": [
+              387.46600341796875,
+              0.0,
+              326.02020263671875,
+              0.0,
+              387.46600341796875,
+              242.14561462402344,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "distortion_model": "plumb_bob"
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/CameraInfo",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge"
+          ],
+          "received_hz": 11.491513300500081,
+          "arrival_minus_header_ms_summary": {
+            "p50": 93.997,
+            "p95": 123.994,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/camera/camera/depth/image_rect_raw": {
+          "type": "sensor_msgs/msg/Image",
+          "count": 78,
+          "first_samples": [
+            {
+              "frame_id": "camera_depth_optical_frame",
+              "stamp_ns": 1793801279723088135,
+              "width": 640,
+              "height": 480,
+              "encoding": "16UC1",
+              "step": 1280,
+              "payload_bytes": 614400
+            },
+            {
+              "frame_id": "camera_depth_optical_frame",
+              "stamp_ns": 1793801279789803467,
+              "width": 640,
+              "height": 480,
+              "encoding": "16UC1",
+              "step": 1280,
+              "payload_bytes": 614400
+            }
+          ],
+          "last_sample": {
+            "frame_id": "camera_depth_optical_frame",
+            "stamp_ns": 1793801289597195313,
+            "width": 640,
+            "height": 480,
+            "encoding": "16UC1",
+            "step": 1280,
+            "payload_bytes": 614400
+          },
+          "publishers": [
+            {
+              "node": "/camera/camera",
+              "type": "sensor_msgs/msg/Image",
+              "reliability": "RELIABLE",
+              "durability": "TRANSIENT_LOCAL",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge"
+          ],
+          "received_hz": 7.789638935879148,
+          "arrival_minus_header_ms_summary": {
+            "p50": 95.173,
+            "p95": 130.049,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        },
+        "/odom": {
+          "type": "nav_msgs/msg/Odometry",
+          "count": 0,
+          "first_samples": [],
+          "publishers": [
+            {
+              "node": "/chassis_odom_node",
+              "type": "nav_msgs/msg/Odometry",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge",
+            "/rosbag2_recorder"
+          ],
+          "received_hz": null
+        },
+        "/scan": {
+          "type": "sensor_msgs/msg/LaserScan",
+          "count": 100,
+          "first_samples": [
+            {
+              "frame_id": "laser",
+              "stamp_ns": 1793801279806786706,
+              "ranges": 3600,
+              "range_min": 0.0,
+              "range_max": 100.0,
+              "scan_time": 0.10053545981645584
+            },
+            {
+              "frame_id": "laser",
+              "stamp_ns": 1793801279906704739,
+              "ranges": 3600,
+              "range_min": 0.0,
+              "range_max": 100.0,
+              "scan_time": 0.09991803020238876
+            }
+          ],
+          "last_sample": {
+            "frame_id": "laser",
+            "stamp_ns": 1793801289695031166,
+            "ranges": 3600,
+            "range_min": 0.0,
+            "range_max": 100.0,
+            "scan_time": 0.09971380233764648
+          },
+          "publishers": [
+            {
+              "node": "/richbeam_lidar_node0",
+              "type": "sensor_msgs/msg/LaserScan",
+              "reliability": "RELIABLE",
+              "durability": "VOLATILE",
+              "depth": 0
+            }
+          ],
+          "subscriber_nodes": [
+            "/ros_bridge",
+            "/rviz",
+            "/cartographer_node",
+            "/rosbag2_recorder"
+          ],
+          "received_hz": 10.009710483838527,
+          "arrival_minus_header_ms_summary": {
+            "p50": 4.849,
+            "p95": 16.342,
+            "note": "Requires clocks on the same time base; not end-to-end algorithm latency."
+          }
+        }
+      },
+      "tf_edges": {
+        "map -> odom": {
+          "count": 1363,
+          "topic": "/tf",
+          "first_stamp_ns": 1793801279761436100,
+          "last_stamp_ns": 1793801289732382300,
+          "translation": [
+            0.0,
+            -5.204170427930421e-18,
+            0.0
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            -3.2789928329214746e-20,
+            1.0
+          ]
+        },
+        "odom -> base_link": {
+          "count": 1363,
+          "topic": "/tf",
+          "first_stamp_ns": 1793801279761436100,
+          "last_stamp_ns": 1793801289732382300,
+          "translation": [
+            -0.006562004464174751,
+            0.010274392651193388,
+            0.0
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            -0.00016833319976314963,
+            0.9999999858319668
+          ]
+        },
+        "base_link -> camera_link": {
+          "count": 1,
+          "topic": "/tf_static",
+          "first_stamp_ns": 1793801225164489078,
+          "last_stamp_ns": 1793801225164489078,
+          "translation": [
+            -0.005,
+            -0.14,
+            0.6
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            0.08290473498662174,
+            0.9965574769760137
+          ]
+        },
+        "camera_link -> camera_depth_frame": {
+          "count": 1,
+          "topic": "/tf_static",
+          "first_stamp_ns": 1793801197797151255,
+          "last_stamp_ns": 1793801197797151255,
+          "translation": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "camera_depth_frame -> camera_depth_optical_frame": {
+          "count": 1,
+          "topic": "/tf_static",
+          "first_stamp_ns": 1793801197797151255,
+          "last_stamp_ns": 1793801197797151255,
+          "translation": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "quaternion": [
+            -0.5,
+            0.4999999999999999,
+            -0.5,
+            0.5000000000000001
+          ]
+        },
+        "camera_link -> camera_color_frame": {
+          "count": 1,
+          "topic": "/tf_static",
+          "first_stamp_ns": 1793801197810817036,
+          "last_stamp_ns": 1793801197810817036,
+          "translation": [
+            8.04092051112093e-05,
+            0.015056708827614784,
+            0.0003254638286307454
+          ],
+          "quaternion": [
+            0.004063072614371777,
+            -0.0009006108157336712,
+            -0.0020242633763700724,
+            0.9999892711639404
+          ]
+        },
+        "camera_color_frame -> camera_color_optical_frame": {
+          "count": 1,
+          "topic": "/tf_static",
+          "first_stamp_ns": 1793801197810817036,
+          "last_stamp_ns": 1793801197810817036,
+          "translation": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "quaternion": [
+            -0.5,
+            0.4999999999999999,
+            -0.5,
+            0.5000000000000001
+          ]
+        }
+      },
+      "tf_checks": [
+        {
+          "topic": "/camera/camera/aligned_depth_to_color/image_raw",
+          "target": "map",
+          "source": "camera_color_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": false,
+          "error": "Lookup would require extrapolation into the future.  Requested time 1793801289.597195 but the latest data is at time 1793801289.551547, when looking up transform from frame [camera_color_optical_frame] to frame [map]"
+        },
+        {
+          "topic": "/camera/camera/aligned_depth_to_color/image_raw",
+          "target": "odom",
+          "source": "camera_color_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": false,
+          "error": "Lookup would require extrapolation into the future.  Requested time 1793801289.597195 but the latest data is at time 1793801289.551547, when looking up transform from frame [camera_color_optical_frame] to frame [odom]"
+        },
+        {
+          "topic": "/camera/camera/aligned_depth_to_color/image_raw",
+          "target": "base_link",
+          "source": "camera_color_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": true
+        },
+        {
+          "topic": "/camera/camera/depth/image_rect_raw",
+          "target": "map",
+          "source": "camera_depth_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": false,
+          "error": "Lookup would require extrapolation into the future.  Requested time 1793801289.597195 but the latest data is at time 1793801289.551547, when looking up transform from frame [camera_depth_optical_frame] to frame [map]"
+        },
+        {
+          "topic": "/camera/camera/depth/image_rect_raw",
+          "target": "odom",
+          "source": "camera_depth_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": false,
+          "error": "Lookup would require extrapolation into the future.  Requested time 1793801289.597195 but the latest data is at time 1793801289.551547, when looking up transform from frame [camera_depth_optical_frame] to frame [odom]"
+        },
+        {
+          "topic": "/camera/camera/depth/image_rect_raw",
+          "target": "base_link",
+          "source": "camera_depth_optical_frame",
+          "requested_stamp_ns": 1793801289597195313,
+          "available_at_capture_time": true
+        }
+      ],
+      "control_publications": 0,
+      "mode": "passive_static_receive",
+      "other_nodes": [
+        {
+          "name": "ros_bridge",
+          "namespace": "/"
+        },
+        {
+          "name": "rviz",
+          "namespace": "/"
+        },
+        {
+          "name": "transform_listener_impl_aaab155b0480",
+          "namespace": "/"
+        },
+        {
+          "name": "richbeam_lidar_node0",
+          "namespace": "/"
+        },
+        {
+          "name": "static_transform_publisher_M4p2EQxpVCWnjpZN",
+          "namespace": "/"
+        },
+        {
+          "name": "cartographer_node",
+          "namespace": "/"
+        },
+        {
+          "name": "transform_listener_impl_aaaacaab40a0",
+          "namespace": "/"
+        },
+        {
+          "name": "occupancy_grid_node",
+          "namespace": "/"
+        },
+        {
+          "name": "camera",
+          "namespace": "/camera"
+        },
+        {
+          "name": "rgbd_compressed_pair_throttle",
+          "namespace": "/"
+        },
+        {
+          "name": "static_transform_publisher_FKHgU1SSedPkqYe1",
+          "namespace": "/"
+        },
+        {
+          "name": "_ros2cli_daemon_0_f85887b0ce34497184cecc4caeebbc46",
+          "namespace": "/"
+        },
+        {
+          "name": "rosbag2_recorder",
+          "namespace": "/"
+        },
+        {
+          "name": "chassis_odom_node",
+          "namespace": "/"
+        }
+      ],
+      "window_seconds": 10.00859991499999,
+      "finished_at": "2026-11-04T22:08:09.784861+08:00"
+    },
+    "ros1_chassis": {
+      "started_at": "2026-11-04T22:09:32.501566+08:00",
+      "mode": "passive_static_chassis_feedback",
+      "topics": {
+        "/encoder": {
+          "count": 0,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/chassis_charge": {
+          "count": 0,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/ultrasound_value": {
+          "count": 0,
+          "type": "std_msgs/Float32MultiArray",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/chassis_initok": {
+          "count": 0,
+          "type": "std_msgs/Bool",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        },
+        "/chassis_docking": {
+          "count": 0,
+          "type": "std_msgs/Bool",
+          "publisher_nodes": [
+            "/serial_node"
+          ],
+          "first_samples": [],
+          "received_hz": null
+        }
+      },
+      "control_publications": 0,
+      "registered_topic_types": {
+        "/rosout_agg": "rosgraph_msgs/Log",
+        "/rosout": "rosgraph_msgs/Log",
+        "/diagnostics": "diagnostic_msgs/DiagnosticArray",
+        "/encoder": "std_msgs/Float32MultiArray",
+        "/chassis_initok": "std_msgs/Bool",
+        "/chassis_charge": "std_msgs/Float32MultiArray",
+        "/ultrasound_value": "std_msgs/Float32MultiArray",
+        "/chassis_docking": "std_msgs/Bool",
+        "/cmd_vel_filtered": "geometry_msgs/Twist",
+        "/chassis_param": "std_msgs/Float32MultiArray",
+        "/charge_enable": "std_msgs/Bool",
+        "/scan": "sensor_msgs/LaserScan",
+        "/camera/camera/aligned_depth_to_color/camera_info": "sensor_msgs/CameraInfo",
+        "/camera/camera/aligned_depth_to_color/image_raw": "sensor_msgs/Image",
+        "/camera/camera/color/camera_info": "sensor_msgs/CameraInfo",
+        "/camera/camera/color/image_raw": "sensor_msgs/Image",
+        "/camera/camera/color/image_raw/compressed": "sensor_msgs/CompressedImage",
+        "/camera/camera/depth/camera_info": "sensor_msgs/CameraInfo",
+        "/camera/camera/depth/image_rect_raw": "sensor_msgs/Image",
+        "/tf_static": "tf2_msgs/TFMessage",
+        "/camera/color/image_raw_throttled/compressed": "sensor_msgs/CompressedImage",
+        "/camera/depth/image_raw_throttled/compressedDepth": "sensor_msgs/CompressedImage",
+        "/odom": "nav_msgs/Odometry",
+        "/tf": "tf2_msgs/TFMessage",
+        "/constraint_list": "visualization_msgs/MarkerArray",
+        "/landmark_poses_list": "visualization_msgs/MarkerArray",
+        "/map": "nav_msgs/OccupancyGrid",
+        "/scan_matched_points2": "sensor_msgs/PointCloud2",
+        "/trajectory_node_list": "visualization_msgs/MarkerArray",
+        "/cmd_vel": "geometry_msgs/Twist"
+      },
+      "window_seconds": 8.033031016999985,
+      "finished_at": "2026-11-04T22:09:40.711801+08:00"
+    },
+    "ros2_domain77_graph": {
+      "started_at": "2026-11-04T22:09:40.014483+08:00",
+      "domain": "77",
+      "scope": "read_only_ros2_graph",
+      "control_publications": 0,
+      "nodes": [],
+      "topics": {},
+      "finished_at": "2026-11-04T22:09:44.105065+08:00"
+    },
+    "tf_followup": {
+      "started_at": "2026-11-04T22:10:59.831454+08:00",
+      "domain": 0,
+      "control_publications": 0,
+      "scope": "passive_tf_capture_time_lookup_with_wait",
+      "checks": [],
+      "latest_chain_checks": [
+        {
+          "target": "base_link",
+          "source": "laser",
+          "request": "latest",
+          "available": false,
+          "error": "\"base_link\" passed to lookupTransform argument target_frame does not exist. "
+        },
+        {
+          "target": "map",
+          "source": "laser",
+          "request": "latest",
+          "available": false,
+          "error": "\"map\" passed to lookupTransform argument target_frame does not exist. "
+        },
+        {
+          "target": "base_link",
+          "source": "camera_color_optical_frame",
+          "request": "latest",
+          "available": false,
+          "error": "\"base_link\" passed to lookupTransform argument target_frame does not exist. "
+        }
+      ],
+      "topics_seen": [],
+      "finished_at": "2026-11-04T22:11:06.950306+08:00"
+    },
+    "control_publications": 0,
+    "driver_or_business_process_started": false,
+    "remote_source_changes": 0,
+    "chassis_status": "serial_sync_errors_and_no_feedback_in_both_ros_versions",
+    "odom_status": "publisher_exists_but_zero_received",
+    "semantic_runtime_tested": false,
+    "lidar_active_executable": "/home/tjark/2D_slam/ros_ws/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node",
+    "chassis_ros2_source": "/home/tjark/2D_slam/odom_ws/src/chassis_odom/src/chassis_odom_node.cpp",
+    "report": "接口静态复核_20261104_2203.md",
+    "chassis_report": "底盘代码与控制接口核查_20261104.md",
+    "raw_evidence_directory": "/home/xsy/ros2/jetson_code_audit_20261104/chassis_readonly_2203"
+  }
+}

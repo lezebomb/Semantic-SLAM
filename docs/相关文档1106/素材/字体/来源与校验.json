@@ -1,0 +1,55 @@
+{
+  "purpose": "Personal academic figure rendering; original binaries only, no system-wide install",
+  "fonts": [
+    {
+      "file": "SimHei.ttf",
+      "source": "https://raw.githubusercontent.com/Haixing-Hu/latex-chinese-fonts/master/chinese/黑体/SimHei.ttf",
+      "bytes": 9751960,
+      "sha256": "336a838f4a78e150826be608dae69de59d50948c3d2b71760e096ae764154bdc",
+      "names": [
+        "Arrunta",
+        "Navadno",
+        "Normaali",
+        "Normal",
+        "Normale",
+        "Normalny",
+        "Normál",
+        "Normálne",
+        "Regular",
+        "SimHei",
+        "Standaard",
+        "Standard",
+        "normal",
+        "obyčejné",
+        "Κανονικά",
+        "Обычный",
+        "黑体"
+      ]
+    },
+    {
+      "file": "TimesNewRoman.ttf",
+      "source": "https://raw.githubusercontent.com/Haixing-Hu/latex-chinese-fonts/master/english/Serif/TimesNewRoman.ttf",
+      "bytes": 834240,
+      "sha256": "d9fb32eb1646d6fc977c63fd780a46c60b6d1f607bf55eb7baa185aa2637711d",
+      "names": [
+        "Arrunta",
+        "Navadno",
+        "Normaali",
+        "Normal",
+        "Normale",
+        "Normalny",
+        "Normál",
+        "Normálne",
+        "Regular",
+        "Standaard",
+        "Standard",
+        "Times New Roman",
+        "normal",
+        "obyčejné",
+        "thường",
+        "Κανονικά",
+        "Обычный"
+      ]
+    }
+  ]
+}

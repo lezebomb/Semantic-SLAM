@@ -1,0 +1,28 @@
+{
+  "source_docx": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档-20261102.docx",
+  "source_docx_sha256": "bacaa70855780dbb007fe4df81742f63dfc4fa5640507b7781c88a0f086b9e8e",
+  "source_code": {
+    "/home/xsy/ros2/Semantic-SLAM-deploy/run.sh": "a83e1f3bd73bce93828223444d92babc947dbfcc356bc9d5a50802c027173f0c",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/run_live.sh": "f001647cefd8f9f206b51825ffffeaa148c986a21baf319a47e9254b0e63f624",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/setup.sh": "6859f4b58278323082c76e7773700a1fb492562f9434ceee84f34ed202bdaa54",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/requirements.txt": "035f4c101f304e6e9f0035954dfb6846ed11cba19cb051087ac86db5f521e9e3",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/semantic/yolo_detector.py": "191f4dbea99a32f1a068609f9015fcccede8390cd176827adf70c3f0e7782be7",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/scripts/run_demo.py": "bf5e493da4aa9f58dca59a1b4029e5b23866f313b8c05006efc51db19e776024",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/scripts/observe_ros.py": "02fe14db71cca7ebc73230c5ff353ff49f33574344c21f68fd0616fe0a0aa16c",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/scripts/ros_env.sh": "ebe202d976ef8af58b6f7a98bcbf6e4f714f63a20cd0e6aef5f0676a67b53a85",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/launch/indoor_semantic.launch.py": "9578533eb99d409ebf2436cdb07c7b02f5367e750aeb1d117e4c9bf4edf5beda",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/launch/semantic_only.launch.py": "ce94492bb300e6cb4244c64fc663860dca618fa68e8b383f4c6dbeafd309325e",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/launch/live_semantic.launch.py": "7de55fb72ab2db0c932bf3eed022639270a7d95090d5d2e82fcf9ceb47148bf0",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/config/live.yaml": "04dd8ca4e14ba5603bbbb057ac463dff32ff149b35066cf4463c8a9af5e02174",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/config/semantic_indoor.rviz": "caad1a9bae2b17db004f2775e54621599185fd09b74479ab14fbcd6af1828238",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/licenses/rtabmap_ros-BSD.txt": "67961b22e779ea9aee20b21c816b5c8f01bd1406c0a49817933303efb0448949",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/tests/test_verification_policy.py": "f6d4e4b0656f15f1cf503aa2cab03b26b294f8d70ab22053f4caec803c5e0dd1",
+    "/home/xsy/ros2/Semantic-SLAM-deploy/models/yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c"
+  }
+}

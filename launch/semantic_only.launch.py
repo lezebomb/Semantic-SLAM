@@ -1,4 +1,5 @@
 """Standalone semantic nodes, standard image_transport decoding, no SLAM backend."""
+import os
 from pathlib import Path
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess
@@ -13,7 +14,7 @@ def generate_launch_description():
                     camera_info='/data_throttled_camera_info', output_dir=str(root/'artifacts/manual'),
                     model_path=str(root/'models/yolov8n-seg.pt'), confidence='0.35',
                     process_every_n='3', image_size='640', cpu_threads='2',
-                    reuse_rgbd='true')
+                    reuse_rgbd='true', device='0')
     args = [DeclareLaunchArgument(k, default_value=v) for k,v in defaults.items()]
     config = {k:LaunchConfiguration(k) for k in defaults}
     nodes = [SetParameter(name='use_sim_time', value=True),
@@ -39,11 +40,12 @@ def generate_launch_description():
                               ('/rgbd_image/rgb/camera_info','/semantic/input/camera_info'),
                               ('/rgbd_image/depth/camera_info','/semantic/input/depth_camera_info')])]
     for name in ('yolo_detector','semantic_projector','semantic_grid_node'):
-        cmd = [str(root/'.venv/bin/python'),str(root/'semantic'/f'{name}.py'),
+        cmd = [os.environ['SEMANTIC_PYTHON'],str(root/'semantic'/f'{name}.py'),
                '--ros-args','-p','use_sim_time:=true','-p',['output_dir:=',config['output_dir']]]
         if name == 'yolo_detector':
             for k in ('model_path','confidence','process_every_n','image_size','cpu_threads'):
                 cmd += ['-p',[k+':=',config[k]]]
+            cmd += ['-p', ["device:='", config['device'], "'"]]
             cmd += ['-r',['/data_throttled_camera_info:=',config['camera_info']]]
         nodes.append(ExecuteProcess(cmd=cmd,output='screen'))
     return LaunchDescription(args+nodes)

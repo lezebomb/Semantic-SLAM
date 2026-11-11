@@ -1,0 +1,54 @@
+{
+  "session": "20261104_2203",
+  "device": "tjark@192.168.10.102",
+  "remote_root": "/home/tjark",
+  "mode": "read_only_static",
+  "motion_commands": 0,
+  "driver_starts": 0,
+  "remote_source_edits": 0,
+  "control_service_calls": 0,
+  "connection_end_note": "22:13附近独立SSH复查被远端关闭：kex_exchange_identification: Connection closed by remote host。不能据此确定断电原因。",
+  "tf_followup_note": "22:10:59至22:11:06未收新深度或TF；此窗口没有采集时刻检查样本，不将其写成所有TF查询失败。",
+  "raw_files": {
+    "passive_ros1_feedback.json": {
+      "bytes": 2480,
+      "sha256": "d6883c14dc52a1d690e975f9ce12371d55d3aebfb0c04223668428a649db16a8"
+    },
+    "ros2_domain0_graph.json": {
+      "bytes": 11062,
+      "sha256": "a588555830984f9cf40ed9d0e0381cffbb34a38116ab5b833893bffc157c7432"
+    },
+    "selected_sources.json": {
+      "bytes": 143573,
+      "sha256": "0f1be8f9352d56a2285c1591717dc24c8ccb892f1286abb43158775bf6fa5551"
+    },
+    "lidar_source_and_serial_logs.json": {
+      "bytes": 36749,
+      "sha256": "f417d4fa29f0f8866a3082f2c3a29d477a803f8ab21f1d14c725cf29cbb370b4"
+    },
+    "host_source_inventory.json": {
+      "bytes": 1502022,
+      "sha256": "6f7e5cf617f841e339ed85d80458bb0528f419ec2e518816c04e9523fc145551"
+    },
+    "ros1_graph.json": {
+      "bytes": 3694,
+      "sha256": "8a010063b3269f73b6823141f80a62a15616dbb6516f0bfc53c645cea8697d75"
+    },
+    "passive_ros2_domain0.json": {
+      "bytes": 16080,
+      "sha256": "41a998ec97e26bc9de0f5250a669e4a6da0fc2421f5fd0861fe963e8570bb1a5"
+    },
+    "ros2_domain77_graph.json": {
+      "bytes": 205,
+      "sha256": "b3a9e0d5d20eb37bb190e0999b7eaadc241d13ce296aa4cfc8ffec6e2b15cc59"
+    },
+    "active_processes.json": {
+      "bytes": 3448,
+      "sha256": "406f03f6a589a7ccb855d56fd432dac8b1fce102d83603c4b544f165d01dfd99"
+    },
+    "tf_capture_time_with_wait.json": {
+      "bytes": 790,
+      "sha256": "1e6c96fbfce5d96faa0c46024073c7dbe97283a4c3df8817bc0aa317e11b59ec"
+    }
+  }
+}

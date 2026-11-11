@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "scope": "Local read-only document and source audit; no robot connection, ROS startup, business source edits or original DOCX edits",
+  "current_integrated_root": "unconfirmed",
+  "sources_sha256": {
+    "RTAB-Map + YOLO/3D语义建图---原理文档-带部分修改建议示例.docx": "a05fe137fe812ec7d072bd51fc20a1c081150858053a66b249a1b7b03e5f638c",
+    "RTAB-Map + YOLO/3D语义建图---测试文档-带部分修改建议示例.docx": "49a4103d985b94e71cd02ba8510cbeaa9c9437c257de567ad82f142a980732d4",
+    "RTAB-Map + YOLO/3D语义建图_会议纪要与Codex交接_完整版.docx": "3099cbf496d1b5bbd27058a8e3c2e7c788d8c48f214035784a0f62666a709787",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档.docx": "28c1ea97aba0693798253fb01c270d416836e0bb38222cec24c39a0c7db70cbe",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档_分模块版.docx": "38d7d2080cc4c5dce6cafd9f2768ec89b60e49b5e3a450e6c92929af93e10148",
+    "RTAB-Map + YOLO/Jetson_ROS启动与开机自启动说明.docx": "b13b16000e63eabc431d66f0aa94def7cd8a2244db13d56d38c50aa8f7ec0424",
+    "RTAB-Map + YOLO/semantic_slam.rar": "ddd398f5a62fbe8d1ad6d4203f72e274aeaec6f90d218082c841d79a35dbdc92",
+    "RTAB-Map + YOLO/原理与测试文档.docx": "e9a934dccca73183f490cfe33b925424d7ba1534182ae2b6f4527ba0f5a39c97",
+    "RTAB-Map + YOLO/原理文档-20261102.docx": "bacaa70855780dbb007fe4df81742f63dfc4fa5640507b7781c88a0f086b9e8e",
+    "RTAB-Map + YOLO/测试文档-20261102.rar": "f3faec3aa71aa7c92bf05472a86af8ca041202f3223e6ef213e7b249b9237a61",
+    "Semantic-SLAM/launch/indoor_semantic.launch.py": "9578533eb99d409ebf2436cdb07c7b02f5367e750aeb1d117e4c9bf4edf5beda",
+    "Semantic-SLAM/launch/semantic_only.launch.py": "ce94492bb300e6cb4244c64fc663860dca618fa68e8b383f4c6dbeafd309325e",
+    "Semantic-SLAM/run.sh": "d3667e9c58d42a1027f441f424901d42124e6ba4e8572c64987998425dfe64aa",
+    "Semantic-SLAM/scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+    "Semantic-SLAM/scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+    "Semantic-SLAM/scripts/observe_ros.py": "4963479719803481ecec2de9adabfa4708c857103708a20689013ba7b3c315a0",
+    "Semantic-SLAM/scripts/ros_env.sh": "ebe202d976ef8af58b6f7a98bcbf6e4f714f63a20cd0e6aef5f0676a67b53a85",
+    "Semantic-SLAM/scripts/run_demo.py": "9fc8b364ae31bee896fc0ae434d5f515d582837a9c2b427b3282343b808d2f4b",
+    "Semantic-SLAM/semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "Semantic-SLAM/semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "Semantic-SLAM/semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "Semantic-SLAM/semantic/yolo_detector.py": "95792624ad0eb441e6765f20fb9c3157530c92d366397622eaeefdffd7e583a0",
+    "Semantic-SLAM/setup.sh": "8dbd8db8886bce5c6a02659b549de6df41d28cc31696b8119e29e08580b09331",
+    "Semantic-SLAM-deploy/config/live.yaml": "04dd8ca4e14ba5603bbbb057ac463dff32ff149b35066cf4463c8a9af5e02174",
+    "Semantic-SLAM-deploy/launch/indoor_semantic.launch.py": "9578533eb99d409ebf2436cdb07c7b02f5367e750aeb1d117e4c9bf4edf5beda",
+    "Semantic-SLAM-deploy/launch/live_semantic.launch.py": "7de55fb72ab2db0c932bf3eed022639270a7d95090d5d2e82fcf9ceb47148bf0",
+    "Semantic-SLAM-deploy/launch/semantic_only.launch.py": "ce94492bb300e6cb4244c64fc663860dca618fa68e8b383f4c6dbeafd309325e",
+    "Semantic-SLAM-deploy/run.sh": "a83e1f3bd73bce93828223444d92babc947dbfcc356bc9d5a50802c027173f0c",
+    "Semantic-SLAM-deploy/run_live.sh": "f001647cefd8f9f206b51825ffffeaa148c986a21baf319a47e9254b0e63f624",
+    "Semantic-SLAM-deploy/run_mobilenet.sh": "ba8df52bab9eb915ddd553906a0ccfe28f1b3afc082cbc133600af3cc6da00f8",
+    "Semantic-SLAM-deploy/scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+    "Semantic-SLAM-deploy/scripts/check_model.py": "75a1be42af0792e53298e247acdc1e379487240651351110d24693769b98de8a",
+    "Semantic-SLAM-deploy/scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+    "Semantic-SLAM-deploy/scripts/observe_ros.py": "02fe14db71cca7ebc73230c5ff353ff49f33574344c21f68fd0616fe0a0aa16c",
+    "Semantic-SLAM-deploy/scripts/ros_env.sh": "ebe202d976ef8af58b6f7a98bcbf6e4f714f63a20cd0e6aef5f0676a67b53a85",
+    "Semantic-SLAM-deploy/scripts/run_demo.py": "bf5e493da4aa9f58dca59a1b4029e5b23866f313b8c05006efc51db19e776024",
+    "Semantic-SLAM-deploy/semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "Semantic-SLAM-deploy/semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "Semantic-SLAM-deploy/semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "Semantic-SLAM-deploy/semantic/yolo_detector.py": "191f4dbea99a32f1a068609f9015fcccede8390cd176827adf70c3f0e7782be7",
+    "Semantic-SLAM-deploy/setup.sh": "6859f4b58278323082c76e7773700a1fb492562f9434ceee84f34ed202bdaa54",
+    "jetson_deploy_20261023/payload/config/lakibeam_passive.yaml": "4a173fac51eebc25b8ed60fbb6af1e5cad264e2392619f623a3d48c6e89ca9d2",
+    "jetson_deploy_20261023/payload/config/live.yaml": "850f8e7fe88dfecf36de428b05d73fab63f2adc91139b960bb7f3a8f79a25957",
+    "jetson_deploy_20261023/payload/launch/indoor_semantic.launch.py": "9835021ebcedc21f97be2c3225da3ccacbd83ccafac5d44c7e37a0158dfa3ce7",
+    "jetson_deploy_20261023/payload/launch/live_semantic.launch.py": "5f35e4a5cd523c965f2e23e388cbf2f107c17125ad5ca79f38e61238a0732765",
+    "jetson_deploy_20261023/payload/launch/official_indoor.launch.py": "2c10983721b8560d9d3d4077c9a230f919f9f7a295ca9b49d3f58d3c80b30e63",
+    "jetson_deploy_20261023/payload/launch/semantic_only.launch.py": "5ae29a2595f9e0bf554041445228d912600d18ce45ce719d57f9a018488441e8",
+    "jetson_deploy_20261023/payload/run.sh": "962231d30c717c668089a89a40bc5d5f588c4ab70d50e60ab103ce97a25052a3",
+    "jetson_deploy_20261023/payload/run_camera.sh": "216ea71cbc91ed357466e0057d47be23a07d82424a6dec01fac7f5d991925b81",
+    "jetson_deploy_20261023/payload/run_handpush.sh": "2032d6ba0d575e8a1facd9595c10db684bf5c0169196a1d85eab452327a2df21",
+    "jetson_deploy_20261023/payload/run_lidar.sh": "75b488958c831fbebd6ae2501e523081ba8c7500c0f61b468b0ee173f14a7588",
+    "jetson_deploy_20261023/payload/run_live.sh": "ae74151067e2ac972176643198c0a6fbe6ca4ca6caab444199855bdf6e237792",
+    "jetson_deploy_20261023/payload/run_offline.sh": "b5b74ede1317757b48a8b4cf6f8651e15cd5fdb3886564d025d0cca557a5c156",
+    "jetson_deploy_20261023/payload/scripts/capture_d435_frame.py": "c81c091a650588b374987fc753412e5de9886328d69000204c62108cf46b0e1f",
+    "jetson_deploy_20261023/payload/scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+    "jetson_deploy_20261023/payload/scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+    "jetson_deploy_20261023/payload/scripts/inspect_live_interfaces.py": "76ef5efd44f41e4b13c992b58f204cdf668648bdedf14898aad966244aa8fb53",
+    "jetson_deploy_20261023/payload/scripts/install_approved_ros.sh": "4494360544a8d6d91f91ca795821157c69938b905179528e842deaf44d71d161",
+    "jetson_deploy_20261023/payload/scripts/install_realsense_approved.sh": "02ef83bc74c5721ea31b3b449de7ee8bc0424027c40cc5cdf0d34aff5c030285",
+    "jetson_deploy_20261023/payload/scripts/observe_handpush.py": "99105b7097c7843a6ae31802dd238bb575bf27b81a531e3b3edf951476cc9096",
+    "jetson_deploy_20261023/payload/scripts/observe_ros.py": "0bedc5397e1ff90f4cc75a0d5fd2647459d1579eef15ca9fe80475124db8f9cc",
+    "jetson_deploy_20261023/payload/scripts/record_handpush_video.py": "0b063a57414a795cf1166535b09bfb3b5b6e24be59b26fb218238177b43659a6",
+    "jetson_deploy_20261023/payload/scripts/ros_env.sh": "31a76553d6ce07128df795a317df2a604bd6d5f24eb65fac6c74e0a38f12cefe",
+    "jetson_deploy_20261023/payload/scripts/run_demo.py": "b45849bbfef48e41fb3a0c62bc42241b0f7cb61bf6252e3f3f6e49af0b0103c8",
+    "jetson_deploy_20261023/payload/scripts/run_handpush.py": "d5183c4b58dd05131ba84f0e94b6ab5dfec49196f78ea207c4d321d33f155c46",
+    "jetson_deploy_20261023/payload/scripts/run_static_check.py": "87bcdd0b48623a5557c5e9ccb5b6b4b5035185e25f47a258ad05e653fc1fe5fe",
+    "jetson_deploy_20261023/payload/scripts/safe_inspect_tar.py": "73408a116e72d9622460a506c092e8dd8ee9e6dd3d37c0268bc2994e284fcb0d",
+    "jetson_deploy_20261023/payload/scripts/validate_gpu.py": "fa43d964b66500b9e4302b257457a5857c387669f0cfdf5f4cb33b07649ed68b",
+    "jetson_deploy_20261023/payload/scripts/validate_scan.py": "eaf4869398b22d3be4d475ed5a188ddeb34a2d1510237e62b6f6f112c44d4387",
+    "jetson_deploy_20261023/payload/semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "jetson_deploy_20261023/payload/semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "jetson_deploy_20261023/payload/semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "jetson_deploy_20261023/payload/semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+    "jetson_deploy_20261023/payload/stop.sh": "6c0a5bf6032865bee2613f7b2db5772953027df968166ee86d1ab93fbda8aeac",
+    "jetson_deploy_20261023/payload/stop_handpush.sh": "2f04872b545e7f179cd9d1e83eb32ae52d0247c14d3f1f1c4ff44ab0a0371e13",
+    "src/rtabmap_ros/rtabmap_demos/launch/robot_mapping_demo.launch.py": "ebaa2e4cd97dde417e3ac529aec6802eb255f22fc0472ad80f22f445eb92e7ca"
+  },
+  "evidence": [
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/events.json",
+      "sha256": "d3dc5c752f0e90e9fd9aadc59c6711474365ecb55566510ac3b8716c558f6586"
+    },
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/verification.json",
+      "sha256": "b5398d3faf05dc70f1d34c157ed133b82ffcead111f7e27867f5b27f85a66eca"
+    },
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/detector_stats.json",
+      "sha256": "7a7cb9cbc1d06138c5c4a76938cc3b45520cc50033b71a7aafce2db67319b5bb"
+    },
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/projector_stats.json",
+      "sha256": "d3c10dba6758db9113d37e76f06f04d917ffbe6ac744e76778c6472ffb58128c"
+    },
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/map_stats.json",
+      "sha256": "81a16448896f57ba58a0a9ed4fb7ce2735f2d6698cf8f57651bb370d72d1ca14"
+    },
+    {
+      "path": "/home/xsy/ros2/Semantic-SLAM/runs/20261009-184520-4455/result.json",
+      "sha256": "7be9228db6d185246a9085915442ecf22be2ae19fabd684a2fa432f453b13455"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/assessment.json",
+      "sha256": "8e9523e66e30217cb48ccb09c9479dc5031f2cb640b43121e0559f18535b56c1"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/verification.json",
+      "sha256": "8edb4822d9401d7f1093916a98066a6270aed296afeddf9699b2156d16d62519"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/recording.log",
+      "sha256": "500d907876d7451d796ea79474517b02a2b134a76826c48d8ede081ab12279be"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/detector_stats.json",
+      "sha256": "a779f996fb43d13cc21ae69d58e2c65d9191dad58d5c1f7a58a264a2d5c475d1"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/projector_stats.json",
+      "sha256": "daee3288d31502648a4c175da6313d6ccdd2cbf986369f640ca2b6eacfc8839d"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/map_stats.json",
+      "sha256": "ce734b4a600502e665864df1fb42e418fae7940c560b8b432735417d7cd41aae"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/result.json",
+      "sha256": "aa06df961678be49e9293cdb27510a864f900b28a382f5f77151834ff78c414c"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/verification.json",
+      "sha256": "11dc8314a45967db98484af12143942abc09c5585c93596443d2dcb81597be53"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/recording.log",
+      "sha256": "50e12c4164d7a647c7affeb37f593f3170f6404b4cb78031c3eeff2659e69a04"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/detector_stats.json",
+      "sha256": "075a6e1f518996996ceb52e50a9b7aae7be1102ae3351ce518a9bb74656e6fb1"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/projector_stats.json",
+      "sha256": "28a18dc4596e372721548320763e3d34dbe13d9e47c79d22c0c13ebb8a0fc6c6"
+    },
+    {
+      "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/map_stats.json",
+      "sha256": "7ab4de0f2acbcabc83bedc65d2cb4e92c35d2cb474af61dc559db1735d6cf708"
+    }
+  ],
+  "skills": [
+    {
+      "name": "academic-humanizer",
+      "source": "https://github.com/Yila-AI/awesome-research-skills/tree/main/skills/academic-humanizer",
+      "install_path": "/home/xsy/.codex/skills/academic-humanizer",
+      "file_sha256": {
+        "SKILL.md": "7fa73c713b801a67a62758f802c140187915c93d4c70c27eb2d78ea95626532a",
+        "THIRD_PARTY_NOTICES.md": "8ed533ea88974184632ec5f95c0079452f320195d7a7018a7afb66a101c39b8f",
+        "agents/openai.yaml": "bc13f813187968af33f273c1de2e06925d80bee0b5f78b9dc84fc7267d723ff2",
+        "references/output-contract.md": "d111ee5601dc7329572bf40ac976a615fb7d507025e42136b75799a94bb96800",
+        "references/pattern-catalog.md": "b5a904f2803ec02f382a7e0bb3c82b856b57d07afffda7916b1534cf1173d124",
+        "references/preservation-and-evidence.md": "4a0db38f42176307a4bf4e4f53dc4a7f6f8539a0bd3408d1f3d64842e6f51de6",
+        "references/voice-calibration.md": "4dfc996d1994bed9f904e1512dace21904bd2ea87174ec671774f535578d1de7",
+        "scripts/check_invariants.py": "bf0683e941cda8d2f33c58403da08f7629debd67bfb90ffa786a1259438c9b0d"
+      },
+      "validation": "SKILL.md front matter parsed; name and description checked; Python scripts parsed without execution",
+      "registration": "Available for discovery on next user turn; project AGENTS.md specifies when to apply",
+      "loaded_references": [
+        "references/preservation-and-evidence.md",
+        "references/pattern-catalog.md",
+        "references/output-contract.md"
+      ]
+    },
+    {
+      "name": "humanizer-zh",
+      "source": "https://github.com/op7418/Humanizer-zh",
+      "install_path": "/home/xsy/.codex/skills/humanizer-zh",
+      "file_sha256": {
+        ".gitignore": "60e2fa4bf2647667b82c5351d453847ae233821ff6af15846b19f40a0c1a45d0",
+        "CHANGELOG.md": "254ac282ea3a224237d7778d1704165f5dd51db29839de6431569435561fd0fe",
+        "LICENSE": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
+        "README.md": "c4f42c5f590b2845608c3913754e0339db0783481efb6d5ec90144fb721bd1d4",
+        "SKILL.md": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df",
+        "tests/README.md": "ece3c1f808c4ef2ad8ac7ccb0977138cbc6f842455c725703b5bf780ae3cc36c",
+        "tests/check_structure.py": "82ba1f91aab7a70abf039e79009fb1b77c036aa892925e5e3df5c2550d20230a",
+        "tests/fixtures/cases.json": "6a62586ee93dd9695976cd45271036f2a92be4f74e1b3b9b6c21a411c8497c0e",
+        "tests/fixtures/structure.md": "d2d0c2740d28c44b7aac88e81aed8d50dc6ad90cc08f93a5a00c6ada1d6368e2"
+      },
+      "validation": "SKILL.md front matter parsed; name and description checked; Python scripts parsed without execution",
+      "registration": "Available for discovery on next user turn; project AGENTS.md specifies when to apply",
+      "loaded_references": []
+    }
+  ],
+  "syntax_checks": [
+    "Semantic-SLAM-deploy/semantic/common.py",
+    "Semantic-SLAM-deploy/semantic/semantic_grid_node.py",
+    "Semantic-SLAM-deploy/semantic/semantic_projector.py",
+    "Semantic-SLAM-deploy/semantic/yolo_detector.py",
+    "Semantic-SLAM-deploy/launch/indoor_semantic.launch.py",
+    "Semantic-SLAM-deploy/launch/live_semantic.launch.py",
+    "Semantic-SLAM-deploy/launch/semantic_only.launch.py",
+    "Semantic-SLAM-deploy/run_live.sh",
+    "Semantic-SLAM-deploy/run.sh",
+    "Semantic-SLAM-deploy/scripts/ros_env.sh",
+    "jetson_deploy_20261023/payload/semantic/common.py",
+    "jetson_deploy_20261023/payload/semantic/semantic_grid_node.py",
+    "jetson_deploy_20261023/payload/semantic/semantic_projector.py",
+    "jetson_deploy_20261023/payload/semantic/yolo_detector.py",
+    "jetson_deploy_20261023/payload/launch/indoor_semantic.launch.py",
+    "jetson_deploy_20261023/payload/launch/live_semantic.launch.py",
+    "jetson_deploy_20261023/payload/launch/official_indoor.launch.py",
+    "jetson_deploy_20261023/payload/launch/semantic_only.launch.py",
+    "jetson_deploy_20261023/payload/run_live.sh",
+    "jetson_deploy_20261023/payload/run.sh",
+    "jetson_deploy_20261023/payload/scripts/ros_env.sh"
+  ],
+  "original_files_unchanged": true,
+  "outputs_sha256": {
+    "/home/xsy/ros2/RTAB-Map + YOLO/AGENTS.md": "753dd90445378732320ecb04b00bc4b46b62f036cdd94611d3c201a44bc04299",
+    "/home/xsy/ros2/RTAB-Map + YOLO/核查与计划_20261103/核查结果与修改计划.md": "c603d33bbe2ed68fb7a65d3c8139a3919a670a94b8cda6170866d5c2790c266b",
+    "/home/xsy/ros2/RTAB-Map + YOLO/核查与计划_20261103/实车测试准备与记录模板.md": "7b42426d24194838fd19a066ebf213b6eb5bbe4d8c39ed653d3d6a5a7cf2e8b8"
+  },
+  "notes": [
+    "RAR test documents were extracted to /tmp/semantic_audit_20261103/test_docs; no original document was overwritten.",
+    "The source JSON and log records were re-read, not re-created or replayed.",
+    "The two writing skills were reviewed in audit-only mode; no formal document revision was performed.",
+    "This installation records downloaded file hashes; no upstream commit is asserted for mutable main-branch downloads."
+  ]
+}

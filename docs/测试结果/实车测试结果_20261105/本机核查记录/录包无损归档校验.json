@@ -1,0 +1,78 @@
+{
+  "archive": "车上原始结果/原始录包_无损归档.tar.zst",
+  "archive_bytes": 2213429026,
+  "verified_sha256_all_members": true,
+  "members": [
+    {
+      "path": "bag_dynamic/bag_dynamic_1.db3",
+      "bytes": 1074024448,
+      "sha256": "63a4ee335b8ecd3fa15b4243f68957c2a74fcdfc72136c6f9a7b41abab3615f3"
+    },
+    {
+      "path": "bag_dynamic/bag_dynamic_2.db3",
+      "bytes": 1074118656,
+      "sha256": "febc6728c7395c15f38bc0c547257224eaae5063b261fe25e85e80ece32d3b3b"
+    },
+    {
+      "path": "bag_dynamic/bag_dynamic_3.db3",
+      "bytes": 656769024,
+      "sha256": "9a2a060fa270a12408c86ae765e338077eca33b64898997dfdf8f5931c109326"
+    },
+    {
+      "path": "bag_dynamic/bag_dynamic_0.db3",
+      "bytes": 1073946624,
+      "sha256": "3847fdde29919de84b8750ef7c04b15189abd3ad14b4c46184a64639f9a7008b"
+    },
+    {
+      "path": "bag_dynamic/metadata.yaml",
+      "bytes": 9684,
+      "sha256": "438397417f95b7d6bff21651d1e1ce31dc95413512dfbf20f859f878457ac3f3"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_1.db3",
+      "bytes": 1074032640,
+      "sha256": "8a1e5a4a69f163fc63e66caf92207d4d046b7cc01e0b64f09ef7a4ce178f5349"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_7.db3",
+      "bytes": 157941760,
+      "sha256": "1d0b1d3e563ec9689c8a00cfe45f5626d3e5b617d315675f559374265cc16258"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_2.db3",
+      "bytes": 1074331648,
+      "sha256": "acbfd39eb373a8412cda2fbcbda20ae5621cb8eec0c6258ccad1f70fba0a2a15"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_3.db3",
+      "bytes": 1074270208,
+      "sha256": "b62ec18c97d5aa606763380de9fb81ec6ff18fbca6789a64932427fd2b097d84"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_0.db3",
+      "bytes": 1074110464,
+      "sha256": "f148a1a34a7d0802050a666900abe6318ca8101bf7c298414f5344821aa65f62"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_4.db3",
+      "bytes": 1074028544,
+      "sha256": "f7ad97dbe76979f24ff5a5139b82cabee1a94d73478bdae862a0e51abf957fc0"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_5.db3",
+      "bytes": 1073860608,
+      "sha256": "a085db589bdeb6e9445934e6f800d06490443ed9233f052f32f2522602c4dd88"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/metadata.yaml",
+      "bytes": 10497,
+      "sha256": "610fc490414d4782ee92c5c6fd205b76347ac9558b5b1170f64bcd74c44e0951"
+    },
+    {
+      "path": "full-dynamic-test/bag_dynamic/bag_dynamic_6.db3",
+      "bytes": 1073934336,
+      "sha256": "d03e0807e1fafe23e8ed46d068d528db2488cb10fcee926e03444181d3aea601"
+    }
+  ],
+  "uncompressed_bytes": 11555389141
+}

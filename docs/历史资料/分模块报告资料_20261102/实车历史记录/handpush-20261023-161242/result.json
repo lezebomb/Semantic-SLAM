@@ -1,0 +1,134 @@
+{
+  "output": "/home/tjark/yolo_rtabmap/runs/handpush-20261023-161242",
+  "motion_commands_sent": 0,
+  "mode": "camera_visual_odometry",
+  "lidar_used_for_mapping": false,
+  "duration_seconds": 120,
+  "phase": "tracking_lost",
+  "odometry": {
+    "messages": 481,
+    "valid_messages": 426,
+    "distance_m": 6.4536986104335785,
+    "last_arrival_wall_time": 1792743265.6907995,
+    "frame": "camera_odom",
+    "child_frame": "camera_link",
+    "last_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_covariance_x": 9999.0
+  },
+  "detector": {
+    "frame": 121,
+    "inference_ms": 59.17,
+    "capture_stamp_ns": 1792743265387310303,
+    "rgb_depth_delta_ms": 0.0,
+    "detections": []
+  },
+  "map_poses": 15,
+  "semantic_points": 19215,
+  "last_update_wall_time": 1792743268.276667,
+  "odometry_messages_recent": true,
+  "tracking_valid": false,
+  "resource_latest": {
+    "wall_time": 1792743267.774697,
+    "processes": [
+      {
+        "pid": 4671,
+        "name": "ros2",
+        "cpu_percent": 0.0,
+        "rss_mib": 34.56640625
+      },
+      {
+        "pid": 4672,
+        "name": "lakibeam1_scan_node",
+        "cpu_percent": 0.0,
+        "rss_mib": 27.4296875
+      },
+      {
+        "pid": 4674,
+        "name": "tegrastats",
+        "cpu_percent": 0.0,
+        "rss_mib": 0.87109375
+      },
+      {
+        "pid": 4734,
+        "name": "rgbd_odometry",
+        "cpu_percent": 54.1,
+        "rss_mib": 175.3671875
+      },
+      {
+        "pid": 4735,
+        "name": "rtabmap",
+        "cpu_percent": 7.5,
+        "rss_mib": 269.5703125
+      },
+      {
+        "pid": 4736,
+        "name": "pt_main_thread",
+        "cpu_percent": 9.3,
+        "rss_mib": 1181.90234375
+      },
+      {
+        "pid": 4737,
+        "name": "python",
+        "cpu_percent": 0.0,
+        "rss_mib": 123.28515625
+      },
+      {
+        "pid": 4738,
+        "name": "python",
+        "cpu_percent": 9.3,
+        "rss_mib": 82.88671875
+      },
+      {
+        "pid": 4739,
+        "name": "python",
+        "cpu_percent": 22.4,
+        "rss_mib": 163.00390625
+      },
+      {
+        "pid": 4740,
+        "name": "ros2",
+        "cpu_percent": 16.8,
+        "rss_mib": 73.8046875
+      },
+      {
+        "pid": 4741,
+        "name": "python",
+        "cpu_percent": 11.2,
+        "rss_mib": 240.36328125
+      },
+      {
+        "pid": 4707,
+        "name": "realsense2_camera_node",
+        "cpu_percent": 26.1,
+        "rss_mib": 104.34375
+      }
+    ],
+    "cpu_percent_sum": 156.7,
+    "rss_sum_mib": 2477.39453125,
+    "system_cpu_percent": 44.4
+  },
+  "cpu_percent_sum_peak": 387.9,
+  "ready_wall_time": 1792743179.2736313,
+  "exit_codes": {
+    "camera_driver": 0,
+    "lidar_driver": 0,
+    "tegrastats": -2,
+    "odometry": 0,
+    "mapping": 0,
+    "yolo_detector": 0,
+    "semantic_projector": 0,
+    "semantic_grid_node": 0,
+    "observer": 0,
+    "recording": 0,
+    "video": 0
+  },
+  "all_test_processes_stopped": true,
+  "database": {
+    "quick_check": "ok",
+    "nodes": 64
+  }
+}

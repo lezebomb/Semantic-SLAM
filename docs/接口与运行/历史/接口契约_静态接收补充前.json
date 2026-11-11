@@ -1,0 +1,246 @@
+{
+  "captured_at": "2026-11-04T20:34:16.672145+08:00",
+  "source_root": "/home/tjark/yolo_rtabmap",
+  "runtime_graph_evidence": [
+    "ros_graph_domain0.json",
+    "ros_graph_domain77.json"
+  ],
+  "active_semantic_endpoints_seen": false,
+  "input_names_are_launch_defaults_not_runtime_confirmation": true,
+  "topics": [
+    {
+      "topic": "/camera/camera/color/image_raw",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "bgr8/rgb8 convertible",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "RGB capture stamp; optical frame; measured Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/camera/camera/aligned_depth_to_color/image_raw",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "16UC1 mm / 32FC1 m; RGB-registered",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "Depth capture stamp; same optical frame/resolution; Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/camera/camera/color/camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publisher": "external camera owner; runtime not observed",
+      "subscriber": "yolo_detector",
+      "encoding_or_fields": "valid rectified K; zero distortion",
+      "qos": "BEST_EFFORT input, depth=10",
+      "timestamp_frame_rate": "Matched camera calibration; Hz unknown",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/label_image",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "mono8; background=0, class=COCO+1",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/instance_image",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "mono16; observation ID 1..65535",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/paired_depth",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "same input depth encoding",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture header; processed bundles; no measured rate",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/paired_camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publisher": "yolo_detector",
+      "subscriber": "semantic_projector",
+      "encoding_or_fields": "paired input intrinsics",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Header overwritten with matched depth header",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/image_annotated",
+      "type": "sensor_msgs/msg/Image",
+      "publisher": "yolo_detector",
+      "subscriber": "RViz / downstream viewer",
+      "encoding_or_fields": "bgr8",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "RGB content; depth capture header; RGB-depth delta in detector_status",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/points_camera",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_projector",
+      "subscriber": "semantic_grid_node",
+      "encoding_or_fields": "x,y,z,rgb FLOAT32; class_id,instance_id UINT32",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture stamp; camera optical frame; nonempty valid clouds only",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/pointcloud",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_grid_node",
+      "subscriber": "downstream viewer / consumer",
+      "encoding_or_fields": "x,y,z,rgb FLOAT32; class_id,instance_id UINT32",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Depth capture stamp; map; nonempty valid clouds only",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/map",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "publisher": "semantic_grid_node",
+      "subscriber": "RViz / downstream map consumer",
+      "encoding_or_fields": "same 24-byte point structure",
+      "qos": "RELIABLE / TRANSIENT_LOCAL, depth=1",
+      "timestamp_frame_rate": "Map frame; current publish stamp; 1 s update timer, dirty only; not pipeline FPS",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/detector_status",
+      "type": "std_msgs/msg/String",
+      "publisher": "yolo_detector",
+      "subscriber": "observer / diagnostics",
+      "encoding_or_fields": "JSON: frame,inference_ms,capture_stamp_ns,rgb_depth_delta_ms,detections",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "Per processed bundle",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/semantic/map_status",
+      "type": "std_msgs/msg/String",
+      "publisher": "semantic_grid_node",
+      "subscriber": "observer / diagnostics",
+      "encoding_or_fields": "JSON: TF,queue,voxel counters",
+      "qos": "RELIABLE / VOLATILE, depth=5",
+      "timestamp_frame_rate": "1 s timer after first transformed cloud",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/tf; /tf_static",
+      "type": "tf2_msgs/msg/TFMessage",
+      "publisher": "geometry / odometry / calibrated transforms owners",
+      "subscriber": "semantic_grid_node TF buffer",
+      "encoding_or_fields": "TF edges; required map to camera at capture time",
+      "qos": "tf2 defaults; actual endpoints unobserved",
+      "timestamp_frame_rate": "Frame names and calibration pending; no zero transform fabricated",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/map",
+      "type": "nav_msgs/msg/OccupancyGrid",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/mapData",
+      "type": "rtabmap_msgs/msg/MapData",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/mapGraph",
+      "type": "rtabmap_msgs/msg/MapGraph",
+      "publisher": "RTAB-Map when separately running",
+      "subscriber": "RViz / observer",
+      "encoding_or_fields": "geometry result",
+      "qos": "runtime QoS not observed",
+      "timestamp_frame_rate": "Runtime endpoint not observed; live semantic launch does not create geometry",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/scan",
+      "type": "sensor_msgs/msg/LaserScan",
+      "publisher": "external owner, endpoint unobserved",
+      "subscriber": "geometry stack if configured; not the three semantic nodes",
+      "encoding_or_fields": "actual source/frames pending",
+      "qos": "not observed",
+      "timestamp_frame_rate": "Not an asserted fused sensor",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    },
+    {
+      "topic": "/odom",
+      "type": "nav_msgs/msg/Odometry",
+      "publisher": "external owner, endpoint unobserved",
+      "subscriber": "geometry stack if configured; not the three semantic nodes",
+      "encoding_or_fields": "actual source/frames pending",
+      "qos": "not observed",
+      "timestamp_frame_rate": "Not an asserted fused sensor",
+      "evidence_status": "source_confirmed_runtime_not_observed"
+    }
+  ],
+  "services": [
+    {
+      "name": "/semantic/save_map",
+      "type": "std_srvs/srv/Trigger",
+      "server": "semantic_grid_node",
+      "effect": "Save semantic_map.ply,semantic_map.npz,map_stats.json to configured output_dir; does not save RTAB-Map db or stop chassis",
+      "runtime_observed": false
+    }
+  ],
+  "runtime_verified_environment": {
+    "file": "/etc/jetson-ros/ros2-env.sh",
+    "ROS_DOMAIN_ID": "0",
+    "ROS_LOCALHOST_ONLY": "0",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "FASTRTPS_DEFAULT_PROFILES_FILE": "/etc/jetson-ros/udp_only.xml"
+  },
+  "live_wrapper_defaults": {
+    "ROS_DOMAIN_ID": "77 unless already defined",
+    "ROS_LOCALHOST_ONLY": "1 unless already defined",
+    "device": "0",
+    "rviz": false,
+    "use_sim_time": false
+  },
+  "additional_camera_input_profiles": [
+    {
+      "status": "source_confirmed_candidate_not_runtime_verified",
+      "owner_source": "/home/tjark/opl_week7/scripts/field/camera_http_ros2.py",
+      "historical_report": "测试文档-20261102/二、环境感知技术.docx, paragraphs 0092-0095",
+      "rgb_topic": "/camera/color/image_rect_raw",
+      "depth_topic": "/camera/aligned_depth_to_color/image_raw",
+      "camera_info_topic": "/camera/color/camera_info",
+      "source_depth_encoding": "32FC1",
+      "source_depth_units": "m",
+      "source_frame_default": "opl_camera_color_optical_frame",
+      "environment": "inherited from publisher terminal; not confirmed at runtime",
+      "status_uri": "http://192.168.10.103:8765/status",
+      "readonly_status_result": "Connection refused",
+      "not_executed": [
+        "camera adapter",
+        "static TF script",
+        "record/stop HTTP endpoints"
+      ]
+    }
+  ]
+}

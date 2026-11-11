@@ -1,0 +1,29 @@
+{
+  "session": "20261104_2203",
+  "interface_rows": 39,
+  "original_source_files_hash_verified": 37,
+  "user_word_documents_unchanged": true,
+  "remote_source_edits": 0,
+  "control_publications": 0,
+  "driver_or_business_process_starts": 0,
+  "vehicle_reported_powered_off": true,
+  "camera_rgb_depth_info_received": true,
+  "lidar_received_frames": 100,
+  "chassis_ros2_feedback_received": false,
+  "chassis_ros1_feedback_received": false,
+  "odom_received": false,
+  "complete_tf_chain_validated": false,
+  "semantic_pipeline_started": false,
+  "code_archive_sha256": "b40cb01615ac1cd3c0e06578fbfb5ab1ee6b1e7b9fca43830a6d75f693e50c3c",
+  "new_reports": [
+    "接口静态复核_20261104_2203.md",
+    "底盘代码与控制接口核查_20261104.md"
+  ],
+  "word_preview_pages": {
+    "接口静态复核_20261104_2203.docx": 2,
+    "底盘代码与控制接口核查_20261104.docx": 3
+  },
+  "word_preview_first_pages_visually_checked": true,
+  "test_template_updated_with_static_references": true,
+  "local_interface_information_review_20261105": "仅本地复核已有证据；更正TF旧字段和待确认项；没有新增实测结果或连接车辆"
+}

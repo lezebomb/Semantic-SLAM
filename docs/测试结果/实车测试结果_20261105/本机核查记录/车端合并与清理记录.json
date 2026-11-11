@@ -1,0 +1,127 @@
+{
+  "at": "2026-11-05T16:53:09.401924+08:00",
+  "canonical_root": "/home/tjark/yolo_rtabmap",
+  "removed_duplicate": "/home/tjark/yolo_rtabmap/organized_20261105",
+  "original_files_before_change": {
+    "run_camera.sh": {
+      "sha256": "216ea71cbc91ed357466e0057d47be23a07d82424a6dec01fac7f5d991925b81",
+      "text": "#!/usr/bin/env bash\n# D435 only. Does not start chassis, arm, odometry, SLAM, navigation or static mount TF.\nset -e\nroot=\"$(cd -- \"$(dirname -- \"${BASH_SOURCE[0]}\")\" && pwd)\"\nsource /opt/ros/humble/setup.bash\nexport ROS_DOMAIN_ID=\"${ROS_DOMAIN_ID:-77}\" ROS_LOCALHOST_ONLY=\"${ROS_LOCALHOST_ONLY:-1}\"\nexport ROS_HOME=\"$root/logs/d435_ros_home\" ROS_LOG_DIR=\"$root/logs/d435_ros\"\nmkdir -p \"$ROS_HOME\" \"$ROS_LOG_DIR\"\nexec ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true \\\n    align_depth.enable:=true enable_sync:=true rgb_camera.color_profile:=640,480,15 \\\n    depth_module.depth_profile:=640,480,15 initial_reset:=false wait_for_device_timeout:=10.0 \"$@\"\n"
+    },
+    "run_live.sh": {
+      "sha256": "ae74151067e2ac972176643198c0a6fbe6ca4ca6caab444199855bdf6e237792",
+      "text": "#!/usr/bin/env bash\nset -e\nDEPLOY_ROOT=\"$(cd -- \"$(dirname -- \"${BASH_SOURCE[0]}\")\" && pwd)\"\nsource \"$DEPLOY_ROOT/scripts/ros_env.sh\"\nexport ROS_DOMAIN_ID=\"${ROS_DOMAIN_ID:-77}\" ROS_LOCALHOST_ONLY=\"${ROS_LOCALHOST_ONLY:-1}\"\nexport ROS_HOME=\"$DEPLOY_ROOT/logs/live_ros_home\" ROS_LOG_DIR=\"$DEPLOY_ROOT/logs/live_ros\"\nmkdir -p \"$ROS_HOME\" \"$ROS_LOG_DIR\"\nexport SEMANTIC_PYTHON=\"${SEMANTIC_PYTHON:-$DEPLOY_ROOT/.venv/bin/python}\"\nif [ ! -x \"$SEMANTIC_PYTHON\" ]; then\n    echo 'Set SEMANTIC_PYTHON to a ROS-aware Python environment; see docs/JETSON.md.' >&2\n    exit 1\nfi\nunset QT_QPA_PLATFORM_PLUGIN_PATH QT_QPA_FONTDIR\nexport QT_QPA_PLATFORM=\"${QT_QPA_PLATFORM:-xcb}\" YOLO_AUTOINSTALL=false\nexport GSETTINGS_SCHEMA_DIR=\"${GSETTINGS_SCHEMA_DIR:-/usr/share/glib-2.0/schemas}\"\nexport PYTHONUNBUFFERED=1\nexec ros2 launch \"$DEPLOY_ROOT/launch/live_semantic.launch.py\" \"$@\"\n"
+    },
+    "run_lidar.sh": {
+      "sha256": "75b488958c831fbebd6ae2501e523081ba8c7500c0f61b468b0ee173f14a7588",
+      "text": "#!/usr/bin/env bash\n# Receive existing LakiBeam UDP data only. Does not launch chassis/TF/navigation.\nset -eo pipefail\nROOT=$(cd -- \"$(dirname -- \"${BASH_SOURCE[0]}\")\" && pwd)\nsource /opt/ros/humble/setup.bash\nexport ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-77}\nexport ROS_LOCALHOST_ONLY=${ROS_LOCALHOST_ONLY:-1}\nexport ROS_HOME=\"$ROOT/logs/lidar_ros_home\"\nexport ROS_LOG_DIR=\"$ROOT/logs/lidar_ros\"\nmkdir -p \"$ROS_HOME\" \"$ROS_LOG_DIR\"\nif [[ -n $(ss -H -lun 'sport = :2368') ]]; then\n    echo 'UDP 2368 is already in use; leave the existing receiver untouched.' >&2\n    exit 1\nfi\nexec \"$ROOT/sensor_ws/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node\" \\\n    --ros-args --params-file \"$ROOT/config/lakibeam_passive.yaml\"\n"
+    },
+    "README.md": {
+      "sha256": "3383ddca18c6a081795efdc13cae09f5d6228d862bee8417914b31f4090e4851",
+      "text": "# Jetson YOLOv8n-seg + RTAB-Map\n\n原版 COCO80 实例分割模型，PyTorch CUDA，独立于机器人比赛代码。\n简要交付见 [DEPLOYMENT_REPORT.md](DEPLOYMENT_REPORT.md)，详细版本和验收记录见 [DEPLOYMENT_STATUS.md](DEPLOYMENT_STATUS.md)。\n\n在 Jetson 上执行：\n\n```bash\ncd /home/tjark/yolo_rtabmap\n# 一键运行已验证的Indoor离线回放；默认120秒、GPU、无RViz。\nbash run_offline.sh\n# 提前结束并保存，或在前台按 Ctrl+C。\nbash stop.sh\n```\n\nruns/ 保存 rtabmap.db、几何地图、轨迹、语义 PLY/NPZ、分割图片、验证结果和资源日志。\ntests/gpu-*/ 保存真实图像 CUDA/NMS/实例 Mask 验证及性能结果。\nlogs/ 保存安装、编译和依赖清单；inspection/ 保存系统与比赛包检查证据。\n\n已确认的实机传感器入口（在 Jetson 分别打开终端）：\n\n```bash\nbash run_camera.sh  # D435：RGB + 配准深度，640×480，15 Hz\nbash run_lidar.sh   # LakiBeam1：只接收现有 UDP，发布 /scan\n```\n\n两者均默认 ROS_DOMAIN_ID=77、ROS_LOCALHOST_ONLY=1，不向比赛 ROS 网络广播。前台 Ctrl+C 停止各入口；stop.sh 只管理 run.sh 回放。\n雷达的地址为 192.168.10.160，现有发送目标是 Jetson 192.168.10.102:2368；未改雷达参数，未启动底盘或机械臂。\n真实雷达验证与扫描图见 tests/lidar_live_verified/，真实相机样图见 tests/d435_real_camera/。\n\n实机语义入口为 run_live.sh，配置为 config/live.yaml；已设置实测 D435 Topic 与 GPU、无 RViz 默认值。\n它仅启动语义节点。真实 map/odom 与底盘到相机、雷达的安装 TF 尚未确认，完整实车建图尚未验收，不能将回放中的 TF 或 NAC 的旧标定直接套用。\nGPU 分割、几何与语义短回放已通过；类别精度未经标注集评测。\n\n雷达源码来自厂商 RichbeamTechnology/Lakibeam_ROS2_Driver 的 b630fb3d6e967aa155c96bd9e81574e086cd220b。\nsensor_ws/ 是独立 ARM64 编译目录，offline/ 保存原始源码包；patches/lakibeam_shutdown.patch 记录接收超时、来源检查及退出修复。\n当前固定版本的 scan_config() 调用已由厂商注释，启动路径只收包；不要换版本后未经审查启动。\n\n环境仅由 scripts/ros_env.sh 在当前进程中加载，无全局 conda init。\n不得在 ARM64 上运行原 x86 setup.sh；本部署未包含它。\n不要用普通 pip torch 替换 NVIDIA wheel。config/jetson_constraints.txt 固定已选版本。\n"
+    }
+  },
+  "other_groups_modified": false,
+  "test_data_deleted": true,
+  "syntax_checked": [
+    "run_camera.sh",
+    "run_live.sh",
+    "run_lidar.sh",
+    "run_gamepad.sh"
+  ],
+  "core_hashes_unchanged": {
+    "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+    "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe"
+  },
+  "merged_configs": [
+    "config/camera_raw_only.yaml",
+    "config/gamepad.yaml"
+  ],
+  "duplicate_removed": true,
+  "remaining_main_directories": [
+    "cache",
+    "config",
+    "envs",
+    "launch",
+    "licenses",
+    "logs",
+    "miniforge3",
+    "models",
+    "runs",
+    "scripts",
+    "semantic",
+    "sensor_ws"
+  ],
+  "unified_entry_20261106": {
+    "checked_at": "2026-11-06T13:23:46.223483+08:00",
+    "vehicle_root": "/home/tjark/yolo_rtabmap",
+    "start": "bash run.sh",
+    "stop_and_save": "bash stop.sh",
+    "default_gamepad_scales": {
+      "linear_m_s": 0.3,
+      "angular_rad_s": 0.2
+    },
+    "command_topic": "/cmd_vel_raw",
+    "shared_adapter_last_observed_max_linear_m_s": 0.15,
+    "local_syntax": {
+      "python": 31,
+      "shell": 16,
+      "yaml": 6
+    },
+    "configuration": "passed",
+    "vehicle_files_sha256": "verified after synchronization; final manifest checked again",
+    "hardware_or_replay_test_this_edit": "not_run; waiting for explicit user instruction",
+    "controller_currently_connected_by_user": false,
+    "vehicle_managed_session_active_at_readonly_check": false,
+    "source_sha256": {
+      "AGENTS.md": "00812495c9c5a664c0753c0a2a6a2b17cb8600c0bb728ec96d107dde33e9a706",
+      "README.md": "0d59a9eb37ea375d8cbf9513a23593fca6623a96080dcd4b1479899143d39125",
+      "run.sh": "01226de93e762638783542f48c75e49a74e0ed546cf65c9c6e2ff0512a6bab67",
+      "run_live.sh": "bd39e75c9fa6acb69657dbfc64008fd2948e80c7be4f4c5470d375c1284c64ed",
+      "run_gamepad.sh": "58312740202652024abb2904ea8851c9de909557bafd9b919037f947c98a3335",
+      "run_offline.sh": "1d8af98584e7893d6c1d3e58ca0243f16689a5c414f51254ee79f3d86a87e8fe",
+      "run_handpush.sh": "7aa42f48958946747e2a1c5524a61835d14048e985760e8665c7f50f44b4ba89",
+      "stop.sh": "59c38ade42c1c2e27fb9a368eb9e415e7dccdbdf1917098a18c42aa21f8a2b31",
+      "stop_live.sh": "c8826cc10e0769d293a953b0c44bb6ecfa7fe171abf9b8a15b31c235442b8f45",
+      "stop_handpush.sh": "002f6fcfec8cc03129a98d6edfc0bd2c3c2e840cffccb52c62574f0a52717588",
+      "config/robot_mapping.yaml": "368d416b40e44bdc90469333b7a03cfa6d37040b1652b52124f5b2d3c9d46fdd",
+      "config/gamepad.yaml": "b9cfcdacc90d9855b5eafe15fb62e567fbe635390ad5082d5b28b2bb5ab08a1c",
+      "scripts/run_live.py": "91acc037b417a57a3d476e12fc830ed65c1f94f03670c70726a83b7173b25f5e",
+      "scripts/mapping_runtime.py": "2064bf687370fe07ba9ecc0e94b3db0b1b5e900f7c39f033da5cec753ea70c21",
+      "scripts/mapping_config.py": "37d1b3786516e1e18fd7ee5554d64ac1d6effcf8ac76ccab6b533064ee2459ec",
+      "scripts/gamepad_runtime.py": "89aa37a1bb2e47a4968ee2e0cc64d44e2bd92f1e3ea090e955f4dab85076ae3e",
+      "scripts/monitor_gamepad.py": "518399c4508972bbd4544acee6ee4e4c43cb3cd916b55bab052ee0a087f009a2",
+      "scripts/sync_jetson.sh": "808a0e0114378aab26f1b5329bf3d8086bbba85a1120c7ecc30eef2463e2b019",
+      "tests/test_live_mapping.py": "86664025a6e19cda112bb5994d521535c5a42133387009bc3d42d1a3bba8f2b3",
+      "tests/启动验证记录.json": "71e3cdde87fd3d567c6b0e1d11ce3d766af20a478f4ba33b9483d4a804f1a925"
+    }
+  },
+  "vehicle_cleanup_20261106": {
+    "completed": true,
+    "completed_at": "2026-11-06T13:44:36.978221+08:00",
+    "archive": "/home/xsy/ros2/RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/车端历史测试与部署材料.tar.zst",
+    "archive_bytes": 8244820844,
+    "archive_members": 4083,
+    "archive_sha256": "17692d55a1d33d41d3d9fa26c9897c6c28ce95c0c049ccd7da967b45cf84e831",
+    "all_archive_members_verified": true,
+    "deleted_file_count": 3377,
+    "released_disk_bytes": 20782395392,
+    "remaining_project_bytes": 3292295168,
+    "source_file_count": 43,
+    "root_shell_entries": [
+      "run.sh",
+      "stop.sh"
+    ],
+    "protected_runtime_hashes_unchanged": {
+      "models/yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+      "envs/yolo/bin/python": "efbb19df428a7472314f20366a2024104fb2310e1fd71bcdced247cb52707c3f",
+      "sensor_ws/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node": "9bf1e5183c27dfa965b8d99403e83eaa59eb7dcc0814df73c68a49291fa5f588"
+    },
+    "other_groups_modified": false,
+    "hardware_tests": "not_run",
+    "detailed_record": "/home/xsy/ros2/RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/车端历史归档与清理清单.json"
+  },
+  "latest_result_section": "vehicle_cleanup_20261106",
+  "test_data_deleted_scope": "Vehicle copies only, after verified local archive; archived inputs preserved on user computer"
+}

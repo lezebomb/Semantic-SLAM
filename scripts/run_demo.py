@@ -4,11 +4,14 @@ import argparse
 import datetime
 import json
 import os
+import platform
 import signal
+import shutil
 import sqlite3
 import subprocess
 import sys
 import time
+import psutil
 from pathlib import Path
 from inspect_bag import inspect_bag
 
@@ -18,9 +21,12 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     p=argparse.ArgumentParser()
     workspace = Path(os.environ.get('RTABMAP_WS', str(Path.home() / 'ros2')))
-    p.add_argument('--bag',default=str(workspace/'data/demo_mapping/demo_mapping_bag'))
+    jetson_bag = ROOT/'tests/demo_mapping.db3'
+    default_bag = jetson_bag if jetson_bag.is_file() else workspace/'data/demo_mapping/demo_mapping_bag/demo_mapping.db3'
+    p.add_argument('--bag',default=str(default_bag))
     p.add_argument('--model',type=Path,default=ROOT/'models/yolov8n-seg.pt')
     p.add_argument('--rate',type=float,choices=[0.25,0.5],default=0.5)
+    p.add_argument('--geometry-only',action='store_true',help='Run geometry first, without semantic nodes')
     p.add_argument('--no-rviz',action='store_true')
     p.add_argument('--domain-id',type=int,default=77)
     p.add_argument('--duration',type=float,help='Wall seconds of playback for a smoke run; default is full bag')
@@ -29,6 +35,8 @@ def main():
                    help='Validate geometry/segmentation interface even when all masks are empty')
     p.add_argument('--confidence',type=float,default=0.35)
     p.add_argument('--image-size',type=int,default=640)
+    p.add_argument('--device',default=os.environ.get('SEMANTIC_DEVICE', '0' if platform.machine() == 'aarch64' else 'cpu'),
+                   help='YOLO device: default GPU 0 on Jetson, CPU on this local x86 environment')
     args=p.parse_args()
     if args.duration is not None and args.duration <= 0:
         p.error('--duration must be positive')
@@ -39,7 +47,7 @@ def main():
     bag=inspect_bag(args.bag)
     args.model=args.model.expanduser().resolve()
     if not args.model.is_file():
-        raise RuntimeError('Missing model; run setup.sh first')
+        raise RuntimeError('Missing model checkpoint: ' + str(args.model))
     suffix=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%Y%m%d-%H%M%S')
     out=ROOT/'runs'/f'{suffix}-{os.getpid()}'
     out.mkdir(parents=True,exist_ok=False)
@@ -61,8 +69,30 @@ def main():
                MPLCONFIGDIR=str(out/'matplotlib'),RCUTILS_COLORIZED_OUTPUT='0',
                OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='2',
                PYTHONUNBUFFERED='1')
-    Path(env['ROS_HOME']).mkdir(parents=True,exist_ok=True)
-    logs=[];player=None;launch=None;observer=None
+    for key in ('ROS_HOME','ROS_LOG_DIR','XDG_CONFIG_HOME','XDG_CACHE_HOME','MPLCONFIGDIR'):
+        Path(env[key]).mkdir(parents=True,exist_ok=True)
+    (Path(env['YOLO_CONFIG_DIR'])/'Ultralytics').mkdir(parents=True,exist_ok=True)
+    logs=[];player=None;launch=None;observer=None;telemetry=None
+    resource_samples=[]
+    processes={}
+    last_resource_sample=0
+
+    def sample_resources():
+        nonlocal last_resource_sample
+        if time.monotonic()-last_resource_sample<5:return
+        last_resource_sample=time.monotonic()
+        items=[]
+        for proc in [psutil.Process()]+psutil.Process().children(recursive=True):
+            try:
+                key=(proc.pid,proc.create_time())
+                if key not in processes: processes[key]=proc;proc.cpu_percent()
+                p=processes[key]
+                items.append(dict(pid=p.pid,name=p.name(),cpu_percent=p.cpu_percent(),rss_MiB=p.memory_info().rss/1024**2))
+            except psutil.Error:pass
+        resource_samples.append(dict(wall_time=time.time(),processes=items,
+            cpu_percent_sum=sum(i["cpu_percent"] for i in items),
+            rss_sum_MiB=sum(i["rss_MiB"] for i in items),system_memory_used_MiB=psutil.virtual_memory().used/1024**2))
+        (out/"resources.json").write_text(json.dumps(resource_samples,indent=2))
     events=[]
 
     def event(kind,**data):
@@ -99,21 +129,32 @@ def main():
 
     success=False
     try:
-        event('configuration',output=str(out),domain_id=args.domain_id,rate=args.rate,
+        event('configuration',geometry_only=args.geometry_only,output=str(out),domain_id=args.domain_id,rate=args.rate,
               bag_duration_s=bag['duration_s'],selected_topics=bag['selected'])
         cmd=['ros2','launch',str(ROOT/'launch/indoor_semantic.launch.py'),
              'output_dir:='+str(out),'rviz:='+str(not args.no_rviz).lower(),
-             'confidence:='+str(args.confidence),'image_size:='+str(args.image_size),
-             'model_path:='+str(args.model)]
+             'confidence:='+str(args.confidence),'image_size:='+str(args.image_size),'device:='+args.device,
+             'model_path:='+str(args.model), 'semantics:='+str(not args.geometry_only).lower()]
         cmd += [k+':='+bag['selected'][k] for k in ('rgb_base','depth_base','camera_info')]
+        if shutil.which('tegrastats'):
+            telemetry=spawn(['tegrastats','--interval','1000'],'tegrastats')
+        else:
+            event('tegrastats_unavailable', note='No Jetson resource telemetry on this host')
+        (ROOT/'logs').mkdir(exist_ok=True)
+        (ROOT/'logs/active_run.json').write_text(json.dumps(dict(pid=os.getpid(),
+            start_ticks=Path('/proc/self/stat').read_text().split()[21], script=str(Path(__file__).resolve()),output=str(out))))
         launch=spawn(cmd,'launch')
         deadline=time.monotonic()+90
         while True:
             text=check()
-            if all(marker in text for marker in ('YOLO_READY','PROJECTOR_READY','GRID_READY')):break
+            if args.geometry_only and text.count('process started with pid')>=2:
+                time.sleep(3);check();break
+            if not args.geometry_only and all(marker in text for marker in ('YOLO_READY','PROJECTOR_READY','GRID_READY')):break
             if time.monotonic()>deadline:raise RuntimeError('Pipeline startup timed out')
             time.sleep(0.5)
         observer_cmd = [sys.executable,str(ROOT/'scripts/observe_ros.py'),str(out)]
+        if args.geometry_only:
+            observer_cmd.append('--geometry-only')
         if args.allow_empty:
             observer_cmd.append('--allow-empty')
         observer=spawn(observer_cmd,'observer')
@@ -124,7 +165,7 @@ def main():
         started=time.monotonic()
         last_report=started
         while player.poll() is None:
-            check();time.sleep(1)
+            check();sample_resources();time.sleep(1)
             elapsed=time.monotonic()-started
             if time.monotonic()-last_report>=30:
                 path=out/'verification.json'
@@ -161,7 +202,7 @@ def main():
         success=False
         event('error',message=str(e))
     finally:
-        stop(player,'bag');stop(launch,'launch');stop(observer,'observer')
+        stop(player,'bag');stop(launch,'launch');stop(observer,'observer');stop(telemetry,'tegrastats')
         for log in logs:log.close()
         db=out/'rtabmap.db'
         database={}
@@ -172,7 +213,7 @@ def main():
             database=dict(bytes=db.stat().st_size,quick_check=result,nodes=count)
             event('database',path=str(db),**database)
         node_stats={}
-        for name,field in [('detector','failures'),('projector','errors')]:
+        for name,field in ([] if args.geometry_only else [('detector','failures'),('projector','errors')]):
             path=out/(name+'_stats.json')
             stats=json.loads(path.read_text()) if path.exists() else {}
             node_stats[name]=stats.get(field)
@@ -189,11 +230,13 @@ def main():
         success=bool(success and database.get('quick_check')=='ok' and
                      all(value==0 for value in node_stats.values()) and not node_shutdown_errors)
         (out/'result.json').write_text(json.dumps(dict(success=success,output=str(out),
-               rate=args.rate,full_bag=args.duration is None,database=database,
+               rate=args.rate,geometry_only=args.geometry_only,full_bag=args.duration is None,database=database,
                node_errors=node_stats,node_shutdown_errors=node_shutdown_errors,
                gui_shutdown_forced=any('exit code -9' in line for line in shutdown_warnings),
                shutdown_warnings=shutdown_warnings),indent=2))
         print('Results: '+str(out),flush=True)
+        active=ROOT/'logs/active_run.json'
+        if active.exists() and json.loads(active.read_text()).get('pid')==os.getpid(): active.unlink()
     return 0 if success else 1
 
 

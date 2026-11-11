@@ -1,0 +1,36 @@
+{
+  "frame": 100,
+  "inference_ms": 81.93,
+  "capture_stamp_ns": 1792744218350846924,
+  "rgb_depth_delta_ms": 0.0,
+  "detections": [
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 631,
+      "confidence": 0.606783390045166,
+      "pixels": 4912
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 632,
+      "confidence": 0.6678918600082397,
+      "pixels": 7473
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 633,
+      "confidence": 0.6814191937446594,
+      "pixels": 15443
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 634,
+      "confidence": 0.8216720223426819,
+      "pixels": 6346
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "phase": "tracking_lost",
+  "all_test_processes_stopped": true,
+  "motion_commands_sent": 0,
+  "route_mapping_success": false,
+  "reason": "Persistent RGB-D visual odometry registration loss; capture and original YOLO remained functional",
+  "cpu_process_sum_mean_percent": 190.49006211180125,
+  "cpu_process_sum_peak_percent": 387.9,
+  "cpu_system_mean_percent": 53.06273291925466,
+  "cpu_system_peak_percent": 100.0,
+  "cpu_sampling_nominal_seconds": 0.5,
+  "rss_sum_peak_mib": 2526.03515625,
+  "gpu_load_mean_percent": 7.132075471698113,
+  "gpu_load_peak_percent": 99,
+  "processed_frames": 124,
+  "detections": 883,
+  "inference_failures": 0,
+  "predict_latency_p50_ms": 90.1,
+  "predict_latency_p95_ms": 104.075,
+  "predict_latency_max_ms": 346.56,
+  "graph_poses": 15,
+  "database_nodes": 64,
+  "semantic_voxels": 19215,
+  "transformed_clouds": 99,
+  "tf_dropped_clouds": 14,
+  "known_map_cells": 10788,
+  "odometry_messages": 493,
+  "valid_odometry_messages": 426,
+  "loop_closures": 0,
+  "exit_codes": {
+    "camera_driver": 0,
+    "lidar_driver": 0,
+    "tegrastats": -2,
+    "odometry": 0,
+    "mapping": 0,
+    "yolo_detector": 0,
+    "semantic_projector": 0,
+    "semantic_grid_node": 0,
+    "observer": 0,
+    "recording": 0,
+    "video": 0
+  },
+  "database": {
+    "quick_check": "ok",
+    "nodes": 64
+  },
+  "video_files": {
+    "camera_segmentation.mp4": {
+      "opened": true,
+      "frames": 297,
+      "fps": 3.0,
+      "width": 640,
+      "height": 960,
+      "bytes": 3130801
+    },
+    "mapping_process.mp4": {
+      "opened": true,
+      "frames": 297,
+      "fps": 3.0,
+      "width": 640,
+      "height": 960,
+      "bytes": 3764974
+    }
+  },
+  "log_error_counts": {
+    "camera_driver": 0,
+    "lidar_driver": 0,
+    "odometry": 0,
+    "mapping": 14,
+    "yolo_detector": 0,
+    "semantic_projector": 0,
+    "semantic_grid_node": 0,
+    "recording": 0,
+    "observer": 0,
+    "video": 0
+  },
+  "recording_duration_seconds": 99.669247933,
+  "message_count": 9076,
+  "topic_counts": {
+    "/semantic/detector_status": 124,
+    "/tf": 2380,
+    "/handpush/odom_info": 496,
+    "/semantic/map_status": 91,
+    "/handpush/odom": 496,
+    "/mapGraph": 15,
+    "/tf_static": 1,
+    "/camera/camera/color/image_raw": 1490,
+    "/info": 64,
+    "/scan": 937,
+    "/camera/camera/color/camera_info": 1492,
+    "/camera/camera/aligned_depth_to_color/image_raw": 1490
+  },
+  "rgb_recorded_fps": 14.949445600328128,
+  "depth_recorded_fps": 14.949445600328128,
+  "bag_parts": [
+    {
+      "file": "sensor_bag_0.db3",
+      "bytes": 1074601984,
+      "quick_check": "ok"
+    },
+    {
+      "file": "sensor_bag_1.db3",
+      "bytes": 1073856512,
+      "quick_check": "ok"
+    },
+    {
+      "file": "sensor_bag_2.db3",
+      "bytes": 185888768,
+      "quick_check": "ok"
+    }
+  ],
+  "pipeline_processed_fps": 1.2441149358662333,
+  "video_combined": "combined_2x.mp4",
+  "video_combined_decode_check": "passed",
+  "selected_for_delivery": true,
+  "trimmed_leading_seconds": 54.84399151802063,
+  "combined_duration_seconds": 22.0,
+  "remote_trimmed_video_upload_confirmed": false,
+  "remote_sync_status": "User requested local-only delivery; no further Jetson synchronization",
+  "remote_sync_requested": false
+}

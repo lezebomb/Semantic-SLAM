@@ -1,0 +1,215 @@
+{
+  "sources_sha256": {
+    "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx": "b828db050a12014e0f8cc7af279ccd6b1b34509724b81e7c8cc3f9572606eaad",
+    "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/3D语义建图---原理文档1-2部分.docx": "413816480bc9cae4a9abd1ccdaef41385e61c7c92ee3e2085d5cef66a4e08a0a"
+  },
+  "output": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/3D语义建图原理文档_整合版.docx",
+  "output_sha256": "d19b34fcb444c3e572f642db49b55ec1ad0fffc0546c907734c3040aad402d97",
+  "user_semantic_original_untouched": true,
+  "user_semantic_text_in_merged_doc_exact": true,
+  "user_semantic_image_bytes_exact": true,
+  "format": {
+    "body": "宋体12pt / Times New Roman12pt，18pt行距，首行缩进2字，左对齐以避免长代码名造成字间距拉伸",
+    "heading": "黑体16pt、14pt",
+    "tables_captions": "宋体11pt",
+    "headers_footers_comments_footnotes": false
+  },
+  "skills": [
+    "academic-humanizer",
+    "humanizer-zh"
+  ],
+  "corrections": [
+    {
+      "issue": "当前几何方案仍按官方激光配置说明",
+      "revision": "当前RGB-D与早期Indoor激光历史分开；更新实际节点、参数和TF",
+      "evidence": [
+        "Semantic-SLAM/config/robot_mapping.yaml",
+        "Semantic-SLAM/launch/live_semantic.launch.py",
+        "Semantic-SLAM/scripts/mapping_config.py"
+      ]
+    },
+    {
+      "issue": "原稿称跨帧身份由后续关联模块维护",
+      "revision": "现有代码没有跨帧跟踪或身份关联；保留为未来计划",
+      "evidence": [
+        "Semantic-SLAM/semantic/yolo_detector.py",
+        "Semantic-SLAM/semantic/semantic_grid_node.py"
+      ]
+    },
+    {
+      "issue": "旧测试路径与GPU命令已不在车端默认部署范围",
+      "revision": "改为现有run.sh --check与可用的直接模型调用，旧工具按历史说明",
+      "evidence": [
+        "Semantic-SLAM/scripts/sync_jetson.sh",
+        "Semantic-SLAM/scripts/validate_gpu.py",
+        "Semantic-SLAM/scripts/capture_d435_frame.py"
+      ]
+    },
+    {
+      "issue": "15W功耗模式缺少独立结果中的配置证据",
+      "revision": "保留Orin NX/CUDA/PyTorch来源信息，不以15W作当前配置或性能前提",
+      "evidence": [
+        "Jetson部署资料.tar.zst/local_audit/gpu-20261023-105459/result.json",
+        "分模块报告资料_20261102/DEPLOYMENT_REPORT.md"
+      ]
+    }
+  ],
+  "historical_numbers": {
+    "geometry_summary": "206 updates / 191 optimized poses / 10 loop events / 67 proximity events / 196 TF checks / 75.54 and 149.13 ms verified from archived summaries",
+    "cloud_count_184619": "Retained from early export report; original cloud was previously removed, no new recount or export claimed",
+    "cpu_benchmark": "Independent baseline member in cpu_benchmark.json: 60 samples, 79.445894/82.0241269 ms, 12.649365 FPS, 517.0078125 MiB",
+    "gpu_benchmark": "Original GPU20-image result: 41.952716/51.932954 ms, 22.958573 FPS, 11 detections / 9 nonempty images",
+    "d435_sample": "after_manual_move/camera/result.json: 3 chair / 4060 mask pixels / stage times checked"
+  },
+  "fidelity_audit": {
+    "numbers": "Historical measured values checked and retained; power mode certainty removed explicitly",
+    "citations": "No invented references; source pointers recorded here rather than adding notes to document",
+    "technical_terms": "Checked against current local code and installed Ultralytics8.3.221",
+    "claims_causality": "No performance/accuracy/generalization uplift invented",
+    "limitations": "Historical vs current route and unmeasured accuracy retained",
+    "voice": "Moderate basis from user-edited third chapter; that chapter copied literally"
+  },
+  "official_cross_checks": [
+    "https://docs.ultralytics.com/models/yolov8/",
+    "https://docs.ultralytics.com/reference/nn/modules/head/",
+    "https://raw.githubusercontent.com/introlab/rtabmap_ros/ros2/rtabmap_examples/launch/realsense_d435i_color.launch.py"
+  ],
+  "new_vehicle_or_model_tests": false,
+  "pdf_review": {
+    "pages": 13,
+    "headers_footers_comments_footnotes": false,
+    "body_and_table_fonts_checked": true,
+    "figures_and_math_rendered": true,
+    "no_empty_cover": true,
+    "long_component_names_use_left_alignment": true
+  },
+  "workspace_material_path_map_20261106": {
+    "RTAB-Map + YOLO/实车测试结果_20261105": "RTAB-Map + YOLO/测试结果/实车测试结果_20261105",
+    "RTAB-Map + YOLO/实车测试结果_20261106": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106",
+    "RTAB-Map + YOLO/车上代码与接口整理_20261104": "RTAB-Map + YOLO/接口与运行",
+    "RTAB-Map + YOLO/分模块报告资料_20261102": "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102",
+    "RTAB-Map + YOLO/文档修订资料_20261030": "RTAB-Map + YOLO/历史资料/文档修订资料_20261030",
+    "RTAB-Map + YOLO/本地整理与原理修订_20261104": "RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104",
+    "RTAB-Map + YOLO/核查与计划_20261103": "RTAB-Map + YOLO/历史资料/核查与计划_20261103",
+    "RTAB-Map + YOLO/3D语义建图---原理文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---原理文档-带部分修改建议示例.docx",
+    "RTAB-Map + YOLO/3D语义建图---测试文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---测试文档-带部分修改建议示例.docx",
+    "RTAB-Map + YOLO/3D语义建图_会议纪要与Codex交接_完整版.docx": "RTAB-Map + YOLO/参考资料/3D语义建图_会议纪要与Codex交接_完整版.docx",
+    "RTAB-Map + YOLO/Jetson_ROS启动与开机自启动说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS启动与开机自启动说明.docx",
+    "RTAB-Map + YOLO/Jetson_ROS日常使用与手柄控制说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS日常使用与手柄控制说明.docx",
+    "RTAB-Map + YOLO/原理文档-20261102.docx": "RTAB-Map + YOLO/参考资料/原理文档-20261102.docx",
+    "RTAB-Map + YOLO/测试文档-20261102.rar": "RTAB-Map + YOLO/参考资料/测试文档-20261102.rar",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档.docx",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档_分模块版.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档_分模块版.docx",
+    "RTAB-Map + YOLO/原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/原理与测试文档.docx",
+    "RTAB-Map + YOLO/semantic_slam.rar": "RTAB-Map + YOLO/历史资料/semantic_slam.rar",
+    "RTAB-Map + YOLO/地图点云.png": "RTAB-Map + YOLO/展示材料/地图点云.png",
+    "RTAB-Map + YOLO/RTAB-Map建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map建图.mp4",
+    "RTAB-Map + YOLO/RTAB-Map+YOLO.pptx": "RTAB-Map + YOLO/展示材料/RTAB-Map+YOLO.pptx",
+    "RTAB-Map + YOLO/RTAB-Map + YOLO 语义建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map + YOLO 语义建图.mp4",
+    "RTAB-Map + YOLO/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+    "presentation/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+    "presentation/Semantic_SLAM_阶段汇报.pptx": "RTAB-Map + YOLO/展示材料/Semantic_SLAM_阶段汇报.pptx",
+    "presentation/.~lock.Semantic_SLAM_阶段汇报.pptx#": "RTAB-Map + YOLO/展示材料/.~lock.Semantic_SLAM_阶段汇报.pptx#",
+    "RTAB-Map + YOLO/语义SLAM原理文档.docx": "RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx",
+    "MobileNetV3 + YOLOv8/MobileNet+YOLO.pptx": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO.pptx",
+    "MobileNetV3 + YOLOv8/MobileNet+YOLO 演示.mp4": "MobileNetV3 + YOLOv8/展示材料/MobileNet+YOLO 演示.mp4",
+    "MobileNetV3 + YOLOv8/integration.rar": "MobileNetV3 + YOLOv8/历史资料/integration.rar"
+  },
+  "final_integrity_verified": true,
+  "invariant_checker": {
+    "scope": "Entire copied user third chapter",
+    "numbers_preserved": true,
+    "citations_and_labels_preserved": true,
+    "protected_terms_preserved": true,
+    "manual_semantic_check": "Exact paragraph/table text and image digests compared; only formatting changed in merged copy"
+  },
+  "final_checks": {
+    "author_originals_sha256_unchanged": true,
+    "third_part_text_and_images_exact": true,
+    "docx_integrity": true,
+    "pdf_page_review": 13,
+    "active_runtime_dry_run": "passed; no live/vehicle test"
+  },
+  "latest_code_explanation_revision": {
+    "target": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/3D语义建图原理文档.docx",
+    "filename_unchanged": true,
+    "source_sha256": "344dad9a8cc303d99ef09bfa4f6a461b9ff92bb68e7a59e453bb30fa375607b3",
+    "output_sha256": "f3a78e0bb267b98fa965f8b8e90bef3dc0376ba425360611c93a2861144de25c",
+    "backup": "/home/xsy/ros2/RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104/备份/3D语义建图原理文档_代码说明修改前.tar.zst",
+    "edit_scope": [
+      "Chapter1 code explanation",
+      "Chapter2 code explanation",
+      "Minor wording changes in chapter1 and2 overview bodies"
+    ],
+    "outside_allowed_regions_canonical_xml_exact": true,
+    "third_chapter_canonical_xml_exact": true,
+    "existing_images_and_other_package_parts_exact": true,
+    "new_code_diagrams": [
+      {
+        "path": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/素材/体素地图构建_代码结构.png",
+        "pixels": [
+          2350,
+          1440
+        ],
+        "chinese_font": "SimHei",
+        "latin_digits_font": "Times New Roman",
+        "sha256": "606a938cb7c217cde73835afc2589c6e42290b973d095dd80e5896fc274e0e91"
+      },
+      {
+        "path": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/素材/语义分割_代码结构.png",
+        "pixels": [
+          2350,
+          1440
+        ],
+        "chinese_font": "SimHei",
+        "latin_digits_font": "Times New Roman",
+        "sha256": "e957f1fc5418a64a1db389455e441cc5b13078e050ddd005abbbc6de1bfda17d"
+      }
+    ],
+    "font_files": {
+      "中文": {
+        "path": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/素材/字体/SimHei.ttf",
+        "sha256": "336a838f4a78e150826be608dae69de59d50948c3d2b71760e096ae764154bdc"
+      },
+      "英文及数字": {
+        "path": "/home/xsy/ros2/RTAB-Map + YOLO/原理文档1106/素材/字体/TimesNewRoman.ttf",
+        "sha256": "d9fb32eb1646d6fc977c63fd780a46c60b6d1f607bf55eb7baa185aa2637711d"
+      }
+    },
+    "source_code_modified": false,
+    "vehicle_or_ros_tests_started": false,
+    "skills": [
+      "academic-humanizer",
+      "humanizer-zh"
+    ],
+    "fidelity_audit": {
+      "numbers": "Code/configuration parameters checked; untouched scientific sections exact",
+      "technical_names_interfaces": "Checked against existing launch/config/publish-subscribe source",
+      "citations": "None added",
+      "claims": "No new test or performance result asserted",
+      "uncertainty": "Conditional save outputs described as conditional",
+      "voice": "Matched user-edited simple engineering language"
+    },
+    "render_review": {
+      "passed": true,
+      "method": "LibreOffice temporary PDF preview; code-section pages 1–8 inspected visually",
+      "page_count": 12,
+      "checked": [
+        "Both overview paragraphs are readable",
+        "New code diagrams aligned, complete and legible",
+        "Important-file and interface tables fit page width",
+        "Repeated table headers on continuation pages",
+        "Commands and save paths visible",
+        "No overlapping new content"
+      ],
+      "preview_location": "Temporary /tmp only; no extra user-facing document version"
+    },
+    "independent_final_scope_check": {
+      "passed": true,
+      "outside_four_allowed_regions_exact": true,
+      "third_chapter_exact": true,
+      "all_existing_package_parts_except_document_and_image_relationships_exact": true,
+      "code_subsection_headings_present_in_all_three_chapters": true
+    }
+  }
+}

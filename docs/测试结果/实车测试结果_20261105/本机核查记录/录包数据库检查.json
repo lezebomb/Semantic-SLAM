@@ -1,0 +1,163 @@
+{
+  "files": [
+    {
+      "file": "bag_dynamic/bag_dynamic_0.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 12573
+    },
+    {
+      "file": "bag_dynamic/bag_dynamic_1.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 11402
+    },
+    {
+      "file": "bag_dynamic/bag_dynamic_2.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 12018
+    },
+    {
+      "file": "bag_dynamic/bag_dynamic_3.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 7384
+    },
+    {
+      "bag": "bag_dynamic",
+      "message_count_matches_metadata": true,
+      "per_topic_counts_match_metadata": true,
+      "messages": 43377,
+      "topics": {
+        "/tf": 7072,
+        "/odom": 5569,
+        "/encoder": 5563,
+        "/cmd_vel": 8057,
+        "/fusion/odometry": 1495,
+        "/scan": 5780,
+        "/tf_static": 4,
+        "/camera/camera/aligned_depth_to_color/image_raw": 3207,
+        "/camera/camera/color/camera_info": 3156,
+        "/camera/camera/color/image_raw": 1589,
+        "/semantic/points_camera": 328,
+        "/semantic/pointcloud": 82,
+        "/semantic/map_status": 278,
+        "/semantic/map": 48,
+        "/semantic/label_image": 389,
+        "/semantic/instance_image": 353,
+        "/semantic/detector_status": 407
+      }
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_0.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 13039
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_1.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 14983
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_2.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 11861
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_3.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 11104
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_4.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 9698
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_5.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 8742
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_6.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 9254
+    },
+    {
+      "file": "full-dynamic-test/bag_dynamic/bag_dynamic_7.db3",
+      "quick_check": [
+        [
+          "ok"
+        ]
+      ],
+      "messages": 1328
+    },
+    {
+      "bag": "full-dynamic-test/bag_dynamic",
+      "message_count_matches_metadata": true,
+      "per_topic_counts_match_metadata": true,
+      "messages": 80009,
+      "topics": {
+        "/fusion/odometry": 0,
+        "/encoder": 11228,
+        "/scan": 11662,
+        "/tf": 11219,
+        "/tf_static": 3,
+        "/cmd_vel": 15035,
+        "/semantic/detector_status": 939,
+        "/semantic/instance_image": 738,
+        "/semantic/label_image": 880,
+        "/semantic/points_camera": 934,
+        "/semantic/map_status": 581,
+        "/semantic/map": 1,
+        "/semantic/pointcloud": 0,
+        "/camera/camera/color/camera_info": 6225,
+        "/camera/camera/color/image_raw": 3090,
+        "/camera/camera/aligned_depth_to_color/image_raw": 6265,
+        "/odom": 11209
+      }
+    }
+  ],
+  "all_database_pages_ok": true
+}

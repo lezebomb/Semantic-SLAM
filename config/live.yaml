@@ -2,12 +2,12 @@
 yolo_detector:
   ros__parameters:
     confidence: 0.35
-    image_size: 640
-    process_every_n: 3
+    image_size: 416
+    process_every_n: 1
     cpu_threads: 2
     sync_slop: 0.04
     input_qos: sensor_data
-    device: cpu  # Jetson: change to "0" only after CUDA + torchvision NMS checks.
+    device: "0"  # Startup refuses CUDA failure; GPU validation required before use.
 semantic_projector:
   ros__parameters:
     min_depth: 0.3

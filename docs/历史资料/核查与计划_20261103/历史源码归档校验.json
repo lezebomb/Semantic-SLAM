@@ -1,0 +1,16 @@
+{
+  "archive": "/home/xsy/ros2/Semantic-SLAM/artifacts/历史准备源码与旧环境.tar.zst",
+  "source_roots": [
+    "semantic_demo",
+    "semantic_slam_local_20261104",
+    "semantic_slam_robot_20261104"
+  ],
+  "files_verified_sha256": 15861,
+  "uncompressed_bytes": 1237769448,
+  "archive_bytes": 313417005,
+  "exclusions": [
+    "runs",
+    "__pycache__"
+  ],
+  "environments_preserved": true
+}

@@ -1,0 +1,197 @@
+{
+  "scope": "Read robot-owned semantic mapping source, related interface configuration and passive graph metadata. Prepare independent local source copy and documentation.",
+  "robot_root": "/home/tjark/yolo_rtabmap",
+  "local_preparation_root": "/home/xsy/ros2/semantic_slam_robot_20261104",
+  "source_snapshot_files": 61,
+  "comparison_against_previous_local_preparation": {
+    "shared_paths": 21,
+    "same": 9,
+    "different": 12,
+    "note": "Includes README and provenance metadata; do not interpret as algorithm-change count."
+  },
+  "remote_final_hash_check": {
+    "checked_at": "2026-11-04T20:55:04.227808+08:00",
+    "checked_files": 72,
+    "changed_since_read": [],
+    "missing_since_read": [],
+    "all_match": true
+  },
+  "local_static_validation": {
+    "scope": "local syntax, copied-source hash and example CLI parsing only",
+    "original_selected_files_match_robot_snapshot": true,
+    "checks": [
+      {
+        "file": "run.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "run_live.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "run_offline.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "stop.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "semantic/common.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/yolo_detector.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/semantic_projector.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/semantic_grid_node.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/indoor_semantic.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/semantic_only.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/live_semantic.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/official_indoor.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/ros_env.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "scripts/run_demo.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/inspect_bag.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/observe_ros.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/capture_rviz.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/inspect_live_interfaces.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "config/live.yaml",
+        "check": "YAML parse",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_handpush.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/stop_handpush.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_camera.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_lidar.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/run_handpush.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/observe_handpush.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/record_handpush_video.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/run_static_check.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/validate_gpu.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/validate_scan.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/capture_d435_frame.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/config/lakibeam_passive.yaml",
+        "check": "YAML parse",
+        "passed": true
+      }
+    ],
+    "subscriber_example_help": "passed without importing ROS or joining ROS graph",
+    "robot_test_performed": false,
+    "model_inference_performed": false,
+    "code_deployed_to_robot": false
+  },
+  "ros2_graph_times": [
+    "2026-11-04T20:36:22+08:00",
+    "2026-11-04T20:37:30+08:00"
+  ],
+  "runtime_sensor_topic_endpoints_observed": false,
+  "camera_http_status_get": "Connection refused; no record/stop endpoints called",
+  "robot_business_process_start_stop_or_parameter_changes": false,
+  "robot_source_write_or_upload": false,
+  "sensor_stream_subscription": false,
+  "model_inference_or_robot_mapping_test": false,
+  "control_message_publication": false,
+  "original_principle_document_handling": "User-edited text and images retained. Current saved baseline recorded; no write-back to either principle DOCX.",
+  "test_archive_reference": "All six DOCX files extracted; interface and evidence-scope sections read; historical results kept distinct."
+}

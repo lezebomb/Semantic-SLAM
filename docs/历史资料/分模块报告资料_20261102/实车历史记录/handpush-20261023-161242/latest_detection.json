@@ -1,0 +1,71 @@
+{
+  "frame": 75,
+  "inference_ms": 81.73,
+  "capture_stamp_ns": 1792743228695045898,
+  "rgb_depth_delta_ms": 0.0,
+  "detections": [
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 667,
+      "confidence": 0.3972013592720032,
+      "pixels": 2915
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 668,
+      "confidence": 0.4229831099510193,
+      "pixels": 18495
+    },
+    {
+      "class_id": 62,
+      "name": "tv",
+      "instance_id": 669,
+      "confidence": 0.5362825393676758,
+      "pixels": 15754
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 670,
+      "confidence": 0.6282174587249756,
+      "pixels": 6251
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 671,
+      "confidence": 0.6476019024848938,
+      "pixels": 2107
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 672,
+      "confidence": 0.6885091066360474,
+      "pixels": 4623
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 673,
+      "confidence": 0.7710954546928406,
+      "pixels": 13047
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 674,
+      "confidence": 0.849309504032135,
+      "pixels": 8883
+    },
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 675,
+      "confidence": 0.9267690181732178,
+      "pixels": 7331
+    }
+  ]
+}

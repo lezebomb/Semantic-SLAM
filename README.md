@@ -4,6 +4,7 @@
 
 语义模块独立运行，不参与 RTAB-Map 的定位、回环检测或后端优化；当前尚未实现紧耦合语义 SLAM。
 
+
 ## 部署版本与入口（2026-10-20）
 
 本仓库包含原始 YOLO 基线及已训练的 MobileNetV3-Small 骨干替换实验。SPPF、YOLOv8n Neck 和 Segment Head 保留，三路 1×1 卷积适配通道；CPU 实测收益有限，MobileNet 仍有明显室内误检，默认部署保持原始 YOLO。
@@ -28,24 +29,56 @@
 
 原有 `run.sh --model /path/model.pt` 接口继续保留。`--allow-empty` 只放宽验证器的非空 Mask 条件，仍检查 RGB-D、几何地图、采集时间 TF、推理/投影错误；它不改变模型输出或生成假 Mask。MobileNet 包装入口默认启用此选项。
 
-## 技术方案
+## 启动与停止
 
-```text
-rosbag：压缩 RGB、compressedDepth、CameraInfo、LiDAR、里程计与 TF
-  └─ RTAB-Map rgbd_sync：解压并同步 RGB-D
-       ├─ RTAB-Map + LiDAR + 里程计 TF → 几何地图、位姿图、map → odom
-       └─ rgbd_split → RGB / Depth
-            └─ YOLOv8n-seg + CameraInfo → 类别 mask、观测实例 mask、标注图
-                 └─ 配对深度反投影 → 相机坐标系语义点
-                      └─ 深度采集时刻 TF → map 坐标系语义点
-                           └─ 5 cm 体素累积与类别投票 → 语义地图
+下次将本机代码同步到车端、确认相机连接后，在车端执行：
+
+```bash
+cd /home/tjark/yolo_rtabmap
+bash run.sh
 ```
 
-默认在 CPU 上运行 YOLO，2 个推理线程、输入尺寸 640、置信度阈值 0.35，每 3 个同步帧处理 1 帧。推理队列最多保留 1 个待处理帧，避免处理延迟持续增长。
+主管复用已有的完整相机数据源，或按需启动 D435；随后统一启动 `rtabmap_odom/rgbd_odometry`、`rtabmap_slam/rtabmap` 和三个语义节点，记录录包、视频、资源及状态。首次就绪要求视觉里程计有效、采集时刻 TF 可用、几何点云与语义地图非空；提示就绪后再缓慢手推。默认就绪后运行600秒，`--duration 0` 持续到手动停止。
 
-检测前以 40 ms 容差配对 RGB、Depth 和 CameraInfo；检测后保留这组深度和内参，以深度时间戳精确同步投影输入。`32FC1` 深度按米使用，`16UC1` 按毫米转换；默认保留 0.3–5 m 深度，横纵方向每 4 个像素采样一次：`X=(u-cx)Z/fx`，`Y=(v-cy)Z/fy`。TF 查询使用采集时间；缺失 TF 时最多等待 5 秒，然后丢弃该帧。
+在另一终端执行 `bash stop.sh`，或在启动终端按 Ctrl+C。主管请求语义保存，关闭本组录包与进程，检查关闭后的数据库，写入 `result.json`。复用的相机和其他组进程不被终止。退出及保存是否成功应查看本次结果，不以“文件存在”代替功能通过。
 
-每个体素保存观测坐标均值和类别投票，最多保留 200000 个体素。实例编号用于区分单次观测，并非跨帧对象 ID。
+## 本机核查与回放
+
+```bash
+bash run.sh --dry-run
+bash run.sh --check --device cpu
+bash run.sh --replay /path/to/bag --device cpu --no-record
+```
+
+`--dry-run` 只显示计划；`--check` 只检查软件、模型哈希和 Torchvision NMS。真实录包回放只选择 RGB、对齐 Depth、CameraInfo 与相机内部静态 TF，在非零 Domain（默认77）和本机通信范围内重新计算视觉里程计及地图。旧轮速、旧动态 TF、语义结果、控制消息不进入回放。`--status` 只读当前主管状态。
+
+`--data-only` 作为旧参数兼容保留，当前基线始终只运行数据和建图。`run_gamepad.sh` 已停用；旧雷达、底盘和手柄工具不在默认调用链，也不在当前部署脚本白名单。官方演示仍可显式用 `run.sh --official --bag /path/to/bag` 调用，不算实车测试。
+
+## 数据流与接口
+
+```text
+RGB + 对齐Depth + CameraInfo
+├── rgbd_odometry → /rtabmap_yolo/odom → rtabmap → 几何地图、数据库
+└── YOLOv8n-seg → 类别/实例掩膜 → 深度反投影 → 相机系点云
+                                                 └── 采集时刻TF → map系点云 → 语义体素地图
+```
+
+TF使用本组私有 `/rtabmap_yolo/tf` 与 `/rtabmap_yolo/tf_static`。相机内部静态外参经过筛选后接入；`camera_odom → camera_link` 由 `rgbd_odometry` 发布，`map → camera_odom` 由 `rtabmap` 发布。当前以相机本体为运动参考，不需要未经复核的相机—底盘安装参数。语义未参与定位、回环或位姿图优化，也不会在几何回环后重投影历史体素。
+
+| 接口 | 类型与用途 |
+|---|---|
+| `/camera/camera/color/image_raw` | `sensor_msgs/msg/Image`，RGB输入 |
+| `/camera/camera/aligned_depth_to_color/image_raw` | `sensor_msgs/msg/Image`，对齐深度输入 |
+| `/camera/camera/color/camera_info` | `sensor_msgs/msg/CameraInfo`，相机内参 |
+| `/rtabmap_yolo/odom` | `nav_msgs/msg/Odometry`，本组视觉里程计输出 |
+| `/rtabmap_yolo/cloud_map`、`mapGraph`、`info` | 几何点云、位姿图和RTAB-Map状态 |
+| `/semantic/label_image`、`instance_image` | 类别图 `mono8` 与单帧实例图 `mono16` |
+| `/semantic/points_camera` | `sensor_msgs/msg/PointCloud2`，相机光学坐标系语义点云 |
+| `/semantic/pointcloud`、`/semantic/map` | `PointCloud2`，单帧地图系点云与累积语义图 |
+| `/semantic/detector_status`、`map_status` | `std_msgs/msg/String`，JSON状态 |
+| `/semantic/save_map` | `std_srvs/srv/Trigger`，保存语义地图 |
+
+原始相机订阅使用SensorData/Best Effort；静态TF和累积语义地图保留最后消息。RGB-D配对允许相差40 ms；这是一项配置，不是实测同步误差。投影要求深度与内参一致、内参为已校正针孔模型；`16UC1`毫米转米，`32FC1`直接按米使用。
 
 ## 环境和依赖
 
@@ -197,3 +230,42 @@ ros2 service call /semantic/save_map std_srvs/srv/Trigger '{}'
 - 本机 VMware/Mesa 下 RViz 栅格显示曾有 shader 警告；仿真时钟停止后 RViz 退出曾需要强制清理，本次整包退出也出现 `std::system_error`。几何和语义结果可通过无图形回放独立检查，启动器在 `result.json` 单独记录 RViz 关闭错误。
 
 RTAB-Map 的官方 launch 通过包依赖调用，RViz 配置基于其演示配置调整，保留的版权及 BSD 条款见 [licenses/rtabmap_ros-BSD.txt](licenses/rtabmap_ros-BSD.txt)。设计流程参考 [rtabmap_allinone](https://github.com/nasyihulwan/rtabmap_allinone/tree/d7d4d8318a1c21db211b260f534d1af73736120c)，本仓库不发布其参考源码。项目使用 [Ultralytics 8.3.221](https://github.com/ultralytics/ultralytics/tree/v8.3.221) 的分割 API 和官方模型，采用 [AGPL-3.0](LICENSE) 发布。
+
+
+## 代码结构与职责
+
+```text
+Semantic-SLAM/                     车端同一结构的根目录名为yolo_rtabmap
+├── run.sh / stop.sh                日常启动、保存退出
+├── semantic/
+│   ├── yolo_detector.py            三路相机配对、每3帧选1帧、队列1、实例分割
+│   ├── semantic_projector.py       掩膜与深度反投影，输出相机系语义点云
+│   ├── semantic_grid_node.py       采集时刻TF、5 cm体素投票、地图发布与保存
+│   └── common.py                  点结构、颜色、坐标变换及公共方法
+├── scripts/
+│   ├── run_live.py                 数据源、建图、录制、就绪及收尾主管
+│   ├── mapping_config.py           参数、输入白名单与基线约束
+│   ├── mapping_runtime.py          TF筛选与观测、同步统计、视频和几何快照
+│   ├── run_camera.sh               内部相机入口
+│   ├── ros_env.sh / ros_env_jetson.sh   已有环境加载
+│   └── sync_jetson.sh              仅向原车端工程同步指定文件
+├── launch/live_semantic.launch.py  两个RTAB-Map节点与三个语义节点
+├── config/robot_mapping.yaml       RGB-D视觉里程计、几何与记录参数
+├── config/live.yaml                分割、投影及体素参数
+├── config/camera_raw_only.yaml      相机原始数据配置
+├── models/yolov8n-seg.pt            原版权重
+├── runs/                          运行产物
+├── logs/                          状态与互斥锁
+├── tests/                         本机回归检查及验证记录，不部署回车端
+└── artifacts/                     已有历史源码压缩归档，不展开为平行工程
+```
+
+目录树列出当前基线的主要文件；已有官方回放与只读核查辅助文件保留在原分类中。车端既有 `envs/yolo`、`miniforge3` 和 `sensor_ws` 保持路径；雷达工作区保留但当前不启动。
+
+每个运行目录保存 `rtabmap.db`、`rtabmap_geometry.ply/.png`、可用时的 `occupancy.png`；`semantic/`保存NPZ、PLY和统计；`bag/`保存输入与关键输出；视频配套逐帧时间表；`resources.json`、可用时的`tegrastats.log`保存资源采样；配置、事件和最终结果分别说明运行依据与退出状态。录包优先zstd，按60秒或512 MiB分卷；启动至少需8 GiB空闲，低于2 GiB请求保存退出。
+
+## 当前验证边界（2026-11-06）
+
+17次历史车端记录已集中在用户指定结果目录，包含轮速输入、ICP尝试及失败收尾，不算RGB-D恢复版的完整实车验收。当前恢复版通过9项本机检查、CPU模型/NMS检查和一段隔离录包回放：实际运行视觉里程计、RTAB-Map和YOLO，产生数据库、几何及语义输出，保存与退出通过。回放较短、没有完整运动路线，只用于检查恢复后的调用链；尚未将本轮代码同步到车端或完成新的实车复测。
+
+恢复前源码已在本目录 `artifacts/切换RGBD前源码.tar.zst` 校验留存。源码部署仍用 `bash scripts/sync_jetson.sh`；此命令不启动测试，不删除其他文件。下一轮先复测当前RGB-D基线，再单独加入雷达；不重新启用当前存在疑点的轮速输入。

@@ -1,0 +1,50 @@
+backend: rtabmap
+namespace: /rtabmap_yolo
+odometry:
+  source: rgbd
+sync_seconds: 0.04
+topics:
+  rgb: /camera/camera/color/image_raw
+  depth: /camera/camera/aligned_depth_to_color/image_raw
+  camera_info: /camera/camera/color/camera_info
+  odom: /rtabmap_yolo/odom
+frames:
+  map: map
+  odom: camera_odom
+  base: camera_link
+  camera: camera_link
+mounts: []
+sources:
+  camera: auto
+gamepad:
+  enabled: false
+recording:
+  enabled: true
+  compression: auto
+  split_bytes: 536870912
+  split_seconds: 60
+  minimum_free_gib: 8
+  stop_free_gib: 2
+video:
+  enabled: true
+  fps: 10
+runtime:
+  readiness_timeout: 150
+  stream_timeout: 8
+  failure_timeout: 15
+  duration_seconds: 600
+visual_odometry:
+  Odom/ImageDecimation: '2'
+  Vis/MaxFeatures: '600'
+rtabmap:
+  Reg/Strategy: '0'
+  Reg/Force3DoF: 'false'
+  RGBD/NeighborLinkRefining: 'false'
+  RGBD/ProximityBySpace: 'true'
+  RGBD/ProximityByTime: 'false'
+  RGBD/OptimizeFromGraphEnd: 'false'
+  RGBD/OptimizeMaxError: '4'
+  Grid/Sensor: '1'
+  Grid/RangeMax: '5.0'
+  Grid/CellSize: '0.05'
+  Rtabmap/DetectionRate: '1.0'

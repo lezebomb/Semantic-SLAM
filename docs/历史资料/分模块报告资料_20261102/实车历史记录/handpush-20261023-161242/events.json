@@ -1,0 +1,138 @@
+[
+  {
+    "event": "started",
+    "wall_time": 1792743162.7808194,
+    "name": "camera_driver",
+    "pid": 4671
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743162.7826424,
+    "name": "lidar_driver",
+    "pid": 4672
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743162.7841578,
+    "name": "tegrastats",
+    "pid": 4674
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.7875605,
+    "name": "odometry",
+    "pid": 4734
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.7894268,
+    "name": "mapping",
+    "pid": 4735
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.7910762,
+    "name": "yolo_detector",
+    "pid": 4736
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.7968953,
+    "name": "semantic_projector",
+    "pid": 4737
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.8105104,
+    "name": "semantic_grid_node",
+    "pid": 4738
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.8236015,
+    "name": "observer",
+    "pid": 4739
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.8386776,
+    "name": "recording",
+    "pid": 4740
+  },
+  {
+    "event": "started",
+    "wall_time": 1792743166.8545055,
+    "name": "video",
+    "pid": 4741
+  },
+  {
+    "event": "READY_FOR_MANUAL_PUSH",
+    "wall_time": 1792743179.2736392,
+    "map_poses": 1,
+    "odometry": {
+      "messages": 41,
+      "valid_messages": 41,
+      "distance_m": 0.08526812071975515,
+      "last_arrival_wall_time": 1792743178.8424625,
+      "frame": "camera_odom",
+      "child_frame": "camera_link",
+      "last_position": [
+        0.0021025799214839935,
+        0.0005160457803867757,
+        -0.0005504358559846878
+      ],
+      "last_covariance_x": 0.0005651987059785054
+    }
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743187.805413
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743190.487706
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743193.7001143
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743196.888902
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743209.9872634
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743220.743628
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743238.7034526
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743241.3814256
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743244.6000743
+  },
+  {
+    "event": "TRACKING_LOST_PAUSE_MANUAL_PUSH",
+    "wall_time": 1792743253.1997457
+  },
+  {
+    "event": "stopping_after_tracking_loss",
+    "wall_time": 1792743268.2774758,
+    "seconds": 15
+  },
+  {
+    "event": "finished",
+    "wall_time": 1792743276.0149543,
+    "phase": "tracking_lost",
+    "output": "/home/tjark/yolo_rtabmap/runs/handpush-20261023-161242"
+  }
+]

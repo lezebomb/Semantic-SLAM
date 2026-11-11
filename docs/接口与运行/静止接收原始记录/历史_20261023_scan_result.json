@@ -1,0 +1,31 @@
+{
+  "messages": 101,
+  "seconds": 10.0,
+  "domain_id": 77,
+  "publishers": [
+    {
+      "node": "laser_scan_publisher",
+      "namespace": "/",
+      "reliability": "ReliabilityPolicy.RELIABLE",
+      "durability": "DurabilityPolicy.VOLATILE"
+    }
+  ],
+  "frame_id": "laser",
+  "readings_min": 3600,
+  "readings_max": 3600,
+  "valid_points_min": 1772,
+  "valid_points_max": 1785,
+  "arrival_hz": 10.010928927105342,
+  "stamps_increasing": true,
+  "timestamp_age_s": 0.0032176971435546875,
+  "angle_min": -3.1415927410125732,
+  "angle_max": 3.1415927410125732,
+  "angle_increment": 0.001745329238474369,
+  "scan_time": 0.09961430728435516,
+  "time_increment": 1.3835320714861155e-05,
+  "range_min": 0.0,
+  "range_max": 100.0,
+  "last_valid_min_m": 0.13099999725818634,
+  "last_valid_max_m": 7.6579999923706055,
+  "success": true
+}

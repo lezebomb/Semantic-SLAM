@@ -1,0 +1,792 @@
+{
+  "date": "2026-11-05",
+  "backend": "RTAB-Map + original YOLOv8n-seg",
+  "verification_scope": "本机CPU对保留实车录包静态片段的集成回放；不是实车或GPU性能测试",
+  "vehicle_synchronized": false,
+  "vehicle_gpu_or_live_sensor_test": "not_run",
+  "network_scope": "沙箱限制UDP套接字；本机ROS消息与共享内存链路已验证，不代表跨机DDS通信已验证",
+  "source": "原始录包_无损归档.tar.zst中的bag_dynamic/bag_dynamic_0.db3，回放仅选择相机、雷达、轮式里程计、编码器和静态外参",
+  "software_check": {
+    "software_check": "passed",
+    "hardware_check": "not_run",
+    "model_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+    "python": "/home/xsy/ros2/Semantic-SLAM/.venv/bin/python",
+    "device": "cpu",
+    "cuda": false,
+    "torch": "2.5.1+cpu",
+    "ultralytics": "8.3.221",
+    "torchvision_nms_device": "cpu",
+    "torchvision_nms_passed": true,
+    "backend": "RTAB-Map + YOLOv8n-seg",
+    "mode": "live",
+    "domain": 0,
+    "namespace": "/rtabmap_yolo",
+    "tf_topics": [
+      "/rtabmap_yolo/tf",
+      "/rtabmap_yolo/tf_static"
+    ],
+    "geometry_executable": "rtabmap_slam/rtabmap",
+    "inputs": {
+      "rgb": "/camera/camera/color/image_raw",
+      "depth": "/camera/camera/aligned_depth_to_color/image_raw",
+      "camera_info": "/camera/camera/color/camera_info",
+      "scan": "/scan",
+      "odom": "/odom",
+      "encoder": "/encoder"
+    },
+    "mounts": [
+      {
+        "parent": "base_link",
+        "child": "laser",
+        "translation": [
+          0.16,
+          0.0,
+          0.0
+        ],
+        "rotation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "parent": "base_link",
+        "child": "camera_link",
+        "translation": [
+          -0.005,
+          -0.14,
+          0.6
+        ],
+        "rotation_xyzw": [
+          0.0,
+          0.0,
+          0.08290473498662174,
+          0.9965574769760137
+        ]
+      }
+    ],
+    "replay_topics": [
+      "/camera/camera/color/image_raw",
+      "/camera/camera/aligned_depth_to_color/image_raw",
+      "/camera/camera/color/camera_info",
+      "/scan",
+      "/odom",
+      "/encoder",
+      "/tf_static"
+    ],
+    "record_topics": [
+      "/camera/camera/color/image_raw",
+      "/camera/camera/aligned_depth_to_color/image_raw",
+      "/camera/camera/color/camera_info",
+      "/scan",
+      "/odom",
+      "/encoder",
+      "/tf_static",
+      "/rtabmap_yolo/tf",
+      "/rtabmap_yolo/tf_static",
+      "/rtabmap_yolo/info",
+      "/rtabmap_yolo/mapGraph",
+      "/semantic/label_image",
+      "/semantic/instance_image",
+      "/semantic/detector_status",
+      "/semantic/points_camera",
+      "/semantic/pointcloud",
+      "/semantic/map_status"
+    ],
+    "duration_after_ready": 600,
+    "controls_published": false,
+    "old_global_dynamic_tf_consumed": false
+  },
+  "regression_tests": {
+    "total": 9,
+    "passed": 9,
+    "python_ast_files": 29,
+    "shell_syntax_files": 16,
+    "cases": [
+      "固定RTAB后端",
+      "禁止旧map TF/融合/控制回放",
+      "私有TF录制",
+      "阻止外部map TF导入",
+      "空场景运行与RTAB断流区别",
+      "实际launch中GPU0参数的ROS字符串类型",
+      "已有3项空预测/验证策略回归"
+    ]
+  },
+  "integration": {
+    "ready": true,
+    "stop_script": "passed",
+    "database": {
+      "quick_check": "ok",
+      "nodes": 9
+    },
+    "semantic_save_service": {
+      "success": true,
+      "message": "/tmp/robot_mapping_acceptance/semantic"
+    },
+    "observed_counts": {
+      "odom": 320,
+      "valid_odom": 320,
+      "encoder": 313,
+      "scan": 333,
+      "camera_info": 165,
+      "depth": 68,
+      "rgb": 33,
+      "rtabmap_info": 9,
+      "geometry": 1,
+      "occupancy": 1,
+      "graph": 1,
+      "map_tf": 528,
+      "capture_tf": 4,
+      "detector": 2,
+      "annotated": 2,
+      "points_camera": 2,
+      "points_map": 2,
+      "semantic_map": 1,
+      "grid": 4
+    },
+    "capture_time_tf_success": 4,
+    "semantic_transformed": 2,
+    "all_three_node_statistics_saved": true,
+    "bag_compression": "zstd",
+    "split_test_seconds": 3,
+    "compressed_parts": 6,
+    "recorded_messages": 2102,
+    "compressed_bag_all_messages_read_back": true,
+    "video_frames": 269,
+    "video_first_last_decode_ok": true,
+    "geometry_snapshot_saved": true
+  },
+  "unchanged_core_sha256": {
+    "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+    "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe"
+  },
+  "code_sha256": {
+    "scripts/safe_inspect_tar.py": "73408a116e72d9622460a506c092e8dd8ee9e6dd3d37c0268bc2994e284fcb0d",
+    "scripts/mapping_config.py": "22c7c325952de4741f5bd761157c1ce0e6b51ef01ed65f91595490932d0aea17",
+    "scripts/run_demo.py": "4a5bb416a82f2c5663156f3295b1f7d856ace19fb3db5ea0e1dfb3d7f69148ef",
+    "scripts/read_chassis_feedback.py": "3173effe492653610490771fa9e7f1ed86a54560284d1689c5f0ef47dd81557d",
+    "scripts/validate_gpu.py": "fa43d964b66500b9e4302b257457a5857c387669f0cfdf5f4cb33b07649ed68b",
+    "scripts/validate_scan.py": "eaf4869398b22d3be4d475ed5a188ddeb34a2d1510237e62b6f6f112c44d4387",
+    "scripts/run_live.py": "b96ca4c17b9f30fa30e603aa600951cbcbf2786793507802cb7ac22d1fd64d03",
+    "scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+    "scripts/run_static_check.py": "87bcdd0b48623a5557c5e9ccb5b6b4b5035185e25f47a258ad05e653fc1fe5fe",
+    "scripts/read_semantic_output.py": "a40835329e9d91641fde74cadc9365cf9dcd5a51c0fa1e3874675384bee506ea",
+    "scripts/observe_ros.py": "0bedc5397e1ff90f4cc75a0d5fd2647459d1579eef15ca9fe80475124db8f9cc",
+    "scripts/inspect_live_interfaces.py": "76ef5efd44f41e4b13c992b58f204cdf668648bdedf14898aad966244aa8fb53",
+    "scripts/record_handpush_video.py": "0b063a57414a795cf1166535b09bfb3b5b6e24be59b26fb218238177b43659a6",
+    "scripts/run_handpush.py": "34273b01052d86428a313a0c356ed6e496dd89e54e5518e3074b73bea69ab4e4",
+    "scripts/mapping_runtime.py": "16762a08386f0c4ecd49b64b36e7d827cf7f4e5df6712301b8b2babc9ad652e7",
+    "scripts/capture_d435_frame.py": "c81c091a650588b374987fc753412e5de9886328d69000204c62108cf46b0e1f",
+    "scripts/observe_handpush.py": "99105b7097c7843a6ae31802dd238bb575bf27b81a531e3b3edf951476cc9096",
+    "scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+    "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+    "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+    "launch/replay_rtabmap.launch.py": "e2bf8f01cd647a8d934f2edda8febff364659583c5e83abbd0cf776b2aeef587",
+    "launch/indoor_semantic.launch.py": "9835021ebcedc21f97be2c3225da3ccacbd83ccafac5d44c7e37a0158dfa3ce7",
+    "launch/semantic_only.launch.py": "5ae29a2595f9e0bf554041445228d912600d18ce45ce719d57f9a018488441e8",
+    "launch/live_semantic.launch.py": "b3b470ca3f13405c227b1b4d8f7aa2d46abb1a0a92c3d6b554021d64f98c800d",
+    "launch/official_indoor.launch.py": "2c10983721b8560d9d3d4077c9a230f919f9f7a295ca9b49d3f58d3c80b30e63",
+    "tests/test_verification_policy.py": "cd10a2f7863da05068f86086c817d14ffeb8cb004519d46014d9b1799196fa72",
+    "tests/test_live_mapping.py": "86791471fdca6a8d127ba64e38de104fa2e8aa66a0cdc16b3b278a98d9dc4689",
+    "run_handpush.sh": "fca7cfa6b658a171f75ce086900a7d151b3b60b8c5961a198352d98b16bbfeea",
+    "run_camera.sh": "f3843e579aa5a391b14f27f39d84d3e543c9a92b6f275838078ded5e68941474",
+    "stop_live.sh": "9daf8b54f2910f00af113a0b6f508b94468de5ba51426f91a983c64dc7af7bf8",
+    "run_offline.sh": "60537852a7fb0575c9a918160225c948f6f0b8bea05b7a6d13faf89aef106cdd",
+    "stop.sh": "c3ad4a76ed721162be38752dffddcd289c6cae8434807f18a9e80b83a45eb841",
+    "setup.sh": "8dbd8db8886bce5c6a02659b549de6df41d28cc31696b8119e29e08580b09331",
+    "run_lidar.sh": "eb16ff27080aef27f676690a9380cd8283737fdacc542169d127edfade8c1c74",
+    "run_live.sh": "ce76b3bc11d670b3a104785f73157589de2285e8a7eb411dd1767a2a67bda896",
+    "stop_handpush.sh": "2e744a73feb5629681fdca85aefbd680efaa50b8784dfbbbfc59f90f53159616",
+    "run.sh": "962231d30c717c668089a89a40bc5d5f588c4ab70d50e60ab103ce97a25052a3",
+    "run_gamepad.sh": "d1b6ad1a810cd18bd60836233642663781e01205a9feb22d3162ac28f3bd44aa",
+    "scripts/install_approved_ros.sh": "4494360544a8d6d91f91ca795821157c69938b905179528e842deaf44d71d161",
+    "scripts/sync_jetson.sh": "54bfed681ce87e29d3370fbb423f99357ee7e3e4e98be10c5b74ec7f9a8190d9",
+    "scripts/ros_env_jetson.sh": "b45dfec63ed37cafc69fbb15c120e71c65267738a1db5e439867157a758937bf",
+    "scripts/install_realsense_approved.sh": "02ef83bc74c5721ea31b3b449de7ee8bc0424027c40cc5cdf0d34aff5c030285",
+    "scripts/ros_env.sh": "6a1d7084ab4fe8c56fc9036e436d8324534618a1e6b67230482ce6eb86be9b95",
+    "config/robot_mapping.yaml": "458c14141049c5944ceb939bd4279386b5f3005cb5b91e59b4517c89ab5c697a",
+    "config/live.yaml": "850f8e7fe88dfecf36de428b05d73fab63f2adc91139b960bb7f3a8f79a25957"
+  },
+  "temporary_validation_bytes_removed": 1255824195,
+  "validation_artifacts_retained": "只保留本文件与回归检查结果.txt；验证用输入展开副本、地图、数据库、视频及录包临时产物已清理",
+  "latest_unified_entry_static_review": {
+    "checked_at": "2026-11-06T13:35:59.285541+08:00",
+    "scope": "syntax/config/files only; no ROS nodes, GPU runtime, hardware or replay tests run",
+    "counts": {
+      ".py": 31,
+      ".sh": 16,
+      ".yaml": 6
+    },
+    "config_validation": "passed",
+    "backend": "rtabmap",
+    "wheel_input": "/rtabmap_yolo/odom",
+    "control_input": "/cmd_vel_raw",
+    "start_entry": "run.sh",
+    "stop_entry": "stop.sh",
+    "live_retest": "not_run; waiting for explicit user instruction",
+    "source_sha256": {
+      "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+      "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+      "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+      "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+      "launch/replay_rtabmap.launch.py": "fb5d9bb4b1b46e6dd4baec50c4b46719ff03dd5171e047e20caf1eef9d0d2c30",
+      "launch/indoor_semantic.launch.py": "9835021ebcedc21f97be2c3225da3ccacbd83ccafac5d44c7e37a0158dfa3ce7",
+      "launch/semantic_only.launch.py": "5ae29a2595f9e0bf554041445228d912600d18ce45ce719d57f9a018488441e8",
+      "launch/live_semantic.launch.py": "051e78a05306b897447e2a8feaac4c71170446bb350f355f702e400fe9270c05",
+      "launch/official_indoor.launch.py": "2c10983721b8560d9d3d4077c9a230f919f9f7a295ca9b49d3f58d3c80b30e63",
+      "config/semantic_indoor.rviz": "caad1a9bae2b17db004f2775e54621599185fd09b74479ab14fbcd6af1828238",
+      "config/99-robot-deploy-d435.rules": "206fa1754f3818450b80c660da130ed31cd4b482adff8de4f11f6bcb4027181a",
+      "config/camera_raw_only.yaml": "fd76e8ad6af3cdd96e81c190f010b89e0ccb49c56ae68fa81612210cdb045257",
+      "config/robot_mapping.yaml": "368d416b40e44bdc90469333b7a03cfa6d37040b1652b52124f5b2d3c9d46fdd",
+      "config/lakibeam_passive.yaml": "4a173fac51eebc25b8ed60fbb6af1e5cad264e2392619f623a3d48c6e89ca9d2",
+      "config/jetson_constraints.txt": "d58cdba7ebd13e67df8467533234e2f53660416ddcefdd9b055542194d580044",
+      "config/gamepad.yaml": "b9cfcdacc90d9855b5eafe15fb62e567fbe635390ad5082d5b28b2bb5ab08a1c",
+      "config/live.yaml": "850f8e7fe88dfecf36de428b05d73fab63f2adc91139b960bb7f3a8f79a25957",
+      "config/replay_cpu.yaml": "046b6b1d729560d615179b366f51804b8aa0fc50566577d057b01bcfeda93e66",
+      "config/robot_mapping.rviz": "e9914389ca4c9f5c4d65b5083b8a61a35d46fdffd32a596130912abd976dc454",
+      "scripts/gamepad_runtime.py": "89aa37a1bb2e47a4968ee2e0cc64d44e2bd92f1e3ea090e955f4dab85076ae3e",
+      "scripts/run_camera.sh": "c40a922c5f9c2e6bfe9ac40af46785dc3e83ea0c23afa7ea1fade084c537ff7c",
+      "scripts/monitor_gamepad.py": "518399c4508972bbd4544acee6ee4e4c43cb3cd916b55bab052ee0a087f009a2",
+      "scripts/sync_jetson.sh": "8ded333aadc5c460960ef8bef2ada8ee90cb1f97fba7723b85c9c051c2e2f8d1",
+      "scripts/mapping_config.py": "37d1b3786516e1e18fd7ee5554d64ac1d6effcf8ac76ccab6b533064ee2459ec",
+      "scripts/run_lidar.sh": "8ccaa6503777e0cad3538f0424397358cf001b8b321c2c8514dfdf073aa88dd7",
+      "scripts/run_demo.py": "4a5bb416a82f2c5663156f3295b1f7d856ace19fb3db5ea0e1dfb3d7f69148ef",
+      "scripts/read_chassis_feedback.py": "3173effe492653610490771fa9e7f1ed86a54560284d1689c5f0ef47dd81557d",
+      "scripts/validate_scan.py": "eaf4869398b22d3be4d475ed5a188ddeb34a2d1510237e62b6f6f112c44d4387",
+      "scripts/ros_env_jetson.sh": "b45dfec63ed37cafc69fbb15c120e71c65267738a1db5e439867157a758937bf",
+      "scripts/run_live.py": "25624f6511250b5d40124ad79a38df151472cd9e1e0a5b9a11a3de05782e20b0",
+      "scripts/read_semantic_output.py": "a40835329e9d91641fde74cadc9365cf9dcd5a51c0fa1e3874675384bee506ea",
+      "scripts/observe_ros.py": "0bedc5397e1ff90f4cc75a0d5fd2647459d1579eef15ca9fe80475124db8f9cc",
+      "scripts/inspect_live_interfaces.py": "76ef5efd44f41e4b13c992b58f204cdf668648bdedf14898aad966244aa8fb53",
+      "scripts/mapping_runtime.py": "2064bf687370fe07ba9ecc0e94b3db0b1b5e900f7c39f033da5cec753ea70c21",
+      "scripts/ros_env.sh": "6a1d7084ab4fe8c56fc9036e436d8324534618a1e6b67230482ce6eb86be9b95",
+      "scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+      "AGENTS.md": "ee5a950f08a82a54600b6b13dcd5e77d0776f45e77c8459c1841c4234534d662",
+      "README.md": "04e8dbc863715cca0954656f8192cb0efab73357bd1aaa8855540eed404d7a35",
+      "LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "requirements.txt": "035f4c101f304e6e9f0035954dfb6846ed11cba19cb051087ac86db5f521e9e3",
+      "models/yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+      "run.sh": "01226de93e762638783542f48c75e49a74e0ed546cf65c9c6e2ff0512a6bab67",
+      "stop.sh": "59c38ade42c1c2e27fb9a368eb9e415e7dccdbdf1917098a18c42aa21f8a2b31"
+    },
+    "source_scope": "Final deployment whitelist: 43 files; sensor helpers under scripts; tests and old aliases are local-only"
+  },
+  "rgbd_handpush_baseline_20261106": {
+    "scope": "Local x86 CPU; isolated Domain211 recorded-camera-only replay; not a Jetson or vehicle retest",
+    "unit_tests": {
+      "passed": 9,
+      "failed": 0,
+      "dds_required": false
+    },
+    "software_cpu_nms": "passed",
+    "replay_result": {
+      "backend": "RTAB-Map + original YOLOv8n-seg",
+      "mode": "replay",
+      "odometry_source": "rtabmap_odom/rgbd_odometry",
+      "geometry_executable": "rtabmap_slam/rtabmap",
+      "domain": 211,
+      "device": "cpu",
+      "namespace": "/rtabmap_yolo",
+      "tf_topics": [
+        "/rtabmap_yolo/tf",
+        "/rtabmap_yolo/tf_static"
+      ],
+      "inputs": {
+        "rgb": "/camera/camera/color/image_raw",
+        "depth": "/camera/camera/aligned_depth_to_color/image_raw",
+        "camera_info": "/camera/camera/color/camera_info",
+        "odom": "/rtabmap_yolo/odom"
+      },
+      "replay_topics": [
+        "/camera/camera/color/image_raw",
+        "/camera/camera/aligned_depth_to_color/image_raw",
+        "/camera/camera/color/camera_info",
+        "/tf_static"
+      ],
+      "record_topics": [
+        "/camera/camera/color/image_raw",
+        "/camera/camera/aligned_depth_to_color/image_raw",
+        "/camera/camera/color/camera_info",
+        "/tf_static",
+        "/rtabmap_yolo/odom",
+        "/rtabmap_yolo/tf",
+        "/rtabmap_yolo/tf_static",
+        "/rtabmap_yolo/info",
+        "/rtabmap_yolo/mapGraph",
+        "/rtabmap_yolo/odom_info",
+        "/semantic/label_image",
+        "/semantic/instance_image",
+        "/semantic/detector_status",
+        "/semantic/points_camera",
+        "/semantic/pointcloud",
+        "/semantic/map_status"
+      ],
+      "duration_after_ready": 8.0,
+      "controls_requested": false,
+      "controls_published": false,
+      "wheel_odometry_used": false,
+      "lidar_used": false,
+      "old_global_dynamic_tf_consumed": false,
+      "output": "/tmp/rgbd-baseline-check/output",
+      "software": {
+        "model_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+        "python": "/home/xsy/ros2/Semantic-SLAM/.venv/bin/python",
+        "device": "cpu",
+        "cuda": false,
+        "torch": "2.5.1+cpu",
+        "ultralytics": "8.3.221",
+        "torchvision_nms_device": "cpu",
+        "torchvision_nms_passed": true
+      },
+      "phase": "duration_finished",
+      "ready": false,
+      "ever_ready": true,
+      "recording": false,
+      "bag_compression": "not_recorded",
+      "latest": {
+        "backend": "rtabmap",
+        "namespace": "/rtabmap_yolo",
+        "counts": {
+          "rgb": 48,
+          "camera_info": 279,
+          "depth": 74,
+          "odom": 17,
+          "rtabmap_info": 10,
+          "geometry": 1,
+          "occupancy": 1,
+          "graph": 1,
+          "map_tf": 931,
+          "valid_odom": 16,
+          "capture_tf": 9,
+          "detector": 4,
+          "annotated": 4,
+          "points_camera": 4,
+          "points_map": 4,
+          "semantic_map": 4,
+          "grid": 12
+        },
+        "sync_matches": 18,
+        "sync_max_spread_ms": 0.0,
+        "capture_tf_success": 9,
+        "capture_tf_failed": 1,
+        "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1793949850.935231 but the latest data is at time 1793949850.601673, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+        "private_tf_edges": {
+          "camera_odom -> camera_link": 17,
+          "map -> camera_odom": 931
+        },
+        "graph_poses": 1,
+        "loop_closures": 0,
+        "geometry_points": 6281,
+        "detector": {
+          "frame": 4,
+          "inference_ms": 157.11,
+          "capture_stamp_ns": 1793949850935230713,
+          "rgb_depth_delta_ms": 0.0,
+          "detections": [
+            {
+              "class_id": 56,
+              "name": "chair",
+              "instance_id": 7,
+              "confidence": 0.4751311242580414,
+              "pixels": 4528
+            }
+          ]
+        },
+        "semantic_grid": {
+          "received": 4,
+          "transformed": 4,
+          "transformed_points": 1991,
+          "tf_retries": 24,
+          "tf_dropped": 0,
+          "queue_dropped": 0,
+          "evicted_voxels": 0,
+          "map_frame": "map",
+          "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1793949850.935231 but the latest data is at time 1793949850.601673, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+          "transform_samples": [
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949839460487793,
+              "translation": [
+                0.0019270287218251276,
+                0.013662710172321993,
+                0.0011276953747866585
+              ],
+              "quaternion": [
+                -0.49671208435640524,
+                0.5027484004740466,
+                -0.4989689180409882,
+                0.5015487712118419
+              ],
+              "camera_point": [
+                1.9717272520065308,
+                -0.39861950278282166,
+                4.809000015258789
+              ],
+              "map_point": [
+                4.803662128657343,
+                -1.9780572336800186,
+                0.3877524570897765
+              ]
+            },
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949847999898438,
+              "translation": [
+                0.0006393625274814757,
+                0.014596137717466543,
+                0.0011046121739615707
+              ],
+              "quaternion": [
+                -0.4966355457687776,
+                0.5026607287998957,
+                -0.49922223585888875,
+                0.5014603529944895
+              ],
+              "camera_point": [
+                1.5009773969650269,
+                -0.31357407569885254,
+                3.7830002307891846
+              ],
+              "map_point": [
+                3.7774935734023316,
+                -1.5032575449458179,
+                0.30744602485553124
+              ]
+            },
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949849534338867,
+              "translation": [
+                0.0030695243208937384,
+                0.013357039156918769,
+                0.001272045960788487
+              ],
+              "quaternion": [
+                -0.4968885826731212,
+                0.5024870713522203,
+                -0.49913861805236587,
+                0.5014669675080703
+              ],
+              "camera_point": [
+                1.895925521850586,
+                -0.389584481716156,
+                4.700000286102295
+              ],
+              "map_point": [
+                4.6963662778002915,
+                -1.9009785634059904,
+                0.3815313347361695
+              ]
+            }
+          ],
+          "voxels": 483
+        },
+        "invalid_odom": 1,
+        "missing_for_readiness": [],
+        "fatal": "",
+        "video_frames": 0
+      },
+      "ready_wall_time": 1793959563.4275968,
+      "semantic_save_service": {
+        "success": true,
+        "message": "/tmp/rgbd-baseline-check/output/semantic"
+      },
+      "final_observation": {
+        "backend": "rtabmap",
+        "namespace": "/rtabmap_yolo",
+        "counts": {
+          "rgb": 49,
+          "camera_info": 283,
+          "depth": 74,
+          "odom": 17,
+          "rtabmap_info": 10,
+          "geometry": 1,
+          "occupancy": 1,
+          "graph": 1,
+          "map_tf": 950,
+          "valid_odom": 16,
+          "capture_tf": 9,
+          "detector": 4,
+          "annotated": 4,
+          "points_camera": 4,
+          "points_map": 4,
+          "semantic_map": 4,
+          "grid": 12
+        },
+        "sync_matches": 18,
+        "sync_max_spread_ms": 0.0,
+        "capture_tf_success": 9,
+        "capture_tf_failed": 1,
+        "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1793949850.935231 but the latest data is at time 1793949850.601673, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+        "private_tf_edges": {
+          "camera_odom -> camera_link": 17,
+          "map -> camera_odom": 950
+        },
+        "graph_poses": 1,
+        "loop_closures": 0,
+        "geometry_points": 6281,
+        "detector": {
+          "frame": 4,
+          "inference_ms": 157.11,
+          "capture_stamp_ns": 1793949850935230713,
+          "rgb_depth_delta_ms": 0.0,
+          "detections": [
+            {
+              "class_id": 56,
+              "name": "chair",
+              "instance_id": 7,
+              "confidence": 0.4751311242580414,
+              "pixels": 4528
+            }
+          ]
+        },
+        "semantic_grid": {
+          "received": 4,
+          "transformed": 4,
+          "transformed_points": 1991,
+          "tf_retries": 24,
+          "tf_dropped": 0,
+          "queue_dropped": 0,
+          "evicted_voxels": 0,
+          "map_frame": "map",
+          "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1793949850.935231 but the latest data is at time 1793949850.601673, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+          "transform_samples": [
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949839460487793,
+              "translation": [
+                0.0019270287218251276,
+                0.013662710172321993,
+                0.0011276953747866585
+              ],
+              "quaternion": [
+                -0.49671208435640524,
+                0.5027484004740466,
+                -0.4989689180409882,
+                0.5015487712118419
+              ],
+              "camera_point": [
+                1.9717272520065308,
+                -0.39861950278282166,
+                4.809000015258789
+              ],
+              "map_point": [
+                4.803662128657343,
+                -1.9780572336800186,
+                0.3877524570897765
+              ]
+            },
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949847999898438,
+              "translation": [
+                0.0006393625274814757,
+                0.014596137717466543,
+                0.0011046121739615707
+              ],
+              "quaternion": [
+                -0.4966355457687776,
+                0.5026607287998957,
+                -0.49922223585888875,
+                0.5014603529944895
+              ],
+              "camera_point": [
+                1.5009773969650269,
+                -0.31357407569885254,
+                3.7830002307891846
+              ],
+              "map_point": [
+                3.7774935734023316,
+                -1.5032575449458179,
+                0.30744602485553124
+              ]
+            },
+            {
+              "source": "camera_color_optical_frame",
+              "stamp_ns": 1793949849534338867,
+              "translation": [
+                0.0030695243208937384,
+                0.013357039156918769,
+                0.001272045960788487
+              ],
+              "quaternion": [
+                -0.4968885826731212,
+                0.5024870713522203,
+                -0.49913861805236587,
+                0.5014669675080703
+              ],
+              "camera_point": [
+                1.895925521850586,
+                -0.389584481716156,
+                4.700000286102295
+              ],
+              "map_point": [
+                4.6963662778002915,
+                -1.9009785634059904,
+                0.3815313347361695
+              ]
+            }
+          ],
+          "voxels": 483
+        },
+        "invalid_odom": 1,
+        "missing_for_readiness": [],
+        "fatal": "",
+        "video_frames": 0
+      },
+      "exit_codes": {
+        "pipeline": 0,
+        "player": 0
+      },
+      "database": {
+        "quick_check": "ok",
+        "nodes": 10
+      },
+      "finished_wall_time": 1793959573.4216173
+    },
+    "source_sha256": {
+      "scripts/gamepad_runtime.py": "89aa37a1bb2e47a4968ee2e0cc64d44e2bd92f1e3ea090e955f4dab85076ae3e",
+      "scripts/run_camera.sh": "c40a922c5f9c2e6bfe9ac40af46785dc3e83ea0c23afa7ea1fade084c537ff7c",
+      "scripts/install_approved_ros.sh": "4494360544a8d6d91f91ca795821157c69938b905179528e842deaf44d71d161",
+      "scripts/monitor_gamepad.py": "518399c4508972bbd4544acee6ee4e4c43cb3cd916b55bab052ee0a087f009a2",
+      "scripts/sync_jetson.sh": "8ded333aadc5c460960ef8bef2ada8ee90cb1f97fba7723b85c9c051c2e2f8d1",
+      "scripts/safe_inspect_tar.py": "73408a116e72d9622460a506c092e8dd8ee9e6dd3d37c0268bc2994e284fcb0d",
+      "scripts/mapping_config.py": "59bfb8ef43b8d2a4a11ca421d4dbcffa890021937d05d476c147a0c025f9f827",
+      "scripts/run_lidar.sh": "8ccaa6503777e0cad3538f0424397358cf001b8b321c2c8514dfdf073aa88dd7",
+      "scripts/run_demo.py": "4a5bb416a82f2c5663156f3295b1f7d856ace19fb3db5ea0e1dfb3d7f69148ef",
+      "scripts/read_chassis_feedback.py": "3173effe492653610490771fa9e7f1ed86a54560284d1689c5f0ef47dd81557d",
+      "scripts/validate_gpu.py": "fa43d964b66500b9e4302b257457a5857c387669f0cfdf5f4cb33b07649ed68b",
+      "scripts/validate_scan.py": "eaf4869398b22d3be4d475ed5a188ddeb34a2d1510237e62b6f6f112c44d4387",
+      "scripts/ros_env_jetson.sh": "b45dfec63ed37cafc69fbb15c120e71c65267738a1db5e439867157a758937bf",
+      "scripts/run_live.py": "4d7f5e9c05e67cac79c985b8e7ce23f4ad439016dcb337a472ffb62f3eb96e29",
+      "scripts/install_realsense_approved.sh": "02ef83bc74c5721ea31b3b449de7ee8bc0424027c40cc5cdf0d34aff5c030285",
+      "scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+      "scripts/run_static_check.py": "31f2482cdc1f084b4d421975c1132660bcf5d71a18f8170f377a49d4a8d846f0",
+      "scripts/read_semantic_output.py": "a40835329e9d91641fde74cadc9365cf9dcd5a51c0fa1e3874675384bee506ea",
+      "scripts/observe_ros.py": "0bedc5397e1ff90f4cc75a0d5fd2647459d1579eef15ca9fe80475124db8f9cc",
+      "scripts/inspect_live_interfaces.py": "76ef5efd44f41e4b13c992b58f204cdf668648bdedf14898aad966244aa8fb53",
+      "scripts/record_handpush_video.py": "0b063a57414a795cf1166535b09bfb3b5b6e24be59b26fb218238177b43659a6",
+      "scripts/run_handpush.py": "34273b01052d86428a313a0c356ed6e496dd89e54e5518e3074b73bea69ab4e4",
+      "scripts/mapping_runtime.py": "ed5e70cf5eaca44865a1beb9bc96d9e705e8c6b36f95df92cf770fdfc4d320e0",
+      "scripts/ros_env.sh": "6a1d7084ab4fe8c56fc9036e436d8324534618a1e6b67230482ce6eb86be9b95",
+      "scripts/capture_d435_frame.py": "c81c091a650588b374987fc753412e5de9886328d69000204c62108cf46b0e1f",
+      "scripts/observe_handpush.py": "99105b7097c7843a6ae31802dd238bb575bf27b81a531e3b3edf951476cc9096",
+      "scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+      "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+      "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+      "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+      "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+      "launch/replay_rtabmap.launch.py": "fb5d9bb4b1b46e6dd4baec50c4b46719ff03dd5171e047e20caf1eef9d0d2c30",
+      "launch/indoor_semantic.launch.py": "9835021ebcedc21f97be2c3225da3ccacbd83ccafac5d44c7e37a0158dfa3ce7",
+      "launch/semantic_only.launch.py": "5ae29a2595f9e0bf554041445228d912600d18ce45ce719d57f9a018488441e8",
+      "launch/live_semantic.launch.py": "138821e157a9f33baf0aad73ed0e445791b13caa69c0507941b6e8105e4fa506",
+      "launch/official_indoor.launch.py": "2c10983721b8560d9d3d4077c9a230f919f9f7a295ca9b49d3f58d3c80b30e63",
+      "config/semantic_indoor.rviz": "caad1a9bae2b17db004f2775e54621599185fd09b74479ab14fbcd6af1828238",
+      "config/camera_raw_only.yaml": "fd76e8ad6af3cdd96e81c190f010b89e0ccb49c56ae68fa81612210cdb045257",
+      "config/robot_mapping.yaml": "2c68ddd56f76fca4587bbc26a4c175967d0b4c1cd15577fa17b4a76ad4b0e62b",
+      "config/lakibeam_passive.yaml": "4a173fac51eebc25b8ed60fbb6af1e5cad264e2392619f623a3d48c6e89ca9d2",
+      "config/gamepad.yaml": "b9cfcdacc90d9855b5eafe15fb62e567fbe635390ad5082d5b28b2bb5ab08a1c",
+      "config/live.yaml": "850f8e7fe88dfecf36de428b05d73fab63f2adc91139b960bb7f3a8f79a25957",
+      "config/replay_cpu.yaml": "046b6b1d729560d615179b366f51804b8aa0fc50566577d057b01bcfeda93e66",
+      "config/robot_mapping.rviz": "e9914389ca4c9f5c4d65b5083b8a61a35d46fdffd32a596130912abd976dc454"
+    },
+    "transport_note": "Sandbox emitted getifaddrs/UDP errors; local shared-memory ROS processes nevertheless received data and reached readiness. Not evidence of cross-host ROS connectivity.",
+    "retained_output_archive": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106/报告/本机回放核验.tar.zst",
+    "archive_verified_files": 35,
+    "replay_input_provenance": {
+      "original_split": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106/runs/live-20261106-152342-779590/bag/bag_0.db3.zstd",
+      "compressed_sha256": "a4abb99bb156e738926bef61cd03fea7c8745325323afb1afde48a2f23d74596",
+      "decompressed_sha256": "5c46ced96b182e84834bf894fb9c94815e85024396b4219db4c71eb313f2a744",
+      "selection": "First bag split only; playback whitelist RGB, aligned Depth, CameraInfo and camera-internal static TF; recompute visual odometry and mapping; no historical motion/odom/control replay"
+    },
+    "final_static_syntax_checks": {
+      "python": 29,
+      "shell": 16,
+      "yaml": 6
+    },
+    "latest_unit_tests_passed": 9,
+    "final_runtime_source_sha256": {
+      "scripts/gamepad_runtime.py": "89aa37a1bb2e47a4968ee2e0cc64d44e2bd92f1e3ea090e955f4dab85076ae3e",
+      "scripts/run_camera.sh": "c40a922c5f9c2e6bfe9ac40af46785dc3e83ea0c23afa7ea1fade084c537ff7c",
+      "scripts/install_approved_ros.sh": "4494360544a8d6d91f91ca795821157c69938b905179528e842deaf44d71d161",
+      "scripts/monitor_gamepad.py": "518399c4508972bbd4544acee6ee4e4c43cb3cd916b55bab052ee0a087f009a2",
+      "scripts/sync_jetson.sh": "71ce83dacf540aafca8d26a116b1a72a6abffb41f053b40c5d7d3a52666a31af",
+      "scripts/safe_inspect_tar.py": "73408a116e72d9622460a506c092e8dd8ee9e6dd3d37c0268bc2994e284fcb0d",
+      "scripts/mapping_config.py": "59bfb8ef43b8d2a4a11ca421d4dbcffa890021937d05d476c147a0c025f9f827",
+      "scripts/run_lidar.sh": "8ccaa6503777e0cad3538f0424397358cf001b8b321c2c8514dfdf073aa88dd7",
+      "scripts/run_demo.py": "4a5bb416a82f2c5663156f3295b1f7d856ace19fb3db5ea0e1dfb3d7f69148ef",
+      "scripts/read_chassis_feedback.py": "3173effe492653610490771fa9e7f1ed86a54560284d1689c5f0ef47dd81557d",
+      "scripts/validate_gpu.py": "fa43d964b66500b9e4302b257457a5857c387669f0cfdf5f4cb33b07649ed68b",
+      "scripts/validate_scan.py": "eaf4869398b22d3be4d475ed5a188ddeb34a2d1510237e62b6f6f112c44d4387",
+      "scripts/ros_env_jetson.sh": "b45dfec63ed37cafc69fbb15c120e71c65267738a1db5e439867157a758937bf",
+      "scripts/run_live.py": "4d7f5e9c05e67cac79c985b8e7ce23f4ad439016dcb337a472ffb62f3eb96e29",
+      "scripts/install_realsense_approved.sh": "02ef83bc74c5721ea31b3b449de7ee8bc0424027c40cc5cdf0d34aff5c030285",
+      "scripts/capture_rviz.py": "f03ead77fce9c175eca53c704bb9fbbaa44f360fe5972426a08d3ca558f432fd",
+      "scripts/run_static_check.py": "31f2482cdc1f084b4d421975c1132660bcf5d71a18f8170f377a49d4a8d846f0",
+      "scripts/read_semantic_output.py": "a40835329e9d91641fde74cadc9365cf9dcd5a51c0fa1e3874675384bee506ea",
+      "scripts/observe_ros.py": "0bedc5397e1ff90f4cc75a0d5fd2647459d1579eef15ca9fe80475124db8f9cc",
+      "scripts/inspect_live_interfaces.py": "76ef5efd44f41e4b13c992b58f204cdf668648bdedf14898aad966244aa8fb53",
+      "scripts/record_handpush_video.py": "0b063a57414a795cf1166535b09bfb3b5b6e24be59b26fb218238177b43659a6",
+      "scripts/run_handpush.py": "34273b01052d86428a313a0c356ed6e496dd89e54e5518e3074b73bea69ab4e4",
+      "scripts/mapping_runtime.py": "d23f23f97a2ddec4b79af0be7970cf24b5e73fc43799a77a0bbc918fc1f06165",
+      "scripts/ros_env.sh": "6a1d7084ab4fe8c56fc9036e436d8324534618a1e6b67230482ce6eb86be9b95",
+      "scripts/capture_d435_frame.py": "c81c091a650588b374987fc753412e5de9886328d69000204c62108cf46b0e1f",
+      "scripts/observe_handpush.py": "99105b7097c7843a6ae31802dd238bb575bf27b81a531e3b3edf951476cc9096",
+      "scripts/inspect_bag.py": "f804a3cf8e594dda88dbfa6c5f2d4b30020405cee5818ae0c473bbed867ed035",
+      "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+      "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+      "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+      "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503",
+      "launch/replay_rtabmap.launch.py": "fb5d9bb4b1b46e6dd4baec50c4b46719ff03dd5171e047e20caf1eef9d0d2c30",
+      "launch/indoor_semantic.launch.py": "9835021ebcedc21f97be2c3225da3ccacbd83ccafac5d44c7e37a0158dfa3ce7",
+      "launch/semantic_only.launch.py": "5ae29a2595f9e0bf554041445228d912600d18ce45ce719d57f9a018488441e8",
+      "launch/live_semantic.launch.py": "138821e157a9f33baf0aad73ed0e445791b13caa69c0507941b6e8105e4fa506",
+      "launch/official_indoor.launch.py": "2c10983721b8560d9d3d4077c9a230f919f9f7a295ca9b49d3f58d3c80b30e63",
+      "config/semantic_indoor.rviz": "caad1a9bae2b17db004f2775e54621599185fd09b74479ab14fbcd6af1828238",
+      "config/camera_raw_only.yaml": "fd76e8ad6af3cdd96e81c190f010b89e0ccb49c56ae68fa81612210cdb045257",
+      "config/robot_mapping.yaml": "2c68ddd56f76fca4587bbc26a4c175967d0b4c1cd15577fa17b4a76ad4b0e62b",
+      "config/lakibeam_passive.yaml": "4a173fac51eebc25b8ed60fbb6af1e5cad264e2392619f623a3d48c6e89ca9d2",
+      "config/gamepad.yaml": "b9cfcdacc90d9855b5eafe15fb62e567fbe635390ad5082d5b28b2bb5ab08a1c",
+      "config/live.yaml": "850f8e7fe88dfecf36de428b05d73fab63f2adc91139b960bb7f3a8f79a25957",
+      "config/replay_cpu.yaml": "046b6b1d729560d615179b366f51804b8aa0fc50566577d057b01bcfeda93e66",
+      "config/robot_mapping.rviz": "e9914389ca4c9f5c4d65b5083b8a61a35d46fdffd32a596130912abd976dc454"
+    },
+    "temporary_validation_bytes_removed": 544685261,
+    "after_replay_changes": "Usage text, documentation and deployment whitelist; mapping_runtime.py change is a comment only. Retained replay configuration contains the exact executed source hashes.",
+    "final_stop_sh_sha256": "c915e7418a4965927a36f66608a7bd5ad7acbadd7f6890765d7aac4916474d14"
+  },
+  "workspace_material_path_map_20261106": {
+    "RTAB-Map + YOLO/实车测试结果_20261105": "RTAB-Map + YOLO/测试结果/实车测试结果_20261105",
+    "RTAB-Map + YOLO/实车测试结果_20261106": "RTAB-Map + YOLO/测试结果/实车测试结果_20261106",
+    "RTAB-Map + YOLO/车上代码与接口整理_20261104": "RTAB-Map + YOLO/接口与运行",
+    "RTAB-Map + YOLO/分模块报告资料_20261102": "RTAB-Map + YOLO/历史资料/分模块报告资料_20261102",
+    "RTAB-Map + YOLO/文档修订资料_20261030": "RTAB-Map + YOLO/历史资料/文档修订资料_20261030",
+    "RTAB-Map + YOLO/本地整理与原理修订_20261104": "RTAB-Map + YOLO/历史资料/本地整理与原理修订_20261104",
+    "RTAB-Map + YOLO/核查与计划_20261103": "RTAB-Map + YOLO/历史资料/核查与计划_20261103",
+    "RTAB-Map + YOLO/3D语义建图---原理文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---原理文档-带部分修改建议示例.docx",
+    "RTAB-Map + YOLO/3D语义建图---测试文档-带部分修改建议示例.docx": "RTAB-Map + YOLO/参考资料/3D语义建图---测试文档-带部分修改建议示例.docx",
+    "RTAB-Map + YOLO/3D语义建图_会议纪要与Codex交接_完整版.docx": "RTAB-Map + YOLO/参考资料/3D语义建图_会议纪要与Codex交接_完整版.docx",
+    "RTAB-Map + YOLO/Jetson_ROS启动与开机自启动说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS启动与开机自启动说明.docx",
+    "RTAB-Map + YOLO/Jetson_ROS日常使用与手柄控制说明.docx": "RTAB-Map + YOLO/参考资料/Jetson_ROS日常使用与手柄控制说明.docx",
+    "RTAB-Map + YOLO/原理文档-20261102.docx": "RTAB-Map + YOLO/参考资料/原理文档-20261102.docx",
+    "RTAB-Map + YOLO/测试文档-20261102.rar": "RTAB-Map + YOLO/参考资料/测试文档-20261102.rar",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档.docx",
+    "RTAB-Map + YOLO/3D语义建图原理与测试文档_分模块版.docx": "RTAB-Map + YOLO/历史资料/3D语义建图原理与测试文档_分模块版.docx",
+    "RTAB-Map + YOLO/原理与测试文档.docx": "RTAB-Map + YOLO/历史资料/原理与测试文档.docx",
+    "RTAB-Map + YOLO/semantic_slam.rar": "RTAB-Map + YOLO/历史资料/semantic_slam.rar",
+    "RTAB-Map + YOLO/地图点云.png": "RTAB-Map + YOLO/展示材料/地图点云.png",
+    "RTAB-Map + YOLO/RTAB-Map建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map建图.mp4",
+    "RTAB-Map + YOLO/RTAB-Map+YOLO.pptx": "RTAB-Map + YOLO/展示材料/RTAB-Map+YOLO.pptx",
+    "RTAB-Map + YOLO/RTAB-Map + YOLO 语义建图.mp4": "RTAB-Map + YOLO/展示材料/RTAB-Map + YOLO 语义建图.mp4",
+    "RTAB-Map + YOLO/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+    "presentation/效果演示_10秒.mp4": "RTAB-Map + YOLO/展示材料/效果演示_10秒.mp4",
+    "presentation/Semantic_SLAM_阶段汇报.pptx": "RTAB-Map + YOLO/展示材料/Semantic_SLAM_阶段汇报.pptx",
+    "presentation/.~lock.Semantic_SLAM_阶段汇报.pptx#": "RTAB-Map + YOLO/展示材料/.~lock.Semantic_SLAM_阶段汇报.pptx#",
+    "RTAB-Map + YOLO/语义SLAM原理文档.docx": "RTAB-Map + YOLO/原理文档1106/语义SLAM原理文档.docx"
+  }
+}

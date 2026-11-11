@@ -1,0 +1,650 @@
+{
+  "user_authorized_scope": "本次仅保留可复用回放；清理本组历史无用测试和重复工程，固定RTAB-Map+YOLO",
+  "removed": [
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/STOP_RECORDING",
+      "bytes": 0,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/GAMEPAD_NOT_STARTED.txt",
+      "bytes": 172,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_raw.log",
+      "bytes": 773256,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic_dynamic",
+      "bytes": 5189900,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/start_gamepad.sh",
+      "bytes": 809,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_raw_only.yaml",
+      "bytes": 253,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/gamepad_retry.log",
+      "bytes": 1771,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/STOP_MONITOR",
+      "bytes": 0,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_flat_restart.json",
+      "bytes": 830,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic_launch_manifest.json",
+      "bytes": 651,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/gamepad_start_result.json",
+      "bytes": 807,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/recording_supervisor.log",
+      "bytes": 0,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/rosbag.log",
+      "bytes": 7019,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic_dynamic.log",
+      "bytes": 72586,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/gamepad_preparation.json",
+      "bytes": 368,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic_ready_check.json",
+      "bytes": 6398,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/full-dynamic-test.tar.gz",
+      "bytes": 1322458785,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/cleanup_result.json",
+      "bytes": 660,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic.log",
+      "bytes": 49985,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/prepare_manifest.json",
+      "bytes": 1496,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_dynamic.log",
+      "bytes": 11408,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/recording_qos.yaml",
+      "bytes": 1763,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/semantic",
+      "bytes": 3019916,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/manual_test_start.json",
+      "bytes": 3997,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/gamepad.log",
+      "bytes": 78,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_raw_flat.log",
+      "bytes": 1625065,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera.log",
+      "bytes": 2593337,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/preview_rgb.jpg",
+      "bytes": 43841,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/test_stop_save.json",
+      "bytes": 4789,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/restored_data",
+      "bytes": 10867080,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/gamesir_0p30_0p20.yaml",
+      "bytes": 401,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/recording_supervisor.py",
+      "bytes": 3945,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_raw_restart.json",
+      "bytes": 842,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/camera_raw_flat.yaml",
+      "bytes": 217,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/export_inventory.json",
+      "bytes": 36427,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/车上原始结果/recording_status.json",
+      "bytes": 1758,
+      "reason": "用户要求删除本次非回放产物"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/实车测试报告.docx",
+      "bytes": 932530,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/代码",
+      "bytes": 7276948,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/地图",
+      "bytes": 667255,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/回放重建_rtabmap_20261105.tar.gz",
+      "bytes": 90411675,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/预览",
+      "bytes": 2148341,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/视频",
+      "bytes": 60588471,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/两轮测试指标对比.csv",
+      "bytes": 4670,
+      "reason": "本次错误路线的地图、视频、报告、对比和临时回放输出；源码已并入现有主工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_raw_sync_tf_probe.json",
+      "bytes": 16574,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/restored_data_manifest.json",
+      "bytes": 1605,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/导出文件SHA256.json",
+      "bytes": 7168,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/文档生成.log",
+      "bytes": 588,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/current_files.json",
+      "bytes": 37094,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/两轮对比提取.log",
+      "bytes": 2027,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/graph_domain0.json",
+      "bytes": 32252,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/preflight_receive.json",
+      "bytes": 0,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/process_domains_camera_log.json",
+      "bytes": 20017,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/ssh_handshake.stdout",
+      "bytes": 0,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/两轮对比时序.npz",
+      "bytes": 475081,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/control_and_camera_processes.json",
+      "bytes": 21117,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/文档修改与忠实性核查.json",
+      "bytes": 3073,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_flat_restart.json",
+      "bytes": 740,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_sync_tf_probe.json",
+      "bytes": 15148,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/semantic_launch_manifest.json",
+      "bytes": 599,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/tf_after_restore.json",
+      "bytes": 629,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/gamepad_ready_files.json",
+      "bytes": 344,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/原理文档_代码与接口补充.md",
+      "bytes": 6875,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/直观预览来源.json",
+      "bytes": 634,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/fusion_failure_diagnostics.json",
+      "bytes": 32516,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/最终导出状态.json",
+      "bytes": 939,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/两轮对比数据.json",
+      "bytes": 20911,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/车端曾用副本_已撤销.json",
+      "bytes": 154,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/restore_source_check.json",
+      "bytes": 33173,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/传输进度_压缩续传.log",
+      "bytes": 5873,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/导出完整性初检.json",
+      "bytes": 297,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/connection_diagnostics.json",
+      "bytes": 481,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/semantic_ready_check.json",
+      "bytes": 4408,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/归档校验.log",
+      "bytes": 169,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/直观预览生成.log",
+      "bytes": 557,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_flat_sync_tf_probe.json",
+      "bytes": 26681,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/传输进度.log",
+      "bytes": 22792,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/实车测试报告_编辑源.md",
+      "bytes": 13136,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/ssh_handshake.stderr",
+      "bytes": 1494,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/manual_test_start.json",
+      "bytes": 3227,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/full_test_monitor_result.json",
+      "bytes": 7862,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/选取帧_RGBD证据.npz",
+      "bytes": 526484,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/tf_dedicated_ready.json",
+      "bytes": 2638,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/test_owned_process_cleanup.json",
+      "bytes": 522,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/车端代码结构.txt",
+      "bytes": 1218,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/导出与测试范围.json",
+      "bytes": 2032,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/对比视频制作.log",
+      "bytes": 921,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/test_stop_save.json",
+      "bytes": 3785,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/视频导出日志.txt",
+      "bytes": 2077,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/graph_latest.json",
+      "bytes": 25196,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/latest_pose_processes.json",
+      "bytes": 292,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/full_test_recording_start.json",
+      "bytes": 1957,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/工具",
+      "bytes": 121674,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/data_run_manifest.json",
+      "bytes": 1360,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_raw_restart.json",
+      "bytes": 750,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/camera_parameter_inventory.json",
+      "bytes": 8239,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "RTAB-Map + YOLO/实车测试结果_20261105/本机核查记录/graph_domain77.json",
+      "bytes": 205,
+      "reason": "本轮临时分析、绘图、对比和生成脚本，不再作为本项目测试结果"
+    },
+    {
+      "path": "demo_runs",
+      "bytes": 5841517833,
+      "reason": "旧官方数据回放生成的数据库/点云/日志/查看器副本；原始输入在data，摘要已归档"
+    },
+    {
+      "path": "semantic_demo",
+      "bytes": 2270310958,
+      "reason": "准备源码与旧环境已逐文件SHA256校验无损归档；旧runs为用户授权清理的历史测试产物"
+    },
+    {
+      "path": "semantic_slam_local_20261104",
+      "bytes": 7202429,
+      "reason": "准备源码与旧环境已逐文件SHA256校验无损归档；旧runs为用户授权清理的历史测试产物"
+    },
+    {
+      "path": "semantic_slam_robot_20261104",
+      "bytes": 7420376,
+      "reason": "准备源码与旧环境已逐文件SHA256校验无损归档；旧runs为用户授权清理的历史测试产物"
+    },
+    {
+      "path": "Semantic-SLAM/runs",
+      "bytes": 106766803,
+      "reason": "本组旧可再生成的回放测试产物；输入data与历史统计保留"
+    },
+    {
+      "path": "Semantic-SLAM/artifacts/latest_run.txt",
+      "bytes": 56,
+      "reason": "清理后失效的旧运行指针"
+    },
+    {
+      "path": "live_robot_test_20261023/handpush-20261023-155002",
+      "bytes": 40739294,
+      "reason": "相机旧测试的失败启动试次；保留161242、162853与静态记录"
+    },
+    {
+      "path": "live_robot_test_20261023/matplotlib_cache",
+      "bytes": 132849,
+      "reason": "绘图缓存"
+    },
+    {
+      "path": "live_robot_test_20261104",
+      "bytes": 1370,
+      "reason": "已并入接口文档的旧探针中间产物"
+    },
+    {
+      "path": "selected_test_videos",
+      "bytes": 1912367,
+      "reason": "旧2倍速交付拷贝；原速与原始实测保存在实车历史记录"
+    },
+    {
+      "path": "jetson_deploy_20261023",
+      "bytes": 243718450,
+      "reason": "旧部署或核查参考已逐文件验证无损归档，不再展开为并行工程"
+    },
+    {
+      "path": "jetson_code_audit_20261104",
+      "bytes": 16424183,
+      "reason": "旧部署或核查参考已逐文件验证无损归档，不再展开为并行工程"
+    },
+    {
+      "path": "RTAB-Map + YOLO/车上代码与接口整理_20261104/semantic_slam_robot_20261104.zip",
+      "bytes": 6556757,
+      "reason": "重复准备工程压缩交付；同源源码已在主工程及验证过的历史源码归档保留"
+    },
+    {
+      "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/semantic_slam_local_20261104.zip",
+      "bytes": 6485077,
+      "reason": "重复准备工程压缩交付；同源源码已在主工程及验证过的历史源码归档保留"
+    },
+    {
+      "path": "Semantic-SLAM/scripts/__pycache__",
+      "bytes": 7489,
+      "reason": "本组源码生成缓存"
+    },
+    {
+      "path": "Semantic-SLAM/launch/__pycache__",
+      "bytes": 5687,
+      "reason": "本组源码生成缓存"
+    },
+    {
+      "path": "Semantic-SLAM/semantic/__pycache__",
+      "bytes": 2926,
+      "reason": "本组源码生成缓存"
+    },
+    {
+      "path": "__pycache__",
+      "bytes": 2200,
+      "reason": "Python生成缓存"
+    },
+    {
+      "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/代码目录树.png",
+      "bytes": 286731,
+      "reason": "过时生成的准备代码树或原理副本，用户当前章节和主文档保留"
+    },
+    {
+      "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/代码目录树.svg",
+      "bytes": 11117,
+      "reason": "过时生成的准备代码树或原理副本，用户当前章节和主文档保留"
+    },
+    {
+      "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/代码目录树.txt",
+      "bytes": 3054,
+      "reason": "过时生成的准备代码树或原理副本，用户当前章节和主文档保留"
+    },
+    {
+      "path": "RTAB-Map + YOLO/本地整理与原理修订_20261104/原理文档-20261102_语义SLAM原理润色_20261104.docx",
+      "bytes": 3329322,
+      "reason": "过时生成的准备代码树或原理副本，用户当前章节和主文档保留"
+    }
+  ],
+  "moved": [
+    {
+      "from": "replay_rtabmap.launch.py",
+      "to": "Semantic-SLAM/launch/replay_rtabmap.launch.py"
+    },
+    {
+      "from": "RTAB-Map + YOLO/实车测试结果_20261105/replay_live_cpu.yaml",
+      "to": "Semantic-SLAM/config/replay_cpu.yaml"
+    },
+    {
+      "from": "Semantic-SLAM-deploy",
+      "to": "MobileNetV3 + YOLOv8/integration/rtabmap_adapter",
+      "reason": "这是MobileNet实验分支；归入其项目，Git分支及worktree关联保留"
+    },
+    {
+      "from": "live_robot_test_20261023",
+      "to": "RTAB-Map + YOLO/分模块报告资料_20261102/实车历史记录"
+    },
+    {
+      "from": "DEPLOYMENT_REPORT.md",
+      "to": "RTAB-Map + YOLO/分模块报告资料_20261102/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "HANDPUSH_TEST_REPORT.md",
+      "to": "RTAB-Map + YOLO/分模块报告资料_20261102/HANDPUSH_TEST_REPORT.md"
+    },
+    {
+      "from": "STATIC_TEST_REPORT.md",
+      "to": "RTAB-Map + YOLO/分模块报告资料_20261102/STATIC_TEST_REPORT.md"
+    }
+  ],
+  "canonical_local_source": "/home/xsy/ros2/Semantic-SLAM",
+  "remote_actions_performed": false,
+  "gross_removed_bytes": 10063163413,
+  "source_archive_bytes": 313417005,
+  "architecture": "固定RTAB-Map+YOLO；run_live只启动语义节点，完整实车RTAB入口待下次连接核实和补齐",
+  "static_checks": {
+    "python_ast_files": 25,
+    "bash_syntax_files": 14,
+    "run_sh_help": "passed",
+    "hardware_or_mapping_processes_started": false
+  },
+  "canonical_core_sha256": {
+    "semantic/yolo_detector.py": "4fa1ea17e4f0efc5e1898e6f3b3293c35e4449e2522f8836caced4abc34eae44",
+    "semantic/semantic_grid_node.py": "13021a2634e8f60aa00abbc97b47e4d0fa92af0df2edf7d40c28a411b5981cfb",
+    "semantic/common.py": "db26706aefba3b5d59d1e62d10e2d50bf151da22bfd76b21863cb107937bdabe",
+    "semantic/semantic_projector.py": "224639133c820cc96cbddbaee5bbc2941dbb13c07c58bd44c4147460d2f38503"
+  },
+  "disk_free_bytes_after": 50776866816,
+  "code_merge_adjustments": [
+    "复用本机已有.venv；ARM64加载原车端环境helper",
+    "官方回放默认路径按本机/Jetson实际存在文件选择",
+    "本机默认CPU、Jetson默认GPU0；资源采样tegrastats仅在存在时运行",
+    "离线RTAB配置拒绝覆盖已有rtabmap.db；完整实车入口仍待现场核实"
+  ]
+}

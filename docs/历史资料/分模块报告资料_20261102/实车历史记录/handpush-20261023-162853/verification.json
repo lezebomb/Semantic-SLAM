@@ -1,0 +1,420 @@
+{
+  "topics": {
+    "/semantic/input/rgb": {
+      "count": 1833,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "rgb8"
+    },
+    "/semantic/input/depth": {
+      "count": 1812,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "16UC1"
+    },
+    "/data_throttled_camera_info": {
+      "count": 1833,
+      "frame_id": "camera_color_optical_frame"
+    },
+    "/cloud_map": {
+      "count": 3,
+      "frame_id": "map",
+      "points": 7357,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb"
+      ]
+    },
+    "/map": {
+      "count": 3,
+      "frame_id": "map",
+      "width": 127,
+      "height": 183,
+      "resolution": 0.05000000074505806,
+      "known_cells": 3266
+    },
+    "/mapData": {
+      "count": 23,
+      "frame_id": "map",
+      "nodes_in_message": 1
+    },
+    "/mapGraph": {
+      "count": 3,
+      "frame_id": "map",
+      "poses": 3
+    },
+    "/info": {
+      "count": 23,
+      "frame_id": "map"
+    },
+    "/semantic/label_image": {
+      "count": 180,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "mono8",
+      "last_nonzero_pixels": 6223
+    },
+    "/semantic/detector_status": {
+      "count": 180,
+      "last": {
+        "frame": 183,
+        "inference_ms": 69.77,
+        "capture_stamp_ns": 1792744274595749268,
+        "rgb_depth_delta_ms": 0.0,
+        "detections": [
+          {
+            "class_id": 56,
+            "name": "chair",
+            "instance_id": 739,
+            "confidence": 0.6053623557090759,
+            "pixels": 6223
+          }
+        ]
+      }
+    },
+    "/semantic/instance_image": {
+      "count": 180,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "mono16",
+      "last_nonzero_pixels": 6223
+    },
+    "/semantic/image_annotated": {
+      "count": 180,
+      "frame_id": "camera_color_optical_frame",
+      "width": 640,
+      "height": 480,
+      "encoding": "bgr8"
+    },
+    "/semantic/points_camera": {
+      "count": 141,
+      "frame_id": "camera_color_optical_frame",
+      "points": 350,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        56
+      ]
+    },
+    "/semantic/pointcloud": {
+      "count": 33,
+      "frame_id": "map",
+      "points": 1207,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        4
+      ]
+    },
+    "/semantic/map_status": {
+      "count": 133,
+      "last": {
+        "received": 141,
+        "transformed": 33,
+        "transformed_points": 83641,
+        "tf_retries": 10949,
+        "tf_dropped": 107,
+        "queue_dropped": 0,
+        "evicted_voxels": 0,
+        "map_frame": "map",
+        "last_tf_error": "Lookup would require extrapolation into the future.  Requested time 1792744274.595749 but the latest data is at time 1792744169.978637, when looking up transform from frame [camera_color_optical_frame] to frame [map]",
+        "transform_samples": [
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792744145692373535,
+            "translation": [
+              -7.673994549911849e-05,
+              0.014833685498025693,
+              2.9380463196762325e-05
+            ],
+            "quaternion": [
+              -0.4964602271742585,
+              0.5025714231656012,
+              -0.49936510645931526,
+              0.5015811977160453
+            ],
+            "camera_point": [
+              -0.014804918318986893,
+              -0.012812414206564426,
+              0.5509999990463257
+            ],
+            "map_point": [
+              0.5509508784942097,
+              0.027380762907873914,
+              0.014010692219162433
+            ]
+          },
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792744146292879883,
+            "translation": [
+              -0.0013319761836636348,
+              0.014741588322065456,
+              -0.0005667869252752579
+            ],
+            "quaternion": [
+              -0.4966531143248947,
+              0.5021969421886875,
+              -0.4997647260290347,
+              0.5013672644926461
+            ],
+            "camera_point": [
+              -0.023222461342811584,
+              -0.013463500887155533,
+              0.5790000557899475
+            ],
+            "map_point": [
+              0.577722499208591,
+              0.03558041527444742,
+              0.014375468298368731
+            ]
+          },
+          {
+            "source": "camera_color_optical_frame",
+            "stamp_ns": 1792744147360377930,
+            "translation": [
+              0.00023016658679002674,
+              0.014954922026612734,
+              0.00016043743106764597
+            ],
+            "quaternion": [
+              -0.49649982094385786,
+              0.5025848758594212,
+              -0.49948983061347746,
+              0.5014043073945482
+            ],
+            "camera_point": [
+              -0.01882055401802063,
+              -0.01306819822639227,
+              0.562000036239624
+            ],
+            "map_point": [
+              0.5622788868429253,
+              0.031322313482536814,
+              0.014386341519644276
+            ]
+          }
+        ],
+        "voxels": 6506
+      }
+    },
+    "/semantic/map": {
+      "count": 21,
+      "frame_id": "map",
+      "points": 6506,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "rgb",
+        "class_id",
+        "instance_id"
+      ],
+      "class_ids": [
+        4,
+        28,
+        37,
+        56
+      ]
+    }
+  },
+  "mask_nonzero_messages": 142,
+  "instance_nonzero_messages": 142,
+  "semantic_cloud_nonempty": 33,
+  "semantic_map_nonempty": 21,
+  "finite_clouds": 195,
+  "tf_checks": 33,
+  "max_tf_point_error_m": 2.384159376589423e-07,
+  "detector_frames_with_instances": 142,
+  "camera_frames": {},
+  "depth_encodings": {
+    "16UC1": 1812
+  },
+  "odometry": {
+    "messages": 655,
+    "valid_messages": 143,
+    "distance_m": 2.21802304005441,
+    "last_arrival_wall_time": 1792744274.7291543,
+    "frame": "camera_odom",
+    "child_frame": "camera_link",
+    "last_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_covariance_x": 9999.0
+  },
+  "geometry_tf_checks": 12,
+  "loop_closures": 0,
+  "proximity_detections": 0,
+  "nodes": [
+    "yolo_detector",
+    "semantic_projector",
+    "semantic_grid_node",
+    "semantic_verifier",
+    "handpush_video_recorder"
+  ],
+  "ros_topics": [
+    {
+      "name": "/camera/camera/aligned_depth_to_color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/cloud_map",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/handpush/odom",
+      "types": [
+        "nav_msgs/msg/Odometry"
+      ]
+    },
+    {
+      "name": "/info",
+      "types": [
+        "rtabmap_msgs/msg/Info"
+      ]
+    },
+    {
+      "name": "/map",
+      "types": [
+        "nav_msgs/msg/OccupancyGrid"
+      ]
+    },
+    {
+      "name": "/mapData",
+      "types": [
+        "rtabmap_msgs/msg/MapData"
+      ]
+    },
+    {
+      "name": "/mapGraph",
+      "types": [
+        "rtabmap_msgs/msg/MapGraph"
+      ]
+    },
+    {
+      "name": "/parameter_events",
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ]
+    },
+    {
+      "name": "/rosout",
+      "types": [
+        "rcl_interfaces/msg/Log"
+      ]
+    },
+    {
+      "name": "/semantic/detector_status",
+      "types": [
+        "std_msgs/msg/String"
+      ]
+    },
+    {
+      "name": "/semantic/image_annotated",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/instance_image",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/label_image",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/map",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/semantic/map_status",
+      "types": [
+        "std_msgs/msg/String"
+      ]
+    },
+    {
+      "name": "/semantic/paired_camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/semantic/paired_depth",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/semantic/pointcloud",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/semantic/points_camera",
+      "types": [
+        "sensor_msgs/msg/PointCloud2"
+      ]
+    },
+    {
+      "name": "/tf",
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ]
+    },
+    {
+      "name": "/tf_static",
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ]
+    }
+  ],
+  "success": true,
+  "verification_policy": "interface_allow_empty",
+  "pipeline_tf_checks": 9,
+  "segmentation_state": "predictions_present",
+  "semantic_transform_validation": "exercised_on_real_model_outputs"
+}

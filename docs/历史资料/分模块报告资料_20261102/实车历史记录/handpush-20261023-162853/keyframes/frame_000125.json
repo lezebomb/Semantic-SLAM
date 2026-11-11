@@ -1,0 +1,15 @@
+{
+  "frame": 125,
+  "inference_ms": 74.21,
+  "capture_stamp_ns": 1792744235831499512,
+  "rgb_depth_delta_ms": 0.0,
+  "detections": [
+    {
+      "class_id": 56,
+      "name": "chair",
+      "instance_id": 714,
+      "confidence": 0.5375056266784668,
+      "pixels": 32041
+    }
+  ]
+}

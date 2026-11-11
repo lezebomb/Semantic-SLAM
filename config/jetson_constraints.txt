@@ -1,0 +1,6 @@
+# Keep the NVIDIA wheel installed in this deployment; do not replace with PyPI torch.
+torch==2.5.0a0+872d972e41.nv24.8
+torchvision==0.20.0
+numpy==1.26.4
+opencv-python==4.10.0.84
+ultralytics==8.3.221

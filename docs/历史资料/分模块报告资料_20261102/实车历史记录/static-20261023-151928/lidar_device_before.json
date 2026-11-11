@@ -1,0 +1,31 @@
+{
+  "/api/v1/system/firmware": {
+    "model": "LakiBeam1",
+    "sn": "RB01A27917161",
+    "hw": "H2.1.0",
+    "fpga": "F0.4.0",
+    "core": "R2.1.0",
+    "aux": "M0.3.7"
+  },
+  "/api/v1/sensor/overview": {
+    "scanfreq": 10,
+    "motor_rpm": 596,
+    "laser_enable": true,
+    "resolution": 0.1,
+    "scan_range": {
+      "start": 90,
+      "stop": 270
+    },
+    "filter": {
+      "level": 3,
+      "min_angle": 10,
+      "max_angle": 170,
+      "window": 95,
+      "neighbors": 0
+    },
+    "host": {
+      "ip": "192.168.10.102",
+      "port": 2368
+    }
+  }
+}

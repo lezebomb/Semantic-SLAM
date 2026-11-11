@@ -107,9 +107,11 @@ class YoloDetector(Node):
             raise ValueError('This pipeline requires RGB-registered depth at RGB resolution')
         if depth.header.frame_id != info.header.frame_id or rgb.header.frame_id != info.header.frame_id:
             raise ValueError('RGB/depth/CameraInfo optical frames differ; registration is required')
+        if self.p['device'] != 'cpu': torch.cuda.synchronize()
         started = time.monotonic()
         result = self.model.predict(image, device=self.p['device'], conf=self.p['confidence'],
                                     imgsz=self.p['image_size'], retina_masks=True, verbose=False)[0]
+        if self.p['device'] != 'cpu': torch.cuda.synchronize()
         elapsed = (time.monotonic() - started) * 1000
         label = np.zeros(image.shape[:2], np.uint8)
         instance = np.zeros(image.shape[:2], np.uint16)
@@ -162,6 +164,11 @@ class YoloDetector(Node):
         self.status_pub.publish(String(data=json.dumps(status)))
         if self.output and detections and (self.stats['processed'] == 1 or self.stats['processed'] % 25 == 0):
             cv2.imwrite(str(self.output / 'latest_annotated.jpg'), annotated)
+            keyframes = self.output / 'keyframes'
+            keyframes.mkdir(exist_ok=True)
+            stem = f'frame_{self.stats["processed"]:06d}'
+            cv2.imwrite(str(keyframes / (stem + '.jpg')), annotated)
+            (keyframes / (stem + '.json')).write_text(json.dumps(status, indent=2))
             cv2.imwrite(str(self.output / 'latest_class_mask.png'), label)
             cv2.imwrite(str(self.output / 'latest_instance_mask.png'), instance)
             (self.output / 'latest_detection.json').write_text(json.dumps(status, indent=2))

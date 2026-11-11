@@ -1,0 +1,235 @@
+{
+  "scope": "Read robot-owned semantic mapping source, related interface configuration and passive graph metadata. Prepare independent local source copy and documentation.",
+  "robot_root": "/home/tjark/yolo_rtabmap",
+  "local_preparation_root": "/home/xsy/ros2/semantic_slam_robot_20261104",
+  "source_snapshot_files": 61,
+  "comparison_against_previous_local_preparation": {
+    "shared_paths": 21,
+    "same": 9,
+    "different": 12,
+    "note": "Includes README and provenance metadata; do not interpret as algorithm-change count."
+  },
+  "remote_final_hash_check": {
+    "checked_at": "2026-11-04T20:55:04.227808+08:00",
+    "checked_files": 72,
+    "changed_since_read": [],
+    "missing_since_read": [],
+    "all_match": true
+  },
+  "local_static_validation": {
+    "scope": "local syntax, copied-source hash and example CLI parsing only",
+    "original_selected_files_match_robot_snapshot": true,
+    "checks": [
+      {
+        "file": "run.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "run_live.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "run_offline.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "stop.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "semantic/common.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/yolo_detector.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/semantic_projector.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "semantic/semantic_grid_node.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/indoor_semantic.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/semantic_only.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/live_semantic.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "launch/official_indoor.launch.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/ros_env.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "scripts/run_demo.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/inspect_bag.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/observe_ros.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/capture_rviz.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "scripts/inspect_live_interfaces.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "config/live.yaml",
+        "check": "YAML parse",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_handpush.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/stop_handpush.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_camera.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/run_lidar.sh",
+        "check": "bash -n",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/run_handpush.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/observe_handpush.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/record_handpush_video.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/run_static_check.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/validate_gpu.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/validate_scan.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/scripts/capture_d435_frame.py",
+        "check": "AST",
+        "passed": true
+      },
+      {
+        "file": "reference/legacy_robot_tools/config/lakibeam_passive.yaml",
+        "check": "YAML parse",
+        "passed": true
+      }
+    ],
+    "subscriber_example_help": "passed without importing ROS or joining ROS graph",
+    "model_inference_performed": false,
+    "code_deployed_to_robot": false,
+    "subscriber_examples": [
+      {
+        "file": "examples/read_chassis_feedback.py",
+        "syntax": true,
+        "no_publishers_or_control_clients": true,
+        "help_exits_before_ROS_import": true
+      },
+      {
+        "file": "examples/read_semantic_output.py",
+        "syntax": true,
+        "no_publishers_or_control_clients": true,
+        "help_exits_before_ROS_import": true
+      }
+    ],
+    "passive_static_receive_performed": true,
+    "robot_motion_or_mapping_test_performed": false,
+    "robot_current_availability": "User reported powered off; no further remote queries."
+  },
+  "ros2_graph_times": [
+    "2026-11-04T20:36:22+08:00",
+    "2026-11-04T20:37:30+08:00"
+  ],
+  "runtime_sensor_topic_endpoints_observed": false,
+  "camera_http_status_get": "Connection refused; no record/stop endpoints called",
+  "robot_business_process_start_stop_or_parameter_changes": false,
+  "robot_source_write_or_upload": false,
+  "sensor_stream_subscription": "Passive chassis feedback and TF subscriptions; no image publisher was discovered, no image frames were captured.",
+  "model_inference_or_robot_mapping_test": false,
+  "control_message_publication": false,
+  "original_principle_document_handling": "User-edited text and images retained. Current saved baseline recorded; no write-back to either principle DOCX.",
+  "test_archive_reference": "All six DOCX files extracted; interface and evidence-scope sections read; historical results kept distinct.",
+  "supplement": "21:13—21:15 passive static reception, later vehicle disconnection reported",
+  "passive_static_receive_performed": true,
+  "runtime_chassis_feedback_received": true,
+  "runtime_camera_odom_or_tf_validated": false,
+  "robot_current_availability": "User reported powered off; ceased remote work.",
+  "human_interface_csv_rows": 33,
+  "chassis_source_lookup_completed": false,
+  "autonomous_motion_implemented_or_tested": false,
+  "offline_consolidation": {
+    "date": "2026-11-04",
+    "scope": "Offline consolidation after power/network loss; no further remote check performed.",
+    "human_csv_rows": 33,
+    "original_copied_source_files_unchanged": 37,
+    "subscriber_examples_static_checks": "2 passed; no publishers or control clients",
+    "user_edited_interface_word_preserved": true,
+    "user_edited_body_blocks_in_supplement": 79,
+    "static_data_scope": "Recorded passive reception before disconnection; no motion, new driver launch, model inference or mapping test.",
+    "ros1_ros2_roles_documented": true,
+    "automatic_motion_status": "Interface identified, autonomy and stopping unverified, no control code or commands deployed.",
+    "code_archive_sha256": "7b87ba57bc3dba399281036577b4b9d3731ca844bdb66827b588ede257c48cb3"
+  },
+  "reconnection_after_first_power_loss": "Attempted identity read failed during SSH handshake; no commands on robot succeeded in that attempt. User then reported power loss again."
+}

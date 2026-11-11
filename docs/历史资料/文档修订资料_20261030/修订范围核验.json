@@ -1,0 +1,36 @@
+{
+  "source_backup": "/home/xsy/ros2/RTAB-Map + YOLO/文档修订资料_20261030/3D语义建图原理与测试文档_修订前备份.docx",
+  "source_sha256": "ce4e04a28fd8b5910a7de276f93f8e2ea9ffeee9b055affb6b3d72ef8bde5730",
+  "output": "/home/xsy/ros2/RTAB-Map + YOLO/3D语义建图原理与测试文档.docx",
+  "changed_original_package_parts": [
+    "word/_rels/document.xml.rels",
+    "word/document.xml"
+  ],
+  "added_image_parts": [
+    "word/media/figure4.png",
+    "word/media/figure5.png",
+    "word/media/figure6.png"
+  ],
+  "scope": "Only 测试效果 and 问题分析",
+  "protected_original_elements_verified": 33,
+  "existing_non_document_parts_unchanged": true,
+  "original_sections_preserved": [
+    "方案概述",
+    "原理阐述",
+    "代码说明",
+    "方法的原创性分析"
+  ],
+  "original_body_paragraphs_replaced": [
+    "图2 表明分割结果能进入可视化流程，同时暴露类别误判；图3 显示语义点云已投影并累积在 map 坐标系。实车入口 ./run_live.sh 仅提供接入现有 RGB-D、里程计和 RTAB-Map/TF 的接口，仓库尚无真实相机、车辆或 Jetson 的测试结果，因此不能填写实车效果数值。",
+    "实机链路仍需验证。当前方案要求彩色与深度已配准、同分辨率且光学坐标系一致；相机标定、时间戳、QoS、TF 连通性和设备算力可能影响真实运行。拟先完成传感器与外参核查，再在实车及 Jetson 上分别记录丢帧率、端到端延迟、地图一致性和资源占用。"
+  ],
+  "added_tables": 2,
+  "added_figures": 3,
+  "new_test_paragraph_count": 21,
+  "output_sha256": "8210948710fcc4483220b47f898262b44de7fe9dd67191c7adbd25979b9fa88b",
+  "final_pdf_pages": 10,
+  "final_pdf_rendered": true,
+  "protected_prefix_identical": true,
+  "originality_and_page_settings_identical": true,
+  "word_package_integrity": "passed"
+}

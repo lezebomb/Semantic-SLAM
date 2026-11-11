@@ -1,0 +1,19 @@
+{
+  "source_sha256": "bacaa70855780dbb007fe4df81742f63dfc4fa5640507b7781c88a0f086b9e8e",
+  "full_revision_sha256": "1f49ee4a14009fc995d1709d1169e0c90b555027edcab77937441ed9fc20f46d",
+  "modified_package_parts": [
+    "word/document.xml"
+  ],
+  "revised_paragraphs": [
+    "5BD71CAC",
+    "2FA4DFB3",
+    "2BFD51F9",
+    "52D5CF8C",
+    "5AC05127"
+  ],
+  "all_other_document_xml_bytes_unchanged": true,
+  "all_images_styles_relationships_and_other_parts_unchanged": true,
+  "backup_matches_source": true,
+  "code_section_status": "retained verbatim from source; not reviewed for final publication in this revision",
+  "robot_testing": "not performed"
+}

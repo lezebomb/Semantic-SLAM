@@ -1,0 +1,15 @@
+{
+  "domain_id": 77,
+  "ros_localhost_only": "1",
+  "topics": {},
+  "tf_edges": {},
+  "nodes": [],
+  "all_topics": [
+    {
+      "name": "/parameter_events",
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ]
+    }
+  ]
+}

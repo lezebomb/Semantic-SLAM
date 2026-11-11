@@ -1,0 +1,14 @@
+{
+  "canonical_path": "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/语义SLAM_方案概述与原理阐述_20261104.docx",
+  "sha256": "84d6e7bf79df7bb2d06663d5ed2a2969d03fb7e02997c25655b480f18c118a8e",
+  "modified_time": "2026-11-04T20:52:10.759965+08:00",
+  "media_sha256": {
+    "word/media/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/media/image1.png": "66be5ad1f142229e96a66ebe846a21def909c4dd0d4d30306ce0a6c5599be714"
+  },
+  "snapshot_copy": "/home/xsy/ros2/RTAB-Map + YOLO/车上代码与接口整理_20261104/用户原理基线快照_20261104_205210.docx",
+  "instruction": "Use the latest saved user-edited text and images as the starting point for future work. Do not overwrite with the earlier generated draft. Refresh this baseline if the user saves further changes.",
+  "user_wording_preference": "Use concrete actions and plain language. Preferred 40 ms sentence: 系统先按时间戳配对 RGB、Depth 和 CameraInfo，允许它们的时间相差在 40 ms 以内。",
+  "previous_sha256": "fd4a290f0393846470e7afb1ca90c2f45d27a163cabcc07f37d9e5fe54df5ff5",
+  "refreshed_after_user_edit": true
+}

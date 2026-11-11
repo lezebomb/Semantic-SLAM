@@ -1,0 +1,132 @@
+[
+  {
+    "figure": "图1_RTABMap原理.png",
+    "operation": "依据官方 Indoor 配置与历史导出命令绘制，三维点云与二维占据栅格为并列表示。",
+    "sources": []
+  },
+  {
+    "figure": "图2_RTABMap早期独立测试.png",
+    "operation": "复用项目最初保存的独立 RTAB-Map 地图截图；未添加语义点或修改几何形状。",
+    "sources": [
+      {
+        "path": "RTAB-Map + YOLO/地图点云.png",
+        "sha256": "cc2a48d191e6d39200530ca3560c546c8f1c97b3ce24f7c440dcbd88d499490f"
+      }
+    ]
+  },
+  {
+    "figure": "图3_RTABMap独立栅格与轨迹.png",
+    "operation": "使用归档占据栅格与离线优化位姿绘图；两幅图来自同一独立建图记录，无轨迹真值。",
+    "sources": [
+      {
+        "path": "demo_runs/2026-10-02/indoor_rgbd_lidar/exports/full_map.png",
+        "sha256": "6d880de3e1d16206b6d4e4dc954fdb2a26ae55583a71fd544a5813a7bf068204"
+      },
+      {
+        "path": "demo_runs/2026-10-02/indoor_rgbd_lidar/exports/full_map.yaml",
+        "sha256": "5fe26e5bff16cebac891eb1c5c90484d64aafc0c346502c435d0c30fe39509ad"
+      },
+      {
+        "path": "demo_runs/2026-10-02/indoor_rgbd_lidar/offline_optimized_xy.csv",
+        "sha256": "173428995f4f03901332ccafc7932dc69bd13dc350ebf5df4321a95bc22207e8"
+      },
+      {
+        "path": "demo_runs/2026-10-02/indoor_rgbd_lidar/graph_review.json",
+        "sha256": "73de40576270c072ec9caf115a5a9598f5c6e8fedc9aa0925b19f9504dfa6b64"
+      }
+    ]
+  },
+  {
+    "figure": "图4_YOLO实例分割原理.png",
+    "operation": "根据已核对代码绘制模块流程，不表示测试结果。",
+    "sources": []
+  },
+  {
+    "figure": "图5_YOLO独立分割效果.png",
+    "operation": "拼排既有独立推理原图与真实预测叠加图；未重新运行模型或制作掩膜。",
+    "sources": [
+      {
+        "path": "jetson_deploy_20261023/payload/tests/images/rgb_00.jpg",
+        "sha256": "d8a448e8c076f14b0e00a6125cdef412d1f647952cd7a8fa2ac553a1cfe6b2ed"
+      },
+      {
+        "path": "jetson_deploy_20261023/local_audit/gpu-20261023-105459/rgb_00_prediction.jpg",
+        "sha256": "ea504a98d4b92fbebf55634fe2fb38e5b6fead2370e6d260e03dac55471c87a5"
+      },
+      {
+        "path": "live_robot_test_20261023/static-20261023-151928/after_manual_move/camera/rgb.jpg",
+        "sha256": "4cdb9ea80d5a9acda017f90ec5b1ed5791f0b38d4de0bbc913372a3c0cc961f6"
+      },
+      {
+        "path": "live_robot_test_20261023/static-20261023-151928/after_manual_move/camera/gpu_prediction.jpg",
+        "sha256": "21b4275bf31b927e0b16d7977f4cfaeb86cc3965f00d26099e8acbedbb86dac6"
+      },
+      {
+        "path": "jetson_deploy_20261023/local_audit/gpu-20261023-105459/result.json",
+        "sha256": "98c34458f7a93d437f50126d4ea0357bf0b6d84685c7f6f68e4f1d269ad5b0af"
+      },
+      {
+        "path": "live_robot_test_20261023/static-20261023-151928/after_manual_move/camera/result.json",
+        "sha256": "57cbda3368d17e0a05434acc46f30f7acade71a25ee16b79a1623dd1d8314d43"
+      }
+    ]
+  },
+  {
+    "figure": "图6_YOLO独立GPU耗时.png",
+    "operation": "直接绘制20张图的CUDA同步计时值；包括预测及结果转CPU，不包括图片读取。",
+    "sources": [
+      {
+        "path": "jetson_deploy_20261023/local_audit/gpu-20261023-105459/result.json",
+        "sha256": "98c34458f7a93d437f50126d4ea0357bf0b6d84685c7f6f68e4f1d269ad5b0af"
+      }
+    ]
+  },
+  {
+    "figure": "图7_语义SLAM总体流程.png",
+    "operation": "复用改写前报告的流程图或原始数据集叠加截图。",
+    "sources": [
+      {
+        "path": "RTAB-Map + YOLO/分模块报告资料_20261102/原报告_image1.png",
+        "sha256": "b7521bbcf5e15c3db8a4d39f84e636ee094dc79c62c4196841643bb073ad899c"
+      }
+    ]
+  },
+  {
+    "figure": "图8_Indoor几何语义叠加.png",
+    "operation": "复用改写前报告的流程图或原始数据集叠加截图。",
+    "sources": [
+      {
+        "path": "RTAB-Map + YOLO/分模块报告资料_20261102/原报告_image3.png",
+        "sha256": "10ae2928ec8a313489ed730d4e297a2c48d1242a9adcce1bd8e342296116e794"
+      }
+    ]
+  },
+  {
+    "figure": "图9_实车局部地图.png",
+    "operation": "复用上一版报告依据实车161242记录绘制的地图或资源图，未改变数值。",
+    "sources": [
+      {
+        "path": "RTAB-Map + YOLO/文档修订资料_20261030/图5_实车局部几何与三维语义地图.png",
+        "sha256": "a8edcc9c2450e70f3df16d2796843de847b4de001a3b7ac4b55bd683f4818f10"
+      },
+      {
+        "path": "RTAB-Map + YOLO/文档修订资料_20261030/测试数据与图片来源.json",
+        "sha256": "8f5bd480da34cbea3f0b8c44244ba5390949b01bbe20bc07ab9c14c4210e199d"
+      }
+    ]
+  },
+  {
+    "figure": "图10_实车CPU与分割耗时.png",
+    "operation": "复用上一版报告依据实车161242记录绘制的地图或资源图，未改变数值。",
+    "sources": [
+      {
+        "path": "RTAB-Map + YOLO/文档修订资料_20261030/图6_实车CPU与分割耗时.png",
+        "sha256": "0c441d1d807334decb11086730c36d380cf45811504503c832f11014cb5a6a1a"
+      },
+      {
+        "path": "RTAB-Map + YOLO/文档修订资料_20261030/测试数据与图片来源.json",
+        "sha256": "8f5bd480da34cbea3f0b8c44244ba5390949b01bbe20bc07ab9c14c4210e199d"
+      }
+    ]
+  }
+]

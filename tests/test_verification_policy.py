@@ -22,7 +22,11 @@ class VerificationPolicyTests(unittest.TestCase):
                      semantic_cloud_nonempty=0, semantic_map_nonempty=0, tf_checks=0,
                      detector_frames_with_instances=0, max_tf_point_error_m=0.)
         return SimpleNamespace(output=Path(output), allow_empty=allow_empty, stats=stats,
-                               latest_header=None, pipeline_tf_checks=1)
+                               latest_header=None, pipeline_tf_checks=1,
+                               tf_buffer=SimpleNamespace(lookup_transform=lambda *args: None),
+                               geometry_frame='base_link', geometry_tf_checks=0,
+                               loop_events=[], proximity_events=[], latest_grid=None,
+                               latest_graph=None, geometry_only=False)
 
     def test_empty_predictions_are_a_valid_interface(self):
         with tempfile.TemporaryDirectory() as out:

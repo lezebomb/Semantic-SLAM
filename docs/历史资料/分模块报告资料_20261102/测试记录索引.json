@@ -1,0 +1,112 @@
+[
+  {
+    "path": "/home/xsy/ros2/demo_runs/2026-10-02/indoor_rgbd_lidar/summary.json",
+    "sha256": "1f2f630997e02b83e180e3ab15f4de950d3e22b691016d5177796546908e6425",
+    "bytes": 38564
+  },
+  {
+    "path": "/home/xsy/ros2/demo_runs/2026-10-02/indoor_rgbd_lidar/graph_review.json",
+    "sha256": "73de40576270c072ec9caf115a5a9598f5c6e8fedc9aa0925b19f9504dfa6b64",
+    "bytes": 264
+  },
+  {
+    "path": "/home/xsy/ros2/demo_runs/2026-10-02/indoor_rgbd_lidar/cloud_export_manifest.json",
+    "sha256": "2de56c96a484b4de92c3cfbba831f1a730015a5f429d71dc52a7152a90064c79",
+    "bytes": 866
+  },
+  {
+    "path": "/home/xsy/ros2/demo_runs/2026-10-02/indoor_rgbd_lidar/export_manifest.json",
+    "sha256": "fbecfd2431ba428a67b10d346723f19406a27db73297c977c83c08cc728fc9fc",
+    "bytes": 1094
+  },
+  {
+    "path": "/home/xsy/ros2/jetson_deploy_20261023/local_audit/gpu-20261023-105459/result.json",
+    "sha256": "98c34458f7a93d437f50126d4ea0357bf0b6d84685c7f6f68e4f1d269ad5b0af",
+    "bytes": 10353
+  },
+  {
+    "path": "/home/xsy/ros2/Semantic-SLAM-deploy/experiments/mobilenet/evidence/cpu_benchmark.json",
+    "sha256": "fef9ebf71e301563d1ba2b55d40c3bfbf7d0539d59bdee074365c25721fc2ee4",
+    "bytes": 2267
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/static-20261023-151928/after_manual_move/camera/result.json",
+    "sha256": "57cbda3368d17e0a05434acc46f30f7acade71a25ee16b79a1623dd1d8314d43",
+    "bytes": 1300
+  },
+  {
+    "path": "/home/xsy/ros2/Semantic-SLAM-deploy/README.md",
+    "sha256": "834714d8c3b6c4a98249e374e685345899773495a5eff5df650dcb45ef366590",
+    "bytes": 14652
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/result.json",
+    "sha256": "36ca65d2ab15fbda92e4ba482f80a0178b03632f3c0b1df2b9c3d435278ee48d",
+    "bytes": 3008
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/detector_stats.json",
+    "sha256": "a779f996fb43d13cc21ae69d58e2c65d9191dad58d5c1f7a58a264a2d5c475d1",
+    "bytes": 1669
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/projector_stats.json",
+    "sha256": "daee3288d31502648a4c175da6313d6ccdd2cbf986369f640ca2b6eacfc8839d",
+    "bytes": 208
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/map_stats.json",
+    "sha256": "ce734b4a600502e665864df1fb42e418fae7940c560b8b432735417d7cd41aae",
+    "bytes": 2356
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/verification.json",
+    "sha256": "8edb4822d9401d7f1093916a98066a6270aed296afeddf9699b2156d16d62519",
+    "bytes": 9903
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/resources.json",
+    "sha256": "49a50cd5e51fff000b24bbe0557318f27eadfeecc578bbb72cd57e8ec3e79abb",
+    "bytes": 178364
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-161242/recording.log",
+    "sha256": "500d907876d7451d796ea79474517b02a2b134a76826c48d8ede081ab12279be",
+    "bytes": 3330
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/result.json",
+    "sha256": "aa06df961678be49e9293cdb27510a864f900b28a382f5f77151834ff78c414c",
+    "bytes": 3038
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/detector_stats.json",
+    "sha256": "075a6e1f518996996ceb52e50a9b7aae7be1102ae3351ce518a9bb74656e6fb1",
+    "bytes": 2330
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/projector_stats.json",
+    "sha256": "28a18dc4596e372721548320763e3d34dbe13d9e47c79d22c0c13ebb8a0fc6c6",
+    "bytes": 208
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/map_stats.json",
+    "sha256": "7ab4de0f2acbcabc83bedc65d2cb4e92c35d2cb474af61dc559db1735d6cf708",
+    "bytes": 2381
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/verification.json",
+    "sha256": "11dc8314a45967db98484af12143942abc09c5585c93596443d2dcb81597be53",
+    "bytes": 9444
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/resources.json",
+    "sha256": "282a9eeaf17c558d8b284b6ddd4e294a4a02d9eb52daa1096fe1e6321f5ede06",
+    "bytes": 236215
+  },
+  {
+    "path": "/home/xsy/ros2/live_robot_test_20261023/handpush-20261023-162853/recording.log",
+    "sha256": "50e12c4164d7a647c7affeb37f593f3170f6404b4cb78031c3eeff2659e69a04",
+    "bytes": 2791
+  }
+]

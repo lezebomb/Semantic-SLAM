@@ -1,0 +1,13 @@
+{
+  "bundles": 183,
+  "clouds": 141,
+  "points": 263032,
+  "invalid_depth": 154888,
+  "errors": 0,
+  "depth_encodings": {
+    "16UC1": 183
+  },
+  "source_frames": {
+    "camera_color_optical_frame": 183
+  }
+}

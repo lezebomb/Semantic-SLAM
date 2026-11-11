@@ -1,0 +1,17 @@
+# Device settings were read from 192.168.10.160, not written by this entry.
+# Pinned vendor revision b630fb3 has scan_config() disabled at startup.
+# Orientation relative to base_link is NOT calibrated; no TF is published here.
+/**:
+  ros__parameters:
+    frame_id: laser
+    output_topic: /scan
+    hostip: 192.168.10.102
+    sensorip: 192.168.10.160
+    port: "2368"
+    inverted: false
+    angle_offset: 0
+    scanfreq: "10"
+    filter: "3"
+    laser_enable: "true"
+    scan_range_start: "90"
+    scan_range_stop: "270"

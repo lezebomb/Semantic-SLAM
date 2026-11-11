@@ -1,0 +1,18 @@
+{
+  "fps": 3,
+  "frames": 399,
+  "encoded_duration_seconds": 133.0,
+  "start_wall_time": 1792744147.9222155,
+  "capture_stamp_ns": 1792744264053915527,
+  "latest_render_wall_time": 1792744280.9212704,
+  "received": {
+    "rgb": 800,
+    "annotated": 91,
+    "unpaired_annotated": 29,
+    "map": 3,
+    "graph": 3,
+    "semantic": 21
+  },
+  "layout": "Camera video: original RGB above synchronized real masks; map video: actual geometry+graph above actual semantic XY projection",
+  "repeated_frames": "Latest actual messages held until a newer message; no interpolated maps or fabricated predictions"
+}

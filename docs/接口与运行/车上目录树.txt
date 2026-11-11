@@ -1,0 +1,34 @@
+Jetson 本组代码目录（2026-11-04 只读核验）
+
+/home/tjark/yolo_rtabmap/                      车上工程根目录，未移动
+├── semantic/                                  本组三个节点及公共格式
+│   ├── yolo_detector.py                       同步、实例分割与配对深度
+│   ├── semantic_projector.py                  深度反投影
+│   ├── semantic_grid_node.py                  采集时刻 TF、体素累计和保存
+│   └── common.py                              点云字段、颜色与通用函数
+├── launch/                                    本组节点组合
+│   ├── live_semantic.launch.py                接入已有 RGB-D 和位姿链
+│   ├── indoor_semantic.launch.py              官方回放组合
+│   ├── semantic_only.launch.py                回放语义链
+│   └── official_indoor.launch.py              本项目内几何回放配置
+├── config/                                    本组参数与显示
+│   ├── live.yaml                              GPU 0；本次未运行
+│   ├── jetson_constraints.txt                 Jetson Python 依赖约束
+│   └── semantic_indoor.rviz                   几何与语义显示
+├── scripts/                                   环境、回放、观察和旧测试工具
+│   ├── ros_env.sh                             加载本项目已有环境
+│   ├── run_demo.py                            独立回放管理
+│   ├── observe_ros.py                         输出与 TF 观察器
+│   └── inspect_live_interfaces.py             既有只读接口观察工具
+├── models/yolov8n-seg.pt                      原版 COCO 模型，哈希已确认
+├── envs/yolo/bin/python                       已有 ARM64 环境，不复制或重装
+├── tests/demo_mapping.db3                     离线数据存在，本轮未播放
+├── runs/                                      既有运行输出，本轮未新增测试
+├── logs/                                      既有日志
+├── sensor_ws/                                 历史雷达工作空间，不接管其结构
+├── run_live.sh                                只启动本组语义链
+├── run.sh / run_offline.sh                    官方数据回放入口
+├── stop.sh                                    仅管理本组托管回放
+└── run_handpush.sh 等旧工具                       会启动驱动和录制，不在当前使用
+
+共享的 /home/tjark/teleop、/etc/jetson-ros 和其他组工程保持原位置，未修改。

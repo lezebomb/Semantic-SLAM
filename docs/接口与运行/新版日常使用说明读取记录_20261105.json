@@ -1,0 +1,62 @@
+{
+  "read_on": "2026-11-05",
+  "source": "/home/xsy/ros2/RTAB-Map + YOLO/Jetson_ROS日常使用与手柄控制说明.docx",
+  "source_sha256": "ae6f65b0764c1464b61dea2a871a079f771be49def59cd30e9ee11f02d1e5d2a",
+  "source_mtime_asia_shanghai": "2026-11-05T13:59:18.386668+08:00",
+  "scope": "完整读取正文、表格及页眉页脚/脚注/尾注；仅本地阅读，不执行说明中的命令",
+  "body_nonempty_blocks": 60,
+  "auxiliary_part_text": {
+    "word/endnotes.xml": "",
+    "word/footer1.xml": "",
+    "word/footnotes.xml": "",
+    "word/header1.xml": ""
+  },
+  "operating_reference_priority": "后续日常使用优先参考本新版；旧启动说明保留安装与历史背景；车上状态仍按当次检查结果",
+  "normal_workflow": [
+    "底层通信随开机自动启动，正常使用不重复手动启动Docker/master/桥接/串口",
+    "在Jetson tjark终端使用，先蓝牙连接手柄",
+    "/home/tjark/teleop/start-gamesir.sh 0.08 0.25",
+    "A键使能，左摇杆控制前后与转向；参数单位m/s和rad/s"
+  ],
+  "health_checks": [
+    "jetson-ros.service为active(exited)并有READY日志；这一状态仅说明启动阶段，不单独保证运行健康",
+    "ros1_noetic、rosserial_mcu、ros1_bridge工作容器为Up",
+    "主机/dev/ttyUSB0存在，串口节点已订阅/cmd_vel_filtered",
+    "实际手柄响应需要现场验证；备份容器停止属于正常情况"
+  ],
+  "recovery_reference": {
+    "before_recovery": "先停止其他速度发布程序并确认小车已停；本次没有执行恢复",
+    "read_only_checks": [
+      "sudo systemctl status jetson-ros.service --no-pager -l",
+      "sudo docker ps -a",
+      "ls -l /dev/ttyUSB0",
+      "sudo journalctl -u jetson-ros.service -b -n 40 --no-pager",
+      "sudo docker logs --tail 30 rosserial_mcu"
+    ],
+    "mutating_action_documented_not_executed": "sudo systemctl restart jetson-ros.service",
+    "no_duplicate_control_scripts": true,
+    "ssh_disconnect_or_communication_stop_is_not_emergency_stop": true
+  },
+  "communication_chain": "ROS2 /cmd_vel → ros1_bridge → ROS1 /cmd_vel → relay → /cmd_vel_filtered → MCU串口接收端",
+  "additional_references_from_manual": [
+    "/usr/local/lib/jetson-ros/jetson-ros-start.sh",
+    "/usr/local/lib/jetson-ros/jetson-ros-stop.sh",
+    "/usr/local/lib/jetson-ros/bridge-entry.sh",
+    "/usr/local/lib/jetson-ros/relay-entry.sh",
+    "/usr/local/lib/jetson-ros/ros1-env.sh",
+    "/usr/local/lib/jetson-ros/check-mcu.py",
+    "/etc/systemd/system/jetson-ros.service",
+    "/etc/jetson-ros/ros2-env.sh",
+    "/etc/jetson-ros/udp_only.xml",
+    "/usr/local/bin/jetson-ros2"
+  ],
+  "relation_to_existing_evidence": {
+    "gamepad_command_and_enable_mapping": "与11月4日读取的手柄脚本和既有记录一致",
+    "known_script_bounds_from_20261104_snapshot": "线速度参数0~0.20m/s，角速度参数0~0.40rad/s；新版说明未另列此范围；并非MCU限速验证",
+    "latest_manual_is_not_runtime_retest": true,
+    "previous_chassis_serial_failure_not_marked_fixed": true,
+    "check_mcu_and_stop_implementation_not_reverified_this_reading": true
+  },
+  "remote_connection_or_commands_executed": false,
+  "source_document_modified": false
+}

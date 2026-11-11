@@ -1,0 +1,15 @@
+{
+  "frame": 150,
+  "inference_ms": 71.4,
+  "capture_stamp_ns": 1792744254646497559,
+  "rgb_depth_delta_ms": 0.0,
+  "detections": [
+    {
+      "class_id": 0,
+      "name": "person",
+      "instance_id": 732,
+      "confidence": 0.3819528818130493,
+      "pixels": 6427
+    }
+  ]
+}

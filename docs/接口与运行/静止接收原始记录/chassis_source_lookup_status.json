@@ -1,0 +1,5 @@
+{
+  "status": "not_completed",
+  "reason": "Remote connection closed; user reported vehicle powered off. No further remote lookups performed.",
+  "array_field_semantics": "unconfirmed; do not infer units from numeric appearance"
+}

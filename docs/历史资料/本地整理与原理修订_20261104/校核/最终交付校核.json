@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-04",
+  "original_docx_unchanged": true,
+  "selected_original_source_files_unchanged": true,
+  "modified_full_docx_scope": "Only the five prose paragraphs of semantic SLAM overview and principle sections. All other document XML bytes and all remaining package parts unchanged.",
+  "short_docx_preview_pages": 2,
+  "visual_review": "Both short-document PDF pages inspected; text, formulas and original diagram are legible. PDF is a local rendering, not a rewrite of DOCX.",
+  "invariant_check": "passed",
+  "code_validation": "/home/xsy/ros2/semantic_slam_local_20261104/LOCAL_VALIDATION.json",
+  "code_archive_sha256": "49db3cfbc5da0efee34060ba3954503f3a01080c8ac6d8bd4fe68d009dcf708f",
+  "new_robot_results": "none",
+  "deliverable_paths": [
+    "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/原理文档-20261102_语义SLAM原理润色_20261104.docx",
+    "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/语义SLAM_方案概述与原理阐述_20261104.docx",
+    "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/本轮修改与实车待补说明.md",
+    "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/代码目录树.svg",
+    "/home/xsy/ros2/RTAB-Map + YOLO/本地整理与原理修订_20261104/semantic_slam_local_20261104.zip"
+  ]
+}

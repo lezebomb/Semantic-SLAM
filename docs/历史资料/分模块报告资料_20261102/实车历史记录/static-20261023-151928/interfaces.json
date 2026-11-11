@@ -1,0 +1,423 @@
+{
+  "domain_id": 77,
+  "ros_localhost_only": "1",
+  "topics": {
+    "/camera/camera/aligned_depth_to_color/camera_info": {
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "messages": 145,
+      "frame_id": "camera_color_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 708070068
+      },
+      "width": 640,
+      "height": 480,
+      "k": [
+        604.2891845703125,
+        0.0,
+        332.23675537109375,
+        0.0,
+        603.649169921875,
+        246.0366668701172,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "plumb_bob"
+    },
+    "/camera/camera/aligned_depth_to_color/image_raw": {
+      "type": "sensor_msgs/msg/Image",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ],
+      "messages": 140,
+      "frame_id": "camera_color_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 641369141
+      },
+      "width": 640,
+      "height": 480,
+      "encoding": "16UC1"
+    },
+    "/camera/camera/color/camera_info": {
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "messages": 143,
+      "frame_id": "camera_color_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 641369141
+      },
+      "width": 640,
+      "height": 480,
+      "k": [
+        604.2891845703125,
+        0.0,
+        332.23675537109375,
+        0.0,
+        603.649169921875,
+        246.0366668701172,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "plumb_bob"
+    },
+    "/camera/camera/color/image_raw": {
+      "type": "sensor_msgs/msg/Image",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ],
+      "messages": 139,
+      "frame_id": "camera_color_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 641369141
+      },
+      "width": 640,
+      "height": 480,
+      "encoding": "rgb8"
+    },
+    "/camera/camera/depth/camera_info": {
+      "type": "sensor_msgs/msg/CameraInfo",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "messages": 144,
+      "frame_id": "camera_depth_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 641369141
+      },
+      "width": 640,
+      "height": 480,
+      "k": [
+        387.46600341796875,
+        0.0,
+        326.02020263671875,
+        0.0,
+        387.46600341796875,
+        242.14561462402344,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "plumb_bob"
+    },
+    "/camera/camera/depth/image_rect_raw": {
+      "type": "sensor_msgs/msg/Image",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ],
+      "messages": 140,
+      "frame_id": "camera_depth_optical_frame",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 641369141
+      },
+      "width": 640,
+      "height": 480,
+      "encoding": "16UC1"
+    },
+    "/scan": {
+      "type": "sensor_msgs/msg/LaserScan",
+      "publishers": [
+        {
+          "node": "/laser_scan_publisher",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "messages": 96,
+      "frame_id": "laser",
+      "last_stamp": {
+        "sec": 1792740254,
+        "nanosec": 685154975
+      }
+    },
+    "/tf_static": {
+      "type": "tf2_msgs/msg/TFMessage",
+      "publishers": [
+        {
+          "node": "/camera/camera",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ],
+      "messages": 1
+    }
+  },
+  "tf_edges": {
+    "camera_link -> camera_depth_frame": {
+      "topic": "/tf_static",
+      "stamp": {
+        "sec": 1792740241,
+        "nanosec": 167395062
+      },
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "camera_depth_frame -> camera_depth_optical_frame": {
+      "topic": "/tf_static",
+      "stamp": {
+        "sec": 1792740241,
+        "nanosec": 167395062
+      },
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "quaternion": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    },
+    "camera_link -> camera_color_frame": {
+      "topic": "/tf_static",
+      "stamp": {
+        "sec": 1792740241,
+        "nanosec": 173964300
+      },
+      "translation": [
+        8.04092051112093e-05,
+        0.015056708827614784,
+        0.0003254638286307454
+      ],
+      "quaternion": [
+        0.004063072614371777,
+        -0.0009006108157336712,
+        -0.0020242633763700724,
+        0.9999892711639404
+      ]
+    },
+    "camera_color_frame -> camera_color_optical_frame": {
+      "topic": "/tf_static",
+      "stamp": {
+        "sec": 1792740241,
+        "nanosec": 173964300
+      },
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "quaternion": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "name": "laser_scan_publisher",
+      "namespace": "/"
+    },
+    {
+      "name": "camera",
+      "namespace": "/camera"
+    },
+    {
+      "name": "deployment_scan_observer",
+      "namespace": "/"
+    }
+  ],
+  "all_topics": [
+    {
+      "name": "/camera/camera/aligned_depth_to_color/camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/camera/camera/aligned_depth_to_color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/camera/camera/aligned_depth_to_color/image_raw/compressed",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/aligned_depth_to_color/image_raw/compressedDepth",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/image_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/image_raw/compressed",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/image_raw/compressedDepth",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/color/metadata",
+      "types": [
+        "realsense2_camera_msgs/msg/Metadata"
+      ]
+    },
+    {
+      "name": "/camera/camera/depth/camera_info",
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ]
+    },
+    {
+      "name": "/camera/camera/depth/image_rect_raw",
+      "types": [
+        "sensor_msgs/msg/Image"
+      ]
+    },
+    {
+      "name": "/camera/camera/depth/image_rect_raw/compressed",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/depth/image_rect_raw/compressedDepth",
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ]
+    },
+    {
+      "name": "/camera/camera/depth/metadata",
+      "types": [
+        "realsense2_camera_msgs/msg/Metadata"
+      ]
+    },
+    {
+      "name": "/camera/camera/extrinsics/depth_to_color",
+      "types": [
+        "realsense2_camera_msgs/msg/Extrinsics"
+      ]
+    },
+    {
+      "name": "/camera/camera/extrinsics/depth_to_depth",
+      "types": [
+        "realsense2_camera_msgs/msg/Extrinsics"
+      ]
+    },
+    {
+      "name": "/camera/camera/triggered_calibration/_action/feedback",
+      "types": [
+        "realsense2_camera_msgs/action/TriggeredCalibration_FeedbackMessage"
+      ]
+    },
+    {
+      "name": "/camera/camera/triggered_calibration/_action/status",
+      "types": [
+        "action_msgs/msg/GoalStatusArray"
+      ]
+    },
+    {
+      "name": "/parameter_events",
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ]
+    },
+    {
+      "name": "/rosout",
+      "types": [
+        "rcl_interfaces/msg/Log"
+      ]
+    },
+    {
+      "name": "/scan",
+      "types": [
+        "sensor_msgs/msg/LaserScan"
+      ]
+    },
+    {
+      "name": "/tf_static",
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ]
+    }
+  ]
+}

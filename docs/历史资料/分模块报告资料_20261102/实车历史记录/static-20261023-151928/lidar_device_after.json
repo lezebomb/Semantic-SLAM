@@ -1,0 +1,21 @@
+{
+  "scanfreq": 10,
+  "motor_rpm": 596,
+  "laser_enable": true,
+  "resolution": 0.1,
+  "scan_range": {
+    "start": 90,
+    "stop": 270
+  },
+  "filter": {
+    "level": 3,
+    "min_angle": 10,
+    "max_angle": 170,
+    "window": 95,
+    "neighbors": 0
+  },
+  "host": {
+    "ip": "192.168.10.102",
+    "port": 2368
+  }
+}

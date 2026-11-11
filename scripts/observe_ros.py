@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Independent live evidence: image/mask/cloud/map counts and numeric TF check."""
+import csv
+import math
 import json
 import signal
 import sys
@@ -14,7 +16,7 @@ from rclpy.qos import qos_profile_sensor_data, QoSProfile, DurabilityPolicy
 from rclpy.time import Time
 from nav_msgs.msg import OccupancyGrid
 from sensor_msgs.msg import Image, PointCloud2, CameraInfo
-from rtabmap_msgs.msg import MapData, MapGraph
+from rtabmap_msgs.msg import MapData, MapGraph, Info
 from std_msgs.msg import String
 import tf2_ros
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'semantic'))
@@ -22,11 +24,18 @@ from common import POINT_DTYPE, rotation_matrix
 
 
 class Observer(Node):
-    def __init__(self, output, allow_empty=False):
+    def __init__(self, output, allow_empty=False, geometry_only=False, use_sim_time=True, geometry_frame='base_footprint'):
         super().__init__('semantic_verifier', parameter_overrides=[
-            rclpy.parameter.Parameter('use_sim_time', value=True)])
+            rclpy.parameter.Parameter('use_sim_time', value=use_sim_time)])
+        self.geometry_frame = geometry_frame
         self.output = output
         self.allow_empty = allow_empty
+        self.geometry_only = geometry_only
+        self.geometry_tf_checks = 0
+        self.latest_grid = None
+        self.latest_graph = None
+        self.loop_events = set()
+        self.proximity_events = set()
         self.latest_header = None
         self.last_tf_stamp = None
         self.pipeline_tf_checks = 0
@@ -45,7 +54,7 @@ class Observer(Node):
                            ('/semantic/instance_image',Image),('/semantic/points_camera',PointCloud2),
                            ('/semantic/pointcloud',PointCloud2),('/semantic/detector_status',String),
                            ('/semantic/map_status',String),('/map',OccupancyGrid),
-                           ('/mapData',MapData),('/mapGraph',MapGraph),('/cloud_map',PointCloud2),
+                           ('/mapData',MapData),('/mapGraph',MapGraph),('/info',Info),('/cloud_map',PointCloud2),
                            ('/semantic/map',PointCloud2)]:
             qos = (QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL)
                    if topic == '/semantic/map' else
@@ -102,12 +111,17 @@ class Observer(Node):
                             pass
                 if topic == '/semantic/map':
                     self.stats['semantic_map_nonempty']+=int(len(p)>0)
+        if isinstance(msg,Info):
+            if msg.loop_closure_id > 0: self.loop_events.add((msg.ref_id, msg.loop_closure_id))
+            if msg.proximity_detection_id > 0: self.proximity_events.add((msg.ref_id, msg.proximity_detection_id))
         if isinstance(msg,OccupancyGrid):
+            self.latest_grid = msg
             item.update(width=msg.info.width,height=msg.info.height,resolution=msg.info.resolution,
                         known_cells=int(np.count_nonzero(np.asarray(msg.data)>=0)))
         if isinstance(msg,MapData):
             item['nodes_in_message']=len(msg.nodes)
         if isinstance(msg,MapGraph):
+            self.latest_graph = msg
             item['poses']=len(msg.poses)
         if isinstance(msg,String):
             item['last']=json.loads(msg.data)
@@ -115,6 +129,36 @@ class Observer(Node):
                 self.stats['detector_frames_with_instances']+=int(bool(item['last']['detections']))
 
     def save(self):
+        try:
+            self.tf_buffer.lookup_transform('map', self.geometry_frame, Time())
+            self.geometry_tf_checks += 1
+        except tf2_ros.TransformException:
+            pass
+        self.stats.update(geometry_tf_checks=self.geometry_tf_checks,
+            loop_closures=len(self.loop_events), proximity_detections=len(self.proximity_events))
+        if self.latest_grid is not None:
+            msg = self.latest_grid
+            a = np.asarray(msg.data).reshape(msg.info.height, msg.info.width)
+            image = np.full(a.shape, 205, np.uint8)
+            image[a == 0] = 254
+            image[a > 0] = np.rint(254 * (1 - a[a > 0] / 100)).astype(np.uint8)
+            cv2.imwrite(str(self.output / 'geometry_map.pgm'), np.flipud(image))
+            cv2.imwrite(str(self.output / 'geometry_map.png'), np.flipud(image))
+            pose = msg.info.origin
+            q = pose.orientation
+            yaw = math.atan2(2*(q.w*q.z+q.x*q.y), 1-2*(q.y*q.y+q.z*q.z))
+            import yaml
+            (self.output/'geometry_map.yaml').write_text(yaml.safe_dump(dict(
+                image='geometry_map.pgm', resolution=float(msg.info.resolution),
+                origin=[pose.position.x, pose.position.y, yaw], negate=0,
+                occupied_thresh=0.65, free_thresh=0.196)))
+        if self.latest_graph is not None:
+            with (self.output/'trajectory.csv').open('w') as stream:
+                writer = csv.writer(stream)
+                writer.writerow(['node_id','x','y','z','qx','qy','qz','qw'])
+                for ident, pose in zip(self.latest_graph.poses_id, self.latest_graph.poses):
+                    t,q=pose.position,pose.orientation
+                    writer.writerow([ident,t.x,t.y,t.z,q.x,q.y,q.z,q.w])
         if self.latest_header is not None:
             stamp = (self.latest_header.stamp.sec, self.latest_header.stamp.nanosec)
             if stamp != self.last_tf_stamp:
@@ -148,7 +192,12 @@ class Observer(Node):
                 and topics.get('/map', {}).get('known_cells', 0) > 0
                 and topics.get('/mapGraph', {}).get('poses', 0) > 0
                 and self.stats['max_tf_point_error_m'] < 1e-4)
-        self.stats['verification_policy'] = 'interface_allow_empty' if self.allow_empty else 'nonempty_semantics'
+        if self.geometry_only:
+            topics=self.stats['topics']
+            self.stats['success'] = (topics.get('/map', {}).get('known_cells', 0)>0
+                and topics.get('/mapGraph', {}).get('poses',0)>2
+                and topics.get('/mapData',{}).get('count',0)>0 and self.geometry_tf_checks>0)
+        self.stats['verification_policy'] = 'geometry_only' if self.geometry_only else 'interface_allow_empty' if self.allow_empty else 'nonempty_semantics'
         self.stats['pipeline_tf_checks'] = self.pipeline_tf_checks
         self.stats['segmentation_state'] = ('predictions_present' if self.stats['detector_frames_with_instances']
             else 'normal_empty_predictions' if self.stats['topics'].get('/semantic/detector_status', {}).get('count', 0)
@@ -160,7 +209,7 @@ class Observer(Node):
 
 if __name__ == '__main__':
     rclpy.init()
-    node=Observer(Path(sys.argv[1]), allow_empty='--allow-empty' in sys.argv[2:])
+    node=Observer(Path(sys.argv[1]), allow_empty='--allow-empty' in sys.argv[2:], geometry_only='--geometry-only' in sys.argv[2:])
     try:
         rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):
