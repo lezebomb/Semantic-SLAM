@@ -56,3 +56,10 @@ experiments/mobilenet/images/
 .matplotlib/
 !config/models/
 !config/models/*.yaml
+
+# Local-only binary docs (not pushed to GitHub)
+docs/**/*.docx
+docs/**/*.pdf
+docs/**/*.png
+docs/**/*.jpg
+docs/**/*.jpeg
